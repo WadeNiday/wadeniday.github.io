@@ -1,0 +1,96 @@
+body {
+	background-color: #ccc;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+article {
+	width: 600px;
+	height: 250px;
+	margin: 100 auto;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	width: 590px;
+}
+
+a:hover {
+	color: red;
+}
+
+header {
+	height: 35px;
+	border-bottom: 1px solid #ccc;
+	padding: 10 10;
+}
+
+header a {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 11px;
+	color: #bbb;
+	line-height: 40px;
+	display: inline;
+}
+
+header a:hover {
+	color: #aaa;
+}
+
+
+.logo {
+	opacity: 0.8;
+	float: right;
+
+}
+
+.logo:hover {
+	opacity: 1.0;
+	
+}
+
+
+nav {
+	clear: all;
+	padding: 10 0 38 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+nav:hover {
+	background-color: #eee;
+
+}
+
+.project {
+	font-weight: 200;
+	font-size: 20px;
+	float: left;
+	width: 130px;
+	display: block;
+	padding-right: 10px;
+	padding-top: 3px;
+
+}
+
+.date {
+	float: left;
+	width: 85px;
+	font-size: 12px;
+	font-weight: 400;
+	padding-top: 8px;
+	padding-right: 30px;
+	color: #aaa;
+}
+
+.description {
+	float: left;
+	font-size: 12.5px;
+	font-weight: 400;
+	padding-top: 8px;
+	color: #999;
+}

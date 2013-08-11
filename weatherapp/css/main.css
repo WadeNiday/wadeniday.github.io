@@ -1,0 +1,121 @@
+.wraper{
+	width: 320px;
+	height: 565px;
+	margin: 30px 328px;
+/*change margin back to 30 auto */
+	padding: 12 0px;
+	background-image: url(../images/clear-skies.jpg);
+	background-position: auto;
+	background-repeat: no-repeat;
+}
+
+
+/*cfont-family: 'Raleway', sans-serif; */
+
+h1{
+	font-family: helvetica;
+	color: #fff;
+	font-size: 72px;
+	font-weight: 400;
+	padding-bottom: 50px;
+	padding-left: 18px;
+}
+
+h2 {
+	font-family: helvetica;
+	color: #fff;
+	font-size: 24px;
+}
+
+h3{
+	font-family: helvetica;
+	font-size: 14px;
+	color: #fff;
+}
+
+header{
+	position: relative;
+	top: -25;
+	left: 308;
+}
+
+#today {
+	float: left;
+	padding-right: 200px;
+	font-weight: 800;
+}
+
+
+article {
+	padding: 25 12 20 12px;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+}
+
+article h2 {
+	padding-bottom: 5px;
+}
+
+nav {
+	padding: 12 25 84 25px;
+	border-bottom: 1px solid #fff;
+}
+
+nav h3 {
+	padding-bottom: 10px;
+}
+
+nav img {
+	padding-bottom: 10px;
+	padding-left: 3px;
+}
+
+
+#now, #morning, #midmorning, #lunch {
+	clear: all;
+	float: left;
+	padding-right: 25px;
+	font-family: helvetica;
+	width: 35px;
+	text-align: center;
+}
+
+#now {
+	font-weight: 800;
+}
+
+#snack {
+	float: right;
+	font-family: helvetica;
+	width: 30px;
+	text-align: center;
+
+}
+
+section {
+	padding: 25 12 0 12px;
+	clear: all;
+}
+
+section h3{
+	padding-bottom: 20px;
+}
+
+section img{
+	padding-bottom: 11px;
+}
+
+#days {
+	float:left;
+	padding-right: 150px;
+}
+
+#temps {
+	float: left;
+
+}
+
+#icons {
+	float: right;
+	width: 24px;
+}
