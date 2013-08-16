@@ -1,0 +1,99 @@
+/* Header */
+header{
+	padding: 10px;
+	border-bottom: 2px solid #eee;
+	position: fixed;
+	background-color: #fff;
+	width: 100%;
+
+}
+
+.logo {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: #999;
+	padding-left: 10px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+nav{
+	float:right;
+	line-height: 33px;
+	font-family: helvetica;
+	color: #eee;
+	padding-right: 20px;
+}
+
+/* container - large, main area below the header */
+body{
+	background-image: url("../images/knitting250px.png");
+	background-attachment: fixed;
+}
+
+
+/* aside */
+aside{
+	width:150px;
+	padding: 10px;
+	position: fixed;
+	top:54px;
+	left: 0;
+}
+
+h5{
+	padding-top: 30px;
+	padding-bottom: 3px;
+	font-family: helvetica;
+	color: black;
+	font-variant: uppercase;
+}
+
+aside a{
+	display: block;
+	font-family: helvetica;
+	color: #999;
+	padding-bottom: 7px;
+}
+
+aside a:hover{
+	font-family: helvetica;
+	color: black;
+	background-color: white
+}
+
+/* coverflow */
+.coverflow{
+	float:left;
+	margin: 97 0 50 170;
+}
+
+
+/* cover */
+.cover{
+	width: 200px;
+	float: left;
+	padding: 10px;
+}
+
+.cover:hover{
+	background-color: white;
+
+}
+
+h1{
+	font-family: helvetica;
+	color: black;
+	padding: 3 0;
+}
+
+h3{
+	font-family: helvetica;
+	color: #999;
+	padding: 3 0;
+}
