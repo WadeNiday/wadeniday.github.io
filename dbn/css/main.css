@@ -1,0 +1,23 @@
+.wrapper {
+	width: 960px;
+	margin: auto;
+	padding: 20 0px;
+}
+
+header {
+	background-color: black;
+}
+
+.top {
+	background-color: #999;
+}
+
+.middle {
+	background-image: url('../images/photo-1.JPG');
+	height: 1000px;
+
+}
+
+footer {
+	background-color: #333;
+}
