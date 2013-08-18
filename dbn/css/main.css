@@ -105,28 +105,31 @@ h2 {
 	font-weight: 300;
 	font-size: 22px;
 	color: black;
-	padding-left: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: 6px;
 } 
 
 .circle {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	background-image: radial-gradient(#fff, #ddd);
 	border-radius: 50%;
+	border: 1px solid #ccc;
 	position: relative;
-	top: -9px;
+	top: -6px;
 	left: 0px;
 }
 
 h3 {
 	color: #d92b2b;
 	font-family: 'Kameron', serif;
-	font-weight: 700;
-	font-size: 15px;
+	font-weight: 400;
+	font-size: 18px;
 	position: relative;
-	top: 7px;
-	left: 10px;
+	top: 12px;
+	left: 16px;
 }
 
 .one h6{
@@ -166,7 +169,9 @@ h3 {
 
 .signup a {
 	display: inline-block;
-	padding: 15px;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	padding-left: 16px;
 	border-radius: 4px;
 	width: 130px;
 	padding-right: 20px;
@@ -185,8 +190,6 @@ a, h1, h4 {
 	text-decoration: none;
 }
 
-
-
 h4 {
 	color: #fff;
 	font-size: 26px;
@@ -196,7 +199,6 @@ h4 {
 }
 
 h5 {
-	padding-top: 10px;
 	padding-bottom: 30px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
