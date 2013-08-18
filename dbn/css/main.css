@@ -1,139 +1,191 @@
 .wrapper {
 	width: 960px;
-	margin: auto;
-	padding: 0 20px;
+	margin: 0 auto;
+	padding: 0 0px;
 }
 
-
 header {
-	padding: 16 0 16 0px;
 	position:fixed;
 	width: 100%;
 	background-color: white;
 }
 
 .logo {
+	padding-top: 15px;
+	padding-bottom: 23px;
 	float: left;
-	padding-bottom: 2px;
+}
+
+nav a {
+	float: right;
+	font-family: 'Kameron', serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ccc;
+	font-size: 12px;	
+	text-align: center;
+	width: 80px;
+	letter-spacing: .1em;
+	line-height: 70px;
+}
+
+nav a:hover {
+	color: #7aa838;
+	background-color: rgb(245, 245, 245);
 }
 
 .top {
 	background-image: url('../images/photo-1.JPG');
 	background-repeat: no-repeat;
-	background-position: -25 -612px;
-	height: 550px;
+	background-position: 0 -512px;
+	height: 600px;
 }
 
-.intro {
-	float: left;
-	padding-top: 222px;
-	padding-left: 150px;
-}
 
 .what {
 	float: left;
-	width: 430px;
-	padding-top: 225px;
-	padding-left: 150px;
+	width: 400px;
+	padding-top: 250px;
+	padding-left: 175px;
+	padding-right: 40px;
 }
 
 .what a {
 	padding: 15px;
+	font-family: 'Kameron', serif;
+	font-weight: 700;
+	color: #ccc;
+	text-transform: uppercase;
 	float: left;
-	background-color: red;
 	border-radius: 4px;
 	width: 130px;
 	text-align: center;
-	color: #fff;
-	font-weight: 300;
-	color: #fff;
-	font-size: 16px;
+	font-size: 15px;
+	letter-spacing: 1px;
 	background-image: linear-gradient(#8ec63f, #36471f);
 }
 
 h6 {
-	display: inline-block;
-	color: #fff;
-	font-weight: 300;
+	display: block;
+	font-family: 'Kameron', serif;
+	font-weight: 700;
+	color: #bbb;
 	text-transform: uppercase;
-	font-size: 11px;
-	letter-spacing: px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding-top: 50px;
+	padding-bottom: 15px;
+
 }
 
 .iphone {
 	float: left;
-	padding-top: 151px;
+	padding-top: 140px;
 	display: inline-block;
 	padding-left: 50;
 } 
 
 .middle {
-	background-image: linear-gradient(#999, black);
-	height: 330px;
+background-color: white;}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	color: #eee;
+	font-size: 30px;
+	line-height: 36px;
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 25px;
+	}
+
+h2 {
+	display: inline;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	color: black;
+	padding-left: 10px;
+} 
+
+.circle {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: radial-gradient(#fff, #ddd);
+	border-radius: 50%;
+	position: relative;
+	top: -9px;
+	left: 0px;
+}
+
+h3 {
+	color: #d92b2b;
+	font-family: 'Kameron', serif;
+	font-weight: 700;
+	font-size: 15px;
+	position: relative;
+	top: 7px;
+	left: 10px;
 }
 
 .one h6{
 	display: block;
-	width: 1200;
 	padding: 30 0px;
 }
 
 .one {
-	display: inline-block;
-	width: 300;
 	float: left;
+	width: 300px;
+	display: inline-block;
 	padding-right: 20px;
 }
 
 .two {
-	display: inline-block;
-	width: 300;
 	float: left;
+	width: 300px;
+	display: inline-block;
 	padding-right: 20px;
-	padding-top: 31px;
-
+	padding-top: 77px;
 }
 
 .three {
-	display: inline-block;
-	width: 300;
 	float: left;
-	padding-right: 20px;
-	padding-top: 31px;
-
-}
-
-nav a {
-	float: right;
+	width: 300px;
 	display: inline-block;
-	padding: 10 0 8 0px;
-	text-transform: uppercase;
-	color: #999;
-	font-size: 11px;	
-	text-align: center;
-	width: 80px;
-	letter-spacing: .1em;
+	padding-right: 20px;
+	padding-top: 77px;
 }
 
-nav a:hover {
-	color: #77a33a;
+.signup {
 	display: block;
-	background-color: rgb(238, 238, 238);
-	border-radius: 4px;
+	padding-top: 20px;
+	padding-bottom: 105px;
+
 }
+
+.signup a {
+	display: inline-block;
+	padding: 15px;
+	border-radius: 4px;
+	width: 130px;
+	padding-right: 20px;
+	text-align: center;
+	font-family: 'Kameron', serif;
+	font-weight: 700;
+	color: #ccc;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 1px;
+	background-image: linear-gradient(#d92b2b, #431a1a);
+}
+
 
 a, h1, h4 {
 	text-decoration: none;
-	color: white;
 }
 
-h1 {
-	color: white;
-	font-size: 20px;
-	line-height: 28px;
-	display: inline-block;
-	padding: 20 0px;
-}
+
 
 h4 {
 	color: #fff;
@@ -143,21 +195,23 @@ h4 {
 	padding: 15 0px;
 }
 
+h5 {
+	padding-top: 10px;
+	padding-bottom: 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	color: rgb(75, 75, 75);
+	font-size: 16px;
+	line-height: 22px;
 
 
-
-.signup {
-	clear: all;
-	float: left;
-	display: block;
-	padding: 20 0px;
-	width: 130px;
 }
 
 footer {
 	clear: all;
+	height: 300px;
 	background-image: linear-gradient(#8ec63f, #36471f);
-	padding: 20 0 240 0px;
+	padding: 20 0 300 0px;
 	padding-right: 100;
 	text-transform: uppercase;
 	color: #999;
