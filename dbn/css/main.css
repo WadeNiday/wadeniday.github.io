@@ -20,7 +20,6 @@ nav a {
 	float: right;
 	font-family: 'Kameron', serif;
 	font-weight: 700;
-	text-transform: uppercase;
 	color: #ccc;
 	font-size: 12px;	
 	text-align: center;
@@ -80,7 +79,7 @@ h6 {
 
 .iphone {
 	float: left;
-	padding-top: 140px;
+	padding-top: 138px;
 	display: inline-block;
 	padding-left: 50;
 } 
@@ -97,6 +96,7 @@ h1 {
 	display: inline-block;
 	padding-top: 5px;
 	padding-bottom: 25px;
+	padding-right: 15px;
 	}
 
 h2 {
