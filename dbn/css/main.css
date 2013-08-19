@@ -79,7 +79,7 @@ h6 {
 
 .iphone {
 	float: left;
-	padding-top: 138px;
+	padding-top: 137px;
 	display: inline-block;
 	padding-left: 50;
 } 
@@ -163,7 +163,7 @@ h3 {
 .signup {
 	display: block;
 	padding-top: 20px;
-	padding-bottom: 105px;
+	padding-bottom: 90px;
 
 }
 
@@ -209,15 +209,44 @@ h5 {
 
 }
 
-footer {
+.faq {
 	clear: all;
 	height: 300px;
 	background-image: linear-gradient(#8ec63f, #36471f);
 	padding: 20 0 300 0px;
 	padding-right: 100;
-	text-transform: uppercase;
 	color: #999;
 	font-size: 11px;	
-	letter-spacing: .1em;
 }
 
+.faq h6 {
+	color: #ddd;
+}
+
+.faq h5 {
+	color: black;
+	width: 600px;
+}
+
+.faq h3 {
+	color: white;
+	font-family: 'Kameron', serif;
+	font-weight: 400;
+	font-size: 18px;
+	position: static;
+}
+
+.list {
+	float: left;
+	display: inline;
+}
+
+.about {
+	width: 300px;
+	padding-left: 40px;
+	float: left;
+}
+
+.about h5 {
+	width: 300px;
+}
