@@ -62,9 +62,53 @@ section {
 	padding-top: 25px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
+	margin-bottom: 50px;
 	background-image: linear-gradient(to right, #fff, #F5F5F5, #fff);
 }
 
-h1 {
+section h1 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #555;
+}
+
+/* table */
+
+table {
+	width: 960px;
+	margin: auto;
+}
+
+/* table header */
+
+thead {
+	border-bottom: 1px solid #ccc;
+}
+
+.empty {
+	width: 210px;
+}
+
+table h1 {
 	font-size: 36px;
+	font-weight: 700;
+}
+
+#thin {
+	display: inline;
+	font-weight: 400;
+}
+
+table h2 {
+	font-size: 20px;
+	font-weight: 400;
+	padding-bottom: 50px;
+}
+
+/* table body */
+
+tbody th {
+	padding-top: 20px;
+}
+
 }
