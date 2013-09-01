@@ -10,14 +10,11 @@ body, a {
 body {
 	width: 1100px;
 	margin: auto;
+	margin-bottom: 50px;
 	background-color: #fff;
 	border-left: 2px solid #ddd;
 	border-right: 2px solid #ddd;
-	height: 800px;
 }
-
-
-
 
 /* top nav */
 
@@ -29,16 +26,31 @@ body {
 nav li a {
 	float: left;
 	color: #fff;
-	background-image: linear-gradient(#999, #999 50%, #888 50%, #888);
+background: rgb(78,82,84); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(78,82,84,1) 0%, rgba(78,82,84,1) 50%, rgba(45,45,45,1) 51%, rgba(45,45,45,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(78,82,84,1)), color-stop(50%,rgba(78,82,84,1)), color-stop(51%,rgba(45,45,45,1)), color-stop(100%,rgba(45,45,45,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(78,82,84,1) 0%,rgba(78,82,84,1) 50%,rgba(45,45,45,1) 51%,rgba(45,45,45,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(78,82,84,1) 0%,rgba(78,82,84,1) 50%,rgba(45,45,45,1) 51%,rgba(45,45,45,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(78,82,84,1) 0%,rgba(78,82,84,1) 50%,rgba(45,45,45,1) 51%,rgba(45,45,45,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(78,82,84,1) 0%,rgba(78,82,84,1) 50%,rgba(45,45,45,1) 51%,rgba(45,45,45,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e5254', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+
 	text-align: center;
 	padding: 12px 15px;
-	border-right: 1px solid #777;
+	border-right: 1px solid #444;
 	width: 90px;
 	font-size: 12px;
 }
 
 nav li a:hover {
-	background-image: linear-gradient(#777, #777 50%, #666 50%, #666);
+background: rgb(78,82,84); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(78,82,84,1) 0%, rgba(45,45,45,1) 50%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(78,82,84,1)), color-stop(50%,rgba(45,45,45,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(78,82,84,1) 0%,rgba(45,45,45,1) 50%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(78,82,84,1) 0%,rgba(45,45,45,1) 50%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(78,82,84,1) 0%,rgba(45,45,45,1) 50%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(78,82,84,1) 0%,rgba(45,45,45,1) 50%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e5254', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
 }
 
 .apple a {
@@ -63,12 +75,20 @@ section {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
 	margin-bottom: 50px;
-	background-image: linear-gradient(to right, #fff, #F5F5F5, #fff);
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 50%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(244,244,244,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 50%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 50%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 50%,rgba(254,254,254,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 50%,rgba(254,254,254,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 */
+
 }
 
 section h1 {
 	font-size: 30px;
-	font-weight: 700;
+	font-weight: 400;
 	color: #555;
 }
 
@@ -76,7 +96,8 @@ section h1 {
 
 table {
 	width: 960px;
-	margin: auto;
+	margin-left: 70px;
+	border-bottom: 1px solid #ccc;
 }
 
 /* table header */
@@ -86,7 +107,7 @@ thead {
 }
 
 .empty {
-	width: 210px;
+	width: 200px;
 }
 
 table h1 {
@@ -102,13 +123,77 @@ table h1 {
 table h2 {
 	font-size: 20px;
 	font-weight: 400;
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 }
 
 /* table body */
+
+td {
+	padding-bottom: 20px;
+}
 
 tbody th {
 	padding-top: 20px;
 }
 
+tbody h2 {
+	font-size: 20px;
+	line-height: 110%;
+	font-weight: 400;
+	text-align: left
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: 700;
+	padding-bottom: 8px;
+}
+
+h4 { 
+	font-size: 12px;
+	font-weight: 400;
+	color: #555;
+	padding-bottom: 5px;
+}
+
+
+.price {
+	display: inline;
+	font-size: 18px;
+	font-weight: 400;
+	color: #555;
+	padding-left: 20px;
+}
+
+.price_last {
+	display: inline;
+	font-size: 18px;
+	font-weight: 400;
+	color: #555;
+	padding-left: 14px;
+	padding-bottom: 20px;
+}
+
+dl {
+	display: block;
+}
+
+h5 { 
+	font-size: 13px;
+	font-weight: 400;
+	color: #555;
+	padding-bottom: 8px;
+	padding-right: 20px;
+}
+
+.specs {
+	padding-left: 5px;
+	display: inline;
+	font-size: 13px;
+	font-weight: 400;
+	color: black;
+}
+
+.capacity {
+	border-bottom: 1px solid #ccc;
 }
