@@ -43,6 +43,7 @@ header a:hover {
 
 
 .logo {
+	display: inline;
 	opacity: 0.8;
 	float: right;
 
