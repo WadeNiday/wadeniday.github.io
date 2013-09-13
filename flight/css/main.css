@@ -153,11 +153,9 @@ h6{
 	background-repeat: no-repeat;
 	background-position: 28px 20px;
 	border-right: 1px solid rgb(200, 200, 200);
-	background-color: pink;
 	border-radius: 0px 0px 0px 6px;
 }
 
 #arrival {
-	background-color: pink;
 	border-radius: 0px 0px 6px 0px;
 }
