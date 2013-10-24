@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-	<title>DivineBackNineApp</title>
+	<title>Exploring something new</title>
 
 
 	<link rel="stylesheet" type="text/css" href="css/clear.css">
@@ -18,6 +18,32 @@
 </head>
 
 <body>
+
+  <a href="http://jquery.com/"></a>
+    <script src="jquery.js"></script>
+    <script>
+ 
+ $(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+ 
+    </script>
+
+
+
 		<header>
 			<div class='wrapper'>
 				<div class='logo'>
@@ -25,13 +51,14 @@
 				</div>
 
 				<nav>
-					<a href="#">at work</a>
-					<a href="#">smiles</a>
-					<a href="#">Wade</a>
+					<a href="#work">at work</a>
+					<a href="#middle">smiles</a>
+					<a href="#top">Wade</a>
 				</nav>
 			</div>	
 		</header>
 
+		<a name='top'></a>
 		<section class='top'>
 			<div class='wrapper'>
 
@@ -45,32 +72,16 @@
 
 			</div>	
 		</section>
-
+			<a name='middle'></a>
 		<section class='middle'>
 			<div class='wrapper'>
 
 
 			</div>
 		</section>
-
-		<section class='faq'>
+			<a name='work'></a>
+		<section class='work'>
 			<div class='wrapper'>
-
-				<div class='list'>
-					<h6 id='faq'>FAQs</h6>
-
-					<h3>How do I change a tee time?</h3>
-					<h5>You cannot cancel a round, but you may request a different round (of equal or lesser value) by filling out the <a href="#">form</a>. Unless this is related to bad weather, round changes must be made at least 1 hour before the round begins.</h5>
-
-					<h3>How much does it cost to golf?</h3>
-					<h5>Most rounds cost between $8 and $20, depending on the course and what is included. All rounds include cart; some rounds include driving range (prior to the round) or breakfast.</h5>
-				</div>
-
-				<div class='about'>
-					<h6>about divinebacknine</h6>
-
-					<h5>DivineBackNine was created so guys could golf on a regular basis throughout the year without breaking the bank or burdening schedules. DivineBackNine is a self-supporting outreach several <a href="#">churches and businesses. </a></h5>
-				</div>
 
 			</div>
 		</section>

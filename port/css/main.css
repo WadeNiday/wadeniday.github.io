@@ -105,6 +105,7 @@ h6 {
 #faq {
 	text-transform: none;
 
+
 }
 
 .iphone {
@@ -114,9 +115,16 @@ h6 {
 	padding-left: 20px;
 } 
 
+
+
 .middle {
 	background: #eee;
 	height: 768px;
+}
+
+.work {
+	background: red;
+	height: 788px;
 }
 
 h1 {
