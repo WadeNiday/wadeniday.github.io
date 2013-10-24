@@ -1,5 +1,5 @@
 .wrapper {
-	width: 960px;
+	width: 1024px;
 	margin: 0 auto;
 	padding: 0 0px;
 }
@@ -7,50 +7,50 @@
 header {
 	position:fixed;
 	width: 100%;
-	background-color: white;
+	background-color: #fff;
+	border-bottom: 1px dashed #eee;
 }
 
 .logo {
-	padding-top: 15px;
-	padding-bottom: 23px;
+	padding-left: 20px;
+	padding-top: 13px;
 	float: left;
 }
 
 nav a {
 	float: right;
 	font-family: 'Kameron', serif;
-	font-weight: 700;
-	color: #ccc;
+	font-weight: 400;
+	color: #ddd;
 	transition: color .3s ease-in;
 	-webkit-transition: color .3s ease-in;
 	-moz-transition: color .3s ease-in;
 	-o-transition: color .3s ease-in;
-	font-size: 12px;	
+	font-size: 13px;	
 	text-align: center;
 	width: 80px;
 	letter-spacing: .1em;
-	line-height: 70px;
+	line-height: 50px;
+	padding-right: 20px;
 }
 
 nav a:hover {
-	color: #7aa838;
+	color: #bbb;
 /*	background-color: rgb(245, 245, 245);
 */}
 
 .top {
-	background-image: url('../images/photo-1.JPG');
-	background-repeat: no-repeat;
-	background-position: 0 -512px;
-	height: 600px;
+	background-color: #fff;
+	height: 768px;
 }
 
 
 .what {
 	float: left;
-	width: 400px;
-	padding-top: 250px;
-	padding-left: 175px;
-	padding-right: 40px;
+	width: 984px;
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .what a {
@@ -63,7 +63,7 @@ nav a:hover {
 	border-radius: 4px;
 	width: 130px;
 	text-align: center;
-	font-size: 15px;
+	font-size: 12px;
 	letter-spacing: 1px;
 
 	transition: background 0.2s linear;
@@ -94,7 +94,7 @@ h6 {
 	display: block;
 	font-family: 'Kameron', serif;
 	font-weight: 700;
-	color: #bbb;
+	color: #eee;
 	text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: 2px;
@@ -115,17 +115,17 @@ h6 {
 } 
 
 .middle {
-background: rgb(142,198,63)
+	background: #eee;
+	height: 768px;
 }
 
 h1 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
-	color: #eee;
-	font-size: 30px;
-	line-height: 36px;
+	color: #bbb;
+	font-size: 60px;
+	line-height: 1.2em;
 	display: inline-block;
-	padding-top: 5px;
 	padding-bottom: 25px;
 	padding-right: 15px;
 	}
