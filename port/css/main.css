@@ -102,16 +102,6 @@ h6 {
 	padding-bottom: 15px;
 }
 
-#faq {
-	text-transform: none;
-}
-
-.iphone {
-	float: left;
-	padding-top: 140px;
-	display: inline-block;
-	padding-left: 20px;
-} 
 
 .middle {
 	background: #eee;
@@ -130,13 +120,13 @@ h6 {
 	border-top: 1px dashed black;
 }
 
-.project {
+/*.project {
 	background-color: yellow;
 	margin-top: 20px;
 	width: 700px;
 	height: 400px;
 	display: inline-block;
-}
+}*/
 
 .description {
 	float: right;
@@ -156,24 +146,27 @@ h6 {
 Edit on 
 @import url(http*/
 .slider-wrap {
-  width: 300px;
-  height: 500px;
+  width: 700px;
+  height: 400px;
   margin: 20px auto;
+  display: inline-block;
 }
+
 .slider {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .holder {
   width: 300%;
 }
 .slide {
   float: left;
-  width: 300px;
-  height: 500px;
+  width: 700px;
+  height: 400px;
   position: relative;
-  background-position: -100px 0;
+  background-position: 0px 0;
 }
-.temp {
+
+/*.temp {
   position: absolute;
   color: white;
   font-size: 100px;
@@ -181,17 +174,18 @@ Edit on
   left: 15px;
   font-family: 'Josefin Slab', serif;
   font-weight: 100;
-}
+}*/
+
 #slide-0 {
-  background-image: url(http://farm8.staticflickr.com/7347/8731666710_34d07e709e_z.jpg);
+  background-image: url(http://placekitten.com/700/400);
 }
 #slide-1 {
-  background-image: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
+  background-image: url(http://placekitten.com/700/400);
 }
 #slide-2 {
-  background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+  background-image: url(http://placekitten.com/700/400);
 }
-.slide:before {
+/*.slide:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -199,22 +193,32 @@ Edit on
   width: 100%;
   height: 40%;
   background: linear-gradient(transparent, black);
-}
+}*/
+
 .slider-nav {
-  text-align: center;
+  text-align: right;
   margin: 10px 0 0 0;
 }
+
 .slider-nav a {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   display: inline-block;
   background: #ddd;
-  overflow: hidden;
   text-indent: -9999px;
-  border-radius: 50%;
+  border-radius: 20%;
+  transition: background .15s ease-in;
+	-webkit-transition: background .15s ease-in;
+	-moz-transition: background .15s ease-in;
+	-o-transition: background .15s ease-in;
 }
+
+.slider-nav a:hover {
+  background: yellow;
+}
+
 .slider-nav a.active {
-  background: #999;
+  background: red;
 }
 
 
