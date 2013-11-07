@@ -1,3 +1,4 @@
+/*structure*/
 .wrapper {
 	width: 1024px;
 	margin: 0 auto;
@@ -8,12 +9,28 @@ header {
 	position:fixed;
 	width: 100%;
 	background-color: #fff;
-	border-bottom: 1px dashed #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.bio {
+	background-color: #fff;
+	height: 768px;
+}
+
+.smiles {
+	background: #eee;
+	height: 768px;
+}
+
+.work {
+	background-color: #fff;
+	height: 788px;
 }
 
 .logo {
-	padding-top: 13px;
 	float: left;
+	width: 20px;
+	padding-left: 50px;
 }
 
 .mainnav a {
@@ -21,30 +38,24 @@ header {
 	font-family: 'Kameron', serif;
 	font-weight: 400;
 	color: #ddd;
-	transition: color .3s ease-in;
-	-webkit-transition: color .3s ease-in;
-	-moz-transition: color .3s ease-in;
-	-o-transition: color .3s ease-in;
+	transition: color .25s ease-in;
+	-webkit-transition: color .25s ease-in;
+	-moz-transition: color .25s ease-in;
+	-o-transition: color .25s ease-in;
 	font-size: 13px;	
 	text-align: center;
-	width: 80px;
+	width: 60px;
 	letter-spacing: .1em;
-	line-height: 50px;
+	line-height: 10px;
 	padding-right: 20px;
+	padding-top: 11px;
 }
 
-nav a:hover {
+.mainnav a:hover {
 	color: #bbb;
-/*	background-color: rgb(245, 245, 245);
-*/}
-
-.top {
-	background-color: #fff;
-	height: 768px;
 }
 
-
-.what {
+.bio h6 {
 	float: left;
 	width: 984px;
 	padding-top: 100px;
@@ -52,7 +63,7 @@ nav a:hover {
 	padding-right: 20px;
 }
 
-.what a {
+.btn a {
 	padding: 15px;
 	font-family: 'Kameron', serif;
 	font-weight: 700;
@@ -64,30 +75,37 @@ nav a:hover {
 	text-align: center;
 	font-size: 12px;
 	letter-spacing: 1px;
-
 	transition: background 0.2s linear;
-/*	background-color: pink;*/
-
-background: rgb(142,198,63);  /*Old browsers */
-background: -moz-linear-gradient(top,  rgba(142,198,63,1) 0%, rgba(54,71,31,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(142,198,63,1)), color-stop(100%,rgba(54,71,31,1)));  /*Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(142,198,63,1) 0%,rgba(54,71,31,1) 100%); /*Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(142,198,63,1) 0%,rgba(54,71,31,1) 100%); /*Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(142,198,63,1) 0%,rgba(54,71,31,1) 100%); /*IE10+ */
-background: linear-gradient(to bottom,  rgba(142,198,63,1) 0%,rgba(54,71,31,1) 100%); /*W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ec63f', endColorstr='#36471f',GradientType=0 ); /*IE6-9 */
-;
-
+	background: rgb(142,198,63);  /*Old browsers */
+	background: -moz-linear-gradient(top,  rgba(142,198,63,1) 0%, rgba(54,71,31,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(142,198,63,1)), color-stop(100%,rgba(54,71,31,1)));  /*Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(142,198,63,1) 0%,rgba(54,71,31,1) 100%); /*Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(142,198,63,1) 0%,rgba(54,71,31,1) 100%); /*Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(142,198,63,1) 0%,rgba(54,71,31,1) 100%); /*IE10+ */
+	background: linear-gradient(to bottom,  rgba(142,198,63,1) 0%,rgba(54,71,31,1) 100%); /*W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ec63f', endColorstr='#36471f',GradientType=0 ); /*IE6-9 */
+	;
 }
 
-#white {
-	color: rgba(54,71,31,1) ;
+.bio a {	
+	color: #bbb;
+	border-bottom: 1px dashed #ddd;
+	transition: color 0.2s linear;
 }
 
-
-.what a:hover {
-background-color: #d92b2b;
+.bio a:hover {
+	color: #888;
 }
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	color: #bbb;
+	font-size: 60px;
+	line-height: 1.2em;
+	display: inline-block;
+	padding: 100 15 25 20;
+	}
 
 h6 {
 	display: block;
@@ -102,15 +120,7 @@ h6 {
 }
 
 
-.middle {
-	background: #eee;
-	height: 768px;
-}
 
-.work {
-	background-color: #fff;
-	height: 788px;
-}
 
 .portfolio {
 	margin-left: 20px;
@@ -221,18 +231,6 @@ Edit on
 }
 
 
-
-h1 {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 200;
-	color: #bbb;
-	font-size: 60px;
-	line-height: 1.2em;
-	display: inline-block;
-	padding-bottom: 25px;
-	padding-right: 15px;
-	}
-
 .pro_nav {
 	float: right;
 	padding-top: 100px;
@@ -240,10 +238,6 @@ h1 {
 	color: yellow;
 }
 
-.leader { 
-  padding-top: 50px; 
-  padding-left: 15px;
-  }
 
 h2 {
 	display: inline;
