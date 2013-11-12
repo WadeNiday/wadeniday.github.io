@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 	<title>Exploring something new</title>
 
 
@@ -60,26 +62,34 @@
 		  <section class='smiles'>
 			 <div class='wrapper'>
 			
-        <h1>smile</h1>
+        <h6>smile</h6>
 
 			</div>
 
-<!-- work area --> 
-		
-    </section>
-			<a name='work'></a>
-			<div class='wrapper'>
-			<h1>design work</h1>
-      
-      <nav class='pro_nav'>
-      <a href='index.html'>next project</a>
-      </nav>
+      </section>
 
-				<article class='portfolio'>
+<!-- work area --> 
+<a name='work'></a>
+<section class='work'>
+	<div class='wrapper'>
+			
+    <h6>design work</h6>
+
+  <nav class='projectnav'>
+    <div class='right_arrow'>
+      <a href='#'>⟶</a>
+    </div>
+
+    <div class='left_arrow'>
+      <a href='#'>⟵</a>
+    </div>
+  </nav>
+
+    <div class='portfolio'>
 					<div class='project'>
 					</div>
 
-
+<!-- image slider and nav --> 
 <div class="slider-wrap">
   <div class="slider" id="slider">
     <div class="holder">
@@ -96,21 +106,20 @@
   </nav>
 </div>
 
+    </div>
 
+    <aside class='description'>
+      
+      <h5>Title goes here<h5> 
 
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <h4>
 
-					<div class='description'>
-					<h6>Title goes here<h6>	
-					</div>
-    <section class='work'>
-				</article>
+      <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<h3> 
 
+    </aside>
 
-
-				
-
-			</div>
-		</section>
+	</div>
+</section>
 
 
 <script src="jquery.js"></script>
@@ -126,7 +135,7 @@
       if ($target.length) {
         var targetOffset = $target.offset().top;
         $('html,body')
-        .animate({scrollTop: targetOffset}, 1000);
+        .animate({scrollTop: targetOffset}, 700);
        return false;
       }
     }
@@ -198,23 +207,7 @@ slider.init();
 </script>
 	
 
-<!--
-		<footer>
-			<div class='wrapper'>
-				
-				<div class='about-dbn'>
-					<h6>About DivineBackNine</h6>
-					<h5>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
-				</div>
 
-				<div class='about-dev'>
-					<h6>Designer/Developer</h6>
-					<h5>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
-				</div>
-			</div>	
-		</footer>
-
--->		
 
 </body>
 
