@@ -23,7 +23,7 @@ header {
 
 .smiles {
 	background: pink;
-	height: 820px;
+	height: 878px;
 }
 
 .work {
@@ -95,7 +95,8 @@ h6 {
 .work h6 {
 	float: left;
 	display: inline;
-	padding-top: 101px;
+	margin-top: 50px;
+	padding-top: 41px;
 	padding-left: 0px;
 	padding-right: 20px;
 	color: purple;
