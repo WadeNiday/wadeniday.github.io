@@ -18,17 +18,18 @@ header {
 
 .bio {
 	background-color: #fff;
-	height: 768px;
+	height: 888px;
 }
 
 .smiles {
 	background: pink;
-	height: 788px;
+	height: 888px;
 }
 
 .work {
 	background-color: #fff;
-	height: 788px;
+
+	height: 888px;
 }
 
 .logo {
@@ -80,7 +81,8 @@ header {
 
 .work h6 {
 	float: left;
-	padding-top: 100px;
+	display: inline;
+	padding-top: 50px;
 	padding-left: 0px;
 	padding-right: 20px;
 }
@@ -135,7 +137,7 @@ header {
 }
 
 h6 {
-	display: block;
+	display: inline;
 	font-family: 'Kameron', serif;
 	font-weight: 700;
 	color: #eee;
@@ -176,7 +178,7 @@ h5 a:hover {
 
 
 .right_arrow a{
-	padding-top: 90px;
+	padding-top: 40px;
 	padding-bottom: 15px;
 	padding-right: 20px;
 	float: right;
@@ -193,9 +195,8 @@ h5 a:hover {
 	color: #ccc;
 }
 
-
 .left_arrow a{
-	padding-top: 90px;
+	padding-top: 40px;
 	padding-bottom: 15px;
 	padding-right: 20px;
 	float: right;
@@ -212,17 +213,15 @@ h5 a:hover {
 		color: #ccc;
 }
 
-
 .portfolio {
-	display: inline;
-	float: left;
 	height: 400px;
-	padding-right: 70px;
+	padding-top: 81px;
 }
 
 .description {
-	float: left;
-	display: inline;
+	clear: all;
+	float: right;
+	display: block;
 	margin-top: 10px;
 	width: 230px;
 	border-top: 1px dashed #ddd;
