@@ -18,17 +18,17 @@ header {
 
 .bio {
 	background-color: #fff;
-	height: 888px;
+	height: 768px;
 }
 
 .smiles {
 	background: pink;
-	height: 888px;
+	height: 788px;
 }
 
 .work {
 	background-color: #fff;
-	height: 888px;
+	height: 788px;
 }
 
 .logo {
@@ -64,41 +64,25 @@ header {
 	color: purple;
 }
 
-h6 {
-	display: inline;
-	font-family: 'Kameron', serif;
-	font-weight: 700;
-	color: #eee;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 2px;
-	padding-top: 50px;
-	padding-bottom: 15px;
-}
-
 .bio h6 {
 	float: left;
-	padding-top: 85px;
+	padding-top: 100px;
 	padding-left: 0px;
 	padding-right: 20px;
-	color: purple;
 }
 
 .smiles h6 {
 	float: left;
-	padding-top: 90px;
+	padding-top: 100px;
 	padding-left: 0px;
 	padding-right: 20px;
-	color: purple;
 }
 
 .work h6 {
 	float: left;
-	display: inline;
-	padding-top: 41px;
+	padding-top: 100px;
 	padding-left: 0px;
 	padding-right: 20px;
-	color: purple;
 }
 
 .bio h1 {
@@ -150,6 +134,18 @@ h6 {
 	color: yellow;
 }
 
+h6 {
+	display: block;
+	font-family: 'Kameron', serif;
+	font-weight: 700;
+	color: #eee;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding-top: 50px;
+	padding-bottom: 15px;
+}
+
 h5 {
 	font-family: 'Kameron', serif;
 	font-weight: 400;
@@ -180,14 +176,13 @@ h5 a:hover {
 
 
 .right_arrow a{
-	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-top: 90px;
+	padding-bottom: 15px;
 	padding-right: 20px;
 	float: right;
 	display: inline;
-	color: purple;
-/*	color: #eee;
-*/	transition: color .25s linear;
+	color: #eee;
+	transition: color .25s linear;
 	-webkit-transition: color .25s linear;
 	-moz-transition: color .25s linear;
 	-o-transition: color .25s linear;
@@ -198,14 +193,14 @@ h5 a:hover {
 	color: #ccc;
 }
 
+
 .left_arrow a{
-	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-top: 90px;
+	padding-bottom: 15px;
 	padding-right: 20px;
 	float: right;
 	display: inline;
-	color: purple;
-/*	color: #eee;*/
+	color: #eee;
 	transition: color .25s linear;
 	-webkit-transition: color .25s linear;
 	-moz-transition: color .25s linear;
@@ -217,21 +212,19 @@ h5 a:hover {
 		color: #ccc;
 }
 
+
 .portfolio {
-	clear: all;
 	display: inline;
 	float: left;
 	height: 400px;
-	margin-top: 14px;
-	margin-right: 90px;
-	background-color: pink;
+	padding-right: 70px;
 }
 
 .description {
 	float: left;
 	display: inline;
-	margin-top: 7px;
-	width: 215px;
+	margin-top: 10px;
+	width: 230px;
 	border-top: 1px dashed #ddd;
 	padding-top: 15px;
 }
@@ -250,7 +243,7 @@ Edit on
 .slider-wrap {
   width: 700px;
   height: 400px;
-  margin: 0px auto;
+  margin: 20px auto;
   display: inline-block;
 }
 
@@ -278,8 +271,6 @@ Edit on
   font-weight: 100;
 }*/
 
-
-
 #slide-0 {
   background-image: url(http://placekitten.com/700/400);
 }
@@ -289,8 +280,6 @@ Edit on
 #slide-2 {
   background-image: url(http://placekitten.com/700/400);
 }
-
-
 /*.slide:before {
   content: "";
   position: absolute;
@@ -303,7 +292,7 @@ Edit on
 
 .slider-nav {
   text-align: right;
-  margin-top: 10px;
+  margin: 10px 0px 0px 20px;
 }
 
 .slider-nav a {
