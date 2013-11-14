@@ -13,8 +13,7 @@ a {
 header {
 	position:fixed;
 	width: 100%;
-	background-color: #fff;
-	border-bottom: 1px solid #eee;
+	background-color: #f3f3f3;
 }
 
 .bio {
@@ -44,7 +43,7 @@ header {
 	float: right;
 	font-family: 'Kameron', serif;
 	font-weight: 400;
-	color: red;
+	color: #3c92b0;
 	transition: color .25s ease-in;
 	-webkit-transition: color .25s ease-in;
 	-moz-transition: color .25s ease-in;
@@ -221,9 +220,7 @@ h5 a:hover {
 }
 
 .description {
-	clear: all;
 	float: right;
-	display: block;
 	margin-top: 10px;
 	width: 230px;
 	border-top: 1px dashed #ddd;
@@ -235,17 +232,19 @@ h5 a:hover {
 	margin-top: 20px;
 	width: 700px;
 	height: 400px;
-	display: inline-block;
+	display: inline;
 }*/
 
 /*HTML  CSS  JS  Result
 Edit on 
 @import url(http*/
 .slider-wrap {
-  width: 700px;
-  height: 400px;
-  margin: 20px auto;
-  display: inline-block;
+	display: inline-block;
+	float: left;
+  	width: 700px;
+  	height: 400px;
+  	margin: 20px auto;
+
 }
 
 .slider {
@@ -281,6 +280,8 @@ Edit on
 #slide-2 {
   background-image: url(http://placekitten.com/700/400);
 }
+
+
 /*.slide:before {
   content: "";
   position: absolute;
