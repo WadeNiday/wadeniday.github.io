@@ -2,7 +2,7 @@
 .wrapper {
 	width: 960px;
 	margin: 0 auto;
-	padding: 0 0px;
+	padding-left: 15px;
 }
 
 
@@ -16,6 +16,13 @@ header {
 	background-color: #f3f3f3;
 }
 
+.logo {
+	float: left;
+	width: 20px;
+	padding-left: 42px;
+	padding-bottom: 7px;
+}
+
 .bio {
 	background-color: #fff;
 	height: 888px;
@@ -27,16 +34,13 @@ header {
 }
 
 .work {
-	background-color: #fff;
-
+	background-color: green;
 	height: 888px;
 }
 
-.logo {
-	float: left;
-	width: 20px;
-	padding-left: 42px;
-	padding-bottom: 7px;
+.pro1 {
+	background: #fff;
+	height: 868px;
 }
 
 .mainnav a {
@@ -81,7 +85,13 @@ header {
 
 .work h6 {
 	float: left;
-	display: inline;
+	padding-top: 90px;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+
+.pro1 h6 {
+	float: left;
 	padding-top: 40px;
 	padding-left: 0px;
 	padding-right: 20px;
@@ -177,9 +187,8 @@ h5 a:hover {
 	color: yellow;
 }
 
-
-.right_arrow a{
-	padding-top: 30px;
+.arrow a{
+	padding-top: 90px;
 	padding-bottom: 15px;
 	padding-right: 20px;
 	float: right;
@@ -192,37 +201,22 @@ h5 a:hover {
 	font-size: 30px;
 }
 
-.right_arrow a:hover{
+.arrow a:hover{
 	color: #ccc;
 }
 
-.left_arrow a{
-	padding-top: 30px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	float: right;
-	display: inline;
-	color: #eee;
-	transition: color .25s linear;
-	-webkit-transition: color .25s linear;
-	-moz-transition: color .25s linear;
-	-o-transition: color .25s linear;
-	font-size: 30px;
-}
-
-.left_arrow a:hover{
-		color: #ccc;
-}
 
 .portfolio {
+	float:left;
 	height: 400px;
-	padding-top: 70px;
+	padding-top: 160x;	
+	padding-right: 20x;
 }
 
 .description {
-	float: right;
+	float: left;
 	margin-top: 10px;
-	width: 230px;
+	width: 210px;
 	border-top: 1px dashed #ddd;
 	padding-top: 15px;
 }
@@ -243,7 +237,8 @@ Edit on
 	float: left;
   	width: 700px;
   	height: 400px;
-  	margin: 20px auto;
+  	margin: 10px auto;
+  	padding-right: 28px;
 
 }
 
@@ -281,6 +276,16 @@ Edit on
   background-image: url(http://placekitten.com/700/400);
 }
 
+
+#slide-1a {
+  background-image: url(http://placekitten.com/700/400);
+}
+#slide-1b {
+  background-image: url(http://placekitten.com/700/400);
+}
+#slide-1c {
+  background-image: url(http://placekitten.com/700/400);
+}
 
 /*.slide:before {
   content: "";
