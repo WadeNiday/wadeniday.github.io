@@ -5,7 +5,6 @@
 	padding-left: 15px;
 }
 
-
 a {
 	text-decoration: none;
 }
@@ -38,7 +37,7 @@ header {
 	height: 888px;
 }
 
-.pro1 {
+.pro1, .pro2, .pro3, .pro4, .pro5 {
 	background: #fff;
 	height: 868px;
 }
@@ -69,14 +68,7 @@ header {
 	color: purple;
 }
 
-.bio h6 {
-	float: left;
-	padding-top: 100px;
-	padding-left: 0px;
-	padding-right: 20px;
-}
-
-.smiles h6 {
+.bio h6, .smiles h6 {
 	float: left;
 	padding-top: 100px;
 	padding-left: 0px;
@@ -85,14 +77,21 @@ header {
 
 .work h6 {
 	float: left;
-	padding-top: 90px;
+	padding-top: 100px;
 	padding-left: 0px;
 	padding-right: 20px;
 }
 
-.pro1 h6 {
+.pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6 {
 	float: left;
-	padding-top: 40px;
+	padding-top: 80px;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+
+.pro5 h6 {
+	float: left;
+	padding-top: 20px;
 	padding-left: 0px;
 	padding-right: 20px;
 }
@@ -182,7 +181,6 @@ h3 {
 	font-size: 12px;
 }
 
-
 h5 a:hover {
 	color: yellow;
 }
@@ -201,7 +199,21 @@ h5 a:hover {
 	font-size: 30px;
 }
 
-.arrow a:hover{
+.arrow_last a{
+	padding-top: 40px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	float: right;
+	display: inline;
+	color: #eee;
+	transition: color .25s linear;
+	-webkit-transition: color .25s linear;
+	-moz-transition: color .25s linear;
+	-o-transition: color .25s linear;
+	font-size: 30px;
+}
+
+.arrow a:hover, .arrow_last a:hover{
 	color: #ccc;
 }
 
@@ -315,11 +327,10 @@ Edit on
 	-o-transition: background .15s ease-in;
 }
 
-.slider-nav a:hover {
-  background: pink;
-}
-
 .slider-nav a.active {
   background: red;
 }
 
+.slider-nav a:hover {
+  background: pink;
+}
