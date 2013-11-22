@@ -13,7 +13,23 @@ header {
 	position:fixed;
 	width: 100%;
 	background-color: #f3f3f3;
+	z-index: 9;
 }
+
+.sec_nav {
+	margin-top: 50px;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 1;
+}
+
+.sec_nav h3 {
+	padding: 20px 0px;
+	color: black;
+}
+
 
 .logo {
 	float: left;
@@ -24,23 +40,24 @@ header {
 
 .bio {
 	background-color: #fff;
-	height: 888px;
+	height: 768px;
 }
 
 .smiles {
 	background: pink;
-	height: 888px;
+	height: 768px;
 }
 
-.work {
-	background-color: green;
-	height: 888px;
-}
-
-.pro1, .pro2, .pro3, .pro4, .pro5 {
+.work, .pro1, .pro2, .pro3, .pro4 {
 	background: #fff;
-	height: 868px;
+	height: 768px;
 }
+
+.pro5 {
+	background: #fff;
+	height: 668px;
+}
+
 
 .mainnav a {
 	float: right;
@@ -68,19 +85,13 @@ header {
 	color: purple;
 }
 
-.bio h6, .smiles h6 {
+.bio h6, .smiles h6, .work h6 {
 	float: left;
-	padding-top: 100px;
-	padding-left: 0px;
-	padding-right: 20px;
+	padding-top: 70px;
+	position: absolute;
+	z-index: 2;
 }
 
-.work h6 {
-	float: left;
-	padding-top: 100px;
-	padding-left: 0px;
-	padding-right: 20px;
-}
 
 .pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6 {
 	float: left;
@@ -99,6 +110,7 @@ header {
 .bio h1 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
+	padding-top: 150px;
 	color: #bbb;
 	font-size: 60px;
 	line-height: 1.2em;
@@ -333,4 +345,9 @@ Edit on
 
 .slider-nav a:hover {
   background: pink;
+}
+
+.footer {
+	width: 100%;
+	background-color: #f3f3f3;
 }
