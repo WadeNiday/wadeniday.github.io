@@ -13,29 +13,14 @@ header {
 	position:fixed;
 	width: 100%;
 	background-color: #f3f3f3;
-	z-index: 9;
-}
-
-.sec_nav {
-	margin-top: 50px;
-	width: 100%;
-	height: 50px;
-	background-color: #fff;
-	position: fixed;
 	z-index: 1;
 }
-
-.sec_nav h3 {
-	padding: 20px 0px;
-	color: black;
-}
-
 
 .logo {
 	float: left;
 	width: 20px;
-	padding-left: 42px;
 	padding-bottom: 7px;
+	margin-left: 42px;
 }
 
 .bio {
@@ -57,7 +42,6 @@ header {
 	background: #fff;
 	height: 668px;
 }
-
 
 .mainnav a {
 	float: right;
@@ -82,16 +66,36 @@ header {
 }
 
 .mainnav a:active {
-	color: purple;
+	color: red;
 }
 
-.bio h6, .smiles h6, .work h6 {
+.bio h6, .smiles h6 {
 	float: left;
-	padding-top: 70px;
+	padding-left: 40px;
+	color: #bbb;
+	padding-top: 23px;
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 }
 
+.work h6 {
+	float: left;
+	padding-left: 40px;
+	color: #bbb;
+	padding-top: 23px;
+	position: absolute;
+	z-index: 1;
+}
+
+#atwork {
+	float: left;
+	padding-left: 40px;
+	color: #bbb;
+	padding-top: 23px;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
 
 .pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6 {
 	float: left;
@@ -110,7 +114,7 @@ header {
 .bio h1 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
-	padding-top: 150px;
+	padding-top: 100px;
 	color: #bbb;
 	font-size: 60px;
 	line-height: 1.2em;
@@ -197,43 +201,43 @@ h5 a:hover {
 	color: yellow;
 }
 
-.arrow a{
-	padding-top: 90px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	float: right;
-	display: inline;
-	color: #eee;
-	transition: color .25s linear;
-	-webkit-transition: color .25s linear;
-	-moz-transition: color .25s linear;
-	-o-transition: color .25s linear;
-	font-size: 30px;
-}
-
-.arrow_last a{
-	padding-top: 40px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	float: right;
-	display: inline;
-	color: #eee;
-	transition: color .25s linear;
-	-webkit-transition: color .25s linear;
-	-moz-transition: color .25s linear;
-	-o-transition: color .25s linear;
-	font-size: 30px;
-}
-
-.arrow a:hover, .arrow_last a:hover{
+.projectnav a {
+	position: relative;
+	left: 666px;
+	top: 21px;
+	z-index: 1;
 	color: #ccc;
+	transition: color .25s linear;
+	-webkit-transition: color .25s linear;
+	-moz-transition: color .25s linear;
+	-o-transition: color .25s linear;
+}
+
+.projectnav a:hover {
+	color: red;
+}
+
+.arrowleft a {
+	float: right;
+	display: inline;
+	font-size: 20px;
+}
+
+.arrowright a {
+	float: right;
+	display: inline;
+	font-size: 20px;
+}
+
+#single_arrowright {
+	padding-left: 20px;
 }
 
 
 .portfolio {
 	float:left;
 	height: 400px;
-	padding-top: 160x;	
+	padding-top: 50px;	
 	padding-right: 20x;
 }
 

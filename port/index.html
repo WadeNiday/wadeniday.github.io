@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<title>Exploring something new</title>
-
 
 	<link rel="stylesheet" type="text/css" href="css/clear.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -13,8 +12,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
 
 	<link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
-
-
 
 
 </head>
@@ -30,7 +27,7 @@
           </div>
 
 					<ul>
-            <li><a href="#work">at work</a></li>
+            <li><a href="#work" class='gotowork'>at work</a></li>
             <li><a href="#smiles">smiles</a></li>
             <li><a href="#bio">Wade</a></li>
           </ul>
@@ -77,13 +74,12 @@
 <a name='work'></a>
 <section class='work'>
 	<div class='wrapper'>
-			
-    <h6>design work</h6>
+
+		<h6>design work</h6>	
+    <h6 id='atwork'>design work</h6>
 
   <nav class='projectnav'>
-    <div class='arrow'>
-      <a href='#pro1'>&rarr;</a>
-    </div>
+      <a href='#pro1' id='single_arrowright'>&rarr;</a>
   </nav>
 
     <div class='portfolio'>
@@ -129,10 +125,8 @@
        <div class='wrapper'>
       
    <nav class='projectnav'>
-    <div class='arrow'>
-      <a href='#pro2'>&#10145;</a>
-      <a href='#work'>&uarr;</a>
-    </div>
+      <a href='#work' id='arrowreturn'>&larr;</a>
+      <a href='#pro2' class='arrowright'>&rarr;</a>
   </nav>
 
     <div class='portfolio'>
@@ -178,10 +172,8 @@
        <div class='wrapper'>
       
    <nav class='projectnav'>
-    <div class='arrow'>
-      <a href='#pro3'>⟶</a>
-      <a href='#pro1'>⟵</a>
-    </div>
+      <a href='#pro1' class='arrowleft'>&larr;</a>
+      <a href='#pro3'class='arrowright'>&rarr;</a>
   </nav>
 
     <div class='portfolio'>
@@ -228,10 +220,8 @@
        <div class='wrapper'>
       
    <nav class='projectnav'>
-    <div class='arrow'>
-      <a href='#pro4'>⟶</a>
-      <a href='#pro2'>⟵</a>
-    </div>
+      <a href='#pro2' class='arrowleft'>&larr;</a>
+      <a href='#pro4' class='arrowright'>&rarr;</a>
   </nav>
 
     <div class='portfolio'>
@@ -277,10 +267,8 @@
        <div class='wrapper'>
       
    <nav class='projectnav'>
-    <div class='arrow'>
-      <a href='#pro5'>⟶</a>
-      <a href='#pro3'>⟵</a>
-    </div>
+      <a href='#pro3' class='arrowleft'>&larr;</a>
+      <a href='#pro5' class='arrowright'>&rarr;</a>
   </nav>
 
     <div class='portfolio'>
@@ -327,10 +315,8 @@
       
 
    <nav class='projectnav'>
-    <div class='arrow_last'>
-      <a href='#pro5'>⟶</a>
-      <a href='#pro4'>⟵</a>
-    </div>
+      <a href='#pro4' class='arrowleft'>&larr;</a>
+      <a href='#pro5' class='arrowright'>&rarr;</a>
   </nav>
 
     <div class='portfolio'>
@@ -381,6 +367,7 @@
 
 <script src="jquery.js"></script>
 <script>
+
  
  $(document).ready(function(){
   $('.mainnav a, .projectnav a').click(function() {
@@ -392,12 +379,29 @@
       if ($target.length) {
         var targetOffset = $target.offset().top;
         $('html,body')
-        .animate({scrollTop: targetOffset}, 700);
+        .animate({scrollTop: targetOffset}, 575);
        return false;
       }
     }
   });
 });
+
+
+
+$('#atwork').hide();
+  $('#single_arrowright, .arrowleft, .arrowright').click(function(){
+    $('#atwork').fadeIn('slow');
+});
+
+  $('.mainnav a, #arrowreturn').click(function(){
+ // 3 second fadeOut
+    $('#atwork').fadeOut('xslow'); 
+});
+
+
+
+
+
  
  var slider = {
   
