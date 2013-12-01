@@ -1,8 +1,13 @@
 /*structure*/
 .wrapper {
-	width: 1024px;
+	width: 960px;
 	margin: 0 auto;
-	padding: 0 0px;
+	padding-left: 15px;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
 }
 
 a {
@@ -12,8 +17,44 @@ a {
 header {
 	position:fixed;
 	width: 100%;
-	background-color: #fff;
-	border-bottom: 1px solid #eee;
+	background-color: #f3f3f3;
+	z-index: 1;
+}
+
+.logo {
+	float: left;
+	width: 20px;
+	padding-bottom: 7px;
+	margin-left: 42px;
+<<<<<<< HEAD
+}
+
+.mainnav a {
+	float: right;
+	font-family: 'Kameron', serif;
+	font-weight: 400;
+	color: red;
+	transition: background .25s ease-in;
+	-webkit-transition: background .25s ease-in;
+	-moz-transition: background .25s ease-in;
+	-o-transition: background .25s ease-in;
+	font-size: 13px;	
+	text-align: center;
+	width: 60px;
+	line-height: 35px;
+	letter-spacing: .1em;
+	padding-right: 20px;
+	padding-top: 15px;
+}
+
+.mainnav a:hover {
+	background: #eee;
+}
+
+.mainnav a:active {
+	color: purple;
+=======
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 }
 
 .bio {
@@ -23,71 +64,114 @@ header {
 
 .smiles {
 	background: pink;
-	height: 788px;
+	height: 768px;
 }
 
-.work {
-	background-color: #fff;
-	height: 788px;
+.work, .pro1, .pro2, .pro3, .pro4 {
+	background: #fff;
+	height: 768px;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 .logo {
 	float: left;
 	width: 20px;
 	padding-left: 42px;
-	padding-bottom: 7px;
+}
+
+=======
+=======
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
+.pro5 {
+	background: #fff;
+	height: 368px;
+	padding-bottom: 250px
 }
 
 .mainnav a {
 	float: right;
-	font-family: 'Kameron', serif;
 	font-weight: 400;
-	color: red;
+	text-transform: uppercase;
+	color: #aaa;
 	transition: color .25s ease-in;
 	-webkit-transition: color .25s ease-in;
 	-moz-transition: color .25s ease-in;
 	-o-transition: color .25s ease-in;
-	font-size: 13px;	
+	font-size: 12px;	
 	text-align: center;
 	width: 60px;
 	line-height: 30px;
-	letter-spacing: .1em;
 	padding-right: 20px;
 	padding-top: 15px;
 }
 
 .mainnav a:hover {
-	color: maroon;
+	color: black;
 }
 
-.mainnav a:active {
-	color: purple;
-}
-
-.bio h6 {
+.bio h6, .smiles h6 {
 	float: left;
-	padding-top: 100px;
-	padding-left: 0px;
-	padding-right: 20px;
+	padding-left: 40px;
+	color: #aaa;
+	padding-top: 23px;
+	position: absolute;
+	z-index: 1;
 }
-
-.smiles h6 {
-	float: left;
-	padding-top: 100px;
-	padding-left: 0px;
-	padding-right: 20px;
-}
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 
 .work h6 {
 	float: left;
-	padding-top: 100px;
+	padding-left: 40px;
+	color: #bbb;
+	padding-top: 23px;
+	position: absolute;
+	z-index: 1;
+<<<<<<< HEAD
+}
+
+#atwork {
+	float: left;
+	padding-left: 40px;
+	color: #bbb;
+	padding-top: 23px;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+
+.pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6 {
+	float: left;
+=======
+}
+
+#atwork {
+	float: left;
+	padding-left: 40px;
+	color: #bbb;
+	padding-top: 23px;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+
+.pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6 {
+	float: left;
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
+	padding-top: 80px;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+
+.pro5 h6 {
+	float: left;
+	padding-top: 20px;
 	padding-left: 0px;
 	padding-right: 20px;
 }
 
 .bio h1 {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 200;
+	padding-top: 75px;
 	color: #bbb;
 	font-size: 60px;
 	line-height: 1.2em;
@@ -107,8 +191,6 @@ header {
 .btn {
 	margin-top: 30px;
 	padding: 15px;
-	font-family: 'Kameron', serif;
-	font-weight: 700;
 	color: #ccc;
 	border-bottom: none;
 	text-transform: uppercase;
@@ -135,96 +217,82 @@ header {
 }
 
 h6 {
-	display: block;
-	font-family: 'Kameron', serif;
-	font-weight: 700;
-	color: #eee;
+	display: inline;
+	font-weight: 600;
+	color: #aaa;
 	text-transform: uppercase;
 	font-size: 12px;
-	letter-spacing: 2px;
+	letter-spacing: .1em;
 	padding-top: 50px;
 	padding-bottom: 15px;
+	color: black;
 }
 
 h5 {
-	font-family: 'Kameron', serif;
-	font-weight: 400;
-	color: blue;
+	color: #777;
 	transition: color .25s ease-in;
 	-webkit-transition: color .25s ease-in;
 	-moz-transition: color .25s ease-in;
 	-o-transition: color .25s ease-in;
-	font-size: 14px;
+	font-size: 20px;
 	padding-bottom: 5px;
 } 
 
-h4 {
-	color: brown;
-	font-size: 14px;
-}
-
-h3 {
-	padding-top: 5px;
-	color: orange;
-	font-size: 12px;
+h4, h3 {
+	font-size: 15px;
+	line-height: 1.35em;
+	padding-bottom: 5px;
 }
 
 
-h5 a:hover {
-	color: yellow;
-}
-
-
-.right_arrow a{
-	padding-top: 90px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	float: right;
-	display: inline;
-	color: #eee;
+.projectnav a {
+	position: relative;
+	left: 666px;
+	top: 21px;
+	z-index: 1;
+	color: #bbb;
 	transition: color .25s linear;
 	-webkit-transition: color .25s linear;
 	-moz-transition: color .25s linear;
 	-o-transition: color .25s linear;
-	font-size: 30px;
 }
 
-.right_arrow a:hover{
-	color: #ccc;
+.projectnav a:hover {
+	color: black;
 }
 
+.projectnav a:active {
+	color: red;
+}
 
-.left_arrow a{
-	padding-top: 90px;
-	padding-bottom: 15px;
-	padding-right: 20px;
+.arrowleft a {
 	float: right;
 	display: inline;
-	color: #eee;
-	transition: color .25s linear;
-	-webkit-transition: color .25s linear;
-	-moz-transition: color .25s linear;
-	-o-transition: color .25s linear;
-	font-size: 30px;
+	font-size: 20px;
 }
 
-.left_arrow a:hover{
-		color: #ccc;
+.arrowright a {
+	float: right;
+	display: inline;
+	font-size: 20px;
+}
+
+#single_arrowright {
+	padding-left: 20px;
 }
 
 
 .portfolio {
-	display: inline;
-	float: left;
+	float:left;
 	height: 400px;
-	padding-right: 70px;
+	padding-top: 45px;	
+	padding-right: 20x;
 }
 
 .description {
 	float: left;
-	display: inline;
-	margin-top: 10px;
-	width: 230px;
+	margin-top: 40px;
+	width: 210px;
 	border-top: 1px dashed #ddd;
 	padding-top: 15px;
 }
@@ -234,17 +302,20 @@ h5 a:hover {
 	margin-top: 20px;
 	width: 700px;
 	height: 400px;
-	display: inline-block;
+	display: inline;
 }*/
 
 /*HTML  CSS  JS  Result
 Edit on 
 @import url(http*/
 .slider-wrap {
-  width: 700px;
-  height: 400px;
-  margin: 20px auto;
-  display: inline-block;
+	display: inline-block;
+	float: left;
+  	width: 700px;
+  	height: 400px;
+  	margin: 10px auto;
+  	padding-right: 28px;
+
 }
 
 .slider {
@@ -280,6 +351,18 @@ Edit on
 #slide-2 {
   background-image: url(http://placekitten.com/700/400);
 }
+
+
+#slide-1a {
+  background-image: url(http://placekitten.com/700/400);
+}
+#slide-1b {
+  background-image: url(http://placekitten.com/700/400);
+}
+#slide-1c {
+  background-image: url(http://placekitten.com/700/400);
+}
+
 /*.slide:before {
   content: "";
   position: absolute;
@@ -292,27 +375,60 @@ Edit on
 
 .slider-nav {
   text-align: right;
-  margin: 10px 0px 0px 20px;
-}
+/*  margin: 10px 0px 0px 20px;
+*/}
+
 
 .slider-nav a {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  background: #ddd;
-  text-indent: -9999px;
-  border-radius: 20%;
-  transition: background .15s ease-in;
-	-webkit-transition: background .15s ease-in;
-	-moz-transition: background .15s ease-in;
-	-o-transition: background .15s ease-in;
-}
-
-.slider-nav a:hover {
-  background: pink;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	padding-left: 10px;
+	color: #bbb;
+  	display: inline-block;
+	transition: color .15s ease-in;
+	-webkit-transition: color .15s ease-in;
+	-moz-transition: color .15s ease-in;
+	-o-transition: color .15s ease-in;
 }
 
 .slider-nav a.active {
-  background: red;
+  color: red;
 }
 
+.slider-nav a:hover {
+  color: black;
+}
+
+.footer {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	width: 100%;
+	background-color: #f3f3f3;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+.footer_main {
+	width: 700px;
+	display: inline-block;
+}
+
+.footer h6 {
+	display: run-in;
+	color: #aaa;
+}
+
+.footer h4 {
+	color: #aaa;
+}
+
+.footer_icons {
+	text-align: right;
+	width: 225px;
+	float: right;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0

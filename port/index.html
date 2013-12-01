@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<title>Exploring something new</title>
 
-
 	<link rel="stylesheet" type="text/css" href="css/clear.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 	
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
 
 	<link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
-
-
 
 
 </head>
@@ -30,13 +29,18 @@
           </div>
 
 					<ul>
-            <li><a href="#work">at work</a></li>
+            <li><a href="#work" class='gotowork'>at work</a></li>
             <li><a href="#smiles">smiles</a></li>
             <li><a href="#bio">Wade</a></li>
           </ul>
 				</nav>
 			</div>	
 	</header>
+
+<section class='sec_nav'>
+  <div class='wrapper'>
+  </div> 
+</section>
 
 <!-- bio statement area --> 
 
@@ -62,7 +66,7 @@
 		  <section class='smiles'>
 			 <div class='wrapper'>
 			
-        <h6>smile</h6>
+        <h6>smiles</h6>
 
 			</div>
 
@@ -72,17 +76,12 @@
 <a name='work'></a>
 <section class='work'>
 	<div class='wrapper'>
-			
-    <h6>design work</h6>
+
+		<h6>design work</h6>	
+    <h6 id='atwork'>design work</h6>
 
   <nav class='projectnav'>
-    <div class='right_arrow'>
-      <a href='#'>⟶</a>
-    </div>
-
-    <div class='left_arrow'>
-      <a href='#'>⟵</a>
-    </div>
+      <a href='#pro1' id='single_arrowright'>&rarr;</a>
   </nav>
 
     <div class='portfolio'>
@@ -91,6 +90,13 @@
 
 <!-- image slider and nav --> 
 <div class="slider-wrap">
+
+  <nav class="slider-nav">
+    <a href="#slide-0" class="active">1</a> 
+    <a href="#slide-1">2</a> 
+    <a href="#slide-2">3</a> 
+  </nav>
+
   <div class="slider" id="slider">
     <div class="holder">
       <div class="slide" id="slide-0"></div>
@@ -99,14 +105,8 @@
     </div>
   </div>
 
-  <nav class="slider-nav">
-    <a href="#slide-0" class="active"></a> 
-    <a href="#slide-1"></a> 
-    <a href="#slide-2"></a> 
-  </nav>
-</div>
 
-    </div>
+</div>
 
     <aside class='description'>
       
@@ -118,15 +118,286 @@
 
     </aside>
 
+  </div>
+
 	</div>
 </section>
 
+<!-- project one --> 
+ 
+      <a name='pro1'></a>
+      <section class='pro1'>
+       <div class='wrapper'>
+      
+   <nav class='projectnav'>
+      <a href='#work' id='arrowreturn'>&larr;</a>
+      <a href='#pro2' class='arrowright'>&rarr;</a>
+  </nav>
+
+    <div class='portfolio'>
+          <div class='project'>
+          </div>
+
+<!-- image slider and nav --> 
+<div class="slider-wrap">
+
+  <nav class="slider-nav">
+    <a href="#slide-0" class="active">1</a> 
+    <a href="#slide-1">2</a> 
+    <a href="#slide-2">3</a> 
+  </nav>
+
+  <div class="slider" id="slider">
+    <div class="holder">
+      <div class="slide" id="slide-0"></div>
+      <div class="slide" id="slide-1"></div>
+      <div class="slide" id="slide-2"></div>
+    </div>
+  </div>
+
+
+</div>
+
+    <aside class='description'>
+      
+      <h5>Title goes here<h5> 
+
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <h4>
+
+      <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<h3> 
+
+    </aside>
+
+  </div>
+
+  </div>
+</section>
+
+<!-- project two --> 
+ 
+      <a name='pro2'></a>
+      <section class='pro2'>
+       <div class='wrapper'>
+      
+   <nav class='projectnav'>
+      <a href='#pro1' class='arrowleft'>&larr;</a>
+      <a href='#pro3'class='arrowright'>&rarr;</a>
+  </nav>
+
+    <div class='portfolio'>
+          <div class='project'>
+          </div>
+
+<!-- image slider and nav --> 
+<div class="slider-wrap">
+
+  <nav class="slider-nav">
+    <a href="#slide-0" class="active">1</a> 
+    <a href="#slide-1">2</a> 
+    <a href="#slide-2">3</a> 
+  </nav>
+
+  <div class="slider" id="slider">
+    <div class="holder">
+      <div class="slide" id="slide-0"></div>
+      <div class="slide" id="slide-1"></div>
+      <div class="slide" id="slide-2"></div>
+    </div>
+  </div>
+
+
+</div>
+
+    <aside class='description'>
+      
+      <h5>Title goes here<h5> 
+
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <h4>
+
+      <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<h3> 
+
+    </aside>
+
+  </div>
+
+  </div>
+</section>
+
+
+<!-- project three --> 
+ 
+      <a name='pro3'></a>
+      <section class='pro3'>
+       <div class='wrapper'>
+      
+   <nav class='projectnav'>
+      <a href='#pro2' class='arrowleft'>&larr;</a>
+      <a href='#pro4' class='arrowright'>&rarr;</a>
+  </nav>
+
+    <div class='portfolio'>
+          <div class='project'>
+          </div>
+
+<!-- image slider and nav --> 
+<div class="slider-wrap">
+
+  <nav class="slider-nav">
+    <a href="#slide-0" class="active">1</a> 
+    <a href="#slide-1">2</a> 
+    <a href="#slide-2">3</a> 
+  </nav>
+
+  <div class="slider" id="slider">
+    <div class="holder">
+      <div class="slide" id="slide-0"></div>
+      <div class="slide" id="slide-1"></div>
+      <div class="slide" id="slide-2"></div>
+    </div>
+  </div>
+
+
+</div>
+
+    <aside class='description'>
+      
+      <h5>Title goes here<h5> 
+
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <h4>
+
+      <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<h3> 
+
+    </aside>
+
+  </div>
+
+  </div>
+</section>
+
+<!-- project four --> 
+ 
+      <a name='pro4'></a>
+      <section class='pro4'>
+       <div class='wrapper'>
+      
+   <nav class='projectnav'>
+      <a href='#pro3' class='arrowleft'>&larr;</a>
+      <a href='#pro5' class='arrowright'>&rarr;</a>
+  </nav>
+
+    <div class='portfolio'>
+          <div class='project'>
+          </div>
+
+<!-- image slider and nav --> 
+<div class="slider-wrap">
+
+  <nav class="slider-nav">
+    <a href="#slide-0" class="active">1</a> 
+    <a href="#slide-1">2</a> 
+    <a href="#slide-2">3</a> 
+  </nav>
+
+  <div class="slider" id="slider">
+    <div class="holder">
+      <div class="slide" id="slide-0"></div>
+      <div class="slide" id="slide-1"></div>
+      <div class="slide" id="slide-2"></div>
+    </div>
+  </div>
+
+
+</div>
+
+    <aside class='description'>
+      
+      <h5>Title goes here<h5> 
+
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <h4>
+
+      <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<h3> 
+
+    </aside>
+
+  </div>
+
+  </div>
+</section>
+
+<!-- project five --> 
+ 
+      <a name='pro5'></a>
+      <section class='pro5'>
+       <div class='wrapper'>
+      
+
+   <nav class='projectnav'>
+      <a href='#pro4' class='arrowleft'>&larr;</a>
+      <a href='#pro5' class='arrowright'>&rarr;</a>
+  </nav>
+
+    <div class='portfolio'>
+          <div class='project'>
+          </div>
+
+<!-- image slider and nav --> 
+<div class="slider-wrap">
+
+  <nav class="slider-nav">
+    <a href="#slide-0" class="active">1</a> 
+    <a href="#slide-1">2</a> 
+    <a href="#slide-2">3</a> 
+  </nav>
+
+  <div class="slider" id="slider">
+    <div class="holder">
+      <div class="slide" id="slide-0"></div>
+      <div class="slide" id="slide-1"></div>
+      <div class="slide" id="slide-2"></div>
+    </div>
+  </div>
+
+
+</div>
+
+    <aside class='description'>
+      
+      <h5>Title goes here<h5> 
+
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. <h4>
+
+      <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<h3> 
+
+    </aside>
+
+  </div>
+
+  </div>
+</section>
+
+<!-- footer --> 
+ 
+<section class='footer'>
+  <div class='wrapper'>
+
+      <article class='footer_main'>
+        <h6>footer </h6> <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <h4> 
+      </article>
+
+      <aside class='footer_icons'>
+        <p>twitter dribbble linked</p>
+      </article>
+      </aside>
+
+  </div>
+</section>
 
 <script src="jquery.js"></script>
 <script>
+
  
  $(document).ready(function(){
-  $('.mainnav a').click(function() {
+  $('.mainnav a, .projectnav a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     && location.hostname == this.hostname) {
       var $target = $(this.hash);
@@ -135,12 +406,29 @@
       if ($target.length) {
         var targetOffset = $target.offset().top;
         $('html,body')
-        .animate({scrollTop: targetOffset}, 700);
+        .animate({scrollTop: targetOffset}, 575);
        return false;
       }
     }
   });
 });
+
+
+
+$('#atwork').hide();
+  $('#single_arrowright, .arrowleft, .arrowright').click(function(){
+    $('#atwork').fadeIn('slow');
+});
+
+  $('.mainnav a, #arrowreturn').click(function(){
+ // 3 second fadeOut
+    $('#atwork').fadeOut('xslow'); 
+});
+
+
+
+
+
  
  var slider = {
   
