@@ -27,6 +27,7 @@ header {
 	padding-bottom: 7px;
 	margin-left: 42px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 .mainnav a {
@@ -55,6 +56,8 @@ header {
 	color: purple;
 =======
 >>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
+=======
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 }
 
 .bio {
@@ -74,6 +77,7 @@ header {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .logo {
 	float: left;
 	width: 20px;
@@ -81,6 +85,8 @@ header {
 }
 
 =======
+=======
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 =======
 >>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 .pro5 {
@@ -128,6 +134,7 @@ header {
 	position: absolute;
 	z-index: 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 #atwork {
@@ -142,6 +149,22 @@ header {
 
 .pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6 {
 	float: left;
+=======
+}
+
+#atwork {
+	float: left;
+	padding-left: 40px;
+	color: #bbb;
+	padding-top: 23px;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+
+.pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6 {
+	float: left;
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 =======
 }
 
@@ -259,6 +282,7 @@ h4, h3 {
 
 .projectnav a:hover {
 	color: black;
+<<<<<<< HEAD
 }
 
 .projectnav a:active {
@@ -275,6 +299,24 @@ h4, h3 {
 	float: right;
 	display: inline;
 	font-size: 20px;
+=======
+}
+
+.projectnav a:active {
+	color: red;
+}
+
+.arrowleft a {
+	float: right;
+	display: inline;
+	font-size: 20px;
+}
+
+.arrowright a {
+	float: right;
+	display: inline;
+	font-size: 20px;
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 }
 
 #single_arrowright {
@@ -407,6 +449,7 @@ Edit on
 	background-color: #f3f3f3;
 	padding-top: 10px;
 	padding-bottom: 40px;
+<<<<<<< HEAD
 }
 
 .footer_main {
@@ -419,6 +462,20 @@ Edit on
 	color: #aaa;
 }
 
+=======
+}
+
+.footer_main {
+	width: 700px;
+	display: inline-block;
+}
+
+.footer h6 {
+	display: run-in;
+	color: #aaa;
+}
+
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 .footer h4 {
 	color: #aaa;
 }
@@ -428,7 +485,11 @@ Edit on
 	width: 225px;
 	float: right;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
 =======
 }
 >>>>>>> a7a8d2b5b5fe87169d6314cb4ff7533d0c6710c0
