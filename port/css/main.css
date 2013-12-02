@@ -49,13 +49,13 @@ header {
 
 .pro5 {
         background: #fff;
-        height: 460px;
+        height: 380px;
         padding-bottom: 175px
 }
 
 .mainnav a {
         float: right;
-        font-weight: 600;
+        font-weight: 400;
         text-transform: uppercase;
         color: #aaa;
         transition: color .25s ease-in;
@@ -165,7 +165,7 @@ header {
 
 h6 {
         display: inline;
-        font-weight: 600;
+        font-weight: 400;
         color: #aaa;
         text-transform: uppercase;
         font-size: 14px;
@@ -176,7 +176,8 @@ h6 {
 }
 
 h5 {
-        color: #777;
+        font-weight: 400;
+        color: #555;
         transition: color .25s ease-in;
         -webkit-transition: color .25s ease-in;
         -moz-transition: color .25s ease-in;
@@ -185,8 +186,18 @@ h5 {
         padding-bottom: 5px;
 } 
 
-h4, h3 {
+h4 {
+        font-weight: 300;
+        color: #555;
         font-size: 15px;
+        line-height: 1.35em;
+        padding-bottom: 5px;
+}
+
+h3 {
+        font-weight: 400;
+        color: red;
+        font-size: 12px;
         line-height: 1.35em;
         padding-bottom: 5px;
 }
@@ -229,9 +240,9 @@ h4, h3 {
 
 .description {
         float: left;
-        margin-top: 90px;
+        margin-top: 72px;
         width: 210px;
-        border-top: 1px dashed #ddd;
+        border-bottom: 1px dashed red;
         padding-top: 15px;
 }
 
@@ -319,7 +330,7 @@ Edit on
 
 .slider-nav a {
         font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 14px;
         padding-left: 10px;
         color: #bbb;
