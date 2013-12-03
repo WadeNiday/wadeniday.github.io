@@ -55,20 +55,20 @@ header {
 
 .mainnav a {
         float: right;
-        font-weight: 400;
+        font-weight: 300;
         text-transform: uppercase;
         color: #aaa;
         transition: color .25s ease-in;
         -webkit-transition: color .25s ease-in;
         -moz-transition: color .25s ease-in;
         -o-transition: color .25s ease-in;
-        font-size: 14px;        
+        font-size: 13px;        
         text-align: center;
         width: 60px;
         line-height: 15px;
         padding-right: 20px;
         padding-top: 20px;
-        letter-spacing: .04em;
+        letter-spacing: .1em;
 }
 
 .mainnav a:hover {
@@ -165,10 +165,10 @@ header {
 
 h6 {
         display: inline;
-        font-weight: 400;
+        font-weight: 300;
         color: #aaa;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 13px;
         letter-spacing: .1em;
         padding-top: 50px;
         padding-bottom: 15px;
