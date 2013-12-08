@@ -34,7 +34,14 @@ header {
         padding-bottom: 175px;
 }
 
-.smiles {
+
+.profile {
+        background: black;
+        height: 760px;
+        padding-bottom: 175px;
+}
+
+.process {
         background: pink;
         height: 760px;
         padding-bottom: 175px;
@@ -75,7 +82,7 @@ header {
         color: black;
 }
 
-.bio h6, .smiles h6 {
+.bio h6, .process h6, .profile h6 {
         float: left;
         padding-left: 40px;
         color: #aaa;
@@ -292,7 +299,7 @@ Edit on
 }*/
 
 #slide-0 {
-  background-image: url(http://placekitten.com/700/400);
+  background-image: url('./images/DBN.png');
 }
 #slide-1 {
   background-image: url(http://placekitten.com/700/400);
