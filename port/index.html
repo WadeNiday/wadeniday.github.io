@@ -8,13 +8,8 @@
 
   <link rel="stylesheet" type="text/css" href="css/clear.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
   
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
-
-  <link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
-
 
 </head>
 
@@ -70,6 +65,7 @@
       
         <h6>wade niday</h6>
 
+
       </div>
 
       </section>
@@ -97,6 +93,7 @@
     <a href="#slide-0" class="active">1</a> 
     <a href="#slide-1">2</a> 
     <a href="#slide-2">3</a> 
+    <a href="#slide-3">4</a> 
   </nav>
 
   <div class="slider" id="slider">
@@ -104,6 +101,8 @@
       <div class="slide" id="slide-0"></div>
       <div class="slide" id="slide-1"></div>
       <div class="slide" id="slide-2"></div>
+      <div class="slide" id="slide-3"></div>
+
     </div>
   </div>
 
@@ -112,7 +111,7 @@
 
     <aside class='description'>
       
-      <h5>Title goes here<h5> 
+      <h5>Guggenheim Partners<h5> 
 
       <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <h4>
 
@@ -144,25 +143,23 @@
 <div class="slider-wrap">
 
   <nav class="slider-nav">
-    <a href="#slide-0" class="active">1</a> 
-    <a href="#slide-1">2</a> 
-    <a href="#slide-2">3</a> 
+    <a href="#slide-3" class="active">1</a> 
+    <a href="#slide-4">2</a> 
+    <a href="#slide-5">3</a> 
   </nav>
 
   <div class="slider" id="slider">
     <div class="holder">
-      <div class="slide" id="slide-0"></div>
-      <div class="slide" id="slide-1"></div>
-      <div class="slide" id="slide-2"></div>
+      <div class="slide" id="slide-3"></div>
+      <div class="slide" id="slide-4"></div>
+      <div class="slide" id="slide-5"></div>
     </div>
   </div>
-
-
 </div>
 
     <aside class='description'>
       
-      <h5>Title goes here<h5> 
+      <h5>HFMA<h5> 
 
       <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <h4>
 
@@ -411,7 +408,8 @@
 <script src="jquery.js"></script>
 <script>
 
- 
+// page to page behavior
+
  $(document).ready(function(){
   $('.mainnav a, .projectnav a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -429,7 +427,7 @@
   });
 });
 
-
+// hide behavior
 
 $('#atwork').hide();
   $('#single_arrowright, .arrowleft, .arrowright').click(function(){
@@ -442,9 +440,7 @@ $('#atwork').hide();
 });
 
 
-
-
-
+// portfolio section behavior
  
  var slider = {
   
@@ -452,30 +448,22 @@ $('#atwork').hide();
   // together is useful or not.
   el: {
     slider: $("#slider"),
-    allSlides: $(".slide"),
+    // allSlides: $(".slide"),
     sliderNav: $(".slider-nav"),
-    allNavButtons: $(".slider-nav > a")
+    // allNavButtons: $(".slider-nav")
   },
-  
+
   timing: 400,
   slideWidth: 700, // could measure this
  
   // In this simple example, might just move the
   // binding here to the init function
   init: function() {
-    this.bindUIEvents();
-  },
-  
-  bindUIEvents: function() {
-    // You can either manually scroll...
-    this.el.slider.on("scroll", function(event) {
-      slider.moveSlidePosition(event);
-    });
-    // ... or click a thing
     this.el.sliderNav.on("click", "a", function(event) {
-      console.log('test');
+      // console.log('test');
       slider.handleNavClick(event, this);
     });
+
     // What would be cool is if it had touch
     // events where you could swipe but it
     // also kinda snapped into place.

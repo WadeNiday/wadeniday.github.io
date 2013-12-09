@@ -214,9 +214,9 @@ h3 {
 */
 .projectnav a {
         position: relative;
-        left: 666px;
-        top: 20px;
-        z-index: 1;
+        left: 728px;
+        top: 70px;
+        z-index: 0;
         color: #bbb;
         transition: color .25s linear;
         -webkit-transition: color .25s linear;
@@ -234,7 +234,7 @@ h3 {
 
 
 #single_arrowright {
-        padding-left: 20px;
+        padding-left: 0px;
 }
 
 
@@ -265,21 +265,25 @@ h3 {
 Edit on 
 @import url(http*/
 .slider-wrap {
-        display: inline-block;
-        float: left;
-          width: 700px;
-          height: 400px;
-          margin: 30px auto;
-          padding-right: 28px;
+    display: inline-block;
+    float: left;
+    width: 700px;
+    height: 400px;
+    margin: 30px auto;
+    padding-right: 28px;
 
 }
 
 .slider {
   overflow-x: hidden;
 }
+
+/*holder equals number of slides × 100%*/
 .holder {
-  width: 300%;
+    width: 500%;
 }
+
+
 .slide {
   float: left;
   width: 700px;
@@ -288,46 +292,26 @@ Edit on
   background-position: 0px 0;
 }
 
-/*.temp {
-  position: absolute;
-  color: white;
-  font-size: 100px;
-  bottom: 15px;
-  left: 15px;
-  font-family: 'Josefin Slab', serif;
-  font-weight: 100;
-}*/
-
 #slide-0 {
-  background-image: url('./images/DBN.png');
+  background-image: url('../images/DBN.png');
 }
 #slide-1 {
-  background-image: url(http://placekitten.com/700/400);
+  background-image: url('../images/FileItem-232389-Web_MutualFund.jpg');
 }
 #slide-2 {
-  background-image: url(http://placekitten.com/700/400);
+  background-image: url('../images/FileItem-232376-SL_03.jpg');
 }
 
+#slide-3 {
+  background-image: url('../images/FileItem-58836-Fagan_logo.jpg');
+}
+#slide-4 {
+  background-image: url('../images/FileItem-58729-About.jpg');
+}
+#slide-4 {
+  background-image: url('../images/FileItem-58431-HSBC_1.jpg');
+}
 
-#slide-1a {
-  background-image: url(http://placekitten.com/700/400);
-}
-#slide-1b {
-  background-image: url(http://placekitten.com/700/400);
-}
-#slide-1c {
-  background-image: url(http://placekitten.com/700/400);
-}
-
-/*.slide:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: linear-gradient(transparent, black);
-}*/
 
 .slider-nav {
   text-align: right;
