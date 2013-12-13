@@ -38,7 +38,7 @@
   </div> 
 </section>
 
-<!-- bio statement area --> 
+<!-- LANDING --> 
 
     <a name='bio'></a>
     <section class='bio'>
@@ -49,7 +49,19 @@
           <h1>Wade enjoys <a title="Paul of Tarsus" href="#">Pauline literature</a>, craft beer and keeping his golf swing fluid. He lives <a title="Naperville, Illinois" href="#">outside of Chicago</a> with his lovely wife and their two <a title="Hannah and Kendall" href="#">adorable daugthers</a>. And yes, it's Niday like Friday.</h1>
           
         <section class='btn'>
-          <a href="#profile">Make me smile</a>
+          <a href="#profile">View the profile</a>
+        </section>
+
+        <section class='btn'>
+          <a href="#profile">view the design work</a>
+        </section>
+
+        <section class='btn'>
+          <a href="#profile">peak at the process</a>
+        </section>
+
+        <section class='btn'>
+          <a href="#profile">get in touch</a>
         </section>
 
       </div>  
@@ -57,18 +69,84 @@
     </section>
 
 
-<!-- other area --> 
+<!-- PROFILE --> 
  
-      <a name='profile'></a>
-      <section class='profile'>
-       <div class='wrapper'>
-      
-        <h6>wade niday</h6>
+<a name='profile'></a>
+  <section class='profile'>
+      <div class='wrapper'>
 
+        <h6 id='nav_active'>wade niday</h6>
 
-      </div>
+      <section class='widecol'>
 
+          <h1>Wade enjoys Pauline literature, craft beer and keeping his golf swing fluid. He lives outside of Chicago with his lovely wife and their two adorable daugthers. And yes, it's Niday like Friday. Wade enjoys Pauline literature, craft beer and keeping his golf swing fluid. He lives outside of Chicago with his lovely wife and their two adorable daugthers.</h1>
+
+        
+          <h6>Organizations I've work with</h6>
+
+          <h4>
+            <ul class='col1'>
+              <li>Ma quande lingues</li>
+              <li>Coalesce li grammatica</li>
+              <li>Resultant lingue</li>
+              <li>Es plu simplic</li>
+              <li>Regulari quam</li>
+              <li>Ti del coalescent</li>
+            </ul>
+
+            <ul class='col2'>
+             <li>Li nov company</li>
+             <li>Lingua franca va</li>
+             <li>Plu simplic</li>
+             <li>E regulari quam</li>
+             <li>Existent europan</li>
+             <li>Lingues it va</li>
+            </ul>
+
+            <ul class='col3'>
+              <li>Tam simplic</li>
+              <li>Quam occidental in</li>
+              <li>It va & associates</li>
+              <li>Esser occidental a</li>
+              <li>Angleso it</li>
+              <li>Va semblar un</li>
+            </ul>
+          </h4>
+        
       </section>
+
+      <aside class='profile_side'>
+
+        <article id='selfie'>
+          <img src="images/profile.jpg" width='175' height='175'>
+        </article>
+        
+          <h4>Email, Twitter, LinkedIn</h4>
+
+          <h6>strenghts</h6>
+
+          <h4>
+            <ul class='col1'>
+              <li>Ma quande lingues</li>
+              <li>Coalesce li grammatica</li>
+              <li>Resultant lingue</li>
+              <li>Es plu simplic</li>
+              <li>Regulari quam</li>
+              <li>Ti del coalescent</li>
+            </ul>
+          </h4>
+
+        </section>
+
+      </aside>
+
+
+
+      
+
+
+    </div>
+  </section>
 
 <!-- work area --> 
 <a name='work'></a>
@@ -401,6 +479,8 @@
       
         <h6>consistent, yet flexible</h6>
 
+        <h1>A solid design process provides a framework that is consistent enough to advance large-scale projects, yet flexible enough to improve upon the smallest detail. Maintaining a process helps keep the project focused. It increases workflow efficiency and offers a feedback loop for collaborative improvements.</h1>
+
       </div>
 
       </section>
@@ -431,7 +511,7 @@
 
 $('#atwork').hide();
   $('#single_arrowright, .arrowleft, .arrowright').click(function(){
-    $('#atwork').fadeIn('slow');
+    $('#atwork, #profile').fadeIn('slow');
 });
 
   $('.mainnav a, #arrowreturn').click(function(){
@@ -441,6 +521,8 @@ $('#atwork').hide();
 
 
 // portfolio section behavior
+// var slider={el:{slider:$("#slider"),allSlides:$(".slide"),sliderNav:$(".slider-nav"),allNavButtons:$(".slider-nav > a")},timing:800,slideWidth:300,init:function(){this.bindUIEvents()},bindUIEvents:function(){this.el.slider.on("scroll",function(a){slider.moveSlidePosition(a)});this.el.sliderNav.on("click","a",function(a){slider.handleNavClick(a,this)})},moveSlidePosition:function(a){this.el.allSlides.css({"background-position":$(a.target).scrollLeft()/6-100+"px 0"})},handleNavClick:function(a,b){a.preventDefault(); var c=$(b).attr("href").split("-").pop();this.el.slider.animate({scrollLeft:c*this.slideWidth},this.timing);this.changeActiveNav(b)},changeActiveNav:function(a){this.el.allNavButtons.removeClass("active");$(a).addClass("active")}};slider.init();
+
  
  var slider = {
   
@@ -448,12 +530,12 @@ $('#atwork').hide();
   // together is useful or not.
   el: {
     slider: $("#slider"),
-    // allSlides: $(".slide"),
+    allSlides: $(".slide"),
     sliderNav: $(".slider-nav"),
-    // allNavButtons: $(".slider-nav")
+    allNavButtons: $(".slider-nav")
   },
 
-  timing: 400,
+  timing: 800,
   slideWidth: 700, // could measure this
  
   // In this simple example, might just move the
@@ -490,8 +572,7 @@ $('#atwork').hide();
   changeActiveNav: function(el) {
     this.el.allNavButtons.removeClass("active");
     $(el).addClass("active");
-  }
-  
+  }  
 };
 
 slider.init();
