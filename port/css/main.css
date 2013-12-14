@@ -91,7 +91,7 @@ header {
         color: black;
 }
 
-.landing h6, .process h6, #nav_active {
+.landing h6, .process h6, .work h6, #nav_active {
         float: left;
         margin-left: 40px;
         color: #aaa;
@@ -100,14 +100,6 @@ header {
         z-index: 1;
 }
 
-.work h6 {
-        float: left;
-        padding-left: 40px;
-        color: #aaa;
-        padding-top: 23px;
-        position: absolute;
-        z-index: 1;
-}
 
 #atwork {
         float: left;
