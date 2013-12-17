@@ -1,37 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Demo_Unslider</title>
 
-  <title>slider test</title>
+<link rel="stylesheet" type="text/css" href="css/clear.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <link rel="stylesheet" type="text/css" href="css/clear.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  
 </head>
 
+
 <body>
+<br/>
 
 <div class="banner">
-    <ul>
-        <li><img src="http://lorempixel.com/400/200"></li>
-        <li><img src="http://lorempixel.com/400/200"></li>
-        <li><img src="http://lorempixel.com/400/200"></li>
-    </ul>
+  <ul>
+    <li><img src="http://lorempixel.com/700/400/"></li>
+    <li><img src="http://lorempixel.com/700/400/"></li>
+    <li><img src="http://lorempixel.com/700/400/"></li>
+    <li><img src="http://lorempixel.com/700/400/"></li>
+    <li><img src="http://lorempixel.com/700/400/"></li>
+    <li><img src="http://lorempixel.com/sports/700/400/"></li>
+  </ul>
 </div>
 
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
-<script src="//unslider.com/unslider.min.js"></script>
-
-
-<script>
-$(function() {
-    $('.banner').unslider();
-});
-
-</script>
-  
 </body>
 
-</html>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script src="http://unslider.com/unslider.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+$(function() {
+$('.banner').unslider({
+  keys: true, 
+  dots: true, 
+  delay: false,  
+  // pause: true,
+  // loop: true,            
+});
+});
+});
+
+
+</script>
+
+
+
+</html> 
