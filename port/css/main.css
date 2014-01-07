@@ -22,14 +22,11 @@ header {
 */        z-index: 1;
 }
 
-
-
 .landing {
         background-color: #dd4b39;
         height: 760px;
         padding-bottom: 175px;
 }
-
 
 .profile {
         background: #222;
@@ -71,7 +68,7 @@ header {
 /*        width: 60px;*/
         line-height: 15px;
         padding-right: 20px;
-        padding-top: 20px;
+        padding-top: 23px;
         letter-spacing: .1em;
 }
 
@@ -91,15 +88,34 @@ header {
         color: black;
 }
 
-.landing h6, .process h6, .work h6, #nav_active {
-        float: left;
-        margin-left: 40px;
-        color: #aaa;
-        padding-top: 23px;
-        position: absolute;
-        z-index: 1;
+h6 {
+    display: inline;
+    font-weight: 300;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .1em;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    color: black;
 }
 
+
+.landing h6, .process h6, .work h6, #nav_active {
+    float: left;
+    margin-left: 40px;
+    color: #aaa;
+    padding-top: 23px;
+    position: absolute;
+    z-index: 1;
+}
+
+.pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6, .pro5 h6 {
+    float: left;
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 20px;
+}
 
 #atwork {
         float: left;
@@ -111,19 +127,6 @@ header {
         z-index: 1;
 }
 
-.pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6 {
-        float: left;
-        padding-top: 80px;
-        padding-left: 0px;
-        padding-right: 20px;
-}
-
-.pro5 h6 {
-        float: left;
-        padding-top: 80px;
-        padding-left: 0px;
-        padding-right: 20px;
-}
 
 .landing h1 {
         padding-top: 150px;
@@ -160,17 +163,24 @@ header {
 }
 
 .profile h6 {
-    padding-top: 20px;     
+    display: inline;
     color: #bbb;
-    line-height: 1.2em;
+    line-height: 15px;
+}
+
+.profile ul {
+    font-weight: 300;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5em;
+
 }
 
 .col1, .col2, .col3 {
-    padding-top: 8px;
     width: 230px;
     display: inline-block;
-    float: left;
     color: #777;
+    clear: all;
 }
 
 .profile_side {
@@ -197,8 +207,21 @@ header {
 
 .profile_side h4 {
     color: #00af81;
-    margin-bottom: 43px;
+    margin-bottom: 34px;
     margin-top: 10px;
+}
+
+.process h1 {
+    margin-top: 95px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 28px;
+    line-height: 1.48em;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #029753;
+    display: inline-block;
+    width: 700px;
 }
 
 .btn {
@@ -211,12 +234,12 @@ header {
     width: 242px;
     display: block;
 /*    border: 1px solid #c0160d;
-*/    transition: background-color 0.2s linear;
+*/    transition: background-color 0.45s linear;
 
 }
 
-.btn :hover {
-    background-color: yellow;
+.btn:hover {
+    background-color: black;
 }
 
 .btn a {
@@ -252,23 +275,6 @@ header {
         ;
 }*/
 
-.btn a:hover {
-        color: yellow;
-}
-
-
-
-h6 {
-        display: inline;
-        font-weight: 300;
-        color: #aaa;
-        text-transform: uppercase;
-        font-size: 13px;
-        letter-spacing: .1em;
-        padding-top: 50px;
-        padding-bottom: 15px;
-        color: black;
-}
 
 h5 {
         font-weight: 400;
@@ -325,12 +331,58 @@ h3 {
         padding-left: 0px;
 }
 
+/*slider
+*/
+.banner ul li { 
+    padding-top: 94px;
+    border: 1px solid #fff;
+    display: inline-block;
+
+}
+
+.dots {
+    position: absolute;
+    top: 59px;
+    left: 576px;
+}
+
+.dots li {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 14px;
+    background-color: #ccc;
+
+    text-indent: -999em;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+.dots li:hover {
+    background: black;
+    width: 6px;
+    height: 6px;
+        margin-left: 15px;
+
+}
+
+
+.dots li.active {
+    background: #dd4b39;
+}
 
 .portfolio {
         float:left;
-        height: 400px;
+        height: 500px;
         padding-top: 0px;        
         padding-right: 20x;
+        display: inline;
 }
 
 .description {
@@ -349,84 +401,20 @@ h3 {
         display: inline;
 }*/
 
-/*HTML  CSS  JS  Result
-Edit on 
-@import url(http*/
-.slider-wrap {
+.banner { 
     display: inline-block;
-    float: left;
-    width: 700px;
-    height: 400px;
-    margin: 30px auto;
-    padding-right: 28px;
-
+    position: relative; 
+    overflow: hidden; 
+    min-height: 550px;
+    width: 695px;
+    height: 600px;
+    margin-right: 27px;
 }
 
-.slider {
-  overflow-x: hidden;
+.banner li { 
+    list-style: none; 
 }
 
-/*holder equals number of slides × 100%*/
-.holder {
-    width: 500%;
-}
-
-
-.slide {
-  float: left;
-  width: 700px;
-  height: 400px;
-  position: relative;
-  background-position: 0px 0;
-}
-
-#slide-0 {
-  background-image: url('../images/DBN.png');
-}
-#slide-1 {
-  background-image: url('../images/FileItem-232389-Web_MutualFund.jpg');
-}
-#slide-2 {
-  background-image: url('../images/FileItem-232376-SL_03.jpg');
-}
-
-#slide-3 {
-  background-image: url('../images/FileItem-58836-Fagan_logo.jpg');
-}
-#slide-4 {
-  background-image: url('../images/FileItem-58729-About.jpg');
-}
-#slide-4 {
-  background-image: url('../images/FileItem-58431-HSBC_1.jpg');
-}
-
-
-.slider-nav {
-  text-align: right;
-  margin: 22px 0px 22px 20px;
-}
-
-
-.slider-nav a {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        padding-left: 10px;
-        color: #bbb;
-          display: inline-block;
-        transition: color .15s ease-in;
-        -webkit-transition: color .15s ease-in;
-        -moz-transition: color .15s ease-in;
-        -o-transition: color .15s ease-in;
-}
-
-.slider-nav a.active {
-  color: red;
-}
-
-.slider-nav a:hover {
-  color: black;
-}
 
 .footer {
         font-family: 'Source Sans Pro', sans-serif;
@@ -457,11 +445,3 @@ Edit on
         float: right;
 }
 
-.process h1 {
-        padding-top: 150px;
-        color: #333;
-        font-size: 30px;
-        line-height: 1.2em;
-        display: inline-block;
-        width: 700px;
-        }
