@@ -328,9 +328,16 @@ h6 {
 }
 
 
-#single_arrowright {
-        padding-left: 0px;
+#single_arrowright, #arrowreturn, .arrowleft {
+    font-size: 22px;
+    padding-left: 0px;
 }
+
+.arrowright {
+    font-size: 22px;
+    padding-left: 6px;
+}
+
 
 /*slider
 */
