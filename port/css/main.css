@@ -220,7 +220,7 @@ h6 {
 
 }
 
-.col1, .col2, .col3 {
+.col1, .col2, .col3, .col4 {
     width: 230px;
     display: inline-block;
     color: #777;
@@ -266,6 +266,33 @@ h6 {
     border-bottom: 1px solid #029753;
     display: inline-block;
     width: 700px;
+}
+
+.process h5 {
+    color: #bbb;
+}
+
+.process h6 {
+    color: #fff;
+}
+
+.process_side h4 {
+    color: #fff;
+}
+
+
+.widecol_process {
+    width: 950px;
+    display: inline-block;        
+}
+
+.process_side {
+    margin-top: 107px;
+    clear: all;
+    display: inline-block;
+    width: 205px;
+    float: right;
+    margin-right: 28px;
 }
 
 .btn {
@@ -343,8 +370,7 @@ h6 {
 */
 .banner ul li { 
     padding-top: 94px;
-    border: 1px solid #fff;
-    display: inline-block;
+    float: left;
 
 }
 
