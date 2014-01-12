@@ -128,7 +128,7 @@ h6 {
 }
 
 
-.landing h6, .process h6, .work h6, #nav_active {
+.landing h6, .work h6, #nav_active {
     float: left;
     margin-left: 40px;
     color: #aaa;
@@ -183,7 +183,7 @@ h6 {
 .profile h1 {
     margin-top: 95px;
     margin-bottom: 15px;
-    color: #777;
+    color: #666;
     font-size: 28px;
     line-height: 1.48em;
     display: inline-block;
@@ -192,12 +192,12 @@ h6 {
 }
 
 .profile h3  {
-    color: #777;
+    color: #666;
     padding-top: 5px;
 }
 
 .profile h3 a  {
-    color: #777;
+    color: #666;
     font-weight: 600;
 }
 
@@ -214,10 +214,9 @@ h6 {
 
 .profile ul {
     font-weight: 300;
-    color: #555;
+    color: #666;
     font-size: 15px;
     line-height: 1.5em;
-
 }
 
 .col1, .col2, .col3, .col4 {
@@ -233,7 +232,7 @@ h6 {
     display: inline-block;
     width: 205px;
     float: right;
-    margin-right: 28px;
+    margin-right: 23px;
 }
 
 #selfie {
@@ -255,6 +254,8 @@ h6 {
     margin-top: 10px;
 }
 
+
+/*PROCESS*/
 .process h1 {
     margin-top: 95px;
     margin-bottom: 15px;
@@ -268,18 +269,39 @@ h6 {
     width: 700px;
 }
 
+.process_col1, .process_col2, .process_col3, .process_col4 {
+    width: 230px;
+    padding-right: 10px;
+    float: left;
+    display: inline-block;
+    color: #777;
+}
+
+.process h4 {
+    color: #333;
+}
+
 .process h5 {
-    color: #bbb;
+    color: #333;
 }
 
 .process h6 {
     color: #fff;
+    letter-spacing: .1em;
+    padding-left: 0px;
+
 }
 
 .process_side h4 {
     color: #fff;
 }
 
+.process ul {
+    font-weight: 300;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5em;
+}
 
 .widecol_process {
     width: 950px;
@@ -291,8 +313,9 @@ h6 {
     clear: all;
     display: inline-block;
     width: 205px;
+    margin-left: 10px;
     float: right;
-    margin-right: 28px;
+    margin-right: 13px;
 }
 
 .btn {
