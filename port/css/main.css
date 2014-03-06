@@ -406,26 +406,22 @@ h6 {
 .banner ul li { 
     padding-top: 94px;
     float: left;
-
 }
 
 .dots {
     position: absolute;
     top: 59px;
-    left: 576px;
+    right: 0px;
 }
 
 .dots li {
     display: inline-block;
-    width: 7px;
-    height: 7px;
-    margin-left: 14px;
+    width: 8px;
+    height: 8px;
+    margin-left: 20px;
     background-color: #ccc;
-
     text-indent: -999em;
-
     border-radius: 7px;
-
     cursor: pointer;
 
     -webkit-transition: background .5s, opacity .5s;
@@ -434,10 +430,10 @@ h6 {
 }
 
 .dots li:hover {
-    background: black;
-    width: 6px;
-    height: 6px;
-        margin-left: 15px;
+    background: #666;
+    width: 7px;
+    height: 7px;
+    margin-left: 21px;
 
 }
 
