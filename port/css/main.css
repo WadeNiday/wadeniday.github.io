@@ -470,10 +470,10 @@ h6 {
     display: inline-block;
     position: relative; 
     overflow: hidden; 
-    min-height: 550px;
-    width: 695px;
-    height: 600px;
-    margin-right: 27px;
+    min-height: 501px;
+    width: 700px;
+    height: 500px;
+    margin-right: 28px;
 }
 
 .banner li { 
