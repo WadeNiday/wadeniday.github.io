@@ -532,17 +532,26 @@ to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</
   });
 });
 
-var slides = jQuery('.banner ul li'),
+var slides = jQuery('.slides'),
     i = 0;
 
 slides
 .on('swipeleft', function(e) {
-  slides.eq(i + 1).addClass('.banner ul li');
+  slides.eq(i + 1).addClass('.banner');
 })
 .on('swiperight', function(e) {
-  slides.eq(i - 1).addClass('.banner ul li');
+  slides.eq(i - 1).addClass('.banner');
 });
 
+jQuery('.banner')
+.on('movestart', function(e) {
+  // If the movestart is heading off in an upwards or downwards
+  // direction, prevent it so that the browser scrolls normally.
+  if ((e.distX > e.distY && e.distX < -e.distY) ||
+      (e.distX < e.distY && e.distX > -e.distY)) {
+    e.preventDefault();
+  }
+});
 
 // hide behavior
 
