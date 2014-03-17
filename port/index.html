@@ -513,7 +513,6 @@ to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</
 
 
 <script>
-
 // page to page behavior
 
  $(document).ready(function(){
@@ -533,6 +532,18 @@ to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</
   });
 });
 
+var slides = jQuery('.banner ul li'),
+    i = 0;
+
+slides
+.on('swipeleft', function(e) {
+  slides.eq(i + 1).addClass('.banner ul li');
+})
+.on('swiperight', function(e) {
+  slides.eq(i - 1).addClass('.banner ul li');
+});
+
+
 // hide behavior
 
 $('#atwork').hide();
@@ -546,7 +557,6 @@ $('#atwork').hide();
 });
 
 
-
 $(document).ready(function(){
 $(function() {
 $('.banner').unslider({
@@ -558,6 +568,8 @@ $('.banner').unslider({
 });
 });
 });
+
+
 
 </script>
   
