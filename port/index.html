@@ -307,7 +307,7 @@ to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</
 <!-- image slider and nav --> 
 <div class="banner">
   <ul>
-    <li><img src="images/guggPortal_1.jpg" width='700' height='483'></li>
+    <li><img src="images/guggPortal_1.jpg" class="" width='700' height='483'></li>
     <li><img src="images/guggPortal_2.jpg" width='700' height='483'></li>
     <li><img src="images/guggPortal_3.jpg" width='700' height='483'></li>
     <li><img src="images/guggPortal_4.jpg" width='700' height='483'></li>
@@ -509,8 +509,9 @@ to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-<script src="http://unslider.com/unslider.min.js"></script>
-
+<script src="js/unslider.js"></script>
+<script src="js/JQuery.event.move.js"></script>
+<script src="js/JQuery.event.swipe.js"></script>
 
 <script>
 // page to page behavior
@@ -530,18 +531,20 @@ to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</
       }
     }
   });
+
+
 });
 
-var slides = jQuery('.banner ul li'),
-    i = 0;
+// var slides = jQuery('.banner ul li'),
+//     i = 0;
 
-slides
-.on('swipeleft', function(e) {
-  slides.eq(i + 1).addClass('.banner ul li');
-})
-.on('swiperight', function(e) {
-  slides.eq(i - 1).addClass('.banner ul li');
-});
+// slides
+// .on('swipeleft', function(e) {
+//   slides.eq(i + 1).addClass('.banner ul li');
+// })
+// .on('swiperight', function(e) {
+//   slides.eq(i - 1).addClass('.banner ul li');
+// });
 
 
 // hide behavior
@@ -568,11 +571,7 @@ $('.banner').unslider({
 });
 });
 });
-
-
-
 </script>
-  
 
 
 
