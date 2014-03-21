@@ -535,16 +535,16 @@ to accelerate <br> thinking. For me â€“ itâ€™s both writing <br>and sk
 
 });
 
-// var slides = jQuery('.banner ul li'),
-//     i = 0;
+var slides = jQuery('.banner ul li'),
+    i = 0;
 
-// slides
-// .on('swipeleft', function(e) {
-//   slides.eq(i + 1).addClass('.banner ul li');
-// })
-// .on('swiperight', function(e) {
-//   slides.eq(i - 1).addClass('.banner ul li');
-// });
+slides
+.on('swipeleft', function(e) {
+  slides.eq(i + 1).addClass('.banner ul li');
+})
+.on('swiperight', function(e) {
+  slides.eq(i - 1).addClass('.banner ul li');
+});
 
 
 // hide behavior
