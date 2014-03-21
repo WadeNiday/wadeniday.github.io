@@ -42,7 +42,7 @@
     <h6>Wade Niday</h6>
 <!--     <h6>Thinking and hoping</h6> -->
 
-    <h1>Hi, I’m Wade: A designer in <a title="City of Big Shoulders" href="#">Chicago</a> that aims to bring <a title="City of Big Shoulders" href="#work"> clarity, refinement, and simplicity</a> to visual problems by <a title="City of Big Shoulders" href="#process">thinking </a> about every <a title="City of Big Shoulders" href="#profile">detail</a>.</h1>
+    <h1>Hey, Iâ€™m Wade: A designer in <a title="City of Big Shoulders" href="#">Chicago</a> that aims to bring <a title="City of Big Shoulders" href="#work"> clarity, refinement, and simplicity</a> to visual problems by <a title="City of Big Shoulders" href="#process">thinking big</a> on every <a title="City of Big Shoulders" href="#profile">detail</a>.</h1>
 
     <section class='btn'>
       <a href="#work">View recent design work &rarr;</a>
@@ -74,7 +74,7 @@
             <ul class='col2'>
               <li> </li>
               <li>Newmont Mining</li>
-              <li>OGE Energy </li>              
+              <li>OGE Energy</li>              
               <li>Park Community Church</li>
               <li>ProLogis</li>
               <li>Streamline Financial</li>
@@ -165,8 +165,8 @@
 
             <ul class='process_col2'>
               <li><h6>Sketch lo-fi ideas &rarr;</h6></li>
-              <li><h4>It’s not pretty, but getting ideas <br>on to paper is a way
-to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</h4> </li>
+              <li><h4>Itâ€™s not pretty, but getting ideas <br>on to paper is a way
+to accelerate <br> thinking. For me â€“ itâ€™s both writing <br>and sketching.</h4> </li>
 <!--               <li><h6>QUESTIONS BEING ASKED:</h6></li>
 <li>What are the requirements?</li>
 <li>How can the main pieces fit into a larger system?</li>
@@ -351,11 +351,11 @@ to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</
 <!-- image slider and nav --> 
 <div class="banner">
   <ul>
-    <li><img src="images/dbn_app_1.jpg" width='700' height='483'></li>
-    <li><img src="images/dbn_app_2.jpg" width='700' height='483'></li>
-    <li><img src="images/dbn_app_3.jpg" width='700' height='483'></li>
-    <li><img src="images/dbn_app_4.jpg" width='700' height='483'></li>
-    <li><img src="images/dbn_app_5.jpg" width='700' height='483'></li>
+    <li><img src="images/dbn_app_1.jpg" width='700' height='450'></li>
+    <li><img src="images/dbn_app_2.jpg" width='700' height='450'></li>
+    <li><img src="images/dbn_app_3.jpg" width='700' height='450'></li>
+    <li><img src="images/dbn_app_4.jpg" width='700' height='450'></li>
+    <li><img src="images/dbn_app_5.jpg" width='700' height='450'></li>
   </ul>
 </div>
 
@@ -532,219 +532,6 @@ to accelerate <br> thinking. For me – it’s both writing <br>and sketching.</
     }
   });
 
-<<<<<<< HEAD
-//touch//
-
-(function(jQuery, undefined) {
-
-jQuery(document).ready(function() {
-
-var wrap = jQuery('.banner ul li'),
-
-slides = wrap.find('.banner li'),
-
-active = slides.filter('.active'),
-
-i = slides.index(active),
-
-width = wrap.width();
-
-
-
-// Listen for swipe events on slides, and use a custom 'activate'
-
-// event to add and remove the class 'active' to the previous
-
-// or next slide, and to keep the index up-to-date. The class
-
-// 'active' uses CSS transitions to make the slide move.
-
-
-
-slides
-
-
-
-.on('swipeleft', function(e) {
-
-if (i === slides.length - 1) { return; }
-
-slides.eq(i + 1).trigger('activate');
-
-})
-
-
-
-.on('swiperight', function(e) {
-
-if (i === 0) { return; }
-
-slides.eq(i - 1).trigger('activate');
-
-})
-
-
-
-.on('activate', function(e) {
-
-slides.eq(i).removeClass('active');
-
-
-
-jQuery(e.target).addClass('active');
-
-
-
-// Update the active slide index
-
-i = slides.index(e.target);
-
-})
-
-
-
-// The code below handles what happens before any swipe event is triggered.
-
-// It makes the slides demo on this page work nicely, but really doesn't
-
-// have much to do with demonstrating the swipe events themselves. For more
-
-// on move events see:
-
-//
-
-// http://stephband.info/jquery.event.move
-
-
-
-.on('movestart', function(e) {
-
-// If the movestart heads off in a upwards or downwards
-
-// direction, prevent it so that the browser scrolls normally.
-
-if ((e.distX > e.distY && e.distX < -e.distY) ||
-
-(e.distX < e.distY && e.distX > -e.distY)) {
-
-e.preventDefault();
-
-return;
-
-}
-
-
-
-// To allow the slide to keep step with the finger,
-
-// temporarily disable transitions.
-
-wrap.addClass('notransition');
-
-})
-
-
-
-.on('move', function(e) {
-
-var left = 100 * e.distX / width;
-
-
-
-// Move slides with the finger
-
-if (e.distX < 0) {
-
-if (slides[i+1]) {
-
-slides[i].style.left = left + '%';
-
-slides[i+1].style.left = (left+100)+'%';
-
-}
-
-else {
-
-slides[i].style.left = left/4 + '%';
-
-}
-
-}
-
-if (e.distX > 0) {
-
-if (slides[i-1]) {
-
-slides[i].style.left = left + '%';
-
-slides[i-1].style.left = (left-100)+'%';
-
-}
-
-else {
-
-slides[i].style.left = left/5 + '%';
-
-}
-
-}
-
-})
-
-
-
-.on('moveend', function(e) {
-
-wrap.removeClass('notransition');
-
-
-
-slides[i].style.left = '';
-
-
-
-if (slides[i+1]) {
-
-slides[i+1].style.left = '';
-
-}
-
-if (slides[i-1]) {
-
-slides[i-1].style.left = '';
-
-}
-
-});
-
-
-
-// Make the buttons work, too. Hijack the id stored in the href and use
-
-// it to activate the slide.
-
-
-
-jQuery(document)
-
-.on('click', '.slide_button', function(e) {
-
-var href = e.currentTarget.hash;
-
-
-
-jQuery(href).trigger('activate');
-
-
-
-e.preventDefault();
-
-});
-
-});
-
-})(jQuery);
-=======
 
 });
 
@@ -759,7 +546,6 @@ e.preventDefault();
 //   slides.eq(i - 1).addClass('.banner ul li');
 // });
 
->>>>>>> FETCH_HEAD
 
 // hide behavior
 
