@@ -403,26 +403,25 @@ h6 {
 
 /*slider
 */
-.banner ul li { 
+.banner { 
     padding-top: 94px;
-    float: left;
+    padding-left: 5px;
 }
 
 .dots {
     position: absolute;
-    top: 59px;
+    top: 56px;
     right: 0px;
 }
 
 .dots li {
     display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-left: 20px;
+    width: 11px;
+    height: 11px;
     background-color: #ccc;
     text-indent: -999em;
-    border-radius: 7px;
     cursor: pointer;
+    border-left: 20px solid white;
 
     -webkit-transition: background .5s, opacity .5s;
     -moz-transition: background .5s, opacity .5s;
@@ -431,10 +430,6 @@ h6 {
 
 .dots li:hover {
     background: #666;
-    width: 7px;
-    height: 7px;
-    margin-left: 21px;
-
 }
 
 
@@ -445,8 +440,6 @@ h6 {
 .portfolio {
         float:left;
         height: 500px;
-        padding-top: 0px;        
-        padding-right: 20x;
         display: inline;
 }
 
@@ -473,7 +466,7 @@ h6 {
     min-height: 501px;
     width: 700px;
     height: 500px;
-    margin-right: 28px;
+    margin-right: 29px;
 }
 
 .banner li { 
