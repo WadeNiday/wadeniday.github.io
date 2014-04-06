@@ -58,7 +58,6 @@ h6 {
     letter-spacing: .1em;
     padding-top: 50px;
     padding-bottom: 15px;
-    color: black;
 }
 
 .landing {
@@ -96,20 +95,24 @@ h6 {
 .mainnav a {
         float: right;
         font-weight: 300;
+        font-size: 13px; 
         text-transform: uppercase;
         color: #aaa;
         transition: color .25s ease-in;
         -webkit-transition: color .25s ease-in;
         -moz-transition: color .25s ease-in;
         -o-transition: color .25s ease-in;
-        font-size: 13px;        
         text-align: center;
         display: inline-block;
 /*        width: 60px;*/
         line-height: 15px;
         padding-right: 20px;
-        padding-top: 23px;
+        padding-top: 15px;
         letter-spacing: .1em;
+}
+
+.mainnav li a {
+        padding-top: 18px;
 }
 
 .logo {
@@ -133,7 +136,7 @@ h6 {
     float: left;
     margin-left: 40px;
     color: #aaa;
-    padding-top: 23px;
+    padding-top: 19px;
     position: absolute;
     z-index: 1;
 }
@@ -209,7 +212,7 @@ h6 {
 .profile h6 {
     display: inline;
     color: #bbb;
-    line-height: 15px;
+    padding-top: 19px;
 }
 
 .profile ul {
@@ -247,7 +250,7 @@ h6 {
 }
 
 #selfie {
-    width: 185px;
+    width: 180px;
     display: block;
     border: 2px solid #333;
     border-radius: 50%;
@@ -258,6 +261,11 @@ h6 {
     background-color: black;
     overflow: hidden;
     margin-bottom: 10px;
+}
+
+#selfie img{
+    margin-bottom: -2px;
+    margin-left: -3px;
 }
 
 .profile_side h4 {
@@ -374,30 +382,34 @@ h6 {
         left: 728px;
         top: 70px;
         z-index: 0;
-        color: #bbb;
-        transition: color .25s linear;
-        -webkit-transition: color .25s linear;
-        -moz-transition: color .25s linear;
-        -o-transition: color .25s linear;
+        color: #aaa;
+/*        border: 1px solid #ddd;
+*/        background-color: #fff;
+        border-radius: 3px;
+        padding: 3px 6px;
+        font-weight: 300;
+        font-size: 15px; 
+/*        text-transform: uppercase;
+*/      font-color: #aaa;
+        letter-spacing: .04em;
+        transition: background-color, font-color .25s linear;
+        -webkit-transition: background-color .25s linear;
+        -moz-transition: background-color .25s linear;
+        -o-transition: background-color .25s linear;
 }
 
 .projectnav a:hover {
-        color: black;
-}
-
-.projectnav a:active {
-        color: red;
+        background-color: #eee;
 }
 
 
 #single_arrowright, #arrowreturn, .arrowleft {
-    font-size: 22px;
-    padding-left: 0px;
+    padding-left: 8px;
+    margin-right: 18px;
 }
 
 .arrowright {
-    font-size: 22px;
-    padding-left: 6px;
+    padding-left:40px;
 }
 
 
@@ -466,7 +478,7 @@ h6 {
     min-height: 501px;
     width: 700px;
     height: 500px;
-    margin-right: 29px;
+    margin-right: 22px;
 }
 
 .banner li { 
