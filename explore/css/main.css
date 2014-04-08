@@ -80,13 +80,13 @@ h6 {
         padding-bottom: 175px;
 }
 
-.work, .pro1, .pro2, .pro3, .pro4 {
+.work, .pro1, .pro2, .pro3 {
         background: #fff;
         height: 760px;
         padding-bottom: 175px;
 }
 
-.pro5 {
+.pro4 {
         background: #fff;
         height: 380px;
         padding-bottom: 250px
@@ -222,31 +222,25 @@ h6 {
     line-height: 1.5em;
 }
 
-.col1, .col2, .col3, .col4 {
+.col1, .col2, .col3 {
     width: 230px;
     display: inline-block;
     color: #777;
-    clear: all;
-}
+/*    clear: all;
+*/}
+
 
 .profile_side {
-    margin-left: 27px;
-    margin-top: 107px;
-    clear: all;
+    margin-top: 130px;
     display: inline-block;
-    width: 205px;
-    margin-right: 23px;
+    width: 165px;
+    margin-right: 60px;
+    float: right;
+    clear: all;
 }
 
-#social {
-    margin-bottom: 70px;
-}
-
-.twitter, .linkedin, .email {
-    float: left;
-    width: 20px;
-    display: block;
-    padding-right: 20px;
+.social {
+    margin-top: -12px;
 }
 
 #selfie {
@@ -255,24 +249,45 @@ h6 {
     border: 2px solid #333;
     border-radius: 50%;
     position: relative;
-    top: -10px;
+    top: -35px;
     right: 12px;
-    padding-top: 10px;
     background-color: black;
     overflow: hidden;
-    margin-bottom: 10px;
 }
 
 #selfie img{
+    padding-top: 10px;
     margin-bottom: -2px;
     margin-left: -3px;
 }
 
-.profile_side h4 {
+.twitter, .linkedin, .email {
+    padding-bottom: 35px;
+    float: left;
+    width: 24px;
+    padding-right: 25px;
+    opacity: 0.5;
+    transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+}
+
+.twitter:hover, .linkedin:hover, .email:hover {
+    opacity: 1.0;
+}
+
+.col4 {
+    float:left;
+    width: 200px;
+}
+
+
+/*.profile_side h4 {
     color: #00af81;
     margin-bottom: 34px;
     margin-top: 10px;
-}
+}*/
 
 
 /*PROCESS*/
@@ -492,7 +507,7 @@ h6 {
         width: 100%;
         background-color: #f3f3f3;
         padding-top: 10px;
-        padding-bottom: 250px;
+        padding-bottom: 150px;
 }
 
 .footer_main {
@@ -510,8 +525,23 @@ h6 {
 }
 
 .footer_icons {
-        text-align: right;
-        width: 225px;
-        float: right;
+    float: right;
+    margin-right: 74px;
+    padding-top: 5px;
+}
+
+.foot_twitter, .foot_linkedin, .foot_email {
+    float: left;
+    width: 24px;
+    padding-right: 25px;
+    opacity: 0.55;
+    transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+}
+
+.foot_twitter:hover , .foot_linkedin:hover , .foot_email:hover {
+    opacity: 1.0;
 }
 
