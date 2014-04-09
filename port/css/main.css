@@ -371,7 +371,7 @@ h6 {
 */
 .projectnav a {
         position: relative;
-        left: 728px;
+        left: 738px;
         top: 70px;
         z-index: 0;
         color: #bbb;
@@ -382,7 +382,7 @@ h6 {
 }
 
 .projectnav a:hover {
-        color: black;
+        color: #666;
 }
 
 .projectnav a:active {
@@ -416,8 +416,8 @@ h6 {
 
 .dots li {
     display: inline-block;
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
     background-color: #ccc;
     text-indent: -999em;
     cursor: pointer;
