@@ -1,52 +1,51 @@
 /*structure*/
 .wrapper {
-        width: 960px;
-        margin: 0 auto;
-        padding-left: 15px;
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 15px;
 }
 
 body {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 200;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
 }
 
 a {
-        text-decoration: none;
+    text-decoration: none;
 }
 
 header {
-        position:fixed;
-        width: 100%;
-        background-color: #fff;
-/*        background-color: #f3f3f3;
-*/        z-index: 1;
+    position:fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
 }
 
 h3 {
-        font-weight: 300;
-        color: red;
-        font-size: 12px;
-        line-height: 1.35em;
-        padding-bottom: 5px;
+    font-weight: 300;
+    color: #dd4b39;
+    font-size: 12px;
+    line-height: 1.35em;
+    padding-bottom: 5px;
 }
 
 h4 {
-        font-weight: 300;
-        color: #555;
-        font-size: 15px;
-        line-height: 1.35em;
-        padding-bottom: 5px;
+    font-weight: 300;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.35em;
+    padding-bottom: 5px;
 }
 
 h5 {
-        font-weight: 400;
-        color: #555;
-        transition: color .25s ease-in;
-        -webkit-transition: color .25s ease-in;
-        -moz-transition: color .25s ease-in;
-        -o-transition: color .25s ease-in;
-        font-size: 20px;
-        padding-bottom: 5px;
+    font-weight: 400;
+    color: #555;
+    transition: color .25s ease-in;
+    -webkit-transition: color .25s ease-in;
+    -moz-transition: color .25s ease-in;
+    -o-transition: color .25s ease-in;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
 
 h6 {
@@ -61,58 +60,109 @@ h6 {
 }
 
 .landing {
-        background-color: #dd4b39;
-        height: 760px;
-        padding-bottom: 175px;
+    background-color: #dd4b39;
+    height: 760px;
+    padding-bottom: 175px;
 }
 
 .profile {
-        background: #222;
-        height: 760px;
-        padding-bottom: 175px;
+    background: #222;
+    height: 760px;
+    padding-bottom: 175px;
 }
-
 
 .process {
-/*        background: #73ba37;*/
     background-color: #00af81;
-        height: 760px;
-        padding-bottom: 175px;
+    height: 760px;
+    padding-bottom: 175px;
 }
 
+#callout {
+    font-weight: 400;
+}
+
+/*BUTTON*/
+.btn {
+    margin-top: 45px;
+    margin-right: 10px;
+    padding: 15px;
+    float: left;
+    background-color: #db3a2d;
+    border-radius: 4px;
+    width: 233px;
+    display: block;
+    border: 1px solid #c93725;
+    transition: background-color 0.45s linear;
+    -webkit-transition: background-color 0.45s linear;
+    -moz-transition: background-color 0.45s linear;
+    -o-transition: background-color 0.45s linear;
+}
+
+.btn:hover {
+    background-color: #c93725;
+    color: #fff;
+}
+
+.btn a {
+    margin-top: 30px;
+    padding: 50px, 0px;
+    font-size: 18px;
+    border-bottom: none;
+    transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+}
+
+.landing .btn a {
+    color: #333;
+    font-weight: 300;
+    border-bottom: none;
+}
+
+.landing .btn a:hover {
+    color: #333;
+    font-weight: 300;
+    border-bottom: none;
+}
+
+.btn a:hover {
+    border-bottom: none;
+}
+
+
 .work, .pro1, .pro2, .pro3 {
-        background: #fff;
-        height: 760px;
-        padding-bottom: 175px;
+    background: #fff;
+    height: 760px;
+    padding-bottom: 175px;
 }
 
 .pro4 {
-        background: #fff;
-        height: 430px;
-        padding-bottom: 200px
+    background: #fff;
+    height: 430px;
+    padding-bottom: 200px
 }
 
 .mainnav a {
-        float: right;
-        font-weight: 300;
-        font-size: 13px; 
-        text-transform: uppercase;
-        color: #aaa;
-        transition: color .25s ease-in;
-        -webkit-transition: color .25s ease-in;
-        -moz-transition: color .25s ease-in;
-        -o-transition: color .25s ease-in;
-        text-align: center;
-        display: inline-block;
-/*        width: 60px;*/
-        line-height: 15px;
-        padding-right: 20px;
-        padding-top: 15px;
-        letter-spacing: .1em;
+    float: right;
+    font-weight: 300;
+    font-size: 13px; 
+    text-transform: uppercase;
+    color: #aaa;
+    transition: color .25s ease-in;
+    -webkit-transition: color .25s ease-in;
+    -moz-transition: color .25s ease-in;
+    -o-transition: color .25s ease-in;
+    text-align: center;
+    display: inline-block;
+    line-height: 15px;
+    padding-right: 20px;
+    padding-top: 15px;
+    letter-spacing: .1em;
 }
 
 .mainnav li a {
-        padding-top: 18px;
+    padding-top: 18px;
 }
 
 .logo {
@@ -128,9 +178,8 @@ h6 {
 }
 
 .mainnav a:active {
-    color: red;
+    color: #dd4b39;
 }
-
 
 .landing h6, .work h6, #nav_active {
     float: left;
@@ -139,6 +188,10 @@ h6 {
     padding-top: 19px;
     position: absolute;
     z-index: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .1em;
+    font-weight: 300;
 }
 
 .pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6, .pro5 h6 {
@@ -149,22 +202,20 @@ h6 {
 }
 
 #atwork {
-        float: left;
-/*        padding-left: 40px;
-*/        color: #bbb;
-        padding-top: 23px;
-        position: fixed;
-        top: 0px;
-        z-index: 1;
+    float: left;
+    color: #bbb;
+    padding-top: 23px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
 }
 
-
 .landing h1 {
-        padding-top: 150px;
-        color: #fff;
-        font-size: 60px;
-        line-height: 1.25em;
-        display: inline-block;
+    padding-top: 150px;
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.25em;
+    display: inline-block;
 }
 
 .landing a {        
@@ -183,7 +234,7 @@ h6 {
     display: inline-block;        
 }
 
-
+/*PROFILE*/
 .profile h1 {
     margin-top: 95px;
     margin-bottom: 15px;
@@ -210,16 +261,20 @@ h6 {
 }
 
 .profile h6 {
+    font-size: 18px;
+    font-weight: 200;
     display: inline;
-    color: #bbb;
     padding-top: 19px;
+    color: #aaa;
+    text-transform: none;
+    letter-spacing: .05em;
 }
 
 .profile ul {
     font-weight: 300;
     color: #666;
     font-size: 15px;
-    line-height: 1.5em;
+    line-height: 1.55em;
 }
 
 .col1, .col2, .col3 {
@@ -282,49 +337,78 @@ h6 {
     width: 200px;
 }
 
+/*BUTTON*/
+.profile .btn {
+    margin-top: 40px;
+    margin-right: 10px;
+    padding: 15px;
+    float: left;
+    background-color: #1b1b1b;
+    border-radius: 4px;
+    width: 198px;
+    display: block;
+    border: 1px solid #1a1a1a;
+    transition: background-color 0.45s linear;
+    -webkit-transition: background-color 0.45s linear;
+    -moz-transition: background-color 0.45s linear;
+    -o-transition: background-color 0.45s linear;
+}
 
-/*.profile_side h4 {
-    color: #00af81;
-    margin-bottom: 34px;
-    margin-top: 10px;
-}*/
+.profile .btn:hover {
+    background-color: #0c0c0c;
+}
 
+.profile .btn a {
+    color: #006755;
+    font-weight: 300;
+}
 
 /*PROCESS*/
 .process h1 {
     margin-top: 95px;
     margin-bottom: 15px;
-    color: #333;
+    color: #4EF2BC;
     font-size: 28px;
     line-height: 1.48em;
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: 1px solid #029753;
+    border-bottom: 1px solid #009e6b;
     display: inline-block;
     width: 700px;
 }
 
-.process_col1, .process_col2, .process_col3, .process_col4 {
+.process_col1, .process_col2, .process_col3 {
     width: 230px;
-    padding-right: 10px;
+    padding-right: 13px;
     float: left;
     display: inline-block;
     color: #777;
 }
 
+.process_col4 {
+    padding-left: 55px;
+}
+
 .process h4 {
-    color: #333;
+    color: #4EF2BC;
 }
 
 .process h5 {
     color: #333;
 }
 
-.process h6 {
+.process .col1 h6 {
     color: #fff;
-    letter-spacing: .1em;
+}
+.process h6 {
+    font-size: 18px;
+    font-weight: 200;
+    display: inline;
+    padding-top: 19px;
+    color: #abffdd;
+    text-transform: none;
+    letter-spacing: .01em;
     padding-left: 0px;
-
 }
 
 .process_side h4 {
@@ -333,7 +417,7 @@ h6 {
 
 .process ul {
     font-weight: 300;
-    color: #444;
+    color: #fff;
     font-size: 15px;
     line-height: 1.5em;
 }
@@ -353,70 +437,65 @@ h6 {
     margin-right: 13px;
 }
 
-.btn {
-    margin-top: 75px;
+.process_side .col1 h6 li {
+    color: #fff;
+}
+
+/*BUTTON*/
+.process .btn {
+    margin-top: 40px;
     margin-right: 10px;
-    padding: 18px;
+    padding: 15px;
     float: left;
-    background-color: #333;
+    background-color: #00a779;
     border-radius: 4px;
-    width: 242px;
+    width: 194px;
     display: block;
+    border: 1px solid #009e6b;
     transition: background-color 0.45s linear;
     -webkit-transition: background-color 0.45s linear;
     -moz-transition: background-color 0.45s linear;
     -o-transition: background-color 0.45s linear;
 }
 
-.btn:hover {
-    background-color: black;
+.process .btn:hover {
+    background-color: #009e6b;
+    transition: background-color 0.45s linear;
+    -webkit-transition: background-color 0.45s linear;
+    -moz-transition: background-color 0.45s linear;
+    -o-transition: background-color 0.45s linear;
 }
 
-.btn a {
-    margin-top: 30px;
-    padding: 50px, 0px;
-    color: #ccc;
-    font-size: 22px;
-    border-bottom: none;
-    transition: color 0.2s linear;
-    -webkit-transition: color 0.2s linear;
-    -moz-transition: color 0.2s linear;
-    -o-transition: color 0.2s linear;
-}
-
-.btn a:hover {
-        border-bottom: none;
+.process .btn a {
+    color: #fff;
+    font-weight: 200;
 }
 
 
-
-/*arrows to advance projects
-*/
+/*DESIGN*/
+/*arrows to advance projects*/
 .projectnav a {
-        position: relative;
-        left: 728px;
-        top: 58px;
-        z-index: 0;
-        color: #aaa;
-/*        border: 1px solid #ddd;
-*/        background-color: #fff;
-        border-radius: 3px;
-        padding: 3px 6px 6px 6px;
-        font-weight: 300;
-        font-size: 15px; 
-/*        text-transform: uppercase;
-*/      font-color: #aaa;
-        letter-spacing: .04em;
-        transition: background-color, font-color .25s linear;
-        -webkit-transition: background-color .25s linear;
-        -moz-transition: background-color .25s linear;
-        -o-transition: background-color .25s linear;
+    position: relative;
+    left: 728px;
+    top: 58px;
+    z-index: 0;
+    color: #aaa;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 3px 6px 6px 6px;
+    font-weight: 300;
+    font-size: 15px; 
+    font-color: #aaa;
+    letter-spacing: .04em;
+    transition: background-color, font-color .25s linear;
+    -webkit-transition: background-color .25s linear;
+    -moz-transition: background-color .25s linear;
+    -o-transition: background-color .25s linear;
 }
 
 .projectnav a:hover {
-        background-color: #eee;
+    background-color: #eee;
 }
-
 
 #single_arrowright, #arrowreturn, .arrowleft {
     padding-left: 8px;
@@ -427,9 +506,7 @@ h6 {
     padding-left:40px;
 }
 
-
-/*slider
-*/
+/*slider*/
 .banner { 
     padding-top: 94px;
     padding-left: 5px;
@@ -449,7 +526,6 @@ h6 {
     text-indent: -999em;
     cursor: pointer;
     border-left: 20px solid white;
-
     -webkit-transition: background .5s, opacity .5s;
     -moz-transition: background .5s, opacity .5s;
     transition: background .5s, opacity .5s;
@@ -459,9 +535,8 @@ h6 {
     background: #666;
 }
 
-
 .dots li.active {
-    background: #dd4b39;
+    background: #db3a2d;
 }
 
 .portfolio {
@@ -474,7 +549,7 @@ h6 {
         float: left;
         margin-top: 72px;
         width: 210px;
-        border-bottom: 1px dashed red;
+        border-bottom: 1px dashed #dd4b39;
         padding-top: 15px;
 }
 
@@ -500,7 +575,6 @@ h6 {
     list-style: none; 
 }
 
-
 .footer {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
@@ -510,6 +584,38 @@ h6 {
         padding-bottom: 150px;
 }
 
+
+/*BUTTON*/
+.design .btn {
+    margin-top: 40px;
+    margin-right: 10px;
+    padding: 15px;
+    float: left;
+    background-color: #00a779;
+    border-radius: 4px;
+    width: 194px;
+    display: block;
+    border: 1px solid #009e6b;
+    transition: background-color 0.45s linear;
+    -webkit-transition: background-color 0.45s linear;
+    -moz-transition: background-color 0.45s linear;
+    -o-transition: background-color 0.45s linear;
+}
+
+.design .btn:hover {
+    background-color: #009e6b;
+    transition: background-color 0.45s linear;
+    -webkit-transition: background-color 0.45s linear;
+    -moz-transition: background-color 0.45s linear;
+    -o-transition: background-color 0.45s linear;
+}
+
+.design .btn a {
+    color: #fff;
+    font-weight: 200;
+}
+
+/*FOOTER*/
 .footer_main {
         width: 700px;
         display: inline-block;
@@ -544,4 +650,3 @@ h6 {
 .foot_twitter:hover , .foot_linkedin:hover , .foot_email:hover {
     opacity: 1.0;
 }
-
