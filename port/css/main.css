@@ -379,8 +379,13 @@ h6 {
 */
 .projectnav a {
         position: relative;
+<<<<<<< HEAD
+        left: 738px;
+        top: 70px;
+=======
         left: 728px;
         top: 58px;
+>>>>>>> FETCH_HEAD
         z-index: 0;
         color: #aaa;
 /*        border: 1px solid #ddd;
@@ -399,7 +404,15 @@ h6 {
 }
 
 .projectnav a:hover {
+<<<<<<< HEAD
+        color: #666;
+}
+
+.projectnav a:active {
+        color: red;
+=======
         background-color: #eee;
+>>>>>>> FETCH_HEAD
 }
 
 
@@ -428,8 +441,8 @@ h6 {
 
 .dots li {
     display: inline-block;
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
     background-color: #ccc;
     text-indent: -999em;
     cursor: pointer;
