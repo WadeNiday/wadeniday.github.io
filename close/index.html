@@ -90,13 +90,13 @@
               <li>Maintain a high attention to details</li>
               <li>Lead, manage, and execute projects</li>
               <li>Collaborate and nurture relationships</li>
-              <li>Lead projects, manage budgets</li>
-              <li>Adobe Creative Suite, HTML & CSS</li>
+<!--               <li>Lead projects, manage budgets</li>
+ -->              <li>Adobe Creative Suite, HTML & CSS</li>
             </ul>
           </h4>
 
       <section class='btn'>
-        <a href="#process">see the design approach &rarr;</a>
+        <a href="#process">see the design process &rarr;</a>
       </section>
     
     </section>
@@ -130,7 +130,7 @@
             <li>Responsibility</li>
             <li>Consistency</li>
             <li> </li>
-            <li><h3>Based on <a href='http://strengths.gallup.com/' target="_blank">StrengthsFinder2.0</a> <br>by Tom Rath</a>.</h3></li>
+            <li><h3>Based on <a href='http://strengths.gallup.com/' title= 'by Tom Rath' target="_blank">StrengthsFinder2.0</a></h3></li>
           </ul>
     </aside>
 
@@ -486,7 +486,7 @@
 <a name='connect'></a>
 <section class='footer'>
   <div class='wrapper'>
-    <h6>Let&#700;s connect</h6>
+    <h6 id='contact'>Let&#700;s connect</h6>
       
       <section class='footer_main'>
         <h1>Feel free to  <a href="mailto:wniday@gmail.com" target="_blank" title='Email'>drop me a line</a> with any <a href="https://twitter.com/NidayLikeFriday" target="_blank" title="@NidayLikeFriday">feedback</a>, or just to <a href="http://www.linkedin.com/in/wadeniday" target="_blank" title='LinkedIn'> make a connection</a>. Until then, be encouraged.  </h1>
@@ -556,13 +556,12 @@
 
 
 // hide behavior
-
 $('#atwork').hide();
-  $('#single_arrowright, .arrowleft, .arrowright').click(function(){
-    $('#atwork, #profile').fadeIn('slow');
+  $('#single_arrowright, .arrowleft, .arrowright, .banner .btn a').click(function(){
+    $('#atwork, #profile, #contact').fadeIn('slow');
 });
 
-  $('.mainnav a, #arrowreturn').click(function(){
+  $('.mainnav a, #arrowreturn, .banner .btn a').click(function(){
  // 3 second fadeOut
     $('#atwork').fadeOut('xslow'); 
 });

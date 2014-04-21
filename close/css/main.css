@@ -95,7 +95,7 @@ h6 {
 
 /*BUTTON*/
 .btn {
-    margin-top: 45px;
+    margin-top: 30px;
     margin-right: 10px;
     padding: 15px;
     float: left;
@@ -116,8 +116,8 @@ h6 {
 }
 
 .btn a {
-    margin-top: 30px;
-    padding: 50px, 0px;
+/*    margin-top: 10px;
+*/    padding: 50px, 0px;
     font-size: 18px;
     border-bottom: none;
     transition: color 0.2s linear;
@@ -217,7 +217,6 @@ h6 {
 #atwork {
     float: left;
     color: #bbb;
-    padding-top: 23px;
     position: fixed;
     top: 0px;
     z-index: 1;
@@ -302,8 +301,12 @@ h6 {
     width: 230px;
     display: inline-block;
     color: #777;
-/*    clear: all;
-*/}
+/*    float: left;*/
+}
+
+.col2 {
+    padding-top: 25px;
+}
 
 
 .profile_side {
@@ -349,8 +352,16 @@ h6 {
     -o-transition: opacity .3s ease-out;
 }
 
-.twitter, .email {
+.twitter {
+    padding-top: 7px;
+}
+
+.linkedin {
     padding-top: 4px;
+}
+
+.email {
+    padding-top: 8px;
 }
 
 
@@ -365,13 +376,13 @@ h6 {
 
 /*BUTTON*/
 .profile .btn {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-right: 10px;
     padding: 15px;
     float: left;
     background-color: #1b1b1b;
     border-radius: 4px;
-    width: 198px;
+    width: 190px;
     display: block;
     border: 1px solid #1a1a1a;
     transition: background-color 0.45s linear;
@@ -470,7 +481,7 @@ h6 {
 
 /*BUTTON*/
 .process .btn {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 10px;
     padding: 15px;
     float: left;
@@ -617,7 +628,7 @@ h6 {
 
 /*BUTTON*/
 .banner .btn {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-right: 10px;
     padding: 15px;
     float: left;
@@ -651,6 +662,16 @@ h6 {
 .footer_main {
     width: 960px;
     display: inline-block;
+}
+
+#contact {
+    float: left;
+    color: #bbb;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    float: left;
+    padding-top: 19px;
 }
 
 .footer h1 {
@@ -688,15 +709,15 @@ h6 {
 
 .footer h4 {
     color: #000;
-    padding-top: 98px;
+    padding-top: 90px;
 
 }
 
 .foot_twitter a, .foot_linkedin a, .foot_email a{
-    margin-top: 30px;
+    margin-top: 20px;
     float: left;
     width: 24px;
-    padding-right: 45px;
+    padding-right: 33px;
     opacity: 0.7;
     border-bottom: none;
     transition: opacity .3s ease-out;
@@ -705,8 +726,16 @@ h6 {
     -o-transition: opacity .3s ease-out;
 }
 
-.foot_twitter a, .foot_email a {
+.foot_twitter a {
+    padding-top: 7px;
+}
+
+.foot_linkedin a {
     padding-top: 4px;
+}
+
+.foot_email a {
+    padding-top: 8px;
 }
 
 .foot_twitter a:hover , .foot_linkedin a:hover , .foot_email a:hover {
