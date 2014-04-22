@@ -486,6 +486,7 @@
 <a name='connect'></a>
 <section class='footer'>
   <div class='wrapper'>
+    <h6>Let&#700;s connect</h6>
     <h6 id='contact'>Let&#700;s connect</h6>
       
       <section class='footer_main'>
@@ -556,9 +557,9 @@
 
 
 // hide behavior
-$('#atwork').hide();
-  $('#single_arrowright, .arrowleft, .arrowright, .banner .btn a').click(function(){
-    $('#atwork, #profile, #contact').fadeIn('slow');
+$('#atwork, #contact').hide();
+  $('#single_arrowright, .arrowleft, .arrowright, .banner .btn a, #connect').click(function(){
+    $('#atwork, #profile').fadeIn('slow');
 });
 
   $('.mainnav a, #arrowreturn, .banner .btn a').click(function(){
