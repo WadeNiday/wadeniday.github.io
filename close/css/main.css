@@ -309,11 +309,10 @@ h6 {
 
 .profile_side {
     margin-top: 130px;
-/*    display: inline-block;
-*/    width: 190px;
+    display: inline-block;
+    width: 190px;
     margin-right: 38px;
     float: right;
-/*    clear: all;*/
 }
 
 .social {
