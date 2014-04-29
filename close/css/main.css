@@ -309,8 +309,8 @@ h6 {
 
 .profile_side {
     margin-top: 130px;
-    display: inline-block;
-    width: 190px;
+/*    display: inline-block;
+*/    width: 190px;
     margin-right: 38px;
     float: right;
 /*    clear: all;*/
@@ -461,17 +461,17 @@ h6 {
     margin-top: 107px;
     clear: all;
     display: inline-block;
-    width: 148px;
+    width: 158px;
     margin-left: 10px;
-    padding: 8px 0px 6px 10px;
+    padding: 8px 0px 6px 18px;
     float: right;
-    margin-right: 73px;
+    margin-right: 55px;
     background-color: #00a779;
     border: 1px solid #009e6b;
 }
 
 .process_side .col1 h6 {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 13px; 
     text-transform: uppercase;
     color: #333;
