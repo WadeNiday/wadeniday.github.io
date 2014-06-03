@@ -130,9 +130,9 @@ h6 {
 }
 
 
-.work, .pro1, .pro2, .pro3 {
+.work  {
     background: #fff;
-    height: 760px;
+    height: 2495px;
     padding-bottom: 175px;
 }
 
@@ -521,10 +521,7 @@ h6 {
 /*DESIGN*/
 /*arrows to advance projects*/
 .projectnav a {
-    position: relative;
-    left: 728px;
-    top: 58px;
-    z-index: 0;
+    z-index: 1;
     color: #aaa;
     background-color: #fff;
     border-radius: 3px;
@@ -543,10 +540,20 @@ h6 {
     background-color: #eee;
 }
 
-#single_arrowright, #arrowreturn, .arrowleft {
+#arrowreturn, .arrowleft {
     padding-left: 8px;
     margin-right: 18px;
 }
+
+
+#single_arrowright {
+    position: fixed;
+    top: 360px;
+    right: 292px;
+    padding-left: 8px;
+    margin-right: 18px;
+}
+
 
 .arrowright {
     padding-left:40px;
@@ -555,34 +562,6 @@ h6 {
 /*slider*/
 #arrowreturn, .arrowleft {
     margin-right: 22px;
-}
-
-/*slider*/
-.dots {
-    position: absolute;
-    top: 46px;
-    right: 0px;
-}
-
-.dots li {
-    display: inline-block;
-    width: 11px;
-    height: 11px;
-    background-color: #ccc;
-    text-indent: -999em;
-    cursor: pointer;
-    border-left: 20px solid white;
-    -webkit-transition: background .5s, opacity .5s;
-    -moz-transition: background .5s, opacity .5s;
-    transition: background .5s, opacity .5s;
-}
-
-.dots li:hover {
-    background: #666;
-}
-
-.dots li.active {
-    background: #db3a2d;
 }
 
 
@@ -620,9 +599,9 @@ h3 a{
     display: inline-block;
     position: relative; 
     overflow: hidden; 
-    min-height: 501px;
+    min-height: 3501px;
     width: 700px;
-    height: 500px;
+/*    height: 500px;*/
     margin-right:22px;
     padding-top: 94px;
     padding-left: 5px;
@@ -630,6 +609,7 @@ h3 a{
 
 .banner li { 
     list-style: none; 
+    padding-bottom: 20px;
 }
 
 .footer {
