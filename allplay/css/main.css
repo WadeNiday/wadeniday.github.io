@@ -132,7 +132,7 @@ h6 {
 
 .work  {
     background: #fff;
-    height: 2495px;
+    height: 760px;
     padding-bottom: 175px;
 }
 
@@ -597,20 +597,22 @@ h3 a{
 
 .banner { 
     display: inline-block;
-    position: relative; 
-    overflow: hidden; 
-    min-height: 3501px;
-    width: 700px;
-/*    height: 500px;*/
-    margin-right:22px;
-    padding-top: 94px;
-    padding-left: 5px;
+    width: 275px;
+    margin-right:43px;
+    margin-top: 90px;
 }
 
-.banner li { 
-    list-style: none; 
-    padding-bottom: 20px;
+.banner-row2 { 
+    display: inline-block;
+    width: 275px;
+    margin-right:43px;
+    margin-top: 10px;
 }
+
+.banner img, .banner-row2 img { 
+    margin-bottom: 6px;
+}
+
 
 .footer {
         font-family: 'Source Sans Pro', sans-serif;
