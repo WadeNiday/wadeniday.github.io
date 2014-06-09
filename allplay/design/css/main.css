@@ -223,7 +223,7 @@ h6 {
     display: inline-block;
     position: relative; 
     overflow: hidden; 
-    width: 700px;
+    width: 925x;
     margin-bottom: 20px;
     margin-right:22px;
     padding-top: 25px;
@@ -234,6 +234,26 @@ h6 {
     list-style: none; 
     padding-bottom: 40px;
 }
+
+
+.enlarge {
+    width:74%;
+    height: 74%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.enlarge:hover {
+    width: 100%;
+    height: 100%;
+       -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+
 
 /*FOOTER*/
 .footer {
