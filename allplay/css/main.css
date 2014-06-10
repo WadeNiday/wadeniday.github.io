@@ -382,141 +382,6 @@ h6 {
     font-weight: 300;
 }
 
-/*PROCESS*/
-.process h1 {
-    font-weight: 200;
-    margin-top: 95px;
-    margin-bottom: 15px;
-    color: #4EF2BC;
-    font-size: 28px;
-    line-height: 1.48em;
-    display: inline-block;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #009e6b;
-    display: inline-block;
-    width: 700px;
-}
-
-.process_col1, .process_col2, .process_col3 {
-    width: 230px;
-    padding-right: 13px;
-    float: left;
-    display: inline-block;
-    color: #777;
-}
-
-
-.process_col4 {
-    padding-left: 55px;
-}
-
-.process h4 {
-    padding-top: 5px;
-    color: #4EF2BC;
-}
-
-.process h5 {
-    color: #333;
-}
-
-.process .col1 h6 {
-    color: #fff;
-}
-
-.process h6 {
-    font-size: 18px;
-    font-weight: 200;
-    display: inline;
-/*    padding-top: 19px;
-*/    color: #abffdd;
-    text-transform: none;
-    letter-spacing: .01em;
-    padding-left: 0px;
-}
-
-
-.widecol_process {
-    width: 950px;
-    display: inline-block;        
-}
-
-.process_side {
-    margin-top: 107px;
-    clear: all;
-    display: inline-block;
-    width: 151px;
-    margin-left: 10px;
-    padding: 8px 1px 6px 14px;
-    float: right;
-    margin-right: 64px;
-    background-color: #00a779;
-    border: 1px solid #009e6b;
-}
-
-.process_side .col1 h6 {
-    font-weight: 400;
-    font-size: 13px; 
-    text-transform: uppercase;
-    color: #333;
-    letter-spacing: .065em;   
-    line-height: 1.25em;
-}
-
-.process_side li {
-    font-weight: 300;
-    color: #4EF2BC;
-    color: #abffdd;
-    color: #333;
-    font-size: 15px;
-    padding-bottom: 10px;
-    letter-spacing: .015em;
-    width: 140px;
-}
-
-#firstthing{
-    padding-top: 12px;
-    border-top: 8px solid #00af81;
-}
-
-/*#first-last {
-    display: inline;
-    font-size: 12px; 
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: .08em;
-    }
-*/
-
-/*BUTTON*/
-.process .btn {
-    margin-top: 20px;
-    margin-right: 10px;
-    padding: 15px 10px 15px 15px;
-    float: left;
-    background-color: #00a779;
-    border-radius: 4px;
-    width: 194px;
-    display: block;
-    border: 1px solid #009e6b;
-    transition: background-color 0.45s linear;
-    -webkit-transition: background-color 0.45s linear;
-    -moz-transition: background-color 0.45s linear;
-    -o-transition: background-color 0.45s linear;
-}
-
-.process .btn:hover {
-    background-color: #009e6b;
-    transition: background-color 0.45s linear;
-    -webkit-transition: background-color 0.45s linear;
-    -moz-transition: background-color 0.45s linear;
-    -o-transition: background-color 0.45s linear;
-}
-
-.process .btn a {
-    color: #fff;
-    font-weight: 200;
-}
-
 
 /*DESIGN*/
 /*arrows to advance projects*/
@@ -648,6 +513,30 @@ h3 a{
 .banner .btn a {
     color: #aaa;
     font-weight: 200;
+}
+
+#oneguggenheim {
+    padding-top: 83px;
+    padding-bottom: 83px;
+    padding-left: 14px;
+}
+
+.holder {
+    height: 180px;
+    margin-bottom: 5px;
+    background-color: #ddd;
+    border-radius: 4px;
+    opacity: .725;
+    transition: background-color 0.2s ease-out;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+}
+
+.holder:hover {
+    background-color: #fff;
+    opacity: 1.0;
+
 }
 
 /*FOOTER*/
