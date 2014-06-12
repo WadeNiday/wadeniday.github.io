@@ -141,7 +141,7 @@ h6 {
     z-index: 1;
     padding-top: 15px;
     padding-bottom: 3px;
-    border-bottom: 1px dotted pink;
+    border-bottom: 1px dashed #bbb;
     display: block;
 }
 
@@ -181,7 +181,7 @@ h6 {
 
 .projectnav h5{
     font-size: 15px;
-    color: green;
+    color: #666;
     font-weight: 700;
 }
 
@@ -233,7 +233,7 @@ h6 {
 /*FOOTER*/
 .footer {
     background-color: #dd4b39;
-    height: 48px;
+    height: 49px;
 }
 
 .footer_main {
@@ -245,7 +245,7 @@ h6 {
     color: #222;
     float: left;
     width: 200px;
-    padding-top: 11px;
+    padding-top: 12px;
 }
 
 .foot_twitter a, .foot_linkedin a, .foot_email a{
