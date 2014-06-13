@@ -17,7 +17,7 @@ a {
 header {
     position:fixed;
     width: 100%;
-    background-color: pink;
+    background-color: #fff;
     z-index: 1;
 }
 
@@ -155,7 +155,7 @@ h6 {
     text-align: center;
     display: inline-block;
     line-height: 15px;
-    padding-right: 20px;
+    padding-left: 38px;
     padding-top: 15px;
     letter-spacing: .1em;
 }
@@ -169,7 +169,7 @@ h6 {
     width: 20px;
     padding-bottom: 12px;
     display: block;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 
@@ -235,20 +235,18 @@ h6 {
 }
 
 .widecol {
-    width: 700px;
+    width: 720px;
     display: inline-block;        
 }
 
 /*PROFILE*/
 .profile h1 {
     margin-top: 95px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #777;
     font-size: 28px;
     line-height: 1.48em;
     display: inline-block;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #444;
 }
 
 .profile h3  {
@@ -267,12 +265,10 @@ h6 {
 }
 
 .profile h6 {
-    font-size: 18px;
-    font-weight: 200;
-    display: inline;
+    font-size: 15px;
     color: #bbb;
-    text-transform: none;
-    letter-spacing: .015em;
+    font-weight: 700;
+    letter-spacing: .05em;
 }
 
 .profile ul {
@@ -282,22 +278,26 @@ h6 {
     line-height: 1.55em;
 }
 
-.col1, .col2, .col3 {
-    width: 230px;
-    display: inline-block;
-    color: #777;
-/*    float: left;*/
+#fourwide {
+    padding-top: 15px;
+    border-top: 1px dashed #444;
 }
 
-.col2 {
-    padding-top: 25px;
+.col1, .col2, .col3, .col4 {
+    width: 240px;
+    display: inline-block;
+    color: #777;
+    float: left;
 }
+
+/*.col2 {
+    padding-top: 25px;
+}*/
 
 .profile_side {
     margin-top: 130px;
     display: inline-block;
-    width: 190px;
-    margin-right: 38px;
+    width: 230px;
     float: right;
 }
 
@@ -462,21 +462,20 @@ h3 a{
 
 .banner { 
     display: inline-block;
-    width: 275px;
-    margin-right:40px;
-    margin-top: 90px;
+    width: 300px;
+/*    padding-bottom: 20px;
+*/    margin-top: 55px;
+    padding-left: 26px;
 }
 
-.banner-row2 { 
+.banner_first { 
     display: inline-block;
-    width: 275px;
-    margin-right:40px;
-    margin-top: 10px;
+    width: 300px;
 }
 
 .banner img, .banner-row2 img { 
-    margin-bottom: 6px;
-}
+/*    margin-bottom: 6px;
+*/}
 
 
 .footer {
@@ -495,7 +494,7 @@ h3 a{
     margin-right: 10px;
     padding: 15px 6px 15px 15px;
     float: left;
-    background-color: #fff;
+    background-color: #eee;
     border-radius: 4px;
     width: 188px;
     display: block;
@@ -506,27 +505,47 @@ h3 a{
     -o-transition: background-color 0.45s linear;
 }
 
-.banner .btn:hover {
+
+.btn_design {
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 15px 6px 15px 15px;
+    float: left;
     background-color: #eee;
+    border-radius: 4px;
+    width: 208px;
+    display: block;
+    border: 1px solid #ddd;
+    transition: background-color 0.45s linear;
+    -webkit-transition: background-color 0.45s linear;
+    -moz-transition: background-color 0.45s linear;
+    -o-transition: background-color 0.45s linear;
 }
 
-.banner .btn a {
-    color: #aaa;
+
+.btn_design:hover {
+    background-color: #ddd;
+}
+
+.btn_design a {
+    color: #666;
     font-weight: 200;
 }
 
 #oneguggenheim {
     padding-top: 83px;
     padding-bottom: 83px;
-    padding-left: 14px;
+    padding-left: 25px;
 }
 
 .holder {
+    width: 300px;
     height: 180px;
-    margin-bottom: 5px;
-    background-color: #ddd;
+    margin-bottom: 6px;
+    background-color: #fff;
     border-radius: 4px;
     opacity: .725;
+    border-bottom: 1px dashed #bbb;
     transition: background-color 0.2s ease-out;
     -webkit-transition: background-color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out;
@@ -534,8 +553,10 @@ h3 a{
 }
 
 .holder:hover {
-    background-color: #fff;
+    background-color: #eee;
     opacity: 1.0;
+    height: 181px;
+    border-bottom: none;
 
 }
 
