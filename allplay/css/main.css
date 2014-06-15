@@ -452,6 +452,13 @@ h3 a{
     padding-bottom: 5px;
 }
 
+.work h4{
+    font-weight: 300;
+    color: #aaa;
+    padding-left: 4px;
+    font-size: 14px;
+}
+
 /*.project {
         background-color: yellow;
         margin-top: 20px;
@@ -473,10 +480,12 @@ h3 a{
     width: 300px;
 }
 
-.banner img, .banner-row2 img { 
-/*    margin-bottom: 6px;
-*/}
-
+.bannertwo { 
+    display: inline-block;
+    width: 300px;
+    padding-top: 15px;
+    padding-left: 26px;
+}
 
 .footer {
         font-family: 'Source Sans Pro', sans-serif;
@@ -507,7 +516,7 @@ h3 a{
 
 
 .btn_design {
-    margin-top: 30px;
+    margin-top: 60px;
     margin-right: 10px;
     padding: 15px 6px 15px 15px;
     float: left;
@@ -534,13 +543,27 @@ h3 a{
 
 #oneguggenheim {
     padding-top: 83px;
-    padding-bottom: 83px;
     padding-left: 25px;
 }
 
 #mapkeys {
     padding-top: 42px;
     padding-left: 50px;
+}
+
+#researchportal {
+    padding-top: 55px;
+    padding-left: 120px;
+}
+
+#dbn {
+    padding-top: 55px;
+    padding-left: 26px;
+}
+
+#foundation {
+    padding-top: 65px;
+    padding-left: 32px;
 }
 
 .holder {
