@@ -424,11 +424,6 @@ h6 {
     padding-left:40px;
 }
 
-/*slider*/
-#arrowreturn, .arrowleft {
-    margin-right: 22px;
-}
-
 
 .portfolio {
         float:left;
@@ -520,7 +515,7 @@ h3 a{
     margin-right: 10px;
     padding: 15px 6px 15px 15px;
     float: left;
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 4px;
     width: 208px;
     display: block;
@@ -531,15 +526,15 @@ h3 a{
     -o-transition: background-color 0.45s linear;
 }
 
-
-.btn_design:hover {
-    background-color: #ddd;
-}
-
 .btn_design a {
-    color: #666;
+    color: #aaa;
     font-weight: 200;
 }
+
+.btn_design:hover {
+    background-color: #eee;
+}
+
 
 #oneguggenheim {
     padding-top: 83px;
@@ -562,30 +557,28 @@ h3 a{
 }
 
 #foundation {
-    padding-top: 65px;
-    padding-left: 32px;
+    padding-top: 68px;
+    padding-left: 36px;
 }
 
 .holder {
     width: 300px;
     height: 180px;
     margin-bottom: 6px;
-    background-color: #fff;
+    background-color: #eee;
     border-radius: 4px;
     opacity: .725;
-    border-bottom: 1px dashed #bbb;
-    transition: background-color 0.2s ease-out;
-    -webkit-transition: background-color 0.2s ease-out;
-    -moz-transition: background-color 0.2s ease-out;
-    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.35s ease-out;
+    -webkit-transition: background-color 0.35s;
+    -moz-transition: background-color 0.35s;
+    -o-transition: background-color 0.35s;
 }
 
 .holder:hover {
-    background-color: #eee;
+    background-color: #fff;
+    border-bottom: 1px dashed #ccc;
+    height: 179px;
     opacity: 1.0;
-    height: 181px;
-    border-bottom: none;
-
 }
 
 /*FOOTER*/
