@@ -59,7 +59,7 @@ h6 {
 }
 
 .landing {
-    background-color: #dd4b39;
+    background-color: #00af81;
     height: 760px;
     padding-bottom: 175px;
 }
@@ -86,11 +86,11 @@ h6 {
     margin-right: 10px;
     padding: 15px 10px 15px 15px;
     float: left;
-    background-color: #db3a2d;
+    background-color: #00a779;
     border-radius: 4px;
     width: 233px;
     display: block;
-    border: 1px solid #c93725;
+    border: 1px solid #009e6b;
     transition: background-color 0.45s linear;
     -webkit-transition: background-color 0.45s linear;
     -moz-transition: background-color 0.45s linear;
@@ -98,13 +98,12 @@ h6 {
 }
 
 .btn:hover {
-    background-color: #c93725;
+    background-color: #009e6b;
     color: #fff;
 }
 
 .btn a {
-/*    margin-top: 10px;
-*/    padding: 50px, 0px;
+    padding: 50px, 0px;
     font-size: 18px;
     border-bottom: none;
     transition: color 0.2s linear;
@@ -114,14 +113,12 @@ h6 {
 }
 
 .landing .btn a {
-    color: #333;
+    color: #4EF2BC;
     font-weight: 300;
     border-bottom: none;
 }
 
 .landing .btn a:hover {
-    color: #333;
-    font-weight: 300;
     border-bottom: none;
 }
 
@@ -225,13 +222,13 @@ h6 {
 
 .landing a {        
     color: #fff;
-    border-bottom: 1px dashed #c0160d;
+    border-bottom: 1px dashed #4EF2BC;
     transition: color 0.2s linear, border-bottom 0.2s linear;
 }
 
 .landing a:hover {        
-    color: #bbb;
-    border-bottom: 1px dashed #333;
+    color: #4EF2BC;
+    border-bottom: 1px dashed #009e6b;
 }
 
 .widecol {
