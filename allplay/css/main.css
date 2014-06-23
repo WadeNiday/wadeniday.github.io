@@ -80,16 +80,24 @@ h6 {
     font-weight: 400;
 }
 
+.landing a {        
+    color: #fff;
+    border-bottom: 1px dashed #4EF2BC;
+    transition: color 0.2s linear, border-bottom 0.2s linear;
+}
+
+.landing a:hover {        
+    color: #4EF2BC;
+    border-bottom: 1px dashed #009e6b;
+}
+
+
 /*BUTTON*/
 .btn {
     margin-top: 30px;
-    margin-right: 10px;
-    padding: 15px 10px 15px 15px;
     float: left;
     background-color: #00a779;
     border-radius: 4px;
-    width: 233px;
-    display: block;
     border: 1px solid #009e6b;
     transition: background-color 0.45s linear;
     -webkit-transition: background-color 0.45s linear;
@@ -97,14 +105,13 @@ h6 {
     -o-transition: background-color 0.45s linear;
 }
 
-.btn:hover {
-    background-color: #009e6b;
-    color: #fff;
-}
-
 .btn a {
-    padding: 50px, 0px;
     font-size: 18px;
+    display: block;
+    padding: 20px;
+    color: red;
+    color: #4EF2BC;
+    font-weight: 300;
     border-bottom: none;
     transition: color 0.2s linear;
     -webkit-transition: color 0.2s linear;
@@ -112,18 +119,8 @@ h6 {
     -o-transition: color 0.2s linear;
 }
 
-.landing .btn a {
-    color: #4EF2BC;
-    font-weight: 300;
-    border-bottom: none;
-}
-
-.landing .btn a:hover {
-    border-bottom: none;
-}
-
-.btn a:hover {
-    border-bottom: none;
+.btn:hover {
+    background-color: #009e6b;
 }
 
 
@@ -220,16 +217,7 @@ h6 {
     display: inline-block;
 }
 
-.landing a {        
-    color: #fff;
-    border-bottom: 1px dashed #4EF2BC;
-    transition: color 0.2s linear, border-bottom 0.2s linear;
-}
 
-.landing a:hover {        
-    color: #4EF2BC;
-    border-bottom: 1px dashed #009e6b;
-}
 
 .widecol {
     width: 720px;
@@ -357,12 +345,10 @@ h6 {
 .profile .btn {
     margin-top: 30px;
     margin-right: 10px;
-    padding: 15px 6px 15px 15px;
     float: left;
+    display: block;
     background-color: #1b1b1b;
     border-radius: 4px;
-    width: 190px;
-    display: block;
     border: 1px solid #1a1a1a;
     transition: background-color 0.45s linear;
     -webkit-transition: background-color 0.45s linear;
@@ -377,6 +363,7 @@ h6 {
 .profile .btn a {
     color: #006755;
     font-weight: 300;
+    padding: 20px;
 }
 
 
@@ -444,41 +431,6 @@ h3 a{
     padding-bottom: 5px;
 }
 
-.work h4{
-    font-weight: 300;
-    color: #aaa;
-    padding-left: 4px;
-    font-size: 14px;
-}
-
-/*.project {
-        background-color: yellow;
-        margin-top: 20px;
-        width: 700px;
-        height: 400px;
-        display: inline;
-}*/
-
-.banner { 
-    display: inline-block;
-    width: 300px;
-/*    padding-bottom: 20px;
-*/    margin-top: 55px;
-    padding-left: 26px;
-}
-
-.banner_first { 
-    display: inline-block;
-    width: 300px;
-}
-
-.bannertwo { 
-    display: inline-block;
-    width: 300px;
-    padding-top: 15px;
-    padding-left: 26px;
-}
-
 .footer {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
@@ -490,32 +442,16 @@ h3 a{
 
 
 /*BUTTON*/
-.banner .btn {
-    margin-top: 30px;
-    margin-right: 10px;
-    padding: 15px 6px 15px 15px;
-    float: left;
-    background-color: #eee;
-    border-radius: 4px;
-    width: 188px;
+
+.btn_design a {
+    padding: 20px;
+    color: #aaa;
+    font-weight: 200;
+        margin-top: 60px;
     display: block;
-    border: 1px solid #ddd;
-    transition: background-color 0.45s linear;
-    -webkit-transition: background-color 0.45s linear;
-    -moz-transition: background-color 0.45s linear;
-    -o-transition: background-color 0.45s linear;
-}
-
-
-.btn_design {
-    margin-top: 60px;
-    margin-right: 10px;
-    padding: 15px 6px 15px 15px;
     float: left;
     background-color: #fff;
     border-radius: 4px;
-    width: 208px;
-    display: block;
     border: 1px solid #ddd;
     transition: background-color 0.45s linear;
     -webkit-transition: background-color 0.45s linear;
@@ -523,18 +459,33 @@ h3 a{
     -o-transition: background-color 0.45s linear;
 }
 
-.btn_design a {
-    color: #aaa;
-    font-weight: 200;
-}
-
-.btn_design:hover {
+.btn_design a:hover {
     background-color: #eee;
 }
 
 
+.banner_first { 
+    display: inline-block;
+    width: 300px;
+    margin-top: 40px;
+}
+
+.banner { 
+    display: inline-block;
+    width: 300px;
+    margin-top: 55px;
+    padding-left: 26px;
+}
+
+.bannertwo { 
+    display: inline-block;
+    width: 300px;
+    padding-left: 26px;
+}
+
 #oneguggenheim {
-    padding-top: 83px;
+    margin-top: 80px;
+    padding-bottom: 25px;
     padding-left: 25px;
 }
 
@@ -544,13 +495,15 @@ h3 a{
 }
 
 #researchportal {
-    padding-top: 55px;
+    padding-top: 60px;
     padding-left: 120px;
 }
 
 #dbn {
-    padding-top: 55px;
-    padding-left: 26px;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 25px;
 }
 
 #foundation {
@@ -558,25 +511,46 @@ h3 a{
     padding-left: 36px;
 }
 
-.holder {
+#placeholder {
+    padding-top: 68px;
+    padding-left: 36px;
+}
+
+.holder a {
+    display: inline-block;
     width: 300px;
     height: 180px;
-    margin-bottom: 6px;
     background-color: #eee;
     border-radius: 4px;
     opacity: .725;
-    transition: background-color 0.35s ease-out;
-    -webkit-transition: background-color 0.35s;
-    -moz-transition: background-color 0.35s;
-    -o-transition: background-color 0.35s;
+
+    transition: background-color 0.45s ease-out, opacity 0.45s ease-out;
+    -webkit-transition: background-color 0.45s ease-out, opacity 0.45s ease-out;
+    -moz-transition: background-color 0.45s ease-out, 0.45s ease-out;
+    -o-transition: background-color 0.45s ease-out, 0.45s ease-out;
 }
 
-.holder:hover {
+.holder {
+    height: 180px;
+}
+
+.holder a:hover {
     background-color: #fff;
+    width: 300px;
     border-bottom: 1px dashed #ccc;
     height: 179px;
     opacity: 1.0;
 }
+
+.holder h4 {
+    display: inline;
+    font-weight: 300;
+    color: #aaa;
+    padding-left: 3px;
+    padding-top: 50px; 
+    font-size: 14px;
+}
+
 
 /*FOOTER*/
 .footer {
