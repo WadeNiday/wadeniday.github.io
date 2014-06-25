@@ -190,6 +190,16 @@ h6 {
     line-height: 1.5em;
     }
 
+.description-int {
+    border-top: 1px solid red;
+    float: left;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    width: 700px;
+    line-height: 1.5em;
+    }
+
 /*project artwork*/
 .banner { 
     display: inline-block;
