@@ -8,7 +8,6 @@
 
   <meta name="description" content="Wade Niday is a designer in Chicago that aims to bring simplicity to web, mobile, and print communication."</> 
 
-  <link rel="stylesheet" type="text/css" href="css/clear.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
   <link rel="shortcut icon" href="/images/sfavicon.ico" type="image/x-icon" />
@@ -19,7 +18,7 @@
 
 <body>
 
-<!-- MAIN NAVIGATION --> 
+<!-- Main Nav Bar --> 
 <header>
   <div class='wrapper'>
     <nav class='mainnav'>
@@ -45,13 +44,12 @@
 
     <nav class='projectnav'>
       <ul>
-      <li><h5>Engaging employees<h5></li>
+      <li class='title'>Engaging employees</li>
       <li class='rightarrow'><a href='mapkeys.html'>next &rarr;</a></li>
+      <li><h5>figure 1 of 6</h5></li>
+      <li class='leftarrow'><a href='#'>&larr; previous</a></li>
       </ul>
     </nav>
-
-<!--     <h6>Design work</h6>   -->
-    <h6 id='atwork'>Design work</h6>
 
 
     <section class='description'> 
@@ -66,7 +64,7 @@
           <li><img class='enlarge' src="images/OneG_icons.png" width='700' height='483'></li>
 
     <section class='description-int'> 
-      <h5>Wireframes for the above user flow.</h5>
+      <h5>Wireframes for the above user flow</h5>
     </section>
 
           <li><img class='enlarge' src="images/OneG_wires_landing.jpg" width='700' height='483'></li>
@@ -84,7 +82,7 @@
           <li><img class='enlarge' src="images/OneG_directory_c_wires.jpg" width='700' height='483'></li> -->
 
     <section class='description-int'> 
-      <h5>Sketching.</h5>
+      <h5>Sketching</h5>
     </section>  
 
           <li><img class='enlarge' src="images/OneG_process_a.jpg" width='700' height='483'></li>
@@ -95,7 +93,6 @@
     
   </div>
 </section>
-
 
 
 <!-- FOOTER --> 
@@ -121,71 +118,6 @@
 
   </div>
 </section>
-
-
-<script src="jquery.js"></script>
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script>
-// page to page behavior
-
- $(document).ready(function(){
-  $('.mainnav a, .projectnav a, .btn a, .landing a, #project-top').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body')
-        .animate({scrollTop: targetOffset}, 575);
-       return false;
-      }
-    }
-  });
-
-
-});
-
-// hide behavior
-$('#atwork, #contact').hide();
-  $('#single_arrowright, .arrowleft, .arrowright, .banner .btn a, #connect').click(function(){
-    $('#atwork, #profile').fadeIn('slow');
-});
-
-  $('.mainnav a, #arrowreturn, .banner .btn a').click(function(){
- // 3 second fadeOut
-    $('#atwork').fadeOut('xslow'); 
-});
-
-
-$(document).ready(function(){
-$(function() {
-$('.banner').unslider({
-  // $('.banner').unslider({
-
-  keys: true, 
-  dots: true, 
-  delay: false,  
-  // pause: true,
-  // loop: true,            
-});
-});
-});
-
-
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-21939970-1', 'wadeniday.com');
-  ga('send', 'pageview');
-
-
-</script>
 
 
 
