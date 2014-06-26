@@ -8,52 +8,48 @@
 
   <meta name="description" content="Wade Niday is a designer in Chicago that aims to bring simplicity to web, mobile, and print communication."</> 
 
-  <link rel="stylesheet" type="text/css" href="css/clear.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
   <link rel="shortcut icon" href="/images/sfavicon.ico" type="image/x-icon" />
   
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300italic, 400,600' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 
-<!-- MAIN NAVIGATION --> 
+<!-- Main Nav Bar --> 
 <header>
   <div class='wrapper'>
-    <nav class='mainnav'>
 
+    <nav class='mainnav'>
       <ul>
-        <li><a href="#connect">contact</a></li>
+        <li><a href="../index.html#connect">contact</a></li>
         <li><a href="../index.html#profile">Profile</a></li>
         <li><a href="../index.html#work" class='gotowork'>design</a></li>
       </ul>
-
       <div class='logo'>
-        <a href="#landing"><img src="images/w.png" width='20' title="Wade's logo"></a>
+        <a href="../index.html"><img src="images/w.png" width='20' title="Wade's logo"></a>
       </div>
-      
     </nav>
+
   </div>  
 </header>
 
-<!-- DESIGN --> 
+
+<!-- Project Nav Bar --> 
 <a name='work'></a>
 <section class='work'>
   <div class='wrapper'>
 
     <nav class='projectnav'>
       <ul>
-      <li><h5>Setting the standard<h5></li>
+      <li class='title'>Setting the standard</li>
       <li class='rightarrow'><a href='researchportal.html'>next &rarr;</a></li>
+      <li> <h5>project&nbsp; 2 of &nbsp;5</h5></li>
       <li class='leftarrow'><a href='oneguggenheim.html'>&larr; previous</a></li>
       </ul>
     </nav>
-
-<!--     <h6>Design work</h6>   -->
-    <h6 id='atwork'>Design work</h6>
-
 
     <section class='description'> 
       <h5>The MapKeys mobile app serves as a resource for healthcare finance professionals by providing standard equations for measuring revenue cycle. My role included setting direction for the user experience, visual design, and user interface. I collaborated with a developer on the prototyping, testing, build-out, and shipment of the final product.</h5>
@@ -64,6 +60,11 @@
           <li><img class='enlarge' src="images/hfma_app_1.jpg" width='700' height='483'></li>
           <li><img class='enlarge' src="images/hfma_app_2.jpg" width='700' height='483'></li>
           <li><img class='enlarge' rc="images/hfma_app_3.jpg" width='700' height='483'></li>
+
+            <section id='description-int-oneg'> 
+              <h5>Print application</h5>
+            </section>
+
           <li><img class='enlarge' src="images/Mapkeys_mix.jpg" width='700' height='483'></li>
         </ul>
       </div>
@@ -71,98 +72,28 @@
   </div>
 </section>
 
-
-
-<!-- FOOTER --> 
+<!-- Footer --> 
 <a name='connect'></a>
-<section class='footer'>
-  <div class='wrapper'>
 
+  <section class='footer'>
+    <div class='wrapper'>
 
+      <h4 id='nostealing'>© 2014 Wade Niday</h4>
 
-        <h4 id='nostealing'>© 2014 Wade Niday</h4>
+      <section class='foot_twitter'>
+        <a href="https://twitter.com/NidayLikeFriday" target="_blank"><img src="images/social_red-01.png" width='33' height='23'></a>
+      </section>
 
-        <section class='foot_twitter'>
-          <a href="https://twitter.com/NidayLikeFriday" target="_blank"><img src="images/social_red-01.png" width='33' height='23'></a>
-        </section>
+      <section class='foot_linkedin'>
+        <a href="http://www.linkedin.com/in/wadeniday" target="_blank"><img src="images/social_red-02.png" width='27' height='25'></a>
+      </section>
 
-        <section class='foot_linkedin'>
-          <a href="http://www.linkedin.com/in/wadeniday" target="_blank"><img src="images/social_red-02.png" width='27' height='25'></a>
-        </section>
+      <section class='foot_email'>
+        <a href="mailto:wniday@gmail.com" target="_blank"><img src="images/social_red-03.png" width='25' height='22'></a>
+      </section>
 
-        <section class='foot_email'>
-          <a href="mailto:wniday@gmail.com" target="_blank"><img src="images/social_red-03.png" width='25' height='22'></a>
-        </section>
-
-  </div>
-</section>
-
-
-<script src="jquery.js"></script>
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script>
-// page to page behavior
-
- $(document).ready(function(){
-  $('.mainnav a, .projectnav a, .btn a, .landing a, #project-top').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body')
-        .animate({scrollTop: targetOffset}, 575);
-       return false;
-      }
-    }
-  });
-
-
-});
-
-// hide behavior
-$('#atwork, #contact').hide();
-  $('#single_arrowright, .arrowleft, .arrowright, .banner .btn a, #connect').click(function(){
-    $('#atwork, #profile').fadeIn('slow');
-});
-
-  $('.mainnav a, #arrowreturn, .banner .btn a').click(function(){
- // 3 second fadeOut
-    $('#atwork').fadeOut('xslow'); 
-});
-
-
-$(document).ready(function(){
-$(function() {
-$('.banner').unslider({
-  // $('.banner').unslider({
-
-  keys: true, 
-  dots: true, 
-  delay: false,  
-  // pause: true,
-  // loop: true,            
-});
-});
-});
-
-
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-21939970-1', 'wadeniday.com');
-  ga('send', 'pageview');
-
-
-</script>
-
-
+    </div>
+  </section>
 
 </body>
 
