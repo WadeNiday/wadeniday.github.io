@@ -176,7 +176,7 @@ header {
 .mainnav a {
     float: right;
     font-weight: 300;
-    font-size: 13px; 
+    font-size: 15px; 
     text-transform: uppercase;
     color: #777;
     transition: color .25s ease-in;
@@ -186,7 +186,7 @@ header {
     text-align: center;
     display: inline-block;
     line-height: 15px;
-    padding-left: 38px;
+    padding-left: 35px;
     padding-top: 15px;
     letter-spacing: .1em;
 }
@@ -217,6 +217,7 @@ header {
 .title {
     color: #777; 
     font-weight: 600;  
+    font-size: 16px; 
 }
 
 .projectnav a {

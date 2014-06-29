@@ -5,6 +5,8 @@
 //  - Reset
 //  - Scaffolding
 //  - Main Nav Bar
+//  - Landing
+//  - Profile
 //  - Project Nav Bar
 //  - Typography
 //  - Footer
@@ -119,42 +121,47 @@ header {
     z-index: 1;
 }
 
-h3 {
-    font-weight: 300;
-    color: #dd4b39;
-    font-size: 12px;
-    line-height: 1.35em;
-    padding-bottom: 5px;
+/* --------------------------------------------
+// !-- Main Nav Bar
+// ----------------------------------------- */
+
+.logo {
+    display: block;
+    float: left;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    width: 20px;
 }
 
-h4 {
-    font-weight: 300;
-    color: #777;
-    font-size: 15px;
-    line-height: 1.5em;
-    padding-bottom: 15px;
+.mainnav li a {
+    padding-top: 18px;
 }
 
-h5 {
-    font-weight: 200;
+.mainnav a {
+    float: right;
+    font-weight: 300;
+    font-size: .91em; 
+    text-transform: uppercase;
     color: #777;
     transition: color .25s ease-in;
     -webkit-transition: color .25s ease-in;
     -moz-transition: color .25s ease-in;
     -o-transition: color .25s ease-in;
-    font-size: 20px;
-    padding-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    line-height: 15px;
+    padding-left: 64px;
+    padding-top: 15px;
+    letter-spacing: .05em;
 }
 
-h6 {
-    display: inline;
-    font-weight: 300;
-    color: #777;
-    font-size: 16px;
-    padding-top: 50px;
-    padding-bottom: 15px;
-    letter-spacing: .02em;
+.mainnav a:hover {
+    color: #dd4b39;
 }
+
+/* --------------------------------------------
+// !-- Landing
+// ----------------------------------------- */
 
 .landing {
     background-color: #00af81;
@@ -162,26 +169,14 @@ h6 {
     padding-bottom: 175px;
 }
 
-.profile {
-    background: #2c2c2c;
-    height: 760px;
-    padding-bottom: 175px;
-}
-
-.process {
-    background-color: #00af81;
-    height: 760px;
-    padding-bottom: 175px;
-}
-
-#callout {
-    font-weight: 400;
-}
-
+/*BUTTON*/
 .landing a {        
     color: #fff;
     border-bottom: 1px dashed #4EF2BC;
     transition: color 0.2s linear, border-bottom 0.2s linear;
+    -webkit-transition: color 0.2s linear, border-bottom 0.2s linear;
+    -moz-transition: color 0.2s linear, border-bottom 0.2s linear;
+    -o-transition: color 0.2s linear, border-bottom 0.2s linear;
 }
 
 .landing a:hover {        
@@ -189,14 +184,13 @@ h6 {
     border-bottom: 1px dashed #009e6b;
 }
 
-
-/*BUTTON*/
 .btn {
     margin-top: 30px;
     float: left;
-    background-color: #00a779;
+    background-color: none;
+/*        background-color: #00a779;*/
     border-radius: 4px;
-    border: 1px solid #009e6b;
+    border: 2px solid #009e6b;
     transition: background-color 0.45s linear;
     -webkit-transition: background-color 0.45s linear;
     -moz-transition: background-color 0.45s linear;
@@ -206,11 +200,11 @@ h6 {
 .btn a {
     font-size: 18px;
     display: block;
-    padding: 20px;
-    color: red;
-    color: #4EF2BC;
-    font-weight: 300;
+    padding: 15px;
+    color: #fff;
+    font-weight: 200;
     border-bottom: none;
+    letter-spacing: .02em;
     transition: color 0.2s linear;
     -webkit-transition: color 0.2s linear;
     -moz-transition: color 0.2s linear;
@@ -218,349 +212,23 @@ h6 {
 }
 
 .btn:hover {
-    background-color: #009e6b;
+    background-color: #009e6b;   
 }
 
+.btn a:hover{
+    color: #fff;
+    border-bottom: none;
+}
+
+/* --------------------------------------------
+// !-- Design
+// ----------------------------------------- */
 
 .work  {
     background: #fff;
     height: 760px;
     padding-bottom: 175px;
 }
-
-.pro4 {
-    background: #fff;
-    height: 760px;
-    padding-bottom: 200px
-}
-
-.mainnav a {
-    float: right;
-    font-weight: 300;
-    font-size: 13px; 
-    text-transform: uppercase;
-    color: #aaa;
-    transition: color .25s ease-in;
-    -webkit-transition: color .25s ease-in;
-    -moz-transition: color .25s ease-in;
-    -o-transition: color .25s ease-in;
-    text-align: center;
-    display: inline-block;
-    line-height: 15px;
-    padding-left: 38px;
-    padding-top: 15px;
-    letter-spacing: .1em;
-}
-
-.mainnav li a {
-    padding-top: 18px;
-}
-
-.logo {
-    float: left;
-    width: 20px;
-    padding-bottom: 12px;
-    display: block;
-    padding-left: 5px;
-}
-
-
-.mainnav a:hover {
-    color: black;
-}
-
-.mainnav a:active {
-    color: #dd4b39;
-}
-
-.landing h6, .work h6, #nav_active {
-    float: left;
-    margin-left: 40px;
-    color: #777;
-    padding-top: 17px;
-    position: absolute;
-    z-index: 1;
-    font-size: 16px;
-    letter-spacing: .02em;
-    font-weight: 300;
-}
-
-.pro1 h6, .pro2 h6, .pro3 h6, .pro4 h6, .pro5 h6 {
-    float: left;
-    padding-top: 80px;
-    padding-left: 0px;
-    padding-right: 20px;
-}
-
-#atwork {
-    float: left;
-    position: fixed;
-    top: 0px;
-    z-index: 1;
-    float: left;
-/*        padding-left: 40px;
-*/  color: #777;
-    letter-spacing: .02em;
-    padding-top: 17px;
-    position: fixed;
-    top: 0px;
-    z-index: 1;
-}
-
-.landing h1 {
-    padding-top: 150px;
-    color: #fff;
-    font-size: 60px;
-    line-height: 1.25em;
-    display: inline-block;
-}
-
-
-
-.widecol {
-    width: 720px;
-    display: inline-block;        
-}
-
-/*PROFILE*/
-.profile h1 {
-    margin-top: 95px;
-    margin-bottom: 10px;
-    color: #777;
-    font-size: 28px;
-    line-height: 1.48em;
-    display: inline-block;
-}
-
-.profile h3  {
-    color: #777;
-    padding-top: 5px;
-    border: none;
-}
-
-.profile h3 a  {
-    color: #777;
-    font-weight: 600;
-}
-
-.profile h3 a:hover  {
-    color: #555;
-}
-
-.profile h6 {
-    font-size: 15px;
-    color: #bbb;
-    font-weight: 700;
-    letter-spacing: .05em;
-}
-
-.profile ul {
-    font-weight: 300;
-    color: #777;
-    font-size: 15px;
-    line-height: 1.55em;
-}
-
-#fourwide {
-    padding-top: 15px;
-    border-top: 1px dashed #444;
-}
-
-.col1, .col2, .col3, .col4 {
-    width: 240px;
-    display: inline-block;
-    color: #777;
-    float: left;
-}
-
-/*.col2 {
-    padding-top: 25px;
-}*/
-
-.profile_side {
-    margin-top: 130px;
-    display: inline-block;
-    width: 230px;
-    float: right;
-}
-
-.social {
-    margin-top: -12px;
-}
-
-#selfie {
-    width: 170px;
-    display: block;
-    border: 2px solid #333;
-    border-radius: 100%;
-    position: relative;
-    top: -35px;
-    right: 8px;
-    background-color: black;
-    overflow: hidden;
-}
-
-#selfie img{
-    padding-top: 10px;
-    margin-bottom: -3px;
-    margin-left: -1px;
-}
-
-.twitter, .linkedin, .email {
-    float: left;
-    width: 30px;
-    padding-right: 33px;
-    padding-bottom: 34px;
-    opacity: 0.5;
-    transition: opacity .3s ease-out;
-    -webkit-transition: opacity .3s ease-out;
-    -moz-transition: opacity .3s ease-out;
-    -o-transition: opacity .3s ease-out;
-}
-
-.twitter {
-    padding-top: 7px;
-}
-
-.linkedin {
-    padding-top: 4px;
-}
-
-.email {
-    padding-top: 8px;
-}
-
-.twitter:hover, .linkedin:hover, .email:hover {
-    opacity: 1.0;
-}
-
-.col4 {
-    float:left;
-    width: 200px;
-}
-
-/*BUTTON*/
-.profile .btn {
-    margin-top: 30px;
-    margin-right: 10px;
-    float: left;
-    display: block;
-    background-color: #1b1b1b;
-    border-radius: 4px;
-    border: 1px solid #1a1a1a;
-    transition: background-color 0.45s linear;
-    -webkit-transition: background-color 0.45s linear;
-    -moz-transition: background-color 0.45s linear;
-    -o-transition: background-color 0.45s linear;
-}
-
-.profile .btn:hover {
-    background-color: #0c0c0c;
-}
-
-.profile .btn a {
-    color: #006755;
-    font-weight: 300;
-    padding: 20px;
-}
-
-
-/*DESIGN*/
-/*arrows to advance projects*/
-.projectnav a {
-    z-index: 1;
-    color: #aaa;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 3px 6px 6px 6px;
-    font-weight: 300;
-    font-size: 15px; 
-    font-color: #aaa;
-    letter-spacing: .04em;
-    transition: background-color, font-color .25s linear;
-    -webkit-transition: background-color .25s linear;
-    -moz-transition: background-color .25s linear;
-    -o-transition: background-color .25s linear;
-}
-
-.projectnav a:hover {
-    background-color: #eee;
-}
-
-#arrowreturn, .arrowleft {
-    padding-left: 8px;
-    margin-right: 18px;
-}
-
-
-#single_arrowright {
-    position: fixed;
-    top: 360px;
-    right: 292px;
-    padding-left: 8px;
-    margin-right: 18px;
-}
-
-
-.arrowright {
-    padding-left:40px;
-}
-
-
-.portfolio {
-        float:left;
-        height: 500px;
-        display: inline;
-}
-
-.description {
-        float: left;
-        margin-top: 90px;
-        width: 210px;
-/*        border-bottom: 1px dashed #dd4b39;
-        padding-top: 15px;*/
-}
-
-h3 a{
-    font-weight: 400;
-    color: #dd4b39;
-    font-size: 12px;
-    line-height: 1.35em;
-    padding-bottom: 5px;
-}
-
-.footer {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 300;
-        width: 100%;
-        background-color: #f3f3f3;
-        padding-top: 10px;
-        padding-bottom: 500px;
-}
-
-
-/*BUTTON*/
-
-.btn_design a {
-    padding: 20px;
-    color: #aaa;
-    font-weight: 200;
-        margin-top: 60px;
-    display: block;
-    float: left;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    transition: background-color 0.45s linear;
-    -webkit-transition: background-color 0.45s linear;
-    -moz-transition: background-color 0.45s linear;
-    -o-transition: background-color 0.45s linear;
-}
-
-.btn_design a:hover {
-    background-color: #eee;
-}
-
 
 .banner_first { 
     display: inline-block;
@@ -621,7 +289,6 @@ h3 a{
     background-color: #eee;
     border-radius: 4px;
     opacity: .725;
-
     transition: background-color 0.45s ease-out, opacity 0.45s ease-out;
     -webkit-transition: background-color 0.45s ease-out, opacity 0.45s ease-out;
     -moz-transition: background-color 0.45s ease-out, 0.45s ease-out;
@@ -640,6 +307,290 @@ h3 a{
     opacity: 1.0;
 }
 
+/*BUTTON*/
+.btn_design a {
+    font-size: 18px;
+    padding: 15px;
+    color: #777;
+    font-weight: 200;
+    margin-top: 60px;
+    display: block;
+    float: left;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    transition: background-color 0.45s linear;
+    -webkit-transition: background-color 0.45s linear;
+    -moz-transition: background-color 0.45s linear;
+    -o-transition: background-color 0.45s linear;
+}
+
+.btn_design a:hover {
+    background-color: #eee;
+}
+
+
+/* --------------------------------------------
+// !-- Profile
+// ----------------------------------------- */
+
+.profile {
+    background: #2c2c2c;
+    height: 760px;
+    padding-bottom: 175px;
+}
+
+.widecol {
+    width: 626px;
+    display: inline-block;        
+}
+
+.twitter, .linkedin, .email {
+    float: left;
+    width: 30px;
+    padding-right: 33px;
+    padding-bottom: 34px;
+    opacity: 0.5;
+    transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+}
+
+.twitter {
+    padding-top: 7px;
+}
+
+.linkedin {
+    padding-top: 4px;
+}
+
+.email {
+    padding-top: 8px;
+}
+
+.twitter:hover, .linkedin:hover, .email:hover {
+    opacity: 1.0;
+}
+
+#selfie {
+    width: 170px;
+    display: block;
+    border: 2px solid #333;
+    border-radius: 100%;
+    position: relative;
+    top: -35px;
+    right: 8px;
+    background-color: black;
+    overflow: hidden;
+}
+
+#selfie img{
+    padding-top: 10px;
+    margin-bottom: -3px;
+    margin-left: -1px;
+}
+
+.col4 {
+    float:left;
+    width: 300px;
+}
+
+#fourwide {
+    padding-top: 15px;
+    border-top: 1px dashed #444;
+}
+.col1 {
+    width: 300px;
+    display: inline-block;
+    color: #777;
+    float: left;
+}
+
+.colx {
+    width: 300px;
+    padding-left: 28px;
+    display: inline-block;
+    color: #777;
+    float: left;
+}
+
+.profile_side {
+    margin-top: 130px;
+    display: inline-block;
+    width: 300px;
+    float: inherit;
+    padding-left: 28px;
+}
+
+.social {
+    margin-top: -12px;
+}
+
+
+
+
+
+
+
+
+
+
+h3 {
+    font-weight: 300;
+    color: #dd4b39;
+    font-size: 12px;
+    line-height: 1.35em;
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-weight: 300;
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+h5 {
+    font-weight: 200;
+    color: #777;
+    transition: color .25s ease-in;
+    -webkit-transition: color .25s ease-in;
+    -moz-transition: color .25s ease-in;
+    -o-transition: color .25s ease-in;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+h6 {
+    display: inline;
+    font-weight: 300;
+    color: #777;
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    letter-spacing: .02em;
+}
+
+#callout {
+    font-weight: 400;
+}
+
+.landing h6, .work h6, #nav_active {
+    float: left;
+    margin-left: 40px;
+    color: #777;
+    padding-top: 17px;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+    letter-spacing: .02em;
+    font-weight: 300;
+}
+
+#atwork {
+    float: left;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    float: left;
+/*        padding-left: 40px;
+*/  color: #777;
+    letter-spacing: .02em;
+    padding-top: 17px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.landing h1 {
+    padding-top: 150px;
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.25em;
+    display: inline-block;
+}
+
+
+
+/*PROFILE type*/
+.profile h1 {
+    margin-top: 95px;
+    margin-bottom: 10px;
+    color: #777;
+    font-size: 28px;
+    line-height: 1.48em;
+    display: inline-block;
+}
+
+.profile h3  {
+    color: #777;
+    padding-top: 5px;
+    border: none;
+}
+
+.profile h3 a  {
+    color: #777;
+    font-weight: 600;
+}
+
+.profile h3 a:hover  {
+    color: #555;
+}
+
+.profile h6 {
+    font-size: 16px;
+    color: #bbb;
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+
+.profile ul {
+    font-weight: 300;
+    color: #777;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+
+/*BUTTON*/
+.profile .btn {
+    margin-top: 30px;
+    margin-right: 10px;
+    float: left;
+    display: block;
+/*    background-color: #1b1b1b;
+*/    border-radius: 4px;
+    border: 2px solid #222;
+    transition: background-color 0.45s linear;
+    -webkit-transition: background-color 0.45s linear;
+    -moz-transition: background-color 0.45s linear;
+    -o-transition: background-color 0.45s linear;
+}
+
+.profile .btn:hover {
+    background-color: #222;
+}
+
+.profile .btn a {
+    font-size: 18px;
+    color: #aaa;
+    font-weight: 300;
+    padding: 15px;
+/*    letter-spacing: .02em;
+*/}
+
+h3 a{
+    font-weight: 400;
+    color: #dd4b39;
+    font-size: 12px;
+    line-height: 1.35em;
+    padding-bottom: 5px;
+}
+
+
+
 .holder h4 {
     display: inline;
     font-weight: 300;
@@ -651,6 +602,18 @@ h3 a{
 
 
 /*FOOTER*/
+
+.footer {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        width: 100%;
+        background-color: #f3f3f3;
+        padding-top: 10px;
+        padding-bottom: 500px;
+}
+
+
+
 .footer {
     background-color: #dd4b39;
     height: 750px;
