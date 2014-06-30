@@ -173,10 +173,10 @@ header {
 .landing a {        
     color: #fff;
     border-bottom: 1px dashed #4EF2BC;
-    transition: color 0.2s linear, border-bottom 0.2s linear;
-    -webkit-transition: color 0.2s linear, border-bottom 0.2s linear;
-    -moz-transition: color 0.2s linear, border-bottom 0.2s linear;
-    -o-transition: color 0.2s linear, border-bottom 0.2s linear;
+    transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
 }
 
 .landing a:hover {        
@@ -190,10 +190,10 @@ header {
     background-color: none;
     border-radius: 4px;
     border: 0.14em solid #009e6b;
-    transition: background-color 0.4s linear;
-    -webkit-transition: background-color 0.4s linear;
-    -moz-transition: background-color 0.4s linear;
-    -o-transition: background-color 0.4s linear;
+    transition: background-color 0.3s ease-in, border 0.3s ease-in;
+    -webkit-transition: background-color 0.3s ease-in, border 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in, border 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in, border 0.3s ease-in;
 }
 
 .btn a {
@@ -207,11 +207,12 @@ header {
 }
 
 .btn:hover {
-    background-color: #009e6b;   
+    background-color: #fff;   
+    border: 0.14em solid #fff;
 }
 
 .btn a:hover{
-    color: #4EF2BC;
+    color: #009e6b;
     border-bottom: none;
 }
 
@@ -284,10 +285,10 @@ header {
     background-color: #eee;
     border-radius: 4px;
     opacity: .725;
-    transition: background-color 0.4s ease-out, opacity 0.4s ease-out;
-    -webkit-transition: background-color 0.4s ease-out, opacity 0.4s ease-out;
-    -moz-transition: background-color 0.4s ease-out, 0.4s ease-out;
-    -o-transition: background-color 0.4s ease-out, 0.4s ease-out;
+    transition: background-color 0.4s ease-in, opacity 0.4s ease-in;
+    -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in;
+    -moz-transition: background-color 0.4s ease-in, 0.4s ease-in;
+    -o-transition: background-color 0.4s ease-in, 0.4s ease-in;
 }
 
 .holder {
@@ -314,14 +315,16 @@ header {
     background-color: #fff;
     border-radius: 4px;
     border: 0.16em solid #ddd;
-    transition: background-color 0.4s linear;
-    -webkit-transition: background-color 0.4s linear;
-    -moz-transition: background-color 0.4s linear;
-    -o-transition: background-color 0.4s linear;
+    transition: background-color 0.3s eas, color 0.3s ease-in, border 0.3s ease-in;
+    -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
 }
 
 .btn_design a:hover {
-    background-color: #eee;
+    background-color: #616161;
+    color: #eee;
+    border: 0.16em solid #616161;
 }
 
 
@@ -358,10 +361,10 @@ header {
     margin-left: 48px;
     width: 30px;
     opacity: 0.35;
-    transition: opacity .6s ease-out;
-    -webkit-transition: opacity .6s ease-out;
-    -moz-transition: opacity .6s ease-out;
-    -o-transition: opacity .6s ease-out;
+    transition: opacity .6s ease-in;
+    -webkit-transition: opacity .6s ease-in;
+    -moz-transition: opacity .6s ease-in;
+    -o-transition: opacity .6s ease-in;
 }
 
 .twitter {
@@ -540,6 +543,18 @@ h6 {
 
 
 /*BUTTON*/
+
+.profile .btn a {
+    font-size: 18px;
+    color: #aaa;
+    font-weight: 300;
+    padding: 15px;
+    transition: color 0.4s ease-in;
+    -webkit-transition: color 0.4s lease-in;
+    -moz-transition: color 0.4s ease-in;
+    -o-transition: color 0.4s ease-in;
+}
+
 .profile .btn {
     margin-top: 30px;
     margin-right: 10px;
@@ -547,21 +562,20 @@ h6 {
     display: block;
     border-radius: 4px;
     border: 0.12em solid #222;
-    transition: background-color 0.4s linear;
-    -webkit-transition: background-color 0.4s linear;
-    -moz-transition: background-color 0.4s linear;
-    -o-transition: background-color 0.4s linear;
+    background-color: none;
+    transition: background-color 0.4 ease-in, border 0.3s ease-in;;
+    -webkit-transition: background-color 0.4s ease-in, border 0.3s ease-in;;
+    -moz-transition: background-color 0.4s ease-in, border 0.3s ease-in;;
+    -o-transition: background-color 0.4s lease-in, border 0.3s ease-in;;
 }
 
 .profile .btn:hover {
-    background-color: #222;
+    background-color: #dd4b39;
+    border: 0.12em solid #dd4b39;
 }
 
-.profile .btn a {
-    font-size: 18px;
-    color: #aaa;
-    font-weight: 300;
-    padding: 15px;
+.profile .btn a:hover{
+    color: #ddd;
 }
 
 h3 a{
@@ -630,7 +644,7 @@ h3 a{
 .footer a {        
     color: #fff;
     border-bottom: 1px dashed #c0160d;
-    transition: color 0.2s linear, border-bottom 0.2s linear;
+    transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
 }
 
 .footer a:hover {        
@@ -659,14 +673,14 @@ h3 a{
 .foot_twitter a, .foot_linkedin a, .foot_email a{
     margin-top: 20px;
     float: left;
-    width: 24px;
-    padding-right: 33px;
+    width: 30px;
+    padding-right: 45px;
     opacity: 0.5;
     border-bottom: none;
-    transition: opacity .6s ease-out;
-    -webkit-transition: opacity .6s ease-out;
-    -moz-transition: opacity .6s ease-out;
-    -o-transition: opacity .6s ease-out;
+    transition: opacity .6s ease-in;
+    -webkit-transition: opacity .6s ease-in;
+    -moz-transition: opacity .6s ease-in;
+    -o-transition: opacity .6s ease-in;
 }
 
 .foot_twitter a {
