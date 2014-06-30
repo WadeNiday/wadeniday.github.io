@@ -143,10 +143,10 @@ header {
     font-size: .91em; 
     text-transform: uppercase;
     color: #777;
-    transition: color .25s ease-in;
-    -webkit-transition: color .25s ease-in;
-    -moz-transition: color .25s ease-in;
-    -o-transition: color .25s ease-in;
+    transition: color .3s ease-in;
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
     text-align: center;
     display: inline-block;
     line-height: 15px;
@@ -188,13 +188,12 @@ header {
     margin-top: 30px;
     float: left;
     background-color: none;
-/*        background-color: #00a779;*/
     border-radius: 4px;
-    border: 2px solid #009e6b;
-    transition: background-color 0.45s linear;
-    -webkit-transition: background-color 0.45s linear;
-    -moz-transition: background-color 0.45s linear;
-    -o-transition: background-color 0.45s linear;
+    border: 0.14em solid #009e6b;
+    transition: background-color 0.4s linear;
+    -webkit-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
 }
 
 .btn a {
@@ -205,10 +204,6 @@ header {
     font-weight: 200;
     border-bottom: none;
     letter-spacing: .02em;
-    transition: color 0.2s linear;
-    -webkit-transition: color 0.2s linear;
-    -moz-transition: color 0.2s linear;
-    -o-transition: color 0.2s linear;
 }
 
 .btn:hover {
@@ -216,7 +211,7 @@ header {
 }
 
 .btn a:hover{
-    color: #fff;
+    color: #4EF2BC;
     border-bottom: none;
 }
 
@@ -289,10 +284,10 @@ header {
     background-color: #eee;
     border-radius: 4px;
     opacity: .725;
-    transition: background-color 0.45s ease-out, opacity 0.45s ease-out;
-    -webkit-transition: background-color 0.45s ease-out, opacity 0.45s ease-out;
-    -moz-transition: background-color 0.45s ease-out, 0.45s ease-out;
-    -o-transition: background-color 0.45s ease-out, 0.45s ease-out;
+    transition: background-color 0.4s ease-out, opacity 0.4s ease-out;
+    -webkit-transition: background-color 0.4s ease-out, opacity 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out, 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out, 0.4s ease-out;
 }
 
 .holder {
@@ -318,11 +313,11 @@ header {
     float: left;
     background-color: #fff;
     border-radius: 4px;
-    border: 2px solid #ddd;
-    transition: background-color 0.45s linear;
-    -webkit-transition: background-color 0.45s linear;
-    -moz-transition: background-color 0.45s linear;
-    -o-transition: background-color 0.45s linear;
+    border: 0.16em solid #ddd;
+    transition: background-color 0.4s linear;
+    -webkit-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
 }
 
 .btn_design a:hover {
@@ -341,20 +336,32 @@ header {
 }
 
 .widecol {
-    width: 626px;
+    width: 655px;
     display: inline-block;        
+}
+
+#fourwide {
+    padding-top: 15px;
+    border-top: 1px dashed #444;
+}
+
+/*aside or selfie and social*/
+.profile_side {
+    display: inline-block;
+    width: 300px;
+    float: right;
+    margin-top: 90px;
 }
 
 .twitter, .linkedin, .email {
     float: left;
+    margin-left: 48px;
     width: 30px;
-    padding-right: 33px;
-    padding-bottom: 34px;
-    opacity: 0.5;
-    transition: opacity .3s ease-out;
-    -webkit-transition: opacity .3s ease-out;
-    -moz-transition: opacity .3s ease-out;
-    -o-transition: opacity .3s ease-out;
+    opacity: 0.35;
+    transition: opacity .6s ease-out;
+    -webkit-transition: opacity .6s ease-out;
+    -moz-transition: opacity .6s ease-out;
+    -o-transition: opacity .6s ease-out;
 }
 
 .twitter {
@@ -373,33 +380,25 @@ header {
     opacity: 1.0;
 }
 
+/*image position on the page*/
 #selfie {
     width: 170px;
     display: block;
     border: 2px solid #333;
     border-radius: 100%;
-    position: relative;
-    top: -35px;
-    right: 8px;
     background-color: black;
     overflow: hidden;
+    margin-left: 58px;
+    margin-bottom: 20px;
 }
 
+/*image position within circle*/
 #selfie img{
     padding-top: 10px;
-    margin-bottom: -3px;
+    margin-bottom: -5px;
     margin-left: -1px;
 }
 
-.col4 {
-    float:left;
-    width: 300px;
-}
-
-#fourwide {
-    padding-top: 15px;
-    border-top: 1px dashed #444;
-}
 .col1 {
     width: 300px;
     display: inline-block;
@@ -415,22 +414,9 @@ header {
     float: left;
 }
 
-.profile_side {
-    margin-top: 130px;
-    display: inline-block;
-    width: 300px;
-    float: inherit;
-    padding-left: 28px;
-}
-
 .social {
-    margin-top: -12px;
+    float: left;
 }
-
-
-
-
-
 
 
 
@@ -512,15 +498,14 @@ h6 {
     display: inline-block;
 }
 
-
-
 /*PROFILE type*/
 .profile h1 {
     margin-top: 95px;
-    margin-bottom: 10px;
+    width:680px;
+    margin-bottom: 15px;
     color: #777;
-    font-size: 28px;
-    line-height: 1.48em;
+    font-size: 1.71em;
+    line-height: 1.49em;
     display: inline-block;
 }
 
@@ -560,13 +545,12 @@ h6 {
     margin-right: 10px;
     float: left;
     display: block;
-/*    background-color: #1b1b1b;
-*/    border-radius: 4px;
-    border: 2px solid #222;
-    transition: background-color 0.45s linear;
-    -webkit-transition: background-color 0.45s linear;
-    -moz-transition: background-color 0.45s linear;
-    -o-transition: background-color 0.45s linear;
+    border-radius: 4px;
+    border: 0.12em solid #222;
+    transition: background-color 0.4s linear;
+    -webkit-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
 }
 
 .profile .btn:hover {
@@ -578,8 +562,7 @@ h6 {
     color: #aaa;
     font-weight: 300;
     padding: 15px;
-/*    letter-spacing: .02em;
-*/}
+}
 
 h3 a{
     font-weight: 400;
@@ -678,12 +661,12 @@ h3 a{
     float: left;
     width: 24px;
     padding-right: 33px;
-    opacity: 0.7;
+    opacity: 0.5;
     border-bottom: none;
-    transition: opacity .3s ease-out;
-    -webkit-transition: opacity .3s ease-out;
-    -moz-transition: opacity .3s ease-out;
-    -o-transition: opacity .3s ease-out;
+    transition: opacity .6s ease-out;
+    -webkit-transition: opacity .6s ease-out;
+    -moz-transition: opacity .6s ease-out;
+    -o-transition: opacity .6s ease-out;
 }
 
 .foot_twitter a {
