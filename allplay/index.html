@@ -60,52 +60,64 @@
     </div>
 
   <!-- one guggenheim --> 
-  <article class="banner_first">
-    <div class='holder'>
+  <section id="banner_oneg">
+    <article class='holder'>
       <a href='design/oneguggenheim.html'><img id='oneguggenheim' src="images/OneGuggenheim_logo.png" width='248' height='14'></a>
-      <h4>web</h4>
-    </div>
-  </article>
+      
+      <div id='oneg'>
+        <h4>web</h4>
+      </div>
+
+    </article>
+  </section>
 
   <!-- map keys --> 
-  <article class="banner">
-    <div class='holder'>
+  <section id="banner_mapk">
+    <article class='holder'>
       <a href='design/mapkeys.html'><img id='mapkeys' src="images/mapkeys_logo.png" width='200'></a>
-      <h4>mobile app, print</h4>
-    </div>
-  </article>
+
+      <div id='mapk'>  
+        <h4>mobile app, print</h4>
+      </div>
+
+    </article>
+  </section>
 
   <!-- research portal --> 
-  <article class="banner">
-    <div class='holder'>
+  <section id="banner_research">
+    <article class='holder'>
       <a href='design/researchportal.html'><img id='researchportal' src="images/gugg_app.png" width='60'></a>
-      <h4>web</h4>
-    </div>
-  </article>
+    
+      <div id='research'>
+        <h4>web</h4>
+      </div>
+
+    </article>
+  </section>
 
   <!-- divinebacknine.com --> 
-  <article class="banner_first">
-    <div class='holder'>
+  <section id="banner_divine">
+    <article class='holder'>
       <a href='design/dbn.html'><img id='dbn' src="images/dbn_logo.png" width='240'></a>
-      <h4>mobile app, identity, messaging</h4>
-    </div>
-  </article>
+     
+      <div id='divine'>
+        <h4>mobile app, identity, messaging</h4>
+      </div>
 
-  <!-- to come --> 
-<!--   <article class="bannertwo">
-    <div class='holder'>
-      <a href='#'><img id='placeholder' src="images/bollywood.png" width='230'></a>
-      <h4>web, mobile, responsive, identity, messaging</h4>
-    </div>
-  </article> -->
+    </article>
+  </section>
 
-  <!-- print collection --> 
-  <article class="bannertwo">
-    <div class='holder'>
+  <!-- print collection (bannertwo)--> 
+  <section id="banner_print">
+    <article class='holder'>
       <a href='design/foundation.html'><img id='foundation' src="images/bollywood.png" width='230'></a>
-      <h4>identity, print</h4>
-    </div>
-  </article>
+  
+      <div id='print'>
+       <h4>identity, print</h4>
+      </div>
+
+    </article>
+  </section>
 
   <!-- btn --> 
   <section class='btn_design'>
@@ -261,19 +273,83 @@ $('#atwork, #contact').hide();
     $('#atwork').fadeOut('xslow'); 
 });
 
-$(document).ready(function(){
-$(function() {
-$('.banner').unslider({
-  // $('.banner').unslider({
 
-  keys: true, 
-  dots: true, 
-  delay: false,  
-  // pause: true,
-  // loop: true,            
+// SHOW PROJECT DESCRIPTION
+
+// show one guggenheim description
+$(function() {
+  $('#oneg').hide ();
+  $('#banner_oneg').on('mouseenter', function() {
+    $('#oneg').fadeIn ('xslow'); } );
 });
+
+// hide one guggenheim description
+  $('#banner_oneg').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#oneg').fadeOut('xslow'); 
 });
+
+
+
+// show mapkeys description
+$(function() {
+  $('#mapk').hide ();
+  $('#banner_mapk').on('mouseenter', function() {
+    $('#mapk').fadeIn ('xslow'); } );
 });
+
+// hide mapkeys description
+  $('#banner_mapk').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#mapk').fadeOut('xslow'); 
+});
+
+
+
+// show research
+$(function() {
+  $('#research').hide ();
+  $('#banner_research').on('mouseenter', function() {
+    $('#research').fadeIn ('xslow'); } );
+});
+
+// hide mapkeys description
+  $('#banner_research').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#research').fadeOut('xslow'); 
+});
+
+
+
+// show divinebacknine.com
+$(function() {
+  $('#divine').hide ();
+  $('#banner_divine').on('mouseenter', function() {
+    $('#divine').fadeIn ('xslow'); } );
+});
+
+// hide mapkeys description
+  $('#banner_divine').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#divine').fadeOut('xslow'); 
+});
+
+
+
+// show print
+$(function() {
+  $('#print').hide ();
+  $('#banner_print').on('mouseenter', function() {
+    $('#print').fadeIn ('xslow'); } );
+});
+
+// hide mapkeys description
+  $('#banner_print').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#print').fadeOut('xslow'); 
+});
+
+
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
