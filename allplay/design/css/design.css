@@ -128,6 +128,8 @@ header {
     padding-bottom: 30px;
 }
 
+/*full frame images*/
+
 /*http://codepen.io/RyGanley/pen/JKwaC*/
 .enlarge {
     width:74%;
@@ -145,6 +147,29 @@ header {
     transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
+
+/*mobile images*/
+.enlarge_mobile {
+    float: left;
+    width: 36%;
+    height: 36%;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.enlarge_mobile:hover {
+    width: 54%;
+    height: 54%;
+    display: inline-block;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
 
 .footer {
     background-color: #dd4b39;
@@ -298,7 +323,7 @@ h5 {
     line-height: 1.5em;
 }
 
-#description-int-oneg {
+#description-int {
     border-top: 1px dashed #bbb;;
     float: left;
     padding-top: 15px;
@@ -306,6 +331,7 @@ h5 {
     width: 700px;
     line-height: 1.5em;
 }
+
 
 /* --------------------------------------------
 // !-- Footer
