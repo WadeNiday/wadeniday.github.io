@@ -118,7 +118,7 @@ header {
     display: inline-block;
     position: relative; 
     overflow: hidden; 
-    width: 947px;
+    width: 948px;
     margin-right:22px;
 }
 
@@ -167,6 +167,28 @@ header {
 .enlarge_mobile:hover {
     width: 54%;
     height: 54%;
+    display: inline-block;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+/*sketch (1/3) images*/
+.enlarge_sketch {
+    float: left;
+    width: 23.8%;
+    height: 23.8%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.enlarge_sketch:hover {
+    width: 41.8%;
+    height: 41.8%;
     display: inline-block;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -294,7 +316,8 @@ header {
 }
 
 .description a {
-    color: #dd4b39;
+    color: #777;
+    font-weight: 600;
     transition: color .5s linear;
     -webkit-transition: color .5s;
     -moz-transition: color .5s;
@@ -302,7 +325,7 @@ header {
 }
 
 .description a:hover {
-    color: black;
+    color: #dd4b39;
 }
 
 /* --------------------------------------------
@@ -336,7 +359,8 @@ h5 {
     margin-top: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 680px;
+    margin-right: 25px;
+    width: 700px;
     line-height: 1.5em;
 }
 
@@ -345,8 +369,10 @@ h5 {
     float: left;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-right: 25px;
     width: 700px;
     line-height: 1.5em;
+    clear: all;
 }
 
 
