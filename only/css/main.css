@@ -1,0 +1,317 @@
+/* -----------------------------------------------------------------------------
+// Table of Contents
+//
+//  - Colors
+//  - Reset
+//  - Scaffolding
+//  - Main Nav Bar
+//  - Landing
+//  - Profile
+//  - Project Nav Bar
+//  - Typography
+//  - Footer
+//
+// -------------------------------------------------------------------------- */
+
+/* --------------------------------------------
+// -- Colors
+//
+// Black:       #222
+// Dark gray:   #777
+// Light gray:  #bbb
+// Red:         #dd4b39
+//
+// ----------------------------------------- */
+
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+
+header {
+    position:fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+/* --------------------------------------------
+// !-- Main Nav Bar
+// ----------------------------------------- */
+
+.mainnav {
+    height: 5vh;
+}
+
+.logo {
+    display: block;
+    float: left;
+    padding-bottom: .875em;
+    padding-left: 0.313em;
+    width: 1.250em;
+}
+
+.mainnav li a {
+    padding-top: 1.3em;
+}
+
+.mainnav a {
+    float: right;
+    font-weight: 300;
+    font-size: .91em; 
+    text-transform: uppercase;
+    color: #777;
+    transition: color .2s ease-in;
+    -webkit-transition: color .2s ease-in;
+    -moz-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+    text-align: center;
+    display: inline-block;
+    padding-left: 3%;
+    padding-top: 0.938em;
+    letter-spacing: .07em;
+}
+
+.mainnav a:hover {
+    color: #dd4b39;
+}
+
+/* --------------------------------------------
+// !-- Landing
+// ----------------------------------------- */
+
+.landing {
+    background-color: #00af81;
+    height: 100vh;
+}
+
+.landing h1 {
+    padding-top: 1.5em;
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.25em;
+    display: inline-block;
+}
+
+.landing h6 {
+    float: left;
+    margin-left: 40px;
+    color: #777;
+    padding-top: 17px;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+    letter-spacing: .02em;
+    font-weight: 300;
+}
+
+/*BUTTON*/
+.landing a {        
+    color: #fff;
+    border-bottom: 1px dashed #4EF2BC;
+    transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+}
+
+.landing a:hover {        
+    color: #4EF2BC;
+    border-bottom: 1px dashed #009e6b;
+}
+
+.btn {
+    margin-top: 3.5%;
+    float: left;
+    background-color: none;
+    border-radius: 0.250em;
+    border: 0.14em solid #009e6b;
+    transition: background-color 0.3s ease-in, border 0.3s ease-in;
+    -webkit-transition: background-color 0.3s ease-in, border 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in, border 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in, border 0.3s ease-in;
+}
+
+.btn a {
+    font-size: 1.3em;
+    display: block;
+    padding: 0.938em;
+    color: #fff;
+    font-weight: 200;
+    border-bottom: none;
+    letter-spacing: .02em;
+}
+
+.btn:hover {
+    background-color: #009e6b;   
+}
+
+.btn a:hover{
+    color: #fff;
+    border-bottom: none;
+}
+
+
+
+
+/* Responsive styles */
+
+
+
+/* iPhone 5 horz */
+  @media (max-width: 625px) {
+  
+
+.landing h1 {
+  padding-top: 2.25em;
+  font-size: 2em;
+  line-height: 1.35em;
+  font-weight: 200;
+  letter-spacing: 0.0225em;
+  }
+
+.wrapper {
+    width: 87.5%;
+} 
+
+.landing a {        
+    color: #fff;
+    border-bottom: none;
+}
+
+.landing a:hover {        
+    color: #4EF2BC;
+    border-bottom: none;
+}
+
+.mainnav a {
+    padding-left: 10%;
+}
+
+.btn {
+    margin-top: 5%;
+    width: 100.1%;
+    background-color: none;  
+    border: 0.14em solid #009e6b;
+    border-radius: 0;
+}
+
+.btn a {
+/*    font-size: 1.3em;
+*/    font-weight: 300;
+    font-size: 90%; 
+    text-transform: uppercase;
+    padding: 6%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: .07em;
+}
+}
+
+/* iPhone 5 vert */
+  @media (max-width: 475px) {
+  .landing h1 {
+    padding-top: 2.65em;
+    font-size: 1.7em;
+  }
+
+.landing h6 {
+    z-index: -2
+}
+
+.btn {
+    margin-top: 5%;
+    width: 100.1%;
+    background-color: #009e6b;  
+    border: .1em solid #4EF2BC;
+    border-radius: 0;
+}
+
+}
+
+
