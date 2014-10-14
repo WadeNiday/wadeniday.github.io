@@ -265,7 +265,6 @@ header {
 
 
 
-
   @media (max-width: 1120px) {  /*viewable at less than 420px*/
  
 .wrapper {
@@ -309,8 +308,10 @@ header {
 }
 
 
+
+
 /* iPhone 5 vert */
-  @media (min-width: 320px) {  /*viewable at less than 420px*/
+  @media (max-width: 420px) {  /*viewable at less than 420px*/
  
 .wrapper {
     width: 92%;
@@ -334,6 +335,7 @@ header {
 }
 
 }
+
 
 
 
