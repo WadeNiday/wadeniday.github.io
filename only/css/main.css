@@ -265,7 +265,11 @@ header {
 /* iPhone 5 vert */    /*viewable at less than 420px*/
 @media (min-width: 320px) and (max-width : 480px) {  
 
-.wrapper {
+.landing {
+    background-color: red;
+}
+
+/*.wrapper {
     width: 92%;
 }
 
@@ -283,10 +287,11 @@ header {
     width: 100.1%;
     background-color: #009e6b;  
     border: .1em solid #4EF2BC;
-    border-radius: 0;
+    border-radius: 0;*/
 }
 
 }
+
 
 
 
