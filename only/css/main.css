@@ -262,21 +262,14 @@ header {
 /* Responsive styles */
 
 
-
-
-
-
-
-
 /* iPhone 5 vert */    /*viewable at less than 420px*/
-  @media only screen (min-device-width: 320px) and (max-device-width : 480px) {  
-
+@media (min-width: 320px) and (max-width : 480px) {  
 
 .wrapper {
     width: 92%;
 }
 
-  .landing h1 {
+.landing h1 {
     padding-top: 3.65em;
     font-size: 1.0em;
   }
@@ -294,6 +287,11 @@ header {
 }
 
 }
+
+
+
+
+
 
 
 
