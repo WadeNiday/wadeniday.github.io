@@ -310,14 +310,14 @@ header {
 
 
 /* iPhone 5 vert */
-  @media (max-width: 320px) {  /*viewable at less than 420px*/
+  @media (min-width: 320px) {  /*viewable at less than 420px*/
  
 .wrapper {
     width: 92%;
 }
 
   .landing h1 {
-    padding-top: 2.65em;
+    padding-top: 3.65em;
     font-size: 1.0em;
   }
 
