@@ -263,7 +263,7 @@ header {
 
 
 /* iPhone 5 vert */    /*viewable at less than 420px*/
-@media (min-width: 320px) and (max-width : 480px) {  
+@media (min-width: 220px) and (max-width : 400px) {  
 
 .landing {
     background-color: red;
