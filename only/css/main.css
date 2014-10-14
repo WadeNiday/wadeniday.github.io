@@ -262,28 +262,33 @@ header {
 /* Responsive styles */
 
 
-/* iPhone 5 vert */    /*viewable at less than 420px*/
-@media (min-width: 220px) and (max-width : 400px) {  
+/* phone */ 
+@media (min-width: 320px) and (max-width: 430px) {  
 
 .landing {
-    background-color: red;
+  background-color: #009e6b;
+  background-color: red;
+}
+
+.logo {
+  padding-left: .8em;
 }
 
 .landing h6 {
     z-index: -2
 }
 
-/*.wrapper {
+.wrapper {
     width: 92%;
 }
 
 .landing h1 {
     padding-top: 3.65em;
-    font-size: 1.0em;
+    font-size: 1.6em;
   }
 
-.landing h6 {
-    z-index: -2
+.landing a {        
+  border-bottom: none;
 }
 
 .btn {
@@ -291,14 +296,71 @@ header {
     width: 100.1%;
     background-color: #009e6b;  
     border: .1em solid #4EF2BC;
-    border-radius: 0;*/
+    border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #00af81;
+  border-radius: none;
 }
 
 }
 
+/* between phone and tablet*/  
+@media (min-width: 431px) and (max-width : 767px) {  
+ 
+.wrapper {
+    width: 80%;
+  }
+
+.landing {
+  background-color: purple;
+}
+
+}
+.landing h1 {
+    padding-top: 1.85em;
+    font-size: 3.5em;
+  }
+}
 
 
 
+/* tablet */
+@media (min-width: 768px) and (max-width : 1024px) {  
+ 
+.wrapper {
+    width: 80%;
+  }
+
+.landing {
+  background-color: pink;
+}
+
+}
+.landing h1 {
+    padding-top: 1.85em;
+    font-size: 3.5em;
+  }
+}
+
+
+/*@media (max-width: 1351px)  {  
+ 
+.wrapper {
+    width: 80%;
+  }
+
+.landing {
+  background-color: yellow;
+}
+
+}
+.landing h1 {
+    padding-top: 1.85em;
+    font-size: 3.5em;
+  }
+}
 
 
 
