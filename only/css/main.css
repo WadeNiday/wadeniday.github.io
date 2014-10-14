@@ -307,7 +307,7 @@ header {
 
 
 /* normal +1 */
-  @media (min-width: 1640px) {  /*viewable at less than 420px*/
+  @media (min-width: 1600px) {  /*viewable at less than 420px*/
  
 .wrapper {
     width: 65%;
