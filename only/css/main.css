@@ -282,7 +282,7 @@ header {
 
 
 /* normal +1 */
-  @media (min-width: 1500px) {  /*viewable at less than 420px*/
+  @media screen (min-width: 1500px) {  /*viewable at less than 420px*/
  
 .wrapper {
     width: 65%;
@@ -310,9 +310,10 @@ header {
 
 
 
-/* iPhone 5 vert */
-  @media (max-width: 420px) {  /*viewable at less than 420px*/
- 
+/* iPhone 5 vert */    /*viewable at less than 420px*/
+  @media only screen (min-device-width: 320px) and (max-device-width : 480px) {  
+
+
 .wrapper {
     width: 92%;
 }
