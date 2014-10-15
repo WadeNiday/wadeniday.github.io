@@ -263,7 +263,7 @@ header {
 
 
 /* Smartphones (portrait) ----------- */
-@media (min-width: 320px) and (max-width: 600px)  {  
+@media (min-width: 320px) and (max-width: 604px)  {  
 
 /* structure */
 .wrapper {
@@ -322,29 +322,19 @@ header {
 
 }
 
-/* Smartphones (landscape) ----------- */
-/*@media (min-width: 470px)  {  */
 
-/* typography */
+/* Smartphones (portrait) ----------- */
+@media (min-width: 605px) and (max-width: 1024px)  {  
 
-/*.landing h1 {
-    padding-top: 12%;
-}
-
-}*/
-
-/* between phone and tablet*/  
-/*@media (min-width: 471px) and (max-width : 767px) {  
- 
 .wrapper {
-    width: 80%;
+    width: 90%;
   }
 
 .landing {
   background-color: purple;
 }
 
-.mainnav a {
+/*.mainnav a {
   color: #555;
   font-weight: 400;
   letter-spacing: .085em;
@@ -354,9 +344,9 @@ header {
 .landing h1 {
     padding-top: 1.85em;
     font-size: 3.5em;
-  }
+  }*/
 }
-*/
+
 
 
 /* iPads (portrait and landscape) ----------- */
