@@ -263,7 +263,7 @@ header {
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media (min-width: 320px) and (max-width: 470px) {  
+@media (min-width: 320px) and (max-width: 570px) {  
 
 .landing {
   background-color: #009e6b;
