@@ -259,16 +259,26 @@ header {
 
 
 
-/* Responsive styles */
+/* R E S P O N S I V E  S T Y L E S */
 
 
 /* Smartphones (portrait and landscape) ----------- */
 @media (min-width: 320px) and (max-width: 570px) {  
 
+/* structure */
+.wrapper {
+    width: 92%;
+}
+
 .landing {
   background-color: #009e6b;
   background-color: red;
   height: 100vh;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .8em;
 }
 
 .mainnav a {
@@ -277,26 +287,19 @@ header {
   letter-spacing: .085em;
 }
 
-
-.logo {
-  padding-left: .8em;
-}
-
 .mainnav li a {
-  padding-left: 6%;
+  padding-left: 4.5%;
 }
 
 .landing h6 {
     z-index: -2
 }
 
-.wrapper {
-    width: 92%;
-}
+/* typography */
 
 .landing h1 {
-    padding-top: 3.65em;
-    font-size: .05em;
+    padding-top: 20%;
+    font-size: 1.5em;
   }
 
 .landing a {        
@@ -357,8 +360,8 @@ header {
 
 }
 .landing h1 {
-    padding-top: 1.85em;
-    font-size: 3.5em;
+/*    padding-top: 1.85em;
+*//*    font-size: 3.5em;*/
   }
 }
 
