@@ -282,6 +282,10 @@ header {
   padding-left: .8em;
 }
 
+.mainnav li a {
+  padding-left: 6%;
+}
+
 .landing h6 {
     z-index: -2
 }
