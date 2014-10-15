@@ -193,7 +193,7 @@ header {
 .landing h1 {
     padding-top: 1.5em;
     color: #fff;
-    font-size: 60px;
+    font-size: 3.2em;
     line-height: 1.25em;
     display: inline-block;
 }
@@ -276,7 +276,6 @@ header {
   height: 100vh;
 }
 
-
 /* Main Nav Bar */
 .logo {
   padding-left: .8em;
@@ -300,7 +299,7 @@ header {
 
 .landing h1 {
   margin-top: 3.5%;
-  font-size: 2.15em;
+  font-size: 2.1em;
   }
 
 .landing a {        
@@ -323,18 +322,18 @@ header {
 }
 
 
-/* Smartphones (portrait) ----------- */
+/* iPads (portrait and landscape) ----------- */
 @media (min-width: 605px) and (max-width: 1024px)  {  
 
 .wrapper {
-    width: 90%;
+    width: 85%;
   }
 
 .landing {
   background-color: purple;
 }
 
-/*.mainnav a {
+.mainnav a {
   color: #555;
   font-weight: 400;
   letter-spacing: .085em;
@@ -342,9 +341,8 @@ header {
 
 }
 .landing h1 {
-    padding-top: 1.85em;
-    font-size: 3.5em;
-  }*/
+    font-size: 2.8em;
+  }
 }
 
 
