@@ -239,6 +239,256 @@ header {
 
 
 
+/* --------------------------------------------
+// !-- Profile
+// ----------------------------------------- */
+
+.profile {
+    background: #2c2c2c;
+    height: 100vh;
+}
+
+.widecol {
+    width: 65%;
+    display: inline-block;        
+}
+
+#fourwide {
+    padding-top: 1em;
+    border-top: 1px dashed #444;
+}
+
+/*aside or selfie and social*/
+.profile_side {
+    display: inline-block;
+    width: 300px;
+/*    float: right;
+*/    margin-top: 90px;
+}
+
+.twitter, .linkedin, .email {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    margin-left: 48px;
+    width: 30px;
+    opacity: 0.35;
+    transition: opacity .6s ease-in;
+    -webkit-transition: opacity .6s ease-in;
+    -moz-transition: opacity .6s ease-in;
+    -o-transition: opacity .6s ease-in;
+}
+
+.twitter {
+    padding-top: 7px;
+}
+
+.linkedin {
+    padding-top: 4px;
+}
+
+.email {
+    padding-top: 8px;
+}
+
+.twitter:hover, .linkedin:hover, .email:hover {
+    opacity: 1.0;
+}
+
+/*image position on the page*/
+#selfie {
+    width: 170px;
+    display: block;
+    border: 2px solid #333;
+    border-radius: 100%;
+    background-color: black;
+    overflow: hidden;
+    margin-right: 58px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+/*image position within circle*/
+#selfie img{
+    padding-top: 10px;
+    margin-bottom: -5px;
+    margin-left: -1px;
+}
+
+.col1 {
+    width: 30.333333333%;
+    display: inline-block;
+    color: #777;
+    float: left;
+}
+
+.colx {
+    width: 30.333333333%;
+    padding-left: 28px;
+    display: inline-block;
+    color: #777;
+    float: left;
+}
+
+.social {
+    float: left;
+}
+
+h3 {
+    font-weight: 300;
+    color: #dd4b39;
+    font-size: 12px;
+    line-height: 1.35em;
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-weight: 300;
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+h5 {
+    font-weight: 200;
+    color: #777;
+    transition: color .25s ease-in;
+    -webkit-transition: color .25s ease-in;
+    -moz-transition: color .25s ease-in;
+    -o-transition: color .25s ease-in;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+h6 {
+    display: inline;
+    font-weight: 300;
+    color: #777;
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    letter-spacing: .02em;
+}
+
+#callout {
+    font-weight: 400;
+}
+
+.landing h6, .work h6, #nav_active {
+    float: left;
+    margin-left: 40px;
+    color: #777;
+    padding-top: 17px;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+    letter-spacing: .02em;
+    font-weight: 300;
+}
+
+#atwork {
+    float: left;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    float: left;
+/*        padding-left: 40px;
+*/  color: #777;
+    letter-spacing: .02em;
+    padding-top: 17px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/*PROFILE type*/
+.profile h1 {
+  padding-top: 3em;
+  margin-bottom: .5em;
+  color: pink;
+  font-size: 1.71em;
+  line-height: 1.49em;
+  display: inline-block;
+}
+
+/*.profile h3  {
+    color: yellow;
+    padding-top: 5px;
+    border: none;
+}
+
+.profile h3 a  {
+    color: gold;
+    font-weight: 600;
+}
+
+.profile h3 a:hover  {
+    color: #555;
+}*/
+
+.profile h6 {
+    font-size: 1em;
+    color: gold;
+    font-weight: 700;
+}
+
+.profile ul {
+    font-weight: 300;
+    color: yellow; /*#777;*/
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+/*BUTTON*/
+
+.profile .btn a {
+    font-size: 1.3em;
+    color: #aaa;
+    font-weight: 200;
+    padding: 15px;
+    transition: color 0.4s ease-in;
+    -webkit-transition: color 0.4s lease-in;
+    -moz-transition: color 0.4s ease-in;
+    -o-transition: color 0.4s ease-in;
+}
+
+.profile .btn {
+    margin-top: 30px;
+    margin-right: 10px;
+    float: left;
+    display: block;
+    border-radius: 4px;
+    border: 0.12em solid #222;
+    background-color: none;
+    transition: background-color 0.4 ease-in, border 0.3s ease-in;;
+    -webkit-transition: background-color 0.4s ease-in, border 0.3s ease-in;;
+    -moz-transition: background-color 0.4s ease-in, border 0.3s ease-in;;
+    -o-transition: background-color 0.4s lease-in, border 0.3s ease-in;;
+}
+
+.profile .btn:hover {
+    background-color: #222;
+}
+
+h3 a{
+    font-weight: 400;
+    color: #dd4b39;
+    font-size: 12px;
+    line-height: 1.35em;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
 /*FOOTER*/
 
 .footer {
@@ -292,24 +542,22 @@ header {
     border-bottom: 1px dashed #333;
 }
 
-
-
 .footer h4 {
     color: #000;
     padding-top: 90px;
 }
 
 .foot_twitter a, .foot_linkedin a, .foot_email a{
-    margin-top: 20px;
+    margin-top: 1.625em;
     float: left;
-    width: 30px;
-    padding-right: 45px;
-    opacity: 0.5;
+    width: 3%;
+    padding-right: 4em;
+    opacity: 0.675;
     border-bottom: none;
-    transition: opacity .6s ease-in;
-    -webkit-transition: opacity .6s ease-in;
-    -moz-transition: opacity .6s ease-in;
-    -o-transition: opacity .6s ease-in;
+    transition: opacity .2s ease-in;
+    -webkit-transition: opacity .2s ease-in;
+    -moz-transition: opacity .2s ease-in;
+    -o-transition: opacity .2s ease-in;
 }
 
 .foot_twitter a {
@@ -328,8 +576,6 @@ header {
     opacity: 1.0;
     border-bottom: none;
 }
-
-
 
 
 
@@ -371,12 +617,16 @@ header {
 
 /* typography */
 
-.landing h1, .footer h1  {
+.landing h1, .footer h1 {
   margin-top: 3.5%;
   font-size: 2.1em;
   }
 
-.landing a {        
+.landing a, .footer a  {        
+  border-bottom: none;
+}
+
+.landing a:hover, .footer a:hover {        
   border-bottom: none;
 }
 
