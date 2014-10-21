@@ -103,7 +103,7 @@ a {
 // ----------------------------------------- */
 
 .wrapper {
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -256,35 +256,109 @@ header {
   letter-spacing: .02em;
 }
 
+.portfolio {
+  width: 100%;
+  margin-top: 15%;
+  padding-top: 1em;
+  border-top: 1px dashed red;
+}
 
-#banner_oneg { 
+.banner{
+/*  display: inline-block;
+  width: 30.333333333%;*/
+/*  padding-right: 3%;*/
+/*  float: left;*/
+}
+/*
+.holder {
+  display: inline-block;
+  background-color: #eee;
+  width: 19em;
+  margin-right: 5%;
+  height: 11.5em;
+  margin-top: 5em;
+  border-radius: .5em;
+  float: left;
+}*/
+
+.holder {
+    width: 30%;
+    background-color: green;
+    margin-right: 5%;
+    display: inline-block;
+    float: left;
+      border-radius: .5em;
+        margin-top: 5em;
+}
+
+.holder_a {
+    width: 30%;
+    background-color: red;
+    margin-right: 5%;
+    display: inline-block;
+    float: left;
+      border-radius: .5em;
+        margin-top: 5em;
+}
+
+.holder_b {
+    width: 30%;
+    background-color: purple;
+    display: inline-block;
+    float: left;
+      border-radius: .5em;
+        margin-top: 5em;
+}
+
+
+
+/*.holder a {
+  display: inline-block;
+  background-color: #eee;
+  width: 30.333333333%;
+  height: 11.5em;
+  margin-top: 5em;
+  border-radius: .5em;
+  padding-right: 5px;
+  float: left;
+  opacity: .725;
+    transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
+    -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
+    -moz-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
+    -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
+}*/
+
+.holder a:hover  {
+    background-color: #fff;
+  width: 30.333333333%;
+    border-bottom: 1px dashed #ccc;
+    height: 179px;
+    opacity: 1.0;
+}
+
+/*#banner_oneg { 
     display: inline-block;
     width: 30.333333333%;
-    margin-top: 13%;
     float: left;
 }
 
 #banner_divine { 
     display: inline-block;
     width: 30.333333333%;
-    margin-top: 13%;
     float: left;
 }
 
-
 #banner_mapk, #banner_research { 
     display: inline-block;
-    width: 30.333333333%;
-    margin-top: 13%;
     float: left;
 }
 
 #banner_print { 
     display: inline-block;
-    width: 30.333333333%;
-    margin-top: 13%;
     float: left;
-}
+}*/
+
+/*  logo positioning within holder  */
 
 #oneguggenheim {
     margin-top: 80px;
@@ -319,45 +393,21 @@ header {
     padding-left: 36px;
 }
 
-.holder {
-    height: 3em;
-    display: inline-block;
-}
+
 
 .holder h4 {
-/*    display: inline-block; */    
     position: absolute;
     margin-top: -30px;
     font-weight: 300;
-    color: #aaa;
+    color: purple;
     padding-left: 3px;
     font-size: 16px;
-}
-
-.holder a {
-    display: inline-block;
-    width: 300px;
-    height: 180px;
-    background-color: #eee;
-    border-radius: 4px;
-    opacity: .725;
-    transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
-    -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
-    -moz-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
-    -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
-}
-
-.holder a:hover  {
-    background-color: #fff;
-    width: 300px;
-    border-bottom: 1px dashed #ccc;
-    height: 179px;
-    opacity: 1.0;
 }
 
 
 /*BUTTON*/
 .btn_design a {
+    clear: all;
     font-size: 1.3em;
     padding: 15px;
     color: #777;
@@ -703,7 +753,7 @@ h3 a{
   padding-left: 4.5%;
 }
 
-.landing h6, .footer h6, #nav_active  {
+.landing h6, .footer h6, #nav_active, .work h6  {
     z-index: -2
 }
 
