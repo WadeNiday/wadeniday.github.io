@@ -283,33 +283,27 @@ header {
 
 .holder {
     width: 30%;
-    background-color: green;
-    margin-right: 5%;
+/*    width: 19em;*/
+    background-color: yellow;
+        margin-right: 5%;
     display: inline-block;
     float: left;
       border-radius: .5em;
-        margin-top: 5em;
+        margin-top: 4em;
+        height: 12em;
 }
 
 .holder_a {
     width: 30%;
-    background-color: red;
-    margin-right: 5%;
+/*    width: 19em;*/
+    background-color: pink;
+
     display: inline-block;
     float: left;
       border-radius: .5em;
-        margin-top: 5em;
+        margin-top: 4em;
+                height: 12em;
 }
-
-.holder_b {
-    width: 30%;
-    background-color: purple;
-    display: inline-block;
-    float: left;
-      border-radius: .5em;
-        margin-top: 5em;
-}
-
 
 
 /*.holder a {
@@ -369,6 +363,7 @@ header {
 #mapkeys {
     padding-top: 42px;
     padding-left: 50px;
+        padding-bottom: 25px;
 }
 
 #researchportal {
@@ -455,12 +450,18 @@ header {
     border-top: 1px dashed #444;
 }
 
-.colx {
-    width: 30.333333333%;
+.col_x {
+    width: 30%;
     background-color: green;
-    padding-right: 3%;
+    margin-right: 5%;
     display: inline-block;
-    color: #777;
+    float: left;
+}
+
+.col_y {
+    width: 30%;
+    background-color: pink;
+    display: inline-block;
     float: left;
 }
 
