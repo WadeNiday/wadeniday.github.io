@@ -237,6 +237,153 @@ header {
 }
 
 
+/* --------------------------------------------
+// !-- Design
+// ----------------------------------------- */
+
+.work  {
+    background: #fff;
+    height: 100vh;
+}
+
+.work h6 {
+  margin-left: 3em;
+  color: #777;
+  padding-top: 1em;
+  position: absolute;
+  z-index: 1;
+  font-size: 1em;
+  letter-spacing: .02em;
+}
+
+
+#banner_oneg { 
+    display: inline-block;
+    width: 30.333333333%;
+    margin-top: 13%;
+    float: left;
+}
+
+#banner_divine { 
+    display: inline-block;
+    width: 30.333333333%;
+    margin-top: 13%;
+    float: left;
+}
+
+
+#banner_mapk, #banner_research { 
+    display: inline-block;
+    width: 30.333333333%;
+    margin-top: 13%;
+    float: left;
+}
+
+#banner_print { 
+    display: inline-block;
+    width: 30.333333333%;
+    margin-top: 13%;
+    float: left;
+}
+
+#oneguggenheim {
+    margin-top: 80px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+#mapkeys {
+    padding-top: 42px;
+    padding-left: 50px;
+}
+
+#researchportal {
+    padding-top: 60px;
+    padding-left: 120px;
+}
+
+#dbn {
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+#foundation {
+    padding-top: 68px;
+    padding-left: 36px;
+}
+
+#placeholder {
+    padding-top: 68px;
+    padding-left: 36px;
+}
+
+.holder {
+    height: 3em;
+    display: inline-block;
+}
+
+.holder h4 {
+/*    display: inline-block; */    
+    position: absolute;
+    margin-top: -30px;
+    font-weight: 300;
+    color: #aaa;
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.holder a {
+    display: inline-block;
+    width: 300px;
+    height: 180px;
+    background-color: #eee;
+    border-radius: 4px;
+    opacity: .725;
+    transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
+    -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
+    -moz-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
+    -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
+}
+
+.holder a:hover  {
+    background-color: #fff;
+    width: 300px;
+    border-bottom: 1px dashed #ccc;
+    height: 179px;
+    opacity: 1.0;
+}
+
+
+/*BUTTON*/
+.btn_design a {
+    font-size: 1.3em;
+    padding: 15px;
+    color: #777;
+    font-weight: 200;
+    margin-top: 30px;
+    display: block;
+    float: left;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 0.14em solid #ddd;
+    transition: background-color 0.3s eas, color 0.3s ease-in, border 0.3s ease-in;
+    -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
+}
+
+.btn_design a:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
 
 
 /* --------------------------------------------
@@ -256,14 +403,6 @@ header {
 #fourwide {
     padding-top: 1em;
     border-top: 1px dashed #444;
-}
-
-.col1 {
-  background-color: brown;
-  width: 30.333333333%;
-    display: inline-block;
-    color: #777;
-    float: left;
 }
 
 .colx {
