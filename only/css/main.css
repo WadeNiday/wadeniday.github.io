@@ -256,53 +256,28 @@ header {
   letter-spacing: .02em;
 }
 
-.portfolio {
-  width: 100%;
-  margin-top: 15%;
-  padding-top: 1em;
-  border-top: 1px dashed red;
-}
-
-.banner{
-/*  display: inline-block;
-  width: 30.333333333%;*/
-/*  padding-right: 3%;*/
-/*  float: left;*/
-}
-/*
-.holder {
-  display: inline-block;
-  background-color: #eee;
-  width: 19em;
-  margin-right: 5%;
-  height: 11.5em;
-  margin-top: 5em;
-  border-radius: .5em;
-  float: left;
-}*/
 
 .holder {
-    width: 30%;
+  width: 30%;
 /*    width: 19em;*/
-    background-color: yellow;
-        margin-right: 5%;
-    display: inline-block;
-    float: left;
-      border-radius: .5em;
-        margin-top: 4em;
-        height: 12em;
+  background-color: yellow;
+  margin-right: 5%;
+  display: inline-block;
+  float: left;
+  border-radius: .5em;
+  margin-top: 4em;
+  height: 12em;
 }
 
 .holder_a {
-    width: 30%;
+  width: 30%;
 /*    width: 19em;*/
-    background-color: pink;
-
-    display: inline-block;
-    float: left;
-      border-radius: .5em;
-        margin-top: 4em;
-                height: 12em;
+  background-color: pink;
+  display: inline-block;
+  float: left;
+  border-radius: .5em;
+  margin-top: 4em;
+  height: 12em;
 }
 
 
@@ -322,13 +297,13 @@ header {
     -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
 }*/
 
-.holder a:hover  {
+/*.holder a:hover  {
     background-color: #fff;
   width: 30.333333333%;
     border-bottom: 1px dashed #ccc;
     height: 179px;
     opacity: 1.0;
-}
+}*/
 
 /*#banner_oneg { 
     display: inline-block;
@@ -361,9 +336,8 @@ header {
 }
 
 #mapkeys {
-    padding-top: 42px;
-    padding-left: 50px;
-        padding-bottom: 25px;
+    padding-top: 15%;
+    padding-left: 15%;
 }
 
 #researchportal {
@@ -785,6 +759,31 @@ h3 a{
   background-color: #00af81;
   border-radius: none;
 }
+
+
+.holder {
+  width: 100%;
+  background-color: green;
+  display: inline-block;
+  float: left;
+  border-radius: 0em;
+  margin-top: 4em;
+  height: 12em;
+}
+
+.holder_a {
+  width: 100%;
+  background-color: yellow;
+  display: inline-block;
+  float: left;
+  border-radius: 0em;
+  margin-top: 2em;
+  height: 12em;
+}
+
+
+
+
 
 }
 
