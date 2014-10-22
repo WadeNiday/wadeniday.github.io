@@ -168,8 +168,8 @@ header {
 // ----------------------------------------- */
 
 .landing {
-    background-color: #00af81;
-    height: 100vh;
+  background-color: #00af81;
+  height: 100vh;
 }
 
 .landing h1 {
@@ -242,8 +242,8 @@ header {
 // ----------------------------------------- */
 
 .work  {
-    background: #fff;
-    height: 100vh;
+  background: #fff;
+  height: 100vh;
 }
 
 .work h6 {
@@ -280,86 +280,86 @@ header {
   height: 12em;
 }
 
-
-/*.holder a {
+.holder a, .holder_a a {
+  background-color: yellow;
+  margin-right: 0%;
   display: inline-block;
-  background-color: #eee;
-  width: 30.333333333%;
-  height: 11.5em;
-  margin-top: 5em;
-  border-radius: .5em;
-  padding-right: 5px;
   float: left;
+  border-radius: .5em;
+  height: 12em;
   opacity: .725;
     transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
     -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
     -moz-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
     -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
-}*/
-
-/*.holder a:hover  {
-    background-color: #fff;
-  width: 30.333333333%;
-    border-bottom: 1px dashed #ccc;
-    height: 179px;
-    opacity: 1.0;
-}*/
-
-/*#banner_oneg { 
-    display: inline-block;
-    width: 30.333333333%;
-    float: left;
 }
 
-#banner_divine { 
-    display: inline-block;
-    width: 30.333333333%;
-    float: left;
+.holder a:hover, .holder_a a:hover  {
+  border-bottom: 1px dashed #ccc;
+  background-color: #fff;
+  height: 12em;
+  margin-right: 0%;
+  opacity: 1.0;
 }
 
-#banner_mapk, #banner_research { 
-    display: inline-block;
-    float: left;
+
+#oneg, #mapk, #research, #print { 
+  margin-top: -10%;
+  display: inline-block;
+/*  width: 100%;
+*/  font-weight: 300;
+  color: red;
+  padding-left: 2%;
+  font-size: 1em;
+  float: left;
 }
 
-#banner_print { 
-    display: inline-block;
-    float: left;
-}*/
+#divine { 
+  margin-top: 30%;
+  display: inline-block;
+/*  width: 100%;
+*/  font-weight: 300;
+  color: red;
+  padding-left: 2%;
+  font-size: 1em;
+  float: left;
+}
+
+
+
+
 
 /*  logo positioning within holder  */
 
 #oneguggenheim {
-  width: 80%;
-    margin-top: 80px;
-    padding-bottom: 25px;
-    padding-left: 25px;
+  width: 85%;
+  margin-top: 32.5%; /*80px*/
+  padding-bottom: 7.5%; /*25px*/
+  padding-left: 7.5%; /*25px*/
 }
 
 #mapkeys {
-    width: 70%;
-    padding-top: 15%;
-    padding-left: 15%;
+  width: 70%;
+  margin-top: 17.5%;
+  padding-left: 15%;
 }
 
 #researchportal {
     width: 25%;
-    padding-top: 60px;
-    padding-left: 120px;
+    margin-top: 22.5%; /*60px*/
+    padding-left: 37.5%; /* 120px*/
 }
 
 #dbn {
     width: 80%;
-    margin-top: 30px;
-    padding-top: 25px;
-    padding-bottom: 5px;
-    padding-left: 25px;
+    margin-top: 25%; /*30px*/
+    padding-left: 10%;
 }
 
 #foundation {
-      width: 77%;
-    padding-top: 68px;
-    padding-left: 36px;
+    width: 80%;
+    padding-top: 28.5%;
+    padding-left: 11%;
 }
 
 #placeholder {
@@ -369,14 +369,6 @@ header {
 
 
 
-.holder h4 {
-    position: absolute;
-    margin-top: -30px;
-    font-weight: 300;
-    color: purple;
-    padding-left: 3px;
-    font-size: 16px;
-}
 
 
 /*BUTTON*/
