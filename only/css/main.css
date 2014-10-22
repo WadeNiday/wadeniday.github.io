@@ -330,22 +330,26 @@ header {
 /*  logo positioning within holder  */
 
 #oneguggenheim {
+  width: 80%;
     margin-top: 80px;
     padding-bottom: 25px;
     padding-left: 25px;
 }
 
 #mapkeys {
+    width: 70%;
     padding-top: 15%;
     padding-left: 15%;
 }
 
 #researchportal {
+    width: 25%;
     padding-top: 60px;
     padding-left: 120px;
 }
 
 #dbn {
+    width: 80%;
     margin-top: 30px;
     padding-top: 25px;
     padding-bottom: 5px;
@@ -353,6 +357,7 @@ header {
 }
 
 #foundation {
+      width: 77%;
     padding-top: 68px;
     padding-left: 36px;
 }
