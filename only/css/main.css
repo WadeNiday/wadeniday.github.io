@@ -713,6 +713,7 @@ h3 a{
 .work  {
   background: tan;
   height: 300vh;
+  width: 100vw;
 }
 
 .holder {
