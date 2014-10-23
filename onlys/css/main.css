@@ -168,16 +168,21 @@ header {
 // ----------------------------------------- */
 
 .landing {
-  background-color: #00af81;
-  height: 100vh;
+/*  background-color: #00af81;*/
+    background-color: #eee;
+/*  height: 100vh;*/
+/*    height: 80vh;*/
 }
 
 .landing h1 {
     padding-top: 1.5em;
-    color: #fff;
+    padding-bottom: .875em;
+    color: purple;
     font-size: 3.5em;
     line-height: 1.25em;
     display: inline-block;
+    border-bottom: 1px dashed purple;
+    margin-bottom: .9em;
 }
 
 .landing h6 {
@@ -242,11 +247,12 @@ header {
 // ----------------------------------------- */
 
 .work  {
-  background: #fff;
-  height: 100vh;
+
+  background: #eee;
+    height: 100vh;
 }
 
-.work h6 {
+/*.work h6 {
   margin-left: 3em;
   color: #777;
   padding-top: 1em;
@@ -254,68 +260,27 @@ header {
   z-index: 1;
   font-size: 1em;
   letter-spacing: .02em;
-}
+}*/
 
-.holder-a, .holder-b, .holder-d, .holder-e {
-  width: 31.66666666666667%;
-/*    width: 19em;*/
-  background-color: yellow;
-  margin-right: 2.5%;
+.holder-a {
+  width: 49%;
+  height: 15em;
+  background-color: blue;
   display: inline-block;
   float: left;
-  border-radius: .5em;
-  margin-top: 4em;
-  height: 15%;
+  margin-top: 1em;
+  margin-right: 2%;
 }
 
-.holder-c, .holder-f {
-  width: 31.66666666666667%;
-/*    width: 19em;*/
-  background-color: pink;
+
+.holder-b {
+  width: 49%;
+  height: 15em;
+  background-color: green;
   display: inline-block;
   float: left;
-  border-radius: .5em;
-  margin-top: 4em;
-  height: 15%;
+  margin-top: 1em;
 }
-
-.holder a, .holder-a a, .holder-b a, .holder-c a, .holder-d a, .holder-e a, .holder-f a {
-  background-color: lightblue;
-  margin-right: 0%;
-  display: inline-block;
-  float: left;
-  border-radius: .5em;
-  height: 15%;
-  opacity: .725;
-  transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
-    -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
-    -moz-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
-    -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
-}
-
-.holder-a a:hover, .holder-b a:hover, .holder-c a:hover, .holder-d a:hover, .holder-e a:hover, .holder-f a:hover   {
-  border-bottom: 1px dashed #ccc;
-  background-color: #fff;
-  height: 15%;
-  margin-right: 0%;
-  opacity: 1.0;
-}
-
-
-#oneg, #mapk, #research, #print, #divine { 
-  margin-top: -10%;
-  display: inline-block;
-/*  width: 100%;
-*/  font-weight: 300;
-  color: red;
-  padding-left: 2%;
-  font-size: 1em;
-  float: left;
-}
-
-
-
-
 
 
 
@@ -323,20 +288,19 @@ header {
 
 #oneguggenheim {
   width: 85%;
-  margin-top: 32.5%; /*80px*/
-  padding-bottom: 7.5%; /*25px*/
-  padding-left: 7.5%; /*25px*/
+    padding: 5%;
+
+  
 }
 
 #mapkeys {
   width: 70%;
-  margin-top: 17.5%;
-  padding-left: 15%;
+    padding: 5%;
 }
 
 #researchportal {
     width: 25%;
-    margin-top: 22.5%; /*60px*/
+    margin-top: 22.5%; /*60px
     padding-left: 37.5%; /* 120px*/
 }
 
@@ -397,8 +361,9 @@ header {
 // ----------------------------------------- */
 
 .profile {
-    background: #2c2c2c;
-    height: 100vh;
+/*    background: #2c2c2c;*/
+  background: lightblue;
+    height: 80vh;
 }
 
 .widecol {
@@ -598,8 +563,8 @@ h3 a{
 .footer {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  background-color: #dd4b39;
-  height: 100vh;
+  background: orange;
+    height: 80vh;
 }
 
 .footer_main {
@@ -706,44 +671,6 @@ h3 a{
 }
 
 
-.holder-a {
-  width: 100%;
-  background-color: white;
-  display: inline-block;
-  float: left;
-  border-radius: 0em;
-  margin-top: 4em;
-  height: 15em;
-}
-
-.holder-b, .holder-c, .holder-d, .holder-e, .holder-f {
-  width: 100%;
-    background-color: white;
-
-  display: inline-block;
-  float: left;
-  border-radius: 0em;
-  margin-top: 2em;
-  height: 15em;
-}
-
-
-.holder-a a, .holder-b a, .holder-c a, .holder-d a, .holder-e a, .holder-f a {
-  width: 100%;
-    background-color: white;
-
-  opacity: 1.0;
-  border-radius: 0em;
-  height: 15em;
-}
-
-.holder-a a:hover, .holder-b a:hover, .holder-c a:hover, .holder-d a:hover, .holder-e a:hover, .holder-f a:hover   {
-    width: 100%;
-    border-bottom: none;
-  background-color: none;
-  height: 15em;
-}
-
 #oneg, #mapk, #research, #print, #divine { 
   margin-top: -8%;
 }
@@ -800,108 +727,6 @@ h3 a{
   border-radius: none;
 }
 
-
 }
-
-
-/* iPads (portrait and landscape) ----------- */
-@media (min-width: 605px) and (max-width: 1024px)  {  
-
-.wrapper {
-    width: 90%;
-  }
-
-.landing, .footer  {
-  background-color: purple;
-}
-
-.work  {
-  background: #eee;
-}
-
-
-.mainnav a {
-  color: #555;
-  font-weight: 400;
-  letter-spacing: .085em;
-}
-
-
-
-}
-/*.landing h1 {
-    font-size: 3.5em;
-  }*/
-}
-
-
-
-/* iPads (portrait and landscape) ----------- */
-@media (min-width: 768px) and (max-width : 1024px) {  
- 
-.wrapper {
-    width: 80%;
-  }
-
-.landing {
-  background-color: pink;
-}
-
-}
-.landing h1 {
-/*    padding-top: 1.85em;
-*//*    font-size: 3.5em;*/
-  }
-
-/*.holder-a, .holder-b, .holder-c, .holder-d, .holder-e, .holder-f {
-  height: 10em;
-}*/
-
-
-/*.holder a, .holder-a a, .holder-b a, .holder-c a, .holder-d a, .holder-e a, .holder-f a {
-  background-color: yellow;
-  margin-right: 0%;
-  display: inline-block;
-  float: left;
-  border-radius: .5em;
-  height: 10em;
-  opacity: .725;
-  transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
-    -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
-    -moz-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
-    -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
-}
-
-.holder-a a:hover, .holder-b a:hover, .holder-c a:hover, .holder-d a:hover, .holder-e a:hover, .holder-f a:hover   {
-  border-bottom: 1px dashed #ccc;
-  background-color: #fff;
-  height: 10em;
-  margin-right: 0%;
-  opacity: 1.0;
-}
-*/
-/*@media (max-width: 1351px)  { 
- 
-.wrapper {
-    width: 80%;
-  }
-
-.landing {
-  background-color: yellow;
-}
-
-}
-.landing h1 {
-    padding-top: 1.85em;
-    font-size: 3.5em;
-  }
-}
-*/
-
-
-
-
-
-
 
 
