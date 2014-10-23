@@ -314,7 +314,7 @@ header {
 }
 
 #divine { 
-  margin-top: 30%;
+  margin-top: 22%;
   display: inline-block;
 /*  width: 100%;
 */  font-weight: 300;
@@ -738,12 +738,26 @@ h3 a{
   width: 100%;
   opacity: 1.0;
   border-radius: 0em;
+      height: 15em;
 }
 
 .holder-a a:hover, .holder-b a:hover, .holder-c a:hover, .holder-d a:hover, .holder-e a:hover, .holder-f a:hover   {
   border-bottom: none;
   background-color: none;
+    height: 15em;
 }
+
+#oneg, #mapk, #research, #print { 
+  margin-top: -8%;
+
+}
+
+#divine { 
+  margin-top: 18%;
+}
+
+
+
 
 
 
