@@ -256,8 +256,7 @@ header {
   letter-spacing: .02em;
 }
 
-
-.holder {
+.holder-a, .holder-b, .holder-d, .holder-e {
   width: 30%;
 /*    width: 19em;*/
   background-color: yellow;
@@ -269,7 +268,7 @@ header {
   height: 12em;
 }
 
-.holder_a {
+.holder-c, .holder-f {
   width: 30%;
 /*    width: 19em;*/
   background-color: pink;
@@ -280,7 +279,7 @@ header {
   height: 12em;
 }
 
-.holder a, .holder_a a {
+.holder a, .holder-a a, .holder-b a, .holder-c a, .holder-d a, .holder-e a, .holder-f a {
   background-color: yellow;
   margin-right: 0%;
   display: inline-block;
@@ -288,13 +287,13 @@ header {
   border-radius: .5em;
   height: 12em;
   opacity: .725;
-    transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
+  transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
     -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
     -moz-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
     -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
 }
 
-.holder a:hover, .holder_a a:hover  {
+.holder-a a:hover, .holder-b a:hover, .holder-c a:hover, .holder-d a:hover, .holder-e a:hover, .holder-f a:hover   {
   border-bottom: 1px dashed #ccc;
   background-color: #fff;
   height: 12em;
@@ -713,30 +712,39 @@ h3 a{
 .work  {
   background: tan;
   height: 300vh;
-  width: 100vw;
 }
 
-.holder {
+
+.holder-a {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  border-radius: 0em;
+  margin-top: 4em;
+  height: 15em;
+}
+
+.holder-b, .holder-c, .holder-d, .holder-e, .holder-f {
   width: 100%;
   display: inline-block;
   float: left;
   border-radius: 0em;
   margin-top: 2em;
-  height: 12em;
+  height: 15em;
 }
 
-.holder_a {
+
+.holder-a a, .holder-b a, .holder-c a, .holder-d a, .holder-e a, .holder-f a {
   width: 100%;
-  display: inline-block;
-  float: left;
-  border-radius: 0em;
-  margin-top: 2em;
-  height: 12em;
-}
-
-.holder a, .holder_a a {
   opacity: 1.0;
+  border-radius: 0em;
 }
+
+.holder-a a:hover, .holder-b a:hover, .holder-c a:hover, .holder-d a:hover, .holder-e a:hover, .holder-f a:hover   {
+  border-bottom: none;
+  background-color: none;
+}
+
 
 
 /* Main Nav Bar */
