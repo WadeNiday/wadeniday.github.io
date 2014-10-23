@@ -257,10 +257,10 @@ header {
 }
 
 .holder-a, .holder-b, .holder-d, .holder-e {
-  width: 30%;
+  width: 31.66666666666667%;
 /*    width: 19em;*/
   background-color: yellow;
-  margin-right: 5%;
+  margin-right: 2.5%;
   display: inline-block;
   float: left;
   border-radius: .5em;
@@ -269,7 +269,7 @@ header {
 }
 
 .holder-c, .holder-f {
-  width: 30%;
+  width: 31.66666666666667%;
 /*    width: 19em;*/
   background-color: pink;
   display: inline-block;
@@ -302,7 +302,7 @@ header {
 }
 
 
-#oneg, #mapk, #research, #print { 
+#oneg, #mapk, #research, #print, #divine { 
   margin-top: -10%;
   display: inline-block;
 /*  width: 100%;
@@ -313,16 +313,7 @@ header {
   float: left;
 }
 
-#divine { 
-  margin-top: 22%;
-  display: inline-block;
-/*  width: 100%;
-*/  font-weight: 300;
-  color: red;
-  padding-left: 2%;
-  font-size: 1em;
-  float: left;
-}
+
 
 
 
@@ -748,20 +739,11 @@ h3 a{
   height: 15em;
 }
 
-#oneg, #mapk, #research, #print { 
+#oneg, #mapk, #research, #print, #divine { 
   margin-top: -8%;
 }
 
-#divine { 
-  margin-top: 8%;
-}
 
-/*#dbn {
-    width: 80%;
-    margin-top: 25%; /*30px*/
-    padding-left: 10%;
-}
-*/
 
 
 
@@ -814,10 +796,6 @@ h3 a{
 }
 
 
-
-
-
-
 }
 
 
@@ -847,7 +825,7 @@ h3 a{
 
 
 /* iPads (portrait and landscape) ----------- */
-/*@media (min-width: 768px) and (max-width : 1024px) {  
+@media (min-width: 768px) and (max-width : 1024px) {  
  
 .wrapper {
     width: 80%;
@@ -858,12 +836,37 @@ h3 a{
 }
 
 }
-.landing h1 {*/
+.landing h1 {
 /*    padding-top: 1.85em;
 *//*    font-size: 3.5em;*/
   }
+
+.holder-a, .holder-b, .holder-c, .holder-d, .holder-e, .holder-f {
+  height: 10em;
 }
 
+
+.holder a, .holder-a a, .holder-b a, .holder-c a, .holder-d a, .holder-e a, .holder-f a {
+  background-color: yellow;
+  margin-right: 0%;
+  display: inline-block;
+  float: left;
+  border-radius: .5em;
+  height: 10em;
+  opacity: .725;
+  transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
+    -webkit-transition: background-color 0.4s ease-in, opacity 0.4s ease-in, border-bottom 0.2s ease-in;
+    -moz-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
+    -o-transition: background-color 0.4s ease-in, 0.4s ease-in, border-bottom 0.2s ease-in;
+}
+
+.holder-a a:hover, .holder-b a:hover, .holder-c a:hover, .holder-d a:hover, .holder-e a:hover, .holder-f a:hover   {
+  border-bottom: 1px dashed #ccc;
+  background-color: #fff;
+  height: 10em;
+  margin-right: 0%;
+  opacity: 1.0;
+}
 
 /*@media (max-width: 1351px)  { 
  
