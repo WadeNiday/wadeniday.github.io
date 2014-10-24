@@ -290,6 +290,7 @@ header {
 /*    background: #2c2c2c;*/
   background: #eee;
   height: 100vh;
+
 }
 
 /* main text style */
@@ -327,6 +328,7 @@ header {
 #fourwide {
   padding-top: 1em;
   border-top: 1px dashed #aaa; /*  #444  */
+
 }
 
 .col_x {
@@ -372,17 +374,21 @@ header {
 /*FOOTER*/
 
 .footer {
-  font-family: 'Source Sans Pro', sans-serif;
-  height: 100vh;
+  display: inline-block;
+  border-top: .5em solid #ccc;
+  width: 100%;
+  margin-top: 1.85em;
 }
 
 /* typography */
 .footer h1 {
   clear: all;
-  padding-top: 1.5em;
+  width: 74.6666666666%;
+  padding-top: .7em;
+  margin-bottom: .5em;
   color: purple;
-  font-size: 3.5em;
-  line-height: 1.25em;
+  font-size: 1.71em;
+  line-height: 1.49em;
   display: inline-block;
 }
 
@@ -401,15 +407,32 @@ header {
 /* copyright */
 .footer h4 {
     color: #000;
-    padding-top: 9%;
+}
+
+.social {
+  display: inline-block;
+  width: 24%;
+  float: right;
+  padding-top: 1.3em;
 }
 
 /* social icons*/
-.foot_twitter a, .foot_linkedin a, .foot_email a{
-    margin-top: 1.625em;
+.foot_twitter a, .foot_linkedin a {
+    margin-left: .5em;
     float: left;
     width: 3%;
-    padding-right: 4em;
+    padding-right: 33%;
+    opacity: 0.675;
+    border-bottom: none;
+    transition: opacity .2s ease-in;
+    -webkit-transition: opacity .2s ease-in;
+    -moz-transition: opacity .2s ease-in;
+    -o-transition: opacity .2s ease-in;
+}
+
+.foot_email a {
+    float: left;
+    width: 3%;
     opacity: 0.675;
     border-bottom: none;
     transition: opacity .2s ease-in;
