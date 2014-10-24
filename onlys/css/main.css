@@ -114,7 +114,6 @@ body {
 
 }
 
-
 header {
     position:fixed;
     width: 100%;
@@ -168,24 +167,20 @@ header {
 // ----------------------------------------- */
 
 .landing {
-/*  background-color: #00af81;*/
     background-color: #eee;
-/*  height: 100vh;*/
-/*    height: 80vh;*/
 }
 
-
 .landing h1 {
-    padding-top: 1.5em;
-    padding-bottom: .875em;
-    color: purple;
-    font-size: 3.5em;
-    line-height: 1.25em;
-    display: inline-block;
-    border-bottom: 1px dashed purple;
-*/}
+  padding-top: 1.5em;
+  padding-bottom: .875em;
+  color: purple;
+  font-size: 3.5em;
+  line-height: 1.25em;
+  display: inline-block;
+  border-bottom: 1px dashed purple;
+}
 
-.landing h6 {
+/*.landing h6 {
   margin-left: 3em;
   color: #777;
   padding-top: 1em;
@@ -193,9 +188,9 @@ header {
   z-index: 1;
   font-size: 1em;
   letter-spacing: .02em;
-}
+}*/
 
-/*BUTTON*/
+/* links in intro copy */
 .landing a {        
     color: gray;
     border-bottom: 1px dashed #4EF2BC;
@@ -210,37 +205,7 @@ header {
     border-bottom: 1px dashed #009e6b;
 }
 
-/*.btn {
-    margin-top: 3.5%;
-    float: left;
-    background-color: none;
-    border-radius: 0.250em;
-    border: 0.14em solid #009e6b;
-    transition: background-color 0.3s ease-in, border 0.3s ease-in;
-    -webkit-transition: background-color 0.3s ease-in, border 0.3s ease-in;
-    -moz-transition: background-color 0.3s ease-in, border 0.3s ease-in;
-    -o-transition: background-color 0.3s ease-in, border 0.3s ease-in;
-}*/
 
-/*.btn a {
-    font-size: 1.3em;
-    display: block;
-    padding: 0.938em;
-    color: #fff;
-    font-weight: 200;
-    border-bottom: none;
-    letter-spacing: .02em;
-}*/
-
-/*.btn:hover {
-    background-color: #009e6b;   
-}*/
-
-/*.btn a:hover{
-    color: #fff;
-    border-bottom: none;
-}
-*/
 
 /* --------------------------------------------
 // !-- Design
@@ -248,7 +213,7 @@ header {
 
 .work  {
   background: #eee;
-  height: 91.5vh;
+  height: 53em;
   margin-top: 3em; /* on all projects */
   border-bottom: 1px dashed purple;
 }
@@ -411,7 +376,6 @@ header {
   display: inline-block;
 }
 
-
 .profile h6 {
     font-size: 1em;
     color: purple;
@@ -424,50 +388,6 @@ header {
     font-size: 1.2em;
     line-height: 1.5em;
 }
-
-
-/*BUTTON*/
-
-/*.profile .btn a {
-    font-size: 1.3em;
-    color: #aaa;
-    font-weight: 200;
-    padding: 15px;
-    transition: color 0.4s ease-in;
-    -webkit-transition: color 0.4s lease-in;
-    -moz-transition: color 0.4s ease-in;
-    -o-transition: color 0.4s ease-in;
-}
-
-.profile .btn {
-    margin-top: 30px;
-    margin-right: 10px;
-    float: left;
-    display: block;
-    border-radius: 4px;
-    border: 0.12em solid #222;
-    background-color: none;
-    transition: background-color 0.4 ease-in, border 0.3s ease-in;;
-    -webkit-transition: background-color 0.4s ease-in, border 0.3s ease-in;;
-    -moz-transition: background-color 0.4s ease-in, border 0.3s ease-in;;
-    -o-transition: background-color 0.4s lease-in, border 0.3s ease-in;;
-}
-
-.profile .btn:hover {
-    background-color: #222;
-}*/
-
-/*h3 a{
-    font-weight: 400;
-    color: #dd4b39;
-    font-size: 12px;
-    line-height: 1.35em;
-    padding-bottom: 5px;
-}
-
-
-*/
-
 
 
 
@@ -576,24 +496,41 @@ header {
 }
 
 .landing, .footer  {
-  background-color: #009e6b;
-  background-color: red;
-/*  height: 100vh;*/
-}
+/*  background-color: #009e6b;
+*/}
 
 .work  {
-  background: tan;
-  height: 300vh;
+  height: 100vh;
+  margin-top: 1.5em; /* on all projects */
+
+}
+
+.profile {
+  height: 100vh;
+}
+
+.holder-a {
+  width: 100%;
+  height: 15em;
+  background-color: #ddd;
+  display: inline-block;
+  float: left;
+  margin-top: 1em;
+}
+
+.holder-b {
+  width: 100%;
+  height: 15em;
+  background-color: #ddd;
+  display: inline-block;
+  float: left;
+  margin-top: 1em;
 }
 
 
 #oneg, #mapk, #research, #print, #divine { 
   margin-top: -8%;
 }
-
-
-
-
 
 
 /* Main Nav Bar */
