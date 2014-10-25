@@ -217,7 +217,7 @@ header {
   border-bottom: 1px dashed purple;
 }
 
-/* left side shaep */
+/* left side shape */
 .holder-a a {
   width: 49%;
   height: 15em;
@@ -327,7 +327,7 @@ header {
 /* four col container */
 #fourwide {
   padding-top: 1em;
-  border-top: 1px dashed #aaa; /*  #444  */
+  border-top: 1px dashed #aaa; /*  #444  */ /*  border top  */
 
 }
 
@@ -382,6 +382,7 @@ header {
 
 /* typography */
 .footer h1 {
+  padding-top: none;
   clear: all;
   width: 74.6666666666%;
   padding-top: .7em;
@@ -390,7 +391,8 @@ header {
   font-size: 1.71em;
   line-height: 1.49em;
   display: inline-block;
-}
+/*  background-color: yellow;
+*/}
 
 /* underlined type */
 .footer a {        
@@ -567,13 +569,21 @@ header {
     width: 90%;
 }
 
+.work  {
+  margin-top: 2.75em; /* on all projects */
+  height: 52em;
+}
+
+
 .landing h1 {
   font-size: 3.65em;
   line-height: 1.3em;
+  padding-bottom: .75em;
+
 }
 
 .profile h1 {
-  padding-top: 2.5em;
+  padding-top: 2.125em;
   margin-bottom: .5em;
   color: purple;
   font-size: 1.6em;
@@ -583,7 +593,7 @@ header {
 
 /* sidebar w photo */
 .profile_side {
-  margin-top: 3.75em;
+  margin-top: 3.7em;
 }
 
 .profile li {
@@ -594,6 +604,7 @@ header {
 }
 
 .footer h1 {
+  padding-top: 1em;
   font-size: 1.6em;
   line-height: 1.42em;
 }
