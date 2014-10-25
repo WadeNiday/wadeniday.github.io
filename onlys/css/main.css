@@ -509,7 +509,6 @@ header {
   margin-top: -8%;
 }
 
-
 /* Main Nav Bar */
 .logo {
   padding-left: .8em;
@@ -559,4 +558,45 @@ header {
 
 }
 
+
+/* tablet (landscape) ----------- */
+@media (min-width: 320px) and (max-width: 1036px)  {  
+
+/* structure */
+.wrapper {
+    width: 90%;
+}
+
+.landing h1 {
+  font-size: 3.65em;
+  line-height: 1.3em;
+}
+
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .5em;
+  color: purple;
+  font-size: 1.6em;
+  line-height: 1.42em;
+  display: inline-block;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+.profile li {
+    font-weight: 300;
+    color: purple; /*#777;*/
+    font-size: 1em;
+    line-height: 1.45em;
+}
+
+.footer h1 {
+  font-size: 1.6em;
+  line-height: 1.42em;
+}
+
+}
 
