@@ -583,7 +583,7 @@ header {
 
 /* sidebar w photo */
 .profile_side {
-  margin-top: 3.25em;
+  margin-top: 3.75em;
 }
 
 .profile li {
@@ -596,6 +596,30 @@ header {
 .footer h1 {
   font-size: 1.6em;
   line-height: 1.42em;
+}
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  padding-top: 24%;
+}
+
+#mapkeys {
+  padding-top: 15%;
+}
+
+#researchportal {
+  padding-top: 14%;
+}
+
+#dbn {
+  padding-top: 15%;
+}
+
+#foundation {
+  padding-top: 19%;
+}
+
+#placeholder {
 }
 
 }
