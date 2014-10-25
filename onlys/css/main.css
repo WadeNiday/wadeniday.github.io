@@ -111,7 +111,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
   background-color: #eee;
-
 }
 
 header {
@@ -290,7 +289,6 @@ header {
 /*    background: #2c2c2c;*/
   background: #eee;
   height: 100vh;
-
 }
 
 /* main text style */
@@ -328,7 +326,6 @@ header {
 #fourwide {
   padding-top: 1em;
   border-top: 1px dashed #aaa; /*  #444  */ /*  border top  */
-
 }
 
 .col_x {
@@ -391,19 +388,18 @@ header {
   font-size: 1.71em;
   line-height: 1.49em;
   display: inline-block;
-/*  background-color: yellow;
-*/}
+}
 
 /* underlined type */
 .footer a {        
-    color: gray;
-    border-bottom: 1px dashed #c0160d;
-    transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+  color: gray;
+  border-bottom: 1px dashed #c0160d;
+  transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
 }
 
 .footer a:hover {        
-    color: #bbb;
-    border-bottom: 1px dashed #333;
+  color: #bbb;
+  border-bottom: 1px dashed #333;
 }
 
 /* copyright */
@@ -574,12 +570,10 @@ header {
   height: 52em;
 }
 
-
 .landing h1 {
   font-size: 3.65em;
   line-height: 1.3em;
   padding-bottom: .75em;
-
 }
 
 .profile h1 {
@@ -593,7 +587,20 @@ header {
 
 /* sidebar w photo */
 .profile_side {
-  margin-top: 3.7em;
+  margin-top: 4em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 10em;
+  height: 10em;
+}
+
+/* image position within circle */
+#selfie img{
+    padding-top: 10px;
+    margin-bottom: -5px;
+    margin-left: -8px;
 }
 
 .profile li {
@@ -632,6 +639,9 @@ header {
 
 #placeholder {
 }
+
+
+
 
 }
 
