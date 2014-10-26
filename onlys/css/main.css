@@ -562,7 +562,6 @@ header {
 /* structure */
 .wrapper {
     width: 90%;
-    background-color: yellow;
 }
 
 .landing h1 {
@@ -598,15 +597,15 @@ header {
 }
 
 #mapkeys {
-  width: 30%;
-  padding-left: 35%;
-  padding-top: 6%;
+  width: 34%;
+  padding-left: 32%;
+  padding-top: 5.25%;
 }
 
 #researchportal {
-  width: 10%;
-  padding-left: 45%;
-  padding-top: 8%;
+  width: 12%;
+  padding-left: 44%;
+  padding-top: 7.5%;
 }
 
 #dbn {
