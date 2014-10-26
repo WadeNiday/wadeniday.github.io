@@ -565,10 +565,31 @@ header {
 }
 
 .landing h1 {
+  margin-top: .28em;
+  border-bottom: none;
+}
+
+.work  {
+  margin-top: 0em; /* on all projects */
+  border-bottom: none;
+  height: 76em;
+}
+
+.landing h1 {
   font-size: 2.8em;
   line-height: 1.225em;
   padding-bottom: .75em;
 }
+
+.profile h1 {
+  padding-top: 2em;
+  margin-bottom: .5em;
+  color: purple;
+  font-size: 1.5em;
+  line-height: 1.35em;
+  display: inline-block;
+}
+
 
 .profile li {
     font-weight: 300;
@@ -576,6 +597,28 @@ header {
     font-size: 1em;
     line-height: 1.45em;
 }
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 2em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 10em;
+  height: 10em;
+}
+
+/* image position within circle */
+#selfie img{
+    padding-top: -10px;
+    margin-left: -8px;
+}
+
+
+
+
+
 
 /* left side shape */
 .holder-a a {
