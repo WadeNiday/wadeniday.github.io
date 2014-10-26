@@ -581,13 +581,13 @@ header {
 /* left side shape */
 .holder-a a {
   width: 100%;
-  height: 12em;
+  height: 10em;
 }
 
 /* right side shape */
 .holder-b a {
   width: 100%;
-  height: 12em;
+  height: 10em;
 }
 
 /*  logo positioning within container  */
