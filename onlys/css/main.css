@@ -600,17 +600,29 @@ header {
 
 
 
+.profile h6 {
+  color: purple;
+  font-weight: 700;
+}
 
 
 .profile li {
     font-weight: 300;
-    color: purple; /*#777;*/
-    font-size: 1em;
-    line-height: 1.45em;
+    color: purple ; /*#777;*/
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+
+/* profile main text style */
+.widecol {
+  width: 72%;
 }
 
 /* sidebar w photo */
 .profile_side {
+    display: inline-block;
+  width: 27%;
+  float: right;
   margin-top: 3em;
 }
 
