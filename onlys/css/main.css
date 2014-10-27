@@ -610,7 +610,7 @@ header {
     font-weight: 300;
     color: purple ; /*#777;*/
     font-size: 1.125em;
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
 
 /* profile main text style */
@@ -620,9 +620,7 @@ header {
 
 /* sidebar w photo */
 .profile_side {
-    display: inline-block;
   width: 27%;
-  float: right;
   margin-top: 3em;
 }
 
@@ -685,6 +683,14 @@ header {
 }
 
 #placeholder {
+}
+
+
+.footer h1 {
+  padding-top: .9em;
+  color: purple;
+  font-size: 1.5em;
+  line-height: 1.35em;
 }
 
 }
