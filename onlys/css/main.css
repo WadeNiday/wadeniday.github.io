@@ -470,41 +470,11 @@ header {
     width: 90%;
 }
 
-.landing, .footer  {
-/*  background-color: #009e6b;
-*/}
-
 .work  {
-  height: 100vh;
-  margin-top: 1.5em; /* on all projects */
+  height: 160vh;
+  margin-top: 3em; /* on all projects */
+  border-bottom: none;
 
-}
-
-.profile {
-  height: 100vh;
-}
-
-.holder-a {
-  width: 100%;
-  height: 15em;
-  background-color: #ddd;
-  display: inline-block;
-  float: left;
-  margin-top: 1em;
-}
-
-.holder-b {
-  width: 100%;
-  height: 15em;
-  background-color: #ddd;
-  display: inline-block;
-  float: left;
-  margin-top: 1em;
-}
-
-
-#oneg, #mapk, #research, #print, #divine { 
-  margin-top: -8%;
 }
 
 /* Main Nav Bar */
@@ -514,8 +484,8 @@ header {
 
 .mainnav a {
   color: #aaa;
-  font-weight: 600;
-  letter-spacing: .085em;
+/*  font-weight: 600;
+*/  letter-spacing: .085em;
 }
 
 .mainnav li a {
@@ -526,11 +496,26 @@ header {
     z-index: -2
 }
 
+/* project shape */
+.holder-a a, .holder-b a {
+  width: 100%;
+  height: 12em;
+}
+
+.profile {
+  height: 100vh;
+}
+
+#oneg, #mapk, #research, #print, #divine { 
+  margin-top: -8%;
+}
+
 /* typography */
 
 .landing h1, .footer h1 {
   margin-top: 3.5%;
   font-size: 2.1em;
+  border-bottom: none;
   }
 
 .landing a, .footer a  {        
@@ -541,18 +526,85 @@ header {
   border-bottom: none;
 }
 
-.btn {
-  margin-top: 5%;
-  width: 100.1%;
-  background-color: #009e6b;  
-  border: .1em solid #4EF2BC;
-  border-radius: 0;
+.profile h1 {
+  padding-top: 2.125em;
+  margin-bottom: .5em;
+  color: purple;
+  font-size: 1.6em;
+  line-height: 1.42em;
+  display: inline-block;
 }
 
-.btn:hover {
-  background-color: #00af81;
-  border-radius: none;
+/* profile main text style */
+.widecol {
+  width: 100%;
 }
+
+/* sidebar w photo */
+.profile_side {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+/* image position on the page */
+#selfie {
+  width: 100%;
+  height: 12em;
+  margin-left: 0%;
+  border: none;
+  border-radius: 0%;
+  background-color: lightblue ;
+  overflow: hidden;
+
+}
+
+/* image position within circle */
+#selfie img{
+    padding-top: 10px;
+    margin-bottom: -5px;
+    margin-left: 20%;
+}
+
+
+
+
+
+/* four col container */
+#fourwide {
+  padding-top: 1em;  
+  border-top: 1px dashed red; /* #aaa OR #444  */ /*  border top  */
+
+}
+
+.col_x {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 3.5%;
+
+}
+
+.col_y {
+    width: 100%;
+}
+
+.footer h1 {
+  width: 100%;
+  padding-top: .5em;
+  font-size: 1.15em;
+  line-height: 1.42em;
+}
+
+
+.social {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  padding-top: .2em;
+  padding-bottom: .5em;
+}
+
 
 }
 
@@ -597,8 +649,6 @@ header {
 .col_y {
     width: 49%;
 }
-
-
 
 .profile h6 {
   color: purple;
