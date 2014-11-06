@@ -463,22 +463,20 @@ header {
 
 
 /* Smartphones (portrait) ----------- */
-@media (min-width: 320px) and (max-width: 499px)  {  
+@media (min-width: 320px) and (max-width: 604px)  {  
 
 /* structure */
 .wrapper {
     width: 90%;
 }
 
-<<<<<<< HEAD
 .work  {
   height: 160vh;
   margin-top: 3em; /* on all projects */
   border-bottom: none;
+
 }
 
-=======
->>>>>>> FETCH_HEAD
 /* Main Nav Bar */
 .logo {
   padding-left: .9em;
@@ -486,7 +484,8 @@ header {
 
 .mainnav a {
   color: #aaa;
-  letter-spacing: .085em;
+/*  font-weight: 600;
+*/  letter-spacing: .085em;
 }
 
 .mainnav li a {
@@ -497,39 +496,15 @@ header {
     z-index: -2
 }
 
-/* project section */
-.work  {
-  height: 160vh;
-  margin-top: 1em; /* on all projects */
-  border-bottom: none;
-}
-
-/* typography */
-
-.landing h1 {
-  margin-top: 3.5%;
-  font-size: 2.1em;
-  border-bottom: none;
-  }
-
-.landing a, .footer a  {        
-  border-bottom: none;
-}
-
-.landing a:hover, .footer a:hover {        
-  border-bottom: none;
-}
-
 /* project shape */
 .holder-a a, .holder-b a {
   width: 100%;
   height: 12em;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD
+
+
 /*  logo positioning within container  */
 #oneguggenheim {
   width: 88%;
@@ -550,221 +525,15 @@ header {
 }
 
 #dbn {
-<<<<<<< HEAD
-  width: 82%;
-  padding-left: 9%;
-=======
-  width: 85%;
-  padding-left: 7.5%;
->>>>>>> FETCH_HEAD
-  padding-top: 19%;
+  width: 44%;
+  padding-left: 28%;
+  padding-top: 7.5%;
 }
 
 #foundation {
-<<<<<<< HEAD
-  width: 82%;
-  padding-left: 9%;
-  padding-top: 23%;
-=======
-  width: 80%;
-  padding-left: 10%;
-  padding-top: 25%;
->>>>>>> FETCH_HEAD
-}
-
-#placeholder {
-}
-
-
-<<<<<<< HEAD
-.profile {
-  height: 100vh;
-=======
-
-
-
-/* profile section */
-
-.profile {
-  height: 100vh;
-}
-
-#oneg, #mapk, #research, #print, #divine { 
-  margin-top: -8%;
-}
-
-/* profile main text style */
-.widecol {
-  width: 100%;
-}
-
-.profile h1 {
-  padding-top: 2.125em;
-  margin-bottom: .5em;
-  color: purple;
-  font-size: 1.3em;
-  line-height: 1.4em;
-  display: inline-block;
-}
-
-.profile li {
-    font-weight: 300;
-    color: purple; /*#777;*/
-    font-size: 1em;
-    line-height: 1.35em;
-}
-
-/* four col container */
-#fourwide {
-  border-top: none; /*  #444  */ /*  border top  */
-}
-
-/* sidebar w photo */
-.profile_side {
-  width: 100%;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-bottom: 2em;
-  border-bottom: 1px dashed red; /* #aaa OR #444  */ /*  border top  */
-}
-
-/* image position on the page */
-#selfie {
-  width: 100%;
-  height: 12em;
-  margin-left: 0%;
-  border: none;
-  border-radius: 0%;
-  background-color: #000 ;
-  overflow: hidden;
-}
-
-/* image position within circle */
-#selfie img{
-    padding-top: 10px;
-    margin-bottom: -5px;
-    margin-left: 20%;
-}
-
-.col_x {
-  width: 100%;
-  margin-right: 0%;
-  margin-bottom: 8%;
->>>>>>> FETCH_HEAD
-}
-
-.col_y {
-  width: 100%;
-  margin-bottom: 8%;
-}
-
-.footer h1 {
-  width: 100%;
-  padding-top: 0em;
-  font-size: 1em;
-  line-height: 1.42em;
-}
-
-.social {
-  display: inline-block;
-  width: 100%;
-  float: left;
-  padding-top: .2em;
-  padding-bottom: .5em;
-}
-
-
-
-}
-
-
-/* Smartphones (portrait) ----------- */
-@media (min-width: 500px) and (max-width: 603px)  {  
-
-/* structure */
-.wrapper {
-  width: 90%;
-  background-color: lightgreen;
-
-}
-
-/* Main Nav Bar */
-/*.logo {
-  padding-left: .9em;
-}
-
-.mainnav a {
-  color: #aaa;
-  letter-spacing: .085em;
-}
-
-.mainnav li a {
-  padding-left: 4.5%;
-}
-
-.landing h6, .footer h6, #nav_active, .work h6  {
-    z-index: -2
-}*/
-
-/* project section */
-.work  {
-  height: 160vh;
-  margin-top: 1em; /* on all projects */
-  border-bottom: none;
-}
-
-/* typography */
-
-.landing h1 {
-  margin-top: 3.5%;
-  font-size: 2.1em;
-  border-bottom: none;
-  }
-
-.landing a, .footer a  {        
-  border-bottom: none;
-}
-
-.landing a:hover, .footer a:hover {        
-  border-bottom: none;
-}
-
-/* project shape */
-.holder-a a, .holder-b a {
-  width: 100%;
-  height: 12em;
-}
-
-
-/*  logo positioning within container  */
-#oneguggenheim {
-  width: 70%;
-  padding-left: 15%;
-  padding-top: 15.5%;
-}
-
-#mapkeys {
-  width: 55%;
-  padding-left: 22.5%;
-  padding-top: 6%;
-}
-
-#researchportal {
-  width: 20%;
-  padding-left: 40%;
-  padding-top: 8%;
-}
-
-#dbn {
-  width: 75%;
-  padding-left: 12.5%;
-  padding-top: 6.75%;
-}
-
-#foundation {
-  width:70%;
-  padding-left: 15%;
-  padding-top: 12%;
+  width: 48%;
+  padding-left: 26%;
+  padding-top: 9%;
 }
 
 #placeholder {
@@ -773,127 +542,6 @@ header {
 
 
 
-
-/* profile section */
-
-.profile {
-  height: 100vh;
-}
-
-#oneg, #mapk, #research, #print, #divine { 
-  margin-top: -8%;
-}
-
-/* profile main text style */
-.widecol {
-  width: 100%;
-}
-
-.profile h1 {
-<<<<<<< HEAD
-  padding-top: 0em;
-  font-size: 1.3em;
-  line-height: 1.4em;
-=======
-  padding-top: 2.125em;
-  margin-bottom: .5em;
-  color: purple;
-  font-size: 1.3em;
-  line-height: 1.4em;
-  display: inline-block;
->>>>>>> FETCH_HEAD
-}
-
-.profile li {
-    font-weight: 300;
-    color: purple; /*#777;*/
-    font-size: 1em;
-    line-height: 1.35em;
-}
-
-/* four col container */
-#fourwide {
-  border-top: none; /*  #444  */ /*  border top  */
-}
-
-/* sidebar w photo */
-.profile_side {
-  width: 100%;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-bottom: 2em;
-  border-bottom: 1px dashed red; /* #aaa OR #444  */ /*  border top  */
-}
-
-/* image position on the page */
-#selfie {
-  width: 100%;
-  height: 12em;
-  margin-left: 0%;
-  border: none;
-  border-radius: 0%;
-<<<<<<< HEAD
-  background-color: black ;
-=======
-  background-color: #000 ;
->>>>>>> FETCH_HEAD
-  overflow: hidden;
-}
-
-/* image position within circle */
-#selfie img{
-    padding-top: 10px;
-    margin-bottom: -5px;
-    margin-left: 20%;
-}
-
-<<<<<<< HEAD
-/* four col container */
-#fourwide {
-  padding-top: 1em;  
-  border-top: 1px dashed red; /* #aaa OR #444  */ /*  border top  */
- }
-
-.col_x {
-    width: 100%;
-    margin-right: 0%;
-    margin-bottom: 18%;
-=======
-.col_x {
-  width: 100%;
-  margin-right: 0%;
-  margin-bottom: 8%;
->>>>>>> FETCH_HEAD
-}
-
-.col_y {
-  width: 100%;
-  margin-bottom: 8%;
-}
-
-<<<<<<< HEAD
-/*  type within the col  */
-.profile li {
-    font-weight: 300;
-    color: purple ; /*#777;*/
-    font-size: 1em;
-    line-height: 1.25em;
-=======
-.footer h1 {
-  width: 100%;
-  padding-top: 0em;
-  font-size: 1em;
-  line-height: 1.42em;
->>>>>>> FETCH_HEAD
-}
-
-.social {
-  display: inline-block;
-  width: 100%;
-  float: left;
-  padding-top: .2em;
-  padding-bottom: .5em;
-}
 
 .footer h1 {
   padding-top: 1.05em;
@@ -907,17 +555,111 @@ header {
 
 
 
+.profile {
+  height: 100vh;
+}
 
+#oneg, #mapk, #research, #print, #divine { 
+  margin-top: -8%;
+}
+
+/* typography */
+
+.landing h1, .footer h1 {
+  margin-top: 3.5%;
+  font-size: 2.1em;
+  border-bottom: none;
+  }
+
+.landing a, .footer a  {        
+  border-bottom: none;
+}
+
+.landing a:hover, .footer a:hover {        
+  border-bottom: none;
+}
+
+.profile h1 {
+  padding-top: 2.125em;
+  margin-bottom: .5em;
+  color: purple;
+  font-size: 1.6em;
+  line-height: 1.42em;
+  display: inline-block;
+}
+
+/* profile main text style */
+.widecol {
+  width: 100%;
+}
+
+/* sidebar w photo */
+.profile_side {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+/* image position on the page */
+#selfie {
+  width: 100%;
+  height: 12em;
+  margin-left: 0%;
+  border: none;
+  border-radius: 0%;
+  background-color: lightblue ;
+  overflow: hidden;
+
+}
+
+/* image position within circle */
+#selfie img{
+    padding-top: 10px;
+    margin-bottom: -5px;
+    margin-left: 20%;
 }
 
 
 
 
 
+/* four col container */
+#fourwide {
+  padding-top: 1em;  
+  border-top: 1px dashed red; /* #aaa OR #444  */ /*  border top  */
+
+}
+
+.col_x {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 3.5%;
+
+}
+
+.col_y {
+    width: 100%;
+}
+
+.footer h1 {
+  width: 100%;
+  padding-top: .5em;
+  font-size: 1.15em;
+  line-height: 1.42em;
+}
 
 
+.social {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  padding-top: .2em;
+  padding-bottom: .5em;
+}
 
 
+}
 
 /* tablet (landscape) ----------- */
 @media (min-width: 605px) and (max-width: 983px)  {  
