@@ -471,12 +471,15 @@ header {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .work  {
   height: 160vh;
   margin-top: 3em; /* on all projects */
   border-bottom: none;
 }
 
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 /* Main Nav Bar */
@@ -529,6 +532,9 @@ header {
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 /*  logo positioning within container  */
 #oneguggenheim {
@@ -551,8 +557,13 @@ header {
 
 #dbn {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 82%;
   padding-left: 9%;
+=======
+  width: 85%;
+  padding-left: 7.5%;
+>>>>>>> FETCH_HEAD
 =======
   width: 85%;
   padding-left: 7.5%;
@@ -562,9 +573,15 @@ header {
 
 #foundation {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 82%;
   padding-left: 9%;
   padding-top: 23%;
+=======
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 25%;
+>>>>>>> FETCH_HEAD
 =======
   width: 80%;
   padding-left: 10%;
@@ -650,6 +667,9 @@ header {
   width: 100%;
   margin-right: 0%;
   margin-bottom: 8%;
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 }
 
@@ -833,7 +853,11 @@ header {
   border: none;
   border-radius: 0%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: black ;
+=======
+  background-color: #000 ;
+>>>>>>> FETCH_HEAD
 =======
   background-color: #000 ;
 >>>>>>> FETCH_HEAD
@@ -848,6 +872,7 @@ header {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* four col container */
 #fourwide {
   padding-top: 1em;  
@@ -858,6 +883,12 @@ header {
     width: 100%;
     margin-right: 0%;
     margin-bottom: 18%;
+=======
+.col_x {
+  width: 100%;
+  margin-right: 0%;
+  margin-bottom: 8%;
+>>>>>>> FETCH_HEAD
 =======
 .col_x {
   width: 100%;
@@ -901,6 +932,9 @@ header {
   font-size: 1.5em;
   line-height: 1.35em;
 }
+
+
+
 
 
 
