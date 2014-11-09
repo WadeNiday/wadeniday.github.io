@@ -137,7 +137,8 @@ header {
 }
 
 .mainnav li a {
-  margin-top: 1.25em;
+  margin-top: 1em;
+  margin-left: 4%;
   padding-left: 4%;
   text-align: center;
   display: inline-block;
@@ -145,15 +146,14 @@ header {
 
 .mainnav a {
   float: right;
-  font-weight: 300;
-  font-size: .91em; 
-  text-transform: uppercase;
-  color: #777;
+  font-weight: 400;
+  font-size: 1.05em; 
+/*  text-transform: uppercase;
+*/  color: #777;
   transition: color .2s ease-in
   -webkit-transition: color .2s ease-in;
   -moz-transition: color .2s ease-in;
   -o-transition: color .2s ease-in;
-  letter-spacing: .07em;
 }
 
 .mainnav a:hover {
@@ -238,7 +238,26 @@ header {
   margin-top: 1em;
 }
 
-.holder-a a:hover, .holder-b a:hover {
+.holder-c a{
+  width: 48.75%;
+  height: 15em;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  display: inline-block;
+  float: left;
+  margin-top: 1em;
+}
+
+/* type shows on hover of kj safe */
+.holder-c h4{
+  color: #ddd;
+  font-size: 1.5em;
+  padding-left: 10%;
+  padding-top: 5.5%;
+}
+
+/* all three holder shapes hover w/ the same behavior*/
+.holder-a a:hover, .holder-b a:hover, .holder-c a:hover{
   border: 1px solid #ddd;
   background-color: #eee;
   transition: background-color .2s ease-in, border .2s ease-in;
@@ -279,7 +298,11 @@ header {
   padding-top: 15%;
 }
 
-#placeholder {
+#safe {
+  width: 25%;
+  padding-left: 37.5%;
+  padding-top: 13%;
+  opacity: 0.3;
 }
 
 
@@ -295,14 +318,14 @@ header {
 
 /* main text style */
 .widecol {
-  width: 66%;
+  width: 65%;
   display: inline-block;        
 }
 
 /* sidebar w photo */
 .profile_side {
   display: inline-block;
-  width: 34%;
+  width: 35%;
   float: right;
   margin-top: 4.5em;
 }
@@ -310,7 +333,7 @@ header {
 /* image position on the page */
 #selfie {
   width: 11em;
-  margin-left: 12%;
+  margin-left: 28.5%;
   border: 1px solid #bbb;
   border-radius: 100%;
   background-color: black;
