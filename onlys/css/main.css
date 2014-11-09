@@ -480,7 +480,7 @@ header {
 
 .mainnav a {
   color: #222;
-  letter-spacing: .02em;
+  font-weight: 400;
 }
 
 .mainnav li a {
