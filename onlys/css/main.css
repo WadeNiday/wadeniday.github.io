@@ -564,6 +564,7 @@ header {
   color: #dd4b39;
   padding-bottom: 0.3em;
   line-height: 1.15em;
+  font-weight: 400;
   }
 
 .landing a, .footer a  {        
