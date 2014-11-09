@@ -468,9 +468,8 @@ header {
 
 .work  {
   height: 160vh;
-  margin-top: 2em; /* on all projects */
+  margin-top: 0em; /* on all projects */
   border-bottom: none;
-
 }
 
 /* Main Nav Bar */
@@ -492,12 +491,10 @@ header {
 }
 
 /* project shape */
-.holder-a a, .holder-b a {
+.holder-a a, .holder-b a, .holder-c a {
   width: 100%;
   height: 12em;
 }
-
-
 
 
 /*  logo positioning within container  */
@@ -561,17 +558,17 @@ header {
 /* typography */
 
 .landing h1 {
-  margin-top: 3.5%;
+  margin-top: 2%;
   font-size: 2.1em;
   border-bottom: none;
   color: #dd4b39;
+  padding-bottom: 0.3em;
+  line-height: 1.15em;
   }
-
-
 
 .landing a, .footer a  {        
   border-bottom: none;
-    color: #dd4b39;
+  color: #dd4b39;
 }
 
 .landing a:hover, .footer a:hover {        
