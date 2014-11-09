@@ -332,8 +332,8 @@ header {
 
 /* image position on the page */
 #selfie {
-  width: 11em;
-  margin-left: 28.5%;
+  width: 60%;
+  margin-left: 20%;
   border: 1px solid #bbb;
   border-radius: 100%;
   background-color: black;
@@ -344,7 +344,7 @@ header {
 #selfie img{
     padding-top: 10px;
     margin-bottom: -5px;
-    margin-left: -1px;
+    margin-left: -3px;
 }
 
 /* four col container */
@@ -367,17 +367,17 @@ header {
     float: left;
 }
 
-
 /* typography */
 #callout {
     font-weight: 600;
+    color: #777;
 }
 
 .profile h1 {
   padding-top: 2.5em;
   margin-bottom: .5em;
   color: #777;
-  font-size: 1.71em;
+  font-size: 1.7em;
   line-height: 1.49em;
   display: inline-block;
 }
@@ -385,7 +385,7 @@ header {
 .profile li {
     font-weight: 300;
     color: #777;
-    font-size: 1.15em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 
@@ -405,64 +405,39 @@ header {
 
 /* typography */
 .footer h1 {
-  padding-top: none;
   clear: all;
-  width: 74.6666666666%;
-  padding-top: .7em;
-  margin-bottom: .5em;
-  color: purple;
-  font-size: 1.71em;
-  line-height: 1.49em;
+  width: 65%;
+  padding-top: 1%;
+  margin-bottom: 1%;
+  color: #777;
+  font-size: 1em;
   display: inline-block;
 }
 
-/* underlined type */
-.footer a {        
-  color: gray;
-  border-bottom: 1px dashed #c0160d;
-  transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
-}
-
-.footer a:hover {        
-  color: #bbb;
-  border-bottom: 1px dashed #333;
-}
 
 /* copyright */
 .footer h4 {
-    color: #000;
+    color: #222;
+    font-size: .7em;
 }
 
 .social {
   display: inline-block;
-  width: 24%;
+  width: 35%;
   float: right;
-  padding-top: 1.3em;
+  padding-top: .75%;
 }
 
 /* social icons*/
-.foot_twitter a, .foot_linkedin a {
-    margin-left: .5em;
-    float: left;
-    width: 3%;
-    padding-right: 33%;
-    opacity: 0.675;
-    border-bottom: none;
-    transition: opacity .2s ease-in;
-    -webkit-transition: opacity .2s ease-in;
-    -moz-transition: opacity .2s ease-in;
-    -o-transition: opacity .2s ease-in;
-}
-
-.foot_email a {
-    float: left;
-    width: 3%;
-    opacity: 0.675;
-    border-bottom: none;
-    transition: opacity .2s ease-in;
-    -webkit-transition: opacity .2s ease-in;
-    -moz-transition: opacity .2s ease-in;
-    -o-transition: opacity .2s ease-in;
+.foot_twitter a, .foot_linkedin a, .foot_email a {
+  float: right;
+  padding-left: 12%;
+  opacity: 0.7;
+  border-bottom: none;
+  transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
 }
 
 /* social icons, positioning */
@@ -476,6 +451,7 @@ header {
 
 .foot_email a {
     padding-top: 8px;
+    padding-right: 5px;
 }
 
 .foot_twitter a:hover , .foot_linkedin a:hover , .foot_email a:hover {
