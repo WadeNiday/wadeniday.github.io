@@ -244,7 +244,7 @@ header {
 
 /* type shows on hover of kj safe */
 .holder-c h4{
-  color: #ddd;
+  color: pink;
   font-size: 1.5em;
   padding-left: 10%;
   padding-top: 5.5%;
@@ -426,7 +426,7 @@ header {
 .foot_twitter a, .foot_linkedin a, .foot_email a {
   float: right;
   padding-left: 12%;
-  opacity: 0.7;
+  opacity: 0.3;
   border-bottom: none;
   transition: opacity .2s ease-in;
   -webkit-transition: opacity .2s ease-in;
@@ -449,7 +449,7 @@ header {
 }
 
 .foot_twitter a:hover , .foot_linkedin a:hover , .foot_email a:hover {
-    opacity: 1.0;
+    opacity: 0.7;
     border-bottom: none;
 }
 
@@ -473,7 +473,6 @@ header {
 .work  {
   height: 160vh;
   margin-top: 4.5%; /* on all projects */
-  border-bottom: none;
 }
 
 /* Main Nav Bar */
@@ -521,23 +520,29 @@ header {
 }
 
 #dbn {
-  width: 44%;
-  padding-left: 28%;
-  padding-top: 7.5%;
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 19%;
 }
 
 #foundation {
-  width: 48%;
-  padding-left: 26%;
-  padding-top: 9%;
+  width: 78%;
+  padding-left: 11%;
+  padding-top: 25%;
 }
 
-#placeholder {
+#safe {
+  width: 40%;
+  padding-left: 30%;
+  padding-top: 12%;
 }
 
-
-
-
+.holder-c h4{
+  color: #777;
+  font-size: 1em;
+  padding-left: 8%;
+  padding-top: 8%;
+}
 
 .footer h1 {
   padding-top: 1.05em;
@@ -545,10 +550,6 @@ header {
   font-size: 1.5em;
   line-height: 1.35em;
 }
-
-
-
-
 
 
 .profile {
@@ -581,12 +582,29 @@ header {
 }
 
 .profile h1 {
-  padding-top: 2.125em;
+  padding-top: 10%;
+  margin-top: 12%;
   margin-bottom: .5em;
-  color: purple;
-  font-size: 1.6em;
-  line-height: 1.42em;
+  color: #777;
+  font-size: 1.45em;
+  line-height: 1.45em;
   display: inline-block;
+  border-top: 1px dashed #777;
+
+}
+
+
+
+.profile li {
+    font-weight: 300;
+    color: #777;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.profile h6 {
+  color: #dd4b39;
+  font-weight: 600;
 }
 
 /* profile main text style */
@@ -597,8 +615,8 @@ header {
 /* sidebar w photo */
 .profile_side {
   width: 100%;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
 
@@ -609,16 +627,15 @@ header {
   margin-left: 0%;
   border: none;
   border-radius: 0%;
-  background-color: lightblue ;
+  background-color: #000 ;
   overflow: hidden;
 
 }
 
 /* image position within circle */
 #selfie img{
-    padding-top: 10px;
-    margin-bottom: -5px;
-    margin-left: 20%;
+    padding-top: 2.35%;
+    margin-left: 15%;
 }
 
 
@@ -628,7 +645,7 @@ header {
 /* four col container */
 #fourwide {
   padding-top: 1em;  
-  border-top: 1px dashed red; /* #aaa OR #444  */ /*  border top  */
+  border-top: none; /* #aaa OR #444  */ /*  border top  */
 
 }
 
@@ -662,6 +679,11 @@ header {
 
 }
 
+
+
+
+
+
 /* tablet (landscape) ----------- */
 @media (min-width: 605px) and (max-width: 983px)  {  
 
@@ -692,6 +714,8 @@ header {
   font-size: 1.5em;
   line-height: 1.35em;
 }
+
+
 
 
 .col_x {
