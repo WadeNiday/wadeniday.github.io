@@ -586,7 +586,6 @@ header {
 }
 
 .profile li {
-  font-weight: 300;
   color: #555;
   font-size: 1em;
   line-height: 1.5em;
@@ -719,87 +718,6 @@ header {
   border-bottom: none;
 }
 
-
-
-/* typography */
-
-.landing h1 {
-  margin-top: 2%;
-  font-size: 2.25em;
-  border-bottom: none;
-  color: #dd4b39;
-  padding-bottom: 0em;
-  line-height: 1.2em;
-  font-weight: 300;
-}
-
-.landing a, .footer a  {        
-  border-bottom: none;
-  color: #dd4b39;
-}
-
-.profile h1 {
-  padding-top: 2em;
-  font-size: 1.5em;
-  line-height: 1.35em;
-}
-
-
-
-
-.col_x {
-    width: 49%;
-    margin-right: 0%;
-    margin-bottom: 3.5%;
-}
-
-.col_y {
-    width: 49%;
-}
-
-.profile h6 {
-  color: purple;
-  font-weight: 700;
-}
-
-
-.profile li {
-    font-weight: 300;
-    color: purple ; /*#777;*/
-    font-size: 1.125em;
-    line-height: 1.4em;
-}
-
-/* profile main text style */
-.widecol {
-  width: 72%;
-}
-
-/* sidebar w photo */
-.profile_side {
-  width: 27%;
-  margin-top: 3em;
-}
-
-/* image position on the page */
-#selfie {
-  width: 10em;
-  height: 10em;
-}
-
-/* image position within circle */
-#selfie img{
-    padding-top: -10px;
-    margin-left: -8px;
-}
-
-
-/* project shape */
-.holder-a a, .holder-b a, .holder-c a  {
-  width: 100%;
-  height: 12em;
-}
-
 /*  logo positioning within container  */
 #oneguggenheim {
   width: 70%;
@@ -843,6 +761,90 @@ header {
   padding-left: 27.5%;
   padding-top: 4%;
 }
+
+
+/* typography */
+
+.landing h1 {
+  margin-top: 2%;
+  font-size: 2.25em;
+  border-bottom: none;
+  color: #dd4b39;
+  padding-bottom: 0em;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.landing a, .footer a  {        
+  border-bottom: none;
+  color: #dd4b39;
+}
+
+.profile h1 {
+  padding-top: 1em;
+  font-size: 1.25em;
+  line-height: 1.3em;
+  display: inline-block;
+  border-top: none;
+  font-weight: 300;
+}
+
+
+
+
+.col_x {
+    width: 49%;
+    margin-right: 0%;
+    margin-bottom: 3.5%;
+}
+
+.col_y {
+    width: 49%;
+}
+
+.profile h6 {
+  color: purple;
+  font-weight: 700;
+}
+
+
+.profile li {
+    font-weight: 300;
+    color: purple ; /*#777;*/
+    font-size: 1.125em;
+    line-height: 1.4em;
+}
+
+/* profile main text style */
+.widecol {
+  width: 100%;
+}
+
+/* sidebar w photo */
+.profile_side {
+  width: 27%;
+  margin-top: 3em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 10em;
+  height: 10em;
+}
+
+/* image position within circle */
+#selfie img{
+    padding-top: -10px;
+    margin-left: -8px;
+}
+
+
+/* project shape */
+.holder-a a, .holder-b a, .holder-c a  {
+  width: 100%;
+  height: 12em;
+}
+
 
 
 .footer h1 {
