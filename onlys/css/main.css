@@ -471,8 +471,9 @@ header {
 }
 
 .work  {
-  height: 160vh;
+/*  height: 160vh;*/
   margin-top: 4.5%; /* on all projects */
+  border-bottom: none;
 }
 
 /* Main Nav Bar */
@@ -553,7 +554,7 @@ header {
 
 
 .profile {
-  height: 100vh;
+/*  height: 100vh;*/
 }
 
 #oneg, #mapk, #research, #print, #divine { 
@@ -590,11 +591,8 @@ header {
   line-height: 1.45em;
   display: inline-block;
   border-top: 1px dashed #777;
-    font-weight: 300;
-
+  font-weight: 300;
 }
-
-
 
 .profile li {
     font-weight: 300;
@@ -635,7 +633,7 @@ header {
 
 /* image position within circle */
 #selfie img{
-    padding-top: 2.35%;
+    padding-top: 2.5%;
     margin-left: 15%;
 }
 
