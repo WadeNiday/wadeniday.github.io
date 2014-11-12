@@ -680,7 +680,7 @@ header {
 
 
 
-/* tablet (landscape) ----------- */
+/* smartphone (landscape) ----------- */
 @media (min-width: 500px) and (max-width: 750px)  {  
 
 
@@ -717,6 +717,13 @@ header {
   margin-top: 0em; /* on all projects */
   border-bottom: none;
 }
+
+/* project shape */
+.holder-a a, .holder-b a, .holder-c a  {
+  width: 100%;
+  height: 12em;
+}
+
 
 /*  logo positioning within container  */
 #oneguggenheim {
@@ -775,21 +782,53 @@ header {
   font-weight: 300;
 }
 
-.landing a, .footer a  {        
+.landing a, .footer a {        
   border-bottom: none;
   color: #dd4b39;
 }
 
+/* profile main text style */
+.widecol {
+  width: 100%;
+}
+
+#fourwide {
+  border-top: none;
+}
+
+
 .profile h1 {
-  padding-top: 1em;
-  font-size: 1.25em;
-  line-height: 1.3em;
+  padding-top: 1.25em;
+  font-size: 1.28em;
+  line-height: 1.4em;
   display: inline-block;
   border-top: none;
   font-weight: 300;
 }
 
+/* sidebar w photo */
+.profile_side {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
 
+/* image position on the page */
+#selfie {
+  width: 100%;
+  height: 12em;
+  margin-left: 0%;
+  border: none;
+  border-radius: 0%;
+  background-color: #000 ;
+  overflow: hidden;
+}
+
+/* image position within shape */
+#selfie img{
+    padding-top: 1.5%;
+    margin-left: 30%;
+}
 
 
 .col_x {
@@ -799,59 +838,34 @@ header {
 }
 
 .col_y {
-    width: 49%;
+    width: 100%;
 }
 
 .profile h6 {
-  color: purple;
+  color: #dd4b39;
   font-weight: 700;
 }
 
 
 .profile li {
     font-weight: 300;
-    color: purple ; /*#777;*/
-    font-size: 1.125em;
-    line-height: 1.4em;
-}
-
-/* profile main text style */
-.widecol {
-  width: 100%;
-}
-
-/* sidebar w photo */
-.profile_side {
-  width: 27%;
-  margin-top: 3em;
-}
-
-/* image position on the page */
-#selfie {
-  width: 10em;
-  height: 10em;
-}
-
-/* image position within circle */
-#selfie img{
-    padding-top: -10px;
-    margin-left: -8px;
+    color: #777;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 
-/* project shape */
-.holder-a a, .holder-b a, .holder-c a  {
-  width: 100%;
-  height: 12em;
-}
+
+
+
+
 
 
 
 .footer h1 {
   padding-top: 1.05em;
-  color: purple;
-  font-size: 1.5em;
-  line-height: 1.35em;
+  color: #777;
+  font-size: 1em;
 }
 
 }
