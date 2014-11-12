@@ -306,8 +306,8 @@ header {
 
 .profile {
   background: #eee;
-  height: 100vh;
-}
+/*  height: 100vh;
+*/}
 
 /* main text style */
 .widecol {
@@ -325,7 +325,7 @@ header {
 
 /* image position on the page */
 #selfie {
-  width: 50%;
+  width: 12em;
   margin-left: 27%;
   border: 1px solid #bbb;
   border-radius: 100%;
@@ -681,7 +681,7 @@ header {
 
 
 /* smartphone (landscape) ----------- */
-@media (min-width: 500px) and (max-width: 750px)  {  
+@media (min-width: 500px) and (max-width: 695px)  {  
 
 
 /* Main Nav Bar */
@@ -707,7 +707,6 @@ header {
 .wrapper {
     width: 95%;
 }
-
 .landing {
   padding-bottom: 2%;
   border-bottom: none;
@@ -723,7 +722,6 @@ header {
   width: 100%;
   height: 12em;
 }
-
 
 /*  logo positioning within container  */
 #oneguggenheim {
@@ -769,9 +767,7 @@ header {
   padding-top: 4%;
 }
 
-
 /* typography */
-
 .landing h1 {
   margin-top: 2%;
   font-size: 2.25em;
@@ -796,7 +792,6 @@ header {
   border-top: none;
 }
 
-
 .profile h1 {
   padding-top: 1.25em;
   font-size: 1.28em;
@@ -804,6 +799,29 @@ header {
   display: inline-block;
   border-top: none;
   font-weight: 300;
+}
+
+.col_x {
+  width: 49%;
+  padding-right: 1%;
+  margin-right: 0%;
+  margin-bottom: 3.5%;
+}
+
+.col_y {
+  width: 100%;
+}
+
+.profile h6 {
+  color: #dd4b39;
+  font-weight: 700;
+}
+
+.profile li {
+    font-weight: 300;
+    color: #777;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 /* sidebar w photo */
@@ -830,40 +848,8 @@ header {
     margin-left: 30%;
 }
 
-
-.col_x {
-    width: 49%;
-    margin-right: 0%;
-    margin-bottom: 3.5%;
-}
-
-.col_y {
-    width: 100%;
-}
-
-.profile h6 {
-  color: #dd4b39;
-  font-weight: 700;
-}
-
-
-.profile li {
-    font-weight: 300;
-    color: #777;
-    font-size: 1em;
-    line-height: 1.5em;
-}
-
-
-
-
-
-
-
-
-
 .footer h1 {
-  padding-top: 1.05em;
+  padding-top: 1em;
   color: #777;
   font-size: 1em;
 }
@@ -872,42 +858,22 @@ header {
 
 
 /* tablet (landscape) ----------- */
-@media (min-width: 984px) and (max-width: 1123px)  {  
+@media (min-width: 696px) and (max-width: 899px)  {  
 
 /* structure */
 .wrapper {
     width: 90%;
 }
 
-.work  {
-  margin-top: 2.75em; /* on all projects */
-  height: 52em;
+/* project shape */
+.holder-a a, .holder-b a, .holder-c a {
+  width: 48%;
+  height: 12em;
 }
-
-.landing h1 {
-  font-size: 3.65em;
-  line-height: 1.3em;
-  padding-bottom: .75em;
-}
-
-.profile h1 {
-  padding-top: 2.125em;
-  margin-bottom: .5em;
-  color: purple;
-  font-size: 1.6em;
-  line-height: 1.42em;
-  display: inline-block;
-}
-
-/* profile main text style */
-.widecol {
-  width: 74%;
-}
-
 
 /* sidebar w photo */
 .profile_side {
-  margin-top: 4em;
+  margin-top: 3.25em;
 }
 
 /* image position on the page */
@@ -922,41 +888,15 @@ header {
     margin-left: -8px;
 }
 
-.profile li {
-    font-weight: 300;
-    color: purple; /*#777;*/
-    font-size: 1em;
-    line-height: 1.45em;
+.col_x {
+  width: 49%;
+  padding-right: 1%;
+  margin-right: 0%;
+  margin-bottom: 3.5%;
 }
 
-.footer h1 {
-  padding-top: 1em;
-  font-size: 1.6em;
-  line-height: 1.42em;
-}
-
-/*  logo positioning within container  */
-#oneguggenheim {
-  padding-top: 24%;
-}
-
-#mapkeys {
-  padding-top: 15%;
-}
-
-#researchportal {
-  padding-top: 14%;
-}
-
-#dbn {
-  padding-top: 15%;
-}
-
-#foundation {
-  padding-top: 19%;
-}
-
-#placeholder {
+.col_y {
+  width: 100%;
 }
 
 
@@ -967,7 +907,7 @@ header {
 
 
 /* tablet (landscape) ----------- */
-@media (min-width: 1024px) and (max-width: 1259px)  {  
+@media (min-width: 900px) and (max-width: 1200px)  {  
 
 /* structure */
 .wrapper {
@@ -976,13 +916,45 @@ header {
 
 /* sidebar w photo */
 .profile_side {
-  margin-top: 3.75em;
+  margin-top: 3.25em;
 }
 
-/* profile main text style */
-.widecol {
-  width: 70.6666666666%;
 }
+
+
+/* tablet (landscape) ----------- */
+@media (min-width: 1201px) and (max-width: 1260px)  {  
+
+/* structure */
+.wrapper {
+    width: 90%;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+
+}
+
+
+
+
+/* the widest */
+@media (min-width: 1550px) {  
+
+/* structure */
+.wrapper {
+    width: 60%;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+
 
 }
 
