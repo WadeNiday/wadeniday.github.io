@@ -244,10 +244,10 @@ header {
 
 /* type shows on hover of kj safe */
 .holder-c h4{
-  color: pink;
+  color: #aaa;
   font-size: 1.5em;
-  padding-left: 10%;
-  padding-top: 5.5%;
+  padding-left: 15%;
+  padding-top: 2.5%;
 }
 
 /* all three holder shapes hover w/ the same behavior*/
@@ -325,8 +325,8 @@ header {
 
 /* image position on the page */
 #selfie {
-  width: 53%;
-  margin-left: 20%;
+  width: 50%;
+  margin-left: 27%;
   border: 1px solid #bbb;
   border-radius: 100%;
   background-color: black;
@@ -413,6 +413,7 @@ header {
 .footer h4 {
     color: #222;
     font-size: .7em;
+    padding-bottom: 5%;
 }
 
 .social {
@@ -491,7 +492,7 @@ header {
 }
 
 .landing h6, .footer h6, #nav_active, .work h6  {
-    z-index: -2
+  z-index: -2
 }
 
 /* project shape */
@@ -545,17 +546,6 @@ header {
   padding-top: 8%;
 }
 
-.footer h1 {
-  padding-top: 1.05em;
-  color: purple;
-  font-size: 1.5em;
-  line-height: 1.35em;
-}
-
-
-.profile {
-/*  height: 100vh;*/
-}
 
 #oneg, #mapk, #research, #print, #divine { 
   margin-top: -8%;
@@ -582,7 +572,7 @@ header {
   border-bottom: none;
 }
 
-.profile h1 {
+.widecol h1 {
   padding-top: 10%;
   margin-top: 12%;
   margin-bottom: .5em;
@@ -595,10 +585,11 @@ header {
 }
 
 .profile li {
-    font-weight: 300;
-    color: #777;
-    font-size: 1em;
-    line-height: 1.5em;
+  font-weight: 300;
+  color: #555;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
 .profile h6 {
@@ -618,7 +609,6 @@ header {
   margin-bottom: 1.5em;
 }
 
-
 /* image position on the page */
 #selfie {
   width: 100%;
@@ -628,7 +618,6 @@ header {
   border-radius: 0%;
   background-color: #000 ;
   overflow: hidden;
-
 }
 
 /* image position within circle */
@@ -637,22 +626,16 @@ header {
     margin-left: 15%;
 }
 
-
-
-
-
 /* four col container */
 #fourwide {
   padding-top: 1em;  
   border-top: none; /* #aaa OR #444  */ /*  border top  */
-
 }
 
 .col_x {
     width: 100%;
     margin-right: 0%;
-    margin-bottom: 3.5%;
-
+    margin-bottom: 7%;
 }
 
 .col_y {
@@ -662,18 +645,32 @@ header {
 .footer h1 {
   width: 100%;
   padding-top: .5em;
-  font-size: 1.15em;
-  line-height: 1.42em;
+  font-size: 1em;
+  color: #555;
+  display: block;
 }
-
 
 .social {
   display: inline-block;
   width: 100%;
-  float: left;
+  clear: all;
   padding-top: .2em;
   padding-bottom: .5em;
 }
+
+/* social icons*/
+.foot_twitter a, .foot_linkedin a, .foot_email a {
+  float: left;
+  padding-left: 0%;
+  padding-right: 12%;
+  opacity: 0.3;
+  border-bottom: none;
+  transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+}
+
 
 
 }
