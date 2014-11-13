@@ -204,9 +204,8 @@ header {
 
 .work  {
   background: #eee;
-  height: 53em;
-  margin-top: 2.6em; /* on all projects */
-  border-bottom: 1px dashed #bbb;
+/*  height: 53em;
+*/  margin-top: 2.6em; /* on all projects */
 }
 
 /* left side shape */
@@ -363,14 +362,14 @@ header {
 /* typography */
 #callout {
     font-weight: 600;
-    color: #777;
+    color: #555;
     letter-spacing: -.03em;
 }
 
 .profile h1 {
   padding-top: 2.5em;
   margin-bottom: .5em;
-  color: #777;
+  color: #555;
   font-size: 1.7em;
   line-height: 1.49em;
   display: inline-block;
@@ -378,7 +377,7 @@ header {
 
 .profile li {
     font-weight: 300;
-    color: #777;
+    color: #555;
     font-size: 1em;
     line-height: 1.5em;
 }
@@ -914,12 +913,28 @@ header {
     width: 90%;
 }
 
+.landing h1 {
+  padding-top: 1.3em;
+  padding-bottom: .5em;
+}
+
+.work  {
+  margin-top: 2em; /* on all projects */
+  border-bottom: none;
+}
+
+
 /* sidebar w photo */
 .profile_side {
   margin-top: 3.25em;
 }
 
 }
+
+
+
+
+
 
 
 /* tablet (landscape) ----------- */
