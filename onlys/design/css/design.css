@@ -226,10 +226,12 @@ header {
 .description {
   display: inline;
   float: right;
-  margin-top: 7.5em;
+  margin-top: 7em;
   width: 100%;
-  padding-bottom: 1.5em;
-}
+  padding-bottom: 2em;
+/*  margin-bottom: 1.5em;
+*//*  border-bottom: 1px dashed #bbb;
+*/}
 
 .description a {
   color: #777;
@@ -247,11 +249,31 @@ header {
 
 /*project artwork*/
 .banner { 
-  display: inline; 
-  position: relative; 
-  overflow: hidden; 
+  display: inline-block;
   width: 100%;
-  padding-top: 8em;
+  margin-bottom: 1%;
+  border-bottom: 1px dashed #ccc;
+}
+
+
+.description-int { 
+  display: inline-block;
+  width: 100%;
+  margin-bottom: .5%;
+  border-bottom: 1px dashed #ccc;
+}
+
+.description-int-last { 
+  display: inline-block;
+  width: 100%;
+  margin-bottom: .5%;
+}
+
+
+#description-int {
+  float: left;
+  display: inline-block; 
+  width: 100%;
 }
 
 .banner li { 
@@ -266,9 +288,56 @@ header {
 /*full frame images*/
 
 /*http://codepen.io/RyGanley/pen/JKwaC*/
-.enlarge {
-    width:70%;
-    height: 70%;
+.full {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.half_left {
+    display: inline-block;
+    width: 49%;
+    height: 49%;
+    padding-bottom: 2%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.half {
+    display: inline-block;
+    width: 49%;
+    height: 49%;
+    float: left;
+    padding-right: 2%;  
+    padding-bottom: 2%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.third_left {
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+    float: left;
+    padding-right: 2%;  
+    padding-bottom: 1.875em;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.third {
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+    float: left;
     padding-bottom: 1.875em;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -347,27 +416,36 @@ header {
 // ----------------------------------------- */
 
 h5 {
-    font-weight: 300;
+    font-weight: 200;
     color: #777;
     transition: color .25s ease-in;
     -webkit-transition: color .25s ease-in;
     -moz-transition: color .25s ease-in;
     -o-transition: color .25s ease-in;
-  font-size: 1.1em;
+  font-size: 3.5em;
   line-height: 1.25em;
-    padding-bottom: 5px;
-}
+/*    padding-bottom: 5px;
+*/}
 
-.projectnav h41
+.projectnav h4 {
     padding-bottom: 3px;
     display: inline;
-    font-weight: 700;
+    font-weight: 300;
     color: #777;
-    font-size: 15px;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
-.description-int {
+.banner h4 {
+    font-weight: 300;
+    color: #777;
+    padding-bottom: 2%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+
+/*.description-int {
     border-top: 1px dashed #bbb;;
     float: left;
     margin-top: 20px;
@@ -376,18 +454,10 @@ h5 {
     margin-right: 25px;
     width: 700px;
     line-height: 1.5em;
-}
+}*/
 
-#description-int {
-    border-top: 1px dashed #bbb;;
-    float: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-right: 25px;
-    width: 700px;
-    line-height: 1.5em;
-    clear: all;
-}
+
+
 
 
 /* --------------------------------------------
