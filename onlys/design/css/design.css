@@ -101,25 +101,157 @@ a {
 // ----------------------------------------- */
 
 .wrapper {
-    width: 960px;
+    width: 70%;
     margin: 0 auto;
-    padding-left: 15px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
 }
 
 header {
     position:fixed;
     width: 100%;
-    background-color: #fff;
     z-index: 1;
 }
 
+/* --------------------------------------------
+// !-- Main Nav Bar
+// ----------------------------------------- */
+
+.mainnav {
+  background-color: #eee;
+  height: 3.125em;
+}
+
+.logo {
+  display: block;
+  float: left;
+  margin-top: .75em;
+  width: 1.75%;
+}
+
+.mainnav li a {
+  margin-top: .9em;
+  margin-left: 4%;
+  padding-left: 4%;
+  text-align: center;
+  display: inline-block;
+}
+
+.mainnav a {
+  float: right;
+  font-size: 1.05em; 
+  color: #dd4b39;
+  transition: color .2s ease-in
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+}
+-
+.mainnav a:hover {
+    color: #777;
+}
+
+
+/* --------------------------------------------
+// !-- Project Nav Bar
+// ----------------------------------------- */
+
+.work {
+  width: 100%;
+  background-color: #fff;
+}
+
+.projectnav {
+  width: 70%;
+  position:fixed;
+  top: 3.125em;
+  padding-top: 1em;
+  background-color: #fff;   
+  z-index: 1;
+  border-bottom: 1px dashed #bbb;
+  display: inline-block;
+}
+
+.projectnav li {
+    display: inline;
+}
+
+.title {
+  color: #777; 
+  font-weight: 600;  
+  font-size: 1em; 
+}
+
+.projectnav a {
+  color: #777;
+  float: right;
+  margin-left: 4%;
+  padding-left: 4%;
+  font-size: 1em; 
+  font-weight: 600;
+  transition: color .5s linear;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.projectnav a:hover {
+    color: #dd4b39; 
+}
+
+.rightarrow a {
+  padding-left: 2em;
+}
+
+.leftarrow a {
+  padding-right: 2em; 
+}
+
+/*Project Number*/
+.projectnav li h5 {
+  float: right;
+  display: inline;
+  font-weight: 300;
+  font-style: italic;
+  color: #777;
+  font-size: 1em;
+  padding-top: .25em;
+}
+
+/*Project Story*/
+.description {
+  display: inline;
+  float: right;
+  margin-top: 7.5em;
+  width: 100%;
+  padding-bottom: 1.5em;
+}
+
+.description a {
+  color: #777;
+  font-weight: 600;
+  transition: color .5s linear;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.description a:hover {
+  color: #dd4b39;
+}
+
+
 /*project artwork*/
 .banner { 
-    display: inline-block;
-    position: relative; 
-    overflow: hidden; 
-    width: 948px;
-    margin-right:22px;
+  display: inline; 
+  position: relative; 
+  overflow: hidden; 
+  width: 100%;
+  padding-top: 8em;
 }
 
 .banner li { 
@@ -135,15 +267,15 @@ header {
 
 /*http://codepen.io/RyGanley/pen/JKwaC*/
 .enlarge {
-    width:74%;
-    height: 74%;
-    padding-bottom: 30px;
+    width:70%;
+    height: 70%;
+    padding-bottom: 1.875em;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
 }
 
-.enlarge:hover {
+/*.enlarge:hover {
     width: 100%;
     height: 100%;
        -webkit-transition: all 0.25s ease-in-out;
@@ -151,7 +283,7 @@ header {
     transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
-
+*/
 /*mobile images*/
 .enlarge_mobile {
     float: left;
@@ -164,7 +296,7 @@ header {
     transition: all 0.25s ease-in-out;
 }
 
-.enlarge_mobile:hover {
+/*.enlarge_mobile:hover {
     width: 54%;
     height: 54%;
     display: inline-block;
@@ -172,7 +304,7 @@ header {
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
   cursor: pointer;
-}
+}*/
 
 /*sketch (1/3) images*/
 .enlarge_sketch {
@@ -186,7 +318,7 @@ header {
     transition: all 0.25s ease-in-out;
 }
 
-.enlarge_sketch:hover {
+/*.enlarge_sketch:hover {
     width: 41.8%;
     height: 41.8%;
     display: inline-block;
@@ -194,7 +326,7 @@ header {
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
   cursor: pointer;
-}
+}*/
 
 
 .footer {
@@ -208,125 +340,7 @@ header {
 }
 
 
-/* --------------------------------------------
-// !-- Main Nav Bar
-// ----------------------------------------- */
 
-.logo {
-    display: block;
-    float: left;
-    padding-bottom: 12px;
-    padding-left: 5px;
-    width: 20px;
-}
-
-.mainnav li a {
-    padding-top: 18px;
-}
-
-.mainnav a {
-    float: right;
-    font-weight: 300;
-    font-size: .91em; 
-    text-transform: uppercase;
-    color: #777;
-    transition: color .25s ease-in;
-    -webkit-transition: color .25s ease-in;
-    -moz-transition: color .25s ease-in;
-    -o-transition: color .25s ease-in;
-    text-align: center;
-    display: inline-block;
-    line-height: 15px;
-    padding-left: 25px;
-    padding-top: 15px;
-    letter-spacing: .07em;
-}
-
-.mainnav a:hover {
-    color: #dd4b39;
-}
-
-/* --------------------------------------------
-// !-- Project Nav Bar
-// ----------------------------------------- */
-
-.projectnav {
-    position:fixed;
-    top: 45px;
-    width: 960px;
-    background-color: #fff;
-    z-index: 1;
-    padding-top: 6px;
-    border-bottom: 1px dashed #bbb;
-    display: inline-block;
-}
-
-.projectnav li {
-    display: inline;
-}
-
-.title {
-    color: #777; 
-    font-weight: 600;  
-    font-size: 16px; 
-}
-
-.projectnav a {
-    color: #777;
-    float: right;
-    padding: 0px 0px 11px 15px;
-    font-size: 15px; 
-    font-weight: 600;
-    transition: color .5s linear;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -o-transition: color .5s;
-}
-
-.projectnav a:hover {
-    color: #dd4b39; 
-}
-
-.rightarrow a {
-    padding-left: 31px;
-}
-
-.leftarrow a {
-    padding-right: 33px; 
-}
-
-/*Project Number*/
-.projectnav li h5 {
-    float: right;
-    display: inline;
-    font-weight: 300;
-    font-style: italic;
-    color: #777;
-    font-size: 13px;
-    padding-top: 2px;
-}
-
-/*Project Story*/
-.description {
-    display: inline;
-    float: left;
-    margin-top: 100px;
-    width: 680px;
-    padding-bottom: 25px;
-}
-
-.description a {
-    color: #777;
-    font-weight: 600;
-    transition: color .5s linear;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -o-transition: color .5s;
-}
-
-.description a:hover {
-    color: #dd4b39;
-}
 
 /* --------------------------------------------
 // !-- Typography
@@ -339,8 +353,8 @@ h5 {
     -webkit-transition: color .25s ease-in;
     -moz-transition: color .25s ease-in;
     -o-transition: color .25s ease-in;
-    font-size: 1.35em;
-    line-height: 1.5em;
+  font-size: 3.5em;
+  line-height: 1.25em;
     padding-bottom: 5px;
 }
 
