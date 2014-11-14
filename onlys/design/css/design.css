@@ -347,18 +347,18 @@ header {
 // ----------------------------------------- */
 
 h5 {
-    font-weight: 200;
+    font-weight: 300;
     color: #777;
     transition: color .25s ease-in;
     -webkit-transition: color .25s ease-in;
     -moz-transition: color .25s ease-in;
     -o-transition: color .25s ease-in;
-  font-size: 3.5em;
+  font-size: 1.1em;
   line-height: 1.25em;
     padding-bottom: 5px;
 }
 
-.projectnav h4{
+.projectnav h41
     padding-bottom: 3px;
     display: inline;
     font-weight: 700;
