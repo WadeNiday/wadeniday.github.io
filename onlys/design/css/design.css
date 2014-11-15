@@ -166,11 +166,10 @@ header {
 }
 
 .projectnav {
-  width: 70%;
-  position:fixed;
-  top: 3.125em;
-  padding-top: .73em;
-  padding-bottom: .73em;
+  width: 100%;
+  margin-top: 3.125em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   background-color: #fff;   
   z-index: 1;
   border-bottom: 1px dashed #bbb;
@@ -205,12 +204,9 @@ header {
 }
 
 .rightarrow a {
-  padding-left: 2em;
+  padding-left: 1%;
 }
 
-.leftarrow a {
-  padding-right: 2em; 
-}
 
 /*Project Number*/
 .projectnav li h5 {
@@ -220,14 +216,14 @@ header {
   font-style: italic;
   color: #777;
   font-size: 1em;
-  padding-top: .25em;
-}
+/*  padding-top: .25em;
+*/}
 
 /*Project Story*/
 .description {
   display: inline;
   float: right;
-  margin-top: 7em;
+  margin-top: 1em;
   width: 100%;
   padding-bottom: 2em;
 /*  margin-bottom: 1.5em;
@@ -294,6 +290,16 @@ header {
     width: 100%;
     height: 100%;
     padding-bottom: 3%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+#full_icons {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1.5%;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -400,14 +406,13 @@ header {
 
 
 .footer {
-    background-color: #dd4b39;
-    height: 2.5em;
+  background-color: #dd4b39;
+  height: 3.125em;
 }
 
 .footer_main {
     width: 100%;
-/*    display: inline-block;
-*/}
+}
 
 
 
@@ -470,7 +475,7 @@ h1 {
 #nostealing {
     color: #222;
     float: left;
-    width: 100%;
+    width: 20%;
     padding-top: 12px;
 }
 
@@ -502,4 +507,268 @@ h1 {
 
 .foot_twitter a:hover, .foot_linkedin a:hover, .foot_email a:hover {
     opacity: 1.0;
+}
+
+
+
+
+
+/* --------------------------------------------
+// !-- R E S S P O N S I V E   S T Y L E S
+// ----------------------------------------- */
+
+/* Smartphones (portrait) ----------- */
+@media (min-width: 320px) and (max-width: 499px)  {  
+
+/* structure */
+.wrapper {
+    width: 90%;
+}
+
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .9em;
+}
+
+.mainnav a {
+  color: #777;
+  font-weight: 400;
+}
+
+.mainnav li a {
+  padding-left: 9%;
+}
+
+.landing h6, .footer h6, #nav_active, .work h6  {
+  z-index: -2;
+}
+
+
+
+#oneg, #mapk, #research, #print, #divine { 
+  margin-top: -8%;
+}
+
+/* typography */
+
+
+.landing a, .footer a  {        
+  border-bottom: none;
+  color: #dd4b39;
+}
+
+.landing a:hover, .footer a:hover {        
+  border-bottom: none;
+}
+
+.footer h1 {
+  width: 100%;
+  padding-top: .5em;
+  font-size: 1em;
+  color: #555;
+  display: block;
+}
+
+.social {
+  display: inline-block;
+  width: 100%;
+  clear: all;
+  padding-top: .2em;
+  padding-bottom: .5em;
+}
+
+/* social icons*/
+.foot_twitter a, .foot_linkedin a, .foot_email a {
+  float: left;
+  padding-left: 0%;
+  padding-right: 12%;
+  opacity: 0.3;
+  border-bottom: none;
+  transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+}
+
+
+
+}
+
+
+
+
+
+
+/* smartphone (landscape) ----------- */
+@media (min-width: 500px) and (max-width: 695px)  {  
+
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .8em;
+}
+
+.mainnav a {
+  color: #777;
+  font-weight: 400;
+}
+
+.mainnav li a {
+  padding-left: 2%;
+}
+
+.landing h6  {
+  z-index: 1;
+  font-weight: 400;
+}
+
+/* structure */
+.wrapper {
+    width: 95%;
+}
+.landing {
+  padding-bottom: 2%;
+  border-bottom: none;
+}
+
+.work  {
+  margin-top: 0em; /* on all projects */
+  border-bottom: none;
+}
+
+
+
+.landing a, .footer a {        
+  border-bottom: none;
+  color: #dd4b39;
+}
+
+/* profile main text style */
+.widecol {
+  width: 100%;
+}
+
+#fourwide {
+  border-top: none;
+}
+
+.profile h1 {
+  padding-top: 1.25em;
+  font-size: 1.28em;
+  line-height: 1.4em;
+  display: inline-block;
+  border-top: none;
+  font-weight: 300;
+}
+
+.col_x {
+  width: 49%;
+  padding-right: 1%;
+  margin-right: 0%;
+  margin-bottom: 3.5%;
+}
+
+.col_y {
+  width: 100%;
+}
+
+.profile h6 {
+  color: #dd4b39;
+  font-weight: 700;
+}
+
+.profile li {
+    font-weight: 300;
+    color: #777;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.footer h1 {
+  padding-top: 1em;
+  color: #777;
+  font-size: 1em;
+}
+
+}
+
+
+/* tablet (landscape) ----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+    width: 90%;
+}
+
+
+}
+
+
+
+/* tablet (landscape) ----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+    width: 90%;
+}
+
+.landing h1 {
+  padding-bottom: .5em;
+}
+
+.work  {
+  border-bottom: none;
+}
+
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+}
+
+
+
+
+
+
+
+/* tablet (landscape) ----------- */
+@media (min-width: 1201px) and (max-width: 1260px)  {  
+
+/* structure */
+.wrapper {
+    width: 90%;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+
+}
+
+
+
+
+/* the widest */
+@media (min-width: 1550px) {  
+
+/* structure */
+.wrapper {
+    width: 60%;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+
+
 }
