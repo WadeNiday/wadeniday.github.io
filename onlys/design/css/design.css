@@ -642,7 +642,7 @@ h1 {
 }
 
 .work  {
-  margin-top: 2em; /* on all projects */
+  margin-top: 0em; /* on all projects */
   border-bottom: none;
 }
 
