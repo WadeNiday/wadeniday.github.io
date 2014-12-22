@@ -622,7 +622,7 @@ h1 {
 
 
 /* tablet (PORTRAIT----------- */
-@media (min-width: 696px) and (max-width: 899px)  {  
+@media (min-width: 600px) and (max-width: 899px)  {  
 
 /* structure */
 .wrapper {
