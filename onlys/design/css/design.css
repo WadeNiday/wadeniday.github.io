@@ -492,7 +492,7 @@ h1 {
 // ----------------------------------------- */
 
 /* Smartphones (PORTRAIT) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 509px)  {  
+@media (min-width: 320px) and (max-width: 509px)  {  
 
 .wrapper {
   width: 95%;
