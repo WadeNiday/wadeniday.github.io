@@ -490,7 +490,9 @@ h1 {
 // !-- R E S S P O N S I V E   S T Y L E S
 // ----------------------------------------- */
 
+
 /* Smartphones (PORTRAIT) ----------- */
+
 @media (min-width: 320px) and (max-width: 509px)  {  
 
 .wrapper {
