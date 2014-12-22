@@ -492,7 +492,7 @@ h1 {
 // ----------------------------------------- */
 
 /* Smartphones (PORTRAIT) ----------- */
-@media (min-width: 320px) and (max-width: 509px)  {  
+@media (min-width: 320px) and (max-width: 500px)  {  
 
 /* --------------------------------------------
 // !-- Structure
@@ -755,6 +755,12 @@ h1 {
 }
 
 }
+
+
+
+
+
+
 
 
 /* tablet (landscape) ----------- */
