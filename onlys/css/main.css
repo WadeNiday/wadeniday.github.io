@@ -541,15 +541,15 @@ background-color: #ddd;
 }
 
 #safe {
-  width: 32%;
-  padding-left: 34%;
+  width: 36%;
+  padding-left: 32%;
   padding-top: 12%;
 }
 
 .holder-c h4{
-  color: #777;
+  color: #555;
   font-size: 1em;
-  padding-left: 9%;
+  padding-left: 10%;
   padding-top: 6%;
 }
 
@@ -583,7 +583,7 @@ background-color: #ddd;
   margin-top: 12%;
   margin-bottom: .5em;
   color: #555;
-  font-size: 1.25em;
+  font-size: 1.3em;
   line-height: 1.5em;
   display: inline-block;
   border-top: 1px dashed #777;
@@ -593,7 +593,7 @@ background-color: #ddd;
 .profile li {
   color: #555;
   font-size: 1em;
-  line-height: 1.45em;
+  line-height: 1.5em;
   font-weight: 300;
 }
 
@@ -628,7 +628,7 @@ background-color: #ddd;
 /* image position within circle */
 #selfie img{
     padding-top: 2.5%;
-    margin-left: 15%;
+    margin-left: 18%;
 }
 
 /* four col container */
@@ -644,15 +644,23 @@ background-color: #ddd;
 }
 
 .col_y {
-    width: 100%;
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+/* footer */
+.footer {
+  margin-top: 1.5em;
 }
 
 .footer h1 {
   width: 100%;
-  padding-top: .5em;
+  margin-top: 5%;
+  padding-top: 0em;
   font-size: 1em;
   color: #555;
   display: block;
+  border-top: none;
 }
 
 .social {
@@ -660,7 +668,7 @@ background-color: #ddd;
   width: 100%;
   clear: all;
   padding-top: .2em;
-  padding-bottom: .5em;
+  padding-bottom: .7em;
 }
 
 /* social icons*/
@@ -675,8 +683,6 @@ background-color: #ddd;
   -moz-transition: opacity .2s ease-in;
   -o-transition: opacity .2s ease-in;
 }
-
-
 
 }
 
