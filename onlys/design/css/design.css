@@ -182,23 +182,32 @@ header {
 
 .title {
   color: #777; 
-  font-weight: 400;  
+  font-weight: 600;  
   font-size: 1em; 
 }
 
 .projectnav a {
-  color: pink;
+  color: #777;
   float: right;
   margin-left: 4%;
   padding-left: 4%;
   font-size: 1em; 
-  font-weight: 400;
+  font-weight: 600;
+  transition: color .5s linear;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
 }
 
+.projectnav a:hover {
+    color: #dd4b39; 
+}
 
 .rightarrow a {
   padding-left: 1%;
 }
+
+
 
 
 /*Project Story*/
@@ -372,8 +381,12 @@ header {
 h1 {
   font-weight: 200;
   color: #777;
-  font-size: 2em;
-  line-height: 1.2em;
+  transition: color .25s ease-in;
+  -webkit-transition: color .25s ease-in;
+  -moz-transition: color .25s ease-in;
+  -o-transition: color .25s ease-in;
+  font-size: 3.5em;
+  line-height: 1.15em;
   padding-top: .3em;
 }
 
@@ -387,14 +400,28 @@ h1 {
 }
 
 .work h4 {
-  width: 100%;
-    font-weight: 200;
+    font-weight: 600;
     color: #777;
-    padding-left: 0%;
-    padding-bottom: 6%;
-    font-size: 1.2em;
-    line-height: 1.4em;
+    padding-left: 17%;
+    padding-bottom: 3%;
+    padding-right: 18%;
+    font-size: 1.35em;
+    line-height: 1.3em;
 }
+
+
+/*.description-int {
+    border-top: 1px dashed #bbb;;
+    float: left;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 25px;
+    width: 700px;
+    line-height: 1.5em;
+}*/
+
+
 
 
 
@@ -409,8 +436,16 @@ h1 {
   margin-top: 1.85em;
 }
 
-
 /* typography */
+.footer h1 {
+  clear: all;
+  width: 65%;
+  padding-top: 1%;
+/*  margin-bottom: 1%;*/
+  color: #777;
+  font-size: 1em;
+  display: inline-block;
+}
 
 
 /* copyright */
@@ -418,7 +453,7 @@ h1 {
   color: #222;
   font-size: .7em;
   padding-bottom: 5%;
-  padding-top: 1.85em;
+  padding-top: 1%;
 }
 
 .social {
@@ -463,6 +498,7 @@ h1 {
 
 
 
+
 /* --------------------------------------------
 // !-- R E S S P O N S I V E   S T Y L E S
 // ----------------------------------------- */
@@ -481,7 +517,6 @@ h1 {
 }
 
 .mainnav a {
-  color: #dd4b39;
   font-weight: 400;
 }
 
@@ -494,66 +529,40 @@ h1 {
 }
 
 
+/* --------------------------------------------
+// !-- Project Nav Bar
+// ----------------------------------------- */
 
-#oneg, #mapk, #research, #print, #divine { 
-  margin-top: -8%;
+.title {
+  color: #777; 
+  font-weight: 400;  
+  font-size: .9em; 
+}
+
+.projectnav a {
+  font-size: .9em; 
+  font-weight: 400;
+}
+
+.rightarrow a {
+  padding-left: 1%;
 }
 
 /* typography */
-
-
-.landing a, .footer a  {        
-  border-bottom: none;
-  color: #dd4b39;
-}
-
-.landing a:hover, .footer a:hover {        
-  border-bottom: none;
-}
-
-
-/* --------------------------------------------
-// !-- Typography
-// ----------------------------------------- */
 
 h1 {
   font-weight: 200;
   color: #777;
   font-size: 2em;
-  line-height: 1.2em;
+  line-height: 1.15em;
   padding-top: .3em;
 }
 
-.projectnav h4 {
-    padding-bottom: 3px;
-    display: inline;
-    font-weight: 300;
-    color: #777;
-    font-size: 1.5em;
-    line-height: 1.5em;
-}
-
-.work h4 {
-  width: 100%;
-    font-weight: 200;
-    color: #777;
-    padding-left: 0%;
-    padding-bottom: 6%;
-    font-size: 1.2em;
-    line-height: 1.4em;
-}
 
 
 
 
-
-.footer h1 {
-  width: 100%;
-  padding-top: .5em;
-  font-size: 1em;
-  color: #555;
-  display: block;
-}
+/* footer */
 
 .social {
   display: inline-block;
