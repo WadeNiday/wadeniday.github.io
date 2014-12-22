@@ -495,7 +495,8 @@ h1 {
 @media (min-width: 320px) and (max-width: 509px)  {  
 
 .wrapper {
-    width: 95%;
+  width: 95%;
+  background-color: pink;
 }
 
 /* Main Nav Bar */
