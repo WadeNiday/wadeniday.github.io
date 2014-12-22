@@ -810,15 +810,8 @@ background-color: #ddd;
 }
 
 
-.col_x h6 {
-  font-size: 1.25em;
-  line-height: 1.5em;
-}
-
-
-
 .col_x {
-  width: 100%;
+  width: 49%;
   padding-right: 1%;
   margin-right: 0%;
   margin-bottom: 3.5%;
@@ -836,8 +829,8 @@ background-color: #ddd;
 .profile li {
     font-weight: 300;
     color: #777;
-  font-size: 1.25em;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.45em;
 }
 
 /* sidebar w photo */
@@ -861,11 +854,11 @@ background-color: #ddd;
 /* image position within shape */
 #selfie img{
     padding-top: 1.5%;
-    margin-left: 30%;
+    margin-left: 32%;
 }
 
 .footer h1 {
-  padding-top: 1em;
+  padding-top: .5em;
   color: #777;
   font-size: 1em;
 }
