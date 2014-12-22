@@ -729,47 +729,48 @@ background-color: #ddd;
 
 /*  logo positioning within container  */
 #oneguggenheim {
-  width: 70%;
-  padding-left: 15%;
-  padding-top: 15%;
-}
-
-#dbn {
-  width: 60%;
-  padding-left: 20%;
-  padding-top: 9%;
+  width: 88%;
+  padding-left: 6%;
+  padding-top: 29%;
 }
 
 #mapkeys {
-  width: 45%;
-  padding-left: 27.5%;
-  padding-top: 7%;
+  width: 65%;
+  padding-left: 17.5%;
+  padding-top: 16%;
 }
 
 #researchportal {
-  width: 20%;
-  padding-left: 40%;
-  padding-top: 7%;
+  width: 30%;
+  padding-left: 35%;
+  padding-top: 17%;
+}
+
+#dbn {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 19%;
 }
 
 #foundation {
-  width: 60%;
-  padding-left: 20%;
-  padding-top: 13%;
+  width: 78%;
+  padding-left: 11%;
+  padding-top: 25%;
 }
 
 #safe {
-  width: 20%;
-  padding-left: 40%;
-  padding-top: 8%;
+  width: 40%;
+  padding-left: 30%;
+  padding-top: 12%;
 }
 
 .holder-c h4{
   color: #777;
   font-size: 1em;
-  padding-left: 27.5%;
-  padding-top: 4%;
+  padding-left: 8%;
+  padding-top: 8%;
 }
+
 
 /* typography */
 .landing h1 {
@@ -861,12 +862,31 @@ background-color: #ddd;
 }
 
 
-/* tablet (landscape) ----------- */
+
+
+
+/* tablet (PORTRAIT ----------- */
 @media (min-width: 696px) and (max-width: 899px)  {  
 
 /* structure */
 .wrapper {
-    width: 90%;
+    width: 95%;
+        background-color: yellow;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .75em;
+}
+
+.landing h1 {
+  padding-top: 1.7em;
+  padding-bottom: .875em;
+  color: #777;
+  font-size: 3.6em;
+  line-height: 1.25em;
+  display: inline-block;
+  border-bottom: 1px dashed #bbb;
 }
 
 /* project shape */
@@ -875,34 +895,133 @@ background-color: #ddd;
   height: 12em;
 }
 
+/* project shape */
+.holder-a a {
+  width: 48%;
+  height: 12em;
+  padding-left: 1%;
+}
+
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  width: 88%;
+  padding-left: 6%;
+  padding-top: 25%;
+}
+
+#mapkeys {
+  width: 65%;
+  padding-left: 17.5%;
+  padding-top: 12%;
+}
+
+#researchportal {
+  width: 25%;
+  padding-left: 37.5%;
+  padding-top: 14%;
+}
+
+#dbn {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 15%;
+}
+
+#foundation {
+  width: 78%;
+  padding-left: 11%;
+  padding-top: 21%;
+}
+
+#safe {
+  width: 30%;
+  padding-left: 35%;
+  padding-top: 12%;
+}
+
+.holder-c h4 {
+/*  width: 120%;
+*/  color: #777;
+  font-size: 1em;
+  padding-left: 15%;
+  padding-top: 8%;
+}
+
+
+
+.widecol {
+  width: 70%;
+}
+
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .8em;
+  color: #555;
+  font-size: 1.28em;
+  line-height: 1.5em;
+  display: inline-block;
+}
+
+.profile li {
+  font-weight: 300;
+  color: #555;
+  font-size: .87em;
+  line-height: 1.6em;
+}
+
+
+
 /* sidebar w photo */
 .profile_side {
-  margin-top: 3.25em;
+  display: inline-block;
+  width: 30%;
+  float: right;
+  margin-top: 2.5em;
 }
 
 /* image position on the page */
 #selfie {
-  width: 10em;
-  height: 10em;
+  width: 9.5em;
+  height: 9.5em;
+  margin-left: 12%;
+  border: 1px solid #bbb;
+  border-radius: 100%;
+  background-color: black;
+  overflow: hidden;
 }
+
 
 /* image position within circle */
 #selfie img{
-    padding-top: -10px;
-    margin-left: -8px;
+  width: 125%;
+  height: 103%;
+  padding-top: 6px;
+  margin-left: -6px;
 }
 
+
 .col_x {
-  width: 49%;
+  width: 32%;
   padding-right: 1%;
   margin-right: 0%;
   margin-bottom: 3.5%;
 }
 
 .col_y {
-  width: 100%;
+  width: 33%;
+  padding-right: 0%;
+
 }
 
+.footer {
+  margin-top: .4em;
+}
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
+}
 
 
 
