@@ -104,7 +104,8 @@ a {
 .wrapper {
     width: 70%;
     margin: 0 auto;
-}
+/*    background-color: purple;
+*/}
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -240,11 +241,11 @@ background-color: #ddd;
   margin-top: 1em;
 }
 
-/* type shows on hover of kj safe */
+/* type for kj safe */
 .holder-c h4{
   color: #aaa;
   font-size: 1.5em;
-  padding-left: 12.5%;
+  padding-left: 14%;
   padding-top: 3%;
 }
 
@@ -469,6 +470,7 @@ background-color: #ddd;
 /* structure */
 .wrapper {
     width: 90%;
+    background-color: green;
 }
 
 .landing {
@@ -710,6 +712,7 @@ background-color: #ddd;
 /* structure */
 .wrapper {
     width: 95%;
+    background-color: lightgreen;
 }
 .landing {
   padding-bottom: 2%;
@@ -1100,43 +1103,60 @@ background-color: #ddd;
 }
 
 
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 1201px) and (max-width: 1350px)  {  
+
+.holder-c h4 {
+  padding-left: 7.5%;
+  padding-top: 2%;
+}
 
 
+}
 
 
-
-/* tablet (landscape) ----------- */
-@media (min-width: 1201px) and (max-width: 1260px)  {  
+/* FULL WIDTH on MacBook Pro */
+@media (min-width: 1500px) {  
 
 /* structure */
 .wrapper {
-    width: 90%;
+  width: 74%;
 }
 
 /* sidebar w photo */
 .profile_side {
-  margin-top: 3.25em;
+  margin-top: 3em;
 }
 
-
+/*  logo positioning within container  */
+#oneguggenheim {
+  padding-top: 18%;
 }
 
-
-
-
-/* the widest */
-@media (min-width: 1550px) {  
-
-/* structure */
-.wrapper {
-    width: 60%;
+#mapkeys {
+  padding-top: 8%;
 }
 
-/* sidebar w photo */
-.profile_side {
-  margin-top: 3.25em;
+#researchportal {
+  padding-top: 10%;
 }
 
+#dbn {
+  padding-top: 10%;
+}
+
+#foundation {
+  padding-top: 15%;
+}
+
+#safe {
+  padding-top: 10%;
+}
+
+.holder-c h4 {
+  padding-left: 17.5%;
+  padding-top: 2%;
+}
 
 
 }
