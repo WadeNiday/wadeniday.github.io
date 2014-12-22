@@ -949,14 +949,13 @@ background-color: #ddd;
 }
 
 
-
 .widecol {
   width: 70%;
 }
 
 .profile h1 {
   padding-top: 2.5em;
-  margin-bottom: .8em;
+/*  margin-bottom: .8em;*/
   color: #555;
   font-size: 1.28em;
   line-height: 1.5em;
@@ -1023,18 +1022,22 @@ background-color: #ddd;
   font-size: 1em;
 }
 
-
-
 }
 
 
 
-/* tablet (landscape) ----------- */
+/* tablet (LANDSCAPE----------- */
 @media (min-width: 900px) and (max-width: 1200px)  {  
 
 /* structure */
 .wrapper {
-    width: 90%;
+    width: 95%;
+    background-color: pink;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .25em;
 }
 
 .landing h1 {
@@ -1047,10 +1050,51 @@ background-color: #ddd;
   border-bottom: none;
 }
 
-
 /* sidebar w photo */
 .profile_side {
   margin-top: 3.25em;
+}
+
+.widecol {
+  width: 68%;
+}
+
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .5em;
+  color: #555;
+  font-size: 1.635em;
+  line-height: 1.45em;
+  display: inline-block;
+}
+
+
+/* sidebar w photo */
+.profile_side {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  padding-right: 2%;
+  margin-top: 3em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 11.4em;
+  height: 11.4em;
+}
+
+/* image position within circle */
+#selfie img{
+  width: 120%;
+  height: 98%;
+  padding-top: 6px;
+  margin-left: -6px;
+}
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
 }
 
 }
