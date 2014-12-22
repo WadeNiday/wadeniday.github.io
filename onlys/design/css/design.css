@@ -182,42 +182,24 @@ header {
 
 .title {
   color: #777; 
-  font-weight: 600;  
+  font-weight: 400;  
   font-size: 1em; 
 }
 
 .projectnav a {
-  color: #777;
+  color: pink;
   float: right;
   margin-left: 4%;
   padding-left: 4%;
   font-size: 1em; 
-  font-weight: 600;
-  transition: color .5s linear;
-  -webkit-transition: color .5s;
-  -moz-transition: color .5s;
-  -o-transition: color .5s;
+  font-weight: 400;
 }
 
-.projectnav a:hover {
-    color: #dd4b39; 
-}
 
 .rightarrow a {
   padding-left: 1%;
 }
 
-
-/*Project Number*/
-.projectnav li h5 {
-  float: right;
-  display: inline;
-  font-weight: 300;
-  font-style: italic;
-  color: #777;
-  font-size: 1em;
-/*  padding-top: .25em;
-*/}
 
 /*Project Story*/
 .description {
@@ -390,12 +372,8 @@ header {
 h1 {
   font-weight: 200;
   color: #777;
-  transition: color .25s ease-in;
-  -webkit-transition: color .25s ease-in;
-  -moz-transition: color .25s ease-in;
-  -o-transition: color .25s ease-in;
-  font-size: 3.5em;
-  line-height: 1.15em;
+  font-size: 2em;
+  line-height: 1.2em;
   padding-top: .3em;
 }
 
@@ -409,13 +387,13 @@ h1 {
 }
 
 .work h4 {
-    font-weight: 600;
+  width: 100%;
+    font-weight: 200;
     color: #777;
-    padding-left: 17%;
-    padding-bottom: 3%;
-    padding-right: 18%;
-    font-size: 1.35em;
-    line-height: 1.3em;
+    padding-left: 0%;
+    padding-bottom: 6%;
+    font-size: 1.2em;
+    line-height: 1.4em;
 }
 
 
@@ -503,14 +481,13 @@ h1 {
 // !-- R E S S P O N S I V E   S T Y L E S
 // ----------------------------------------- */
 
-/* Smartphones (portrait) ----------- */
-@media (min-width: 320px) and (max-width: 499px)  {  
+/* Smartphones (PORTRAIT) ----------- */
+@media (min-width: 320px) and (max-width: 509px)  {  
 
 /* structure */
 .wrapper {
-    width: 90%;
+    width: 95%;
 }
-
 
 /* Main Nav Bar */
 .logo {
@@ -518,7 +495,7 @@ h1 {
 }
 
 .mainnav a {
-  color: #777;
+  color: #dd4b39;
   font-weight: 400;
 }
 
