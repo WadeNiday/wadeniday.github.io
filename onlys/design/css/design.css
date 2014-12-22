@@ -655,38 +655,109 @@ h1 {
   width: 68%;
 }
 
+
+/*Typography*/
 .profile h1 {
   padding-top: 2.5em;
   margin-bottom: .5em;
   color: #555;
-  font-size: 1.635em;
+  font-size: 1.5em;
   line-height: 1.45em;
   display: inline-block;
 }
 
+.work h4 {
+  width: 75%;
+  font-weight: 400;
+  color: #777;
+  padding-left: 12.5%;
+  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-right: 12.5%;
+  font-size: 1.25em;
+  line-height: 1.3em;
+}
+
+.banner { 
+  margin-bottom: %;
+  border-bottom: 1px dashed #ccc;
+}
+
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
+}
+
+}
+
+
+
+
+
+
+
+/* tablet (PORTRAIT----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+    width: 95%;
+    background-color: lightblue;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .25em;
+}
+
+.landing h1 {
+  padding-top: 1.3em;
+  padding-bottom: .5em;
+}
+
+.work  {
+  margin-top: 0em; /* on all projects */
+  border-bottom: none;
+}
 
 /* sidebar w photo */
 .profile_side {
+  margin-top: 3.25em;
+}
+
+.widecol {
+  width: 68%;
+}
+
+
+/*Typography*/
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .5em;
+  color: #555;
+  font-size: 1.5em;
+  line-height: 1.45em;
   display: inline-block;
-  width: 30%;
-  float: right;
-  padding-right: 2%;
-  margin-top: 3em;
 }
 
-/* image position on the page */
-#selfie {
-  width: 11.4em;
-  height: 11.4em;
+.work h4 {
+  width: 75%;
+  font-weight: 400;
+  color: #777;
+  padding-left: 12.5%;
+  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-right: 12.5%;
+  font-size: 1.25em;
+  line-height: 1.3em;
 }
 
-/* image position within circle */
-#selfie img{
-  width: 120%;
-  height: 98%;
-  padding-top: 6px;
-  margin-left: -6px;
+.banner { 
+  margin-bottom: %;
+  border-bottom: 1px dashed #ccc;
 }
+
 
 .footer h1 {
   padding-top: 1%;
