@@ -397,20 +397,6 @@ h1 {
 }
 
 
-/*.description-int {
-    border-top: 1px dashed #bbb;;
-    float: left;
-    margin-top: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-right: 25px;
-    width: 700px;
-    line-height: 1.5em;
-}*/
-
-
-
-
 
 /* --------------------------------------------
 // !-- Footer
@@ -524,6 +510,42 @@ h1 {
 .landing a:hover, .footer a:hover {        
   border-bottom: none;
 }
+
+
+/* --------------------------------------------
+// !-- Typography
+// ----------------------------------------- */
+
+h1 {
+  font-weight: 200;
+  color: #777;
+  font-size: 2em;
+  line-height: 1.2em;
+  padding-top: .3em;
+}
+
+.projectnav h4 {
+    padding-bottom: 3px;
+    display: inline;
+    font-weight: 300;
+    color: #777;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.work h4 {
+  width: 100%;
+    font-weight: 200;
+    color: #777;
+    padding-left: 0%;
+    padding-bottom: 6%;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+
+
+
 
 .footer h1 {
   width: 100%;
