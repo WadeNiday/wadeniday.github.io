@@ -390,36 +390,24 @@ h1 {
   padding-top: .3em;
 }
 
-.projectnav h4 {
-    padding-bottom: 3px;
-    display: inline;
-    font-weight: 300;
-    color: #777;
-    font-size: 1.5em;
-    line-height: 1.5em;
-}
+/*.projectnav h4 {
+  padding-bottom: 3px;
+  display: inline;
+  font-weight: 300;
+  color: pink;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}*/
 
 .work h4 {
-    font-weight: 600;
-    color: #777;
-    padding-left: 17%;
-    padding-bottom: 3%;
-    padding-right: 18%;
-    font-size: 1.35em;
-    line-height: 1.3em;
+  font-weight: 600;
+  color: #777;
+  padding-left: 17%;
+  padding-bottom: 3%;
+  padding-right: 18%;
+  font-size: 1.35em;
+  line-height: 1.3em;
 }
-
-
-/*.description-int {
-    border-top: 1px dashed #bbb;;
-    float: left;
-    margin-top: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-right: 25px;
-    width: 700px;
-    line-height: 1.5em;
-}*/
 
 
 
@@ -506,7 +494,10 @@ h1 {
 /* Smartphones (PORTRAIT) ----------- */
 @media (min-width: 320px) and (max-width: 509px)  {  
 
-/* structure */
+/* --------------------------------------------
+// !-- Structure
+// ----------------------------------------- */
+
 .wrapper {
     width: 95%;
 }
@@ -528,7 +519,6 @@ h1 {
   z-index: -2;
 }
 
-
 /* --------------------------------------------
 // !-- Project Nav Bar
 // ----------------------------------------- */
@@ -548,21 +538,73 @@ h1 {
   padding-left: 1%;
 }
 
-/* typography */
+/* --------------------------------------------
+// !-- Typography
+// ----------------------------------------- */
 
 h1 {
   font-weight: 200;
   color: #777;
   font-size: 2em;
-  line-height: 1.15em;
+  line-height: 1.2em;
   padding-top: .3em;
+}
+
+.work h4 {
+  width: 100%;
+  font-weight: 600;
+  color: #777;
+  padding-left: 0%;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-right: 0%;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+
+/* --------------------------------------------
+// !-- Images
+// ----------------------------------------- */
+
+.full {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6%;
+}
+
+#full_icons {
+    display: inline;
+    width: 100%;
+    padding-bottom: 1.5%;
+}
+
+.half, .half_left {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 6%;
+}
+
+.third, .third_left {
+  width: 80%;
+  padding-left: 10%;
+  padding-bottom: 6%;
+}
+
+.mobile, .mobile_left {
+  width: 80%;
+  padding-left: 10%;
+  padding-bottom: 6%;
+  padding-right: 0%;
+  margin-left: 0%;
 }
 
 
 
-
-
-/* footer */
+/* --------------------------------------------
+// !-- Footer
+// ----------------------------------------- */
 
 .social {
   display: inline-block;
@@ -579,11 +621,8 @@ h1 {
   padding-right: 12%;
   opacity: 0.3;
   border-bottom: none;
-  transition: opacity .2s ease-in;
-  -webkit-transition: opacity .2s ease-in;
-  -moz-transition: opacity .2s ease-in;
-  -o-transition: opacity .2s ease-in;
 }
+
 
 
 
@@ -595,7 +634,7 @@ h1 {
 
 
 /* smartphone (landscape) ----------- */
-@media (min-width: 500px) and (max-width: 695px)  {  
+@media (min-width: 510px) and (max-width: 695px)  {  
 
 
 /* Main Nav Bar */
@@ -638,14 +677,7 @@ h1 {
   color: #dd4b39;
 }
 
-/* profile main text style */
-.widecol {
-  width: 100%;
-}
 
-#fourwide {
-  border-top: none;
-}
 
 .profile h1 {
   padding-top: 1.25em;
