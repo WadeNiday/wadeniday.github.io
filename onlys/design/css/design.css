@@ -491,7 +491,7 @@ h1 {
 // ----------------------------------------- */
 
 /* Smartphones (PORTRAIT) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 509px)  {  
+@media (min-width: 320px) and (max-width: 509px)  {  
 
 .wrapper {
   width: 95%;
@@ -618,6 +618,487 @@ h1 {
   opacity: 0.3;
   border-bottom: none;
 }
+
+}
+
+
+
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
+
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .65em;
+}
+
+.mainnav a {
+  color: #dd4b39;
+  font-weight: 400;
+}
+
+.mainnav li a {
+  padding-left: 3%;
+}
+
+.landing h6  {
+  z-index: 1;
+  font-weight: 400;
+}
+
+/* structure */
+.wrapper {
+  width: 95%;
+  background-color: lightgreen;
+}
+.landing {
+  padding-bottom: 2%;
+  border-bottom: none;
+}
+
+.work  {
+  margin-top: 0em; /* on all projects */
+  border-bottom: none;
+}
+
+/* project shape */
+.holder-a a, .holder-b a, .holder-c a  {
+  width: 100%;
+  height: 12em;
+}
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 14%;
+}
+
+#dbn {
+  width: 70%;
+  padding-left: 15%;
+  padding-top: 7.5%;
+}
+
+#mapkeys {
+  width: 50%;
+  padding-left: 25%;
+  padding-top: 6.3%;
+}
+
+#researchportal {
+  width: 22%;
+  padding-left: 39%;
+  padding-top: 5.3%;
+}
+
+#foundation {
+  width: 62%;
+  padding-left: 19%;
+  padding-top: 12%;
+}
+
+#safe {
+  width: 22%;
+  padding-left: 39%;
+  padding-top: 5%;
+}
+
+.holder-c h4{
+  font-size: 1.25em;
+  padding-left: 23.4%;
+  padding-top: 2%;
+}
+
+
+/* typography */
+.landing h1 {
+  margin-top: 2%;
+  font-size: 2.25em;
+  border-bottom: none;
+  color: #777;
+  padding-bottom: 0em;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.landing a, .footer a {        
+  border-bottom: none;
+  color: #777;
+}
+
+/* profile main text style */
+.widecol {
+  width: 100%;
+}
+
+#fourwide {
+  border-top: none;
+}
+
+.profile h1 {
+  padding-top: 1.25em;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  display: inline-block;
+  border-top: none;
+  font-weight: 300;
+}
+
+.col_x {
+  width: 49%;
+  padding-right: 1%;
+  margin-right: 0%;
+  margin-bottom: 3.5%;
+}
+
+.col_y {
+  width: 100%;
+}
+
+.profile h6 {
+  color: #dd4b39;
+  font-weight: 700;
+}
+
+.profile li {
+  font-weight: 300;
+  color: #777;
+  font-size: 1em;
+  line-height: 1.45em;
+}
+
+/* sidebar w photo */
+.profile_side {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 100%;
+  height: 12em;
+  margin-left: 0%;
+  border: none;
+  border-radius: 0%;
+  background-color: #000 ;
+  overflow: hidden;
+}
+
+/* image position within shape */
+#selfie img{
+    padding-top: 1.5%;
+    margin-left: 32%;
+}
+
+.footer h1 {
+  padding-top: .5em;
+  color: #777;
+  font-size: 1em;
+  width: 60%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* tablet PORTRAIT ----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+    width: 95%;
+        background-color: yellow;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .75em;
+}
+
+.landing h1 {
+  padding-top: 1.7em;
+  padding-bottom: .875em;
+  color: #777;
+  font-size: 3.6em;
+  line-height: 1.25em;
+  display: inline-block;
+  border-bottom: 1px dashed #bbb;
+}
+
+/* project shape */
+.holder-a a, .holder-b a, .holder-c a {
+  width: 48%;
+  height: 12em;
+}
+
+/* project shape */
+.holder-a a {
+  width: 48%;
+  height: 12em;
+  padding-left: 1%;
+}
+
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  width: 88%;
+  padding-left: 6%;
+  padding-top: 25%;
+}
+
+#mapkeys {
+  width: 65%;
+  padding-left: 17.5%;
+  padding-top: 12%;
+}
+
+#researchportal {
+  width: 25%;
+  padding-left: 37.5%;
+  padding-top: 14%;
+}
+
+#dbn {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 15%;
+}
+
+#foundation {
+  width: 78%;
+  padding-left: 11%;
+  padding-top: 21%;
+}
+
+#safe {
+  width: 30%;
+  padding-left: 35%;
+  padding-top: 12%;
+}
+
+.holder-c h4 {
+/*  width: 120%;
+*/  color: #777;
+  font-size: 1em;
+  padding-left: 15%;
+  padding-top: 8%;
+}
+
+
+.widecol {
+  width: 70%;
+}
+
+.profile h1 {
+  padding-top: 2.5em;
+/*  margin-bottom: .8em;*/
+  color: #555;
+  font-size: 1.28em;
+  line-height: 1.5em;
+  display: inline-block;
+}
+
+.profile li {
+  font-weight: 300;
+  color: #555;
+  font-size: .87em;
+  line-height: 1.6em;
+}
+
+
+
+/* sidebar w photo */
+.profile_side {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  margin-top: 2.5em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 9.5em;
+  height: 9.5em;
+  margin-left: 12%;
+  border: 1px solid #bbb;
+  border-radius: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+
+/* image position within circle */
+#selfie img{
+  width: 125%;
+  height: 103%;
+  padding-top: 6px;
+  margin-left: -6px;
+}
+
+
+.col_x {
+  width: 32%;
+  padding-right: 1%;
+  margin-right: 0%;
+  margin-bottom: 3.5%;
+}
+
+.col_y {
+  width: 33%;
+  padding-right: 0%;
+
+}
+
+.footer {
+  margin-top: .4em;
+}
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
+}
+
+}
+
+
+
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+    width: 95%;
+    background-color: pink;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .25em;
+}
+
+.landing h1 {
+  padding-top: 1.3em;
+  padding-bottom: .5em;
+}
+
+.work  {
+  margin-top: 2em; /* on all projects */
+  border-bottom: none;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+.widecol {
+  width: 68%;
+}
+
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .5em;
+  color: #555;
+  font-size: 1.635em;
+  line-height: 1.45em;
+  display: inline-block;
+}
+
+
+/* sidebar w photo */
+.profile_side {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  padding-right: 2%;
+  margin-top: 3em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 11.4em;
+  height: 11.4em;
+}
+
+/* image position within circle */
+#selfie img{
+  width: 120%;
+  height: 98%;
+  padding-top: 6px;
+  margin-left: -6px;
+}
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
+}
+
+}
+
+
+/* workaround for label on 'to come' project; can be deleated once added */
+@media (min-width: 1201px) and (max-width: 1350px)  {  
+
+.holder-c h4 {
+  padding-left: 7.5%;
+  padding-top: 2%;
+}
+
+}
+
+
+/* FULL WIDTH on MacBook Pro */
+@media (min-width: 1500px) {  
+
+/* structure */
+.wrapper {
+  width: 74%;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3em;
+}
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  padding-top: 18%;
+}
+
+#mapkeys {
+  padding-top: 8%;
+}
+
+#researchportal {
+  padding-top: 10%;
+}
+
+#dbn {
+  padding-top: 10%;
+}
+
+#foundation {
+  padding-top: 15%;
+}
+
+#safe {
+  padding-top: 10%;
+}
+
+.holder-c h4 {
+  padding-left: 17.5%;
+  padding-top: 2%;
+}
+
 
 }
 
