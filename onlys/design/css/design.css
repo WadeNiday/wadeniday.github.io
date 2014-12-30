@@ -498,7 +498,8 @@ h1 {
 
 .wrapper {
   width: 95%;
-  background-color: pink;
+/*  background-color: pink;*/
+  background-color: none;
 }
 
 /* Main Nav Bar */
@@ -626,7 +627,8 @@ h1 {
 
 .wrapper {
   width: 95%;
-  background-color: tan;
+/*  background-color: tan;
+*/  background-color: none;
 }
 
 /* Main Nav Bar */
@@ -755,8 +757,9 @@ h1 {
 
 /* structure */
 .wrapper {
-    width: 95%;
-    background-color: lightblue;
+  width: 95%;
+/*  background-color: lightblue;
+*/  background-color: none;
 }
 
 /* Main Nav Bar */
@@ -824,8 +827,9 @@ h1 {
 
 /* structure */
 .wrapper {
-    width: 95%;
-    background-color: pink;
+  width: 95%;
+/*  background-color: pink;
+*/  background-color: none;
 }
 
 /* Main Nav Bar */

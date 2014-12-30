@@ -470,7 +470,8 @@ background-color: #ddd;
 /* structure */
 .wrapper {
     width: 95%;
-    background-color: green;
+/*    background-color: green;*/
+    background-color: none;
 }
 
 .landing {
@@ -717,7 +718,8 @@ background-color: #ddd;
 /* structure */
 .wrapper {
   width: 95%;
-  background-color: lightgreen;
+/*  background-color: lightgreen;
+*/  background-color: none;
 }
 .landing {
   padding-bottom: 2%;
@@ -882,8 +884,9 @@ background-color: #ddd;
 
 /* structure */
 .wrapper {
-    width: 95%;
-        background-color: yellow;
+  width: 95%;
+/*  background-color: yellow;
+*/  background-color: none;
 }
 
 /* Main Nav Bar */
@@ -1043,8 +1046,9 @@ background-color: #ddd;
 
 /* structure */
 .wrapper {
-    width: 95%;
-    background-color: pink;
+  width: 95%;
+/*  background-color: pink;
+*/  background-color: none;
 }
 
 /* Main Nav Bar */
