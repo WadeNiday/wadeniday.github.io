@@ -144,6 +144,7 @@ header {
 }
 
 .mainnav a {
+  font-weight: 400;
   float: right;
   font-size: 1.05em; 
   color: #dd4b39;
@@ -190,6 +191,7 @@ header {
 
 .landing h6, .work h6, #nav_active {
     float: left;
+    font-weight: 400;
     margin-left: 2em;
     color: #777;
     padding-top: .9em;
@@ -501,6 +503,7 @@ background-color: #ddd;
 
 .landing h6, .footer h6, #nav_active, .work h6  {
   z-index: -2;
+  font-weight: 400;
 }
 
 /* project shape */
@@ -894,6 +897,10 @@ background-color: #ddd;
   padding-left: .75em;
 }
 
+.mainnav a {
+  font-weight: 400;
+}
+
 .landing h1 {
   padding-top: 1.7em;
   padding-bottom: .875em;
@@ -962,7 +969,6 @@ background-color: #ddd;
   padding-left: 15%;
   padding-top: 8%;
 }
-
 
 .widecol {
   width: 70%;
@@ -1056,6 +1062,10 @@ background-color: #ddd;
   padding-left: .25em;
 }
 
+.mainnav a {
+  font-weight: 400;
+}
+
 .landing h1 {
   padding-top: 1.3em;
   padding-bottom: .5em;
@@ -1133,6 +1143,10 @@ background-color: #ddd;
 /* structure */
 .wrapper {
   width: 74%;
+}
+
+.mainnav a {
+  font-weight: 400;
 }
 
 /* sidebar w photo */
