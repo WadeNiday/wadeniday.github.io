@@ -142,6 +142,7 @@ header {
 }
 
 .mainnav a {
+  font-weight: 400;
   float: right;
   font-size: 1.05em; 
   color: #dd4b39;
@@ -893,6 +894,20 @@ h1 {
 }
 
 
+/* FULL WIDTH on MacBook Pro */
+@media (min-width: 1500px) {  
+
+/* structure */
+.wrapper {
+  width: 74%;
+}
+
+.mainnav a {
+  font-weight: 400;
+}
+
+
+}
 
 
 
