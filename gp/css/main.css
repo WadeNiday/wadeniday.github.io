@@ -1,0 +1,1189 @@
+/* -----------------------------------------------------------------------------
+// Table of Contents
+//
+//  - Colors
+//  - Reset
+//  - Scaffolding
+//  - Main Nav Bar
+//  - Landing
+//  - Profile
+//  - Project Nav Bar
+//  - Typography
+//  - Footer
+//
+// -------------------------------------------------------------------------- */
+
+/* --------------------------------------------
+// -- Colors
+//
+// Black:       #222
+// Dark gray:   #777
+// Light gray:  #bbb
+// Red:         #dd4b39
+//
+// ----------------------------------------- */
+
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+    background-color: purple;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  background-color: #eee;
+}
+
+header {
+    position:fixed;
+    width: 100%;
+    background-color: #51284f;
+    z-index: 1;
+}
+
+/* --------------------------------------------
+// !-- Main Nav Bar
+// ----------------------------------------- */
+
+.mainnav {
+  height: 4.063em;
+}
+
+.logo {
+  display: block;
+  float: left;
+  margin-top: .75em;
+  width: 1.75%;
+}
+
+.mainnav li a {
+  margin-top: .9em;
+  margin-left: 4%;
+  padding-left: 4%;
+  text-align: center;
+  display: inline-block;
+}
+
+.mainnav a {
+  font-weight: 200;
+  float: right;
+  font-size: .85em; 
+  color: #fff;
+  transition: color .2s ease-in
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+}
+-
+.mainnav a:hover {
+    color: #777;
+}
+
+/* --------------------------------------------
+// !-- Landing
+// ----------------------------------------- */
+
+.landing {
+    background-color: #eee;
+}
+
+.landing h1 {
+  padding-top: 1.7em;
+  padding-bottom: .875em;
+  color: #777;
+  font-size: 3.5em;
+  line-height: 1.25em;
+  display: inline-block;
+  border-bottom: 1px dashed #bbb;
+}
+
+/* links in intro copy */
+.landing a {        
+  color: #777;
+  transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+  -o-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+}
+
+.landing a:hover {        
+    color: #dd4b39;
+}
+
+.landing h6, .work h6, #nav_active {
+    float: left;
+    font-weight: 400;
+    margin-left: 2em;
+    color: #777;
+    padding-top: .9em;
+    position: absolute;
+    z-index: 1;
+    font-size: 1.05em; 
+}
+
+/* --------------------------------------------
+// !-- Design
+// ----------------------------------------- */
+
+.work  {
+  background: #eee;
+/*  height: 53em;
+*/  margin-top: 2.6em; /* on all projects */
+}
+
+/* left side shape */
+.holder-a a {
+  width: 48.75%;
+  height: 15rem;
+background-color: #ddd;
+  border: 1px solid #ddd;
+  display: inline-block;
+  float: left;
+  margin-top: 1em;
+  margin-right: 2%;
+}
+
+/* right side shape */
+.holder-b a {
+  width: 48.75%;
+  height: 15rem;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  display: inline-block;
+  float: left;
+  margin-top: 1em;
+}
+
+.holder-c a{
+  width: 48.75%;
+  height: 15rem;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  display: inline-block;
+  float: left;
+  margin-top: 1em;
+}
+
+/* type for kj safe */
+.holder-c h4{
+  color: #aaa;
+  font-size: 1.5em;
+  padding-left: 14%;
+  padding-top: 3%;
+}
+
+/* all three holder shapes hover w/ the same behavior*/
+.holder-a a:hover, .holder-b a:hover, .holder-c a:hover{
+  border: 1px solid #ddd;
+  background-color: #eee;
+  transition: background-color .2s ease-in, border .2s ease-in;
+  -webkit-transition: background-color .2s ease-in, border .2s ease-in;
+  -moz-transition: background-color .2s ease-in, border .2s ease-in;
+  -o-transition: background-color .2s ease-in, border .2s ease-in;
+}
+
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  width: 75%;
+  padding-left: 12.5%;
+  padding-bottom: 22%;
+  padding-top: 23%;
+}
+
+#mapkeys {
+  width: 50%;
+  padding-left: 25%;
+  padding-top: 12%;
+  padding-bottom: 18%;
+}
+
+#researchportal {
+  width: 18%;
+  padding-left: 41%;
+  padding-top: 15%;
+  padding-bottom: 12.5%;
+
+}
+
+#dbn {
+  width: 70%;
+  padding-left: 14.5%;
+  padding-top: 13%;
+  padding-bottom: 18%;
+}
+
+#foundation {
+  width: 70%;
+  padding-left: 15%;
+  padding-top: 18%;
+  padding-bottom: 18%;
+}
+
+#safe {
+  width: 25%;
+  padding-left: 37.5%;
+  padding-top: 13%;
+  opacity: 0.3;
+}
+
+
+/* --------------------------------------------
+// !-- Profile
+// ----------------------------------------- */
+
+.profile {
+  background: #eee;
+/*  height: 100vh;
+*/}
+
+/* main text style */
+.widecol {
+  width: 65%;
+  display: inline-block;        
+}
+
+/* sidebar w photo */
+.profile_side {
+  display: inline-block;
+  width: 35%;
+  float: right;
+  margin-top: 4.5em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 12em;
+  margin-left: 27%;
+  border: 1px solid #bbb;
+  border-radius: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* image position within circle */
+#selfie img{
+  padding-top: 10px;
+  margin-bottom: -5px;
+  margin-left: -3px;
+}
+
+/* four col container */
+#fourwide {
+  padding-top: 1em;
+  border-top: 1px dashed #aaa; /*  #444  */ /*  border top  */
+  width: 100%;
+}
+
+.col_x {
+    width: 33%;
+    margin-right: .3%;
+    display: inline-block;
+    float: left;
+}
+
+.col_y {
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+/* typography */
+#callout {
+    font-weight: 600;
+    color: #555;
+    letter-spacing: -.03em;
+}
+
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .5em;
+  color: #555;
+  font-size: 1.7em;
+  line-height: 1.49em;
+  display: inline-block;
+}
+
+.profile li {
+    font-weight: 300;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.profile h6 {
+  color: #dd4b39;
+  font-weight: 600;
+}
+
+/*FOOTER*/
+
+.footer {
+  display: inline-block;
+  border-top: .5em solid #ccc;
+  width: 100%;
+  margin-top: 1.85em;
+}
+
+/* typography */
+.footer h1 {
+  clear: all;
+  width: 65%;
+  padding-top: 1%;
+/*  margin-bottom: 1%;*/
+  color: #777;
+  font-size: 1em;
+  display: inline-block;
+}
+
+
+/* copyright */
+.footer h4 {
+    color: #222;
+    font-size: .7em;
+    padding-bottom: 5%;
+}
+
+.social {
+  display: inline-block;
+  width: 35%;
+  float: right;
+  padding-top: .75%;
+}
+
+/* social icons*/
+.foot_twitter a, .foot_linkedin a, .foot_email a {
+  float: right;
+  padding-left: 12%;
+  opacity: 0.3;
+  border-bottom: none;
+  transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+}
+
+/* social icons, positioning */
+.foot_twitter a {
+    padding-top: 7px;
+}
+
+.foot_linkedin a {
+    padding-top: 4px;
+}
+
+.foot_email a {
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+.foot_twitter a:hover , .foot_linkedin a:hover , .foot_email a:hover {
+    opacity: 0.7;
+    border-bottom: none;
+}
+
+
+
+/* R E S P O N S I V E  S T Y L E S */
+
+
+/* Smartphones (PORTRAIT) ----------- */
+@media (min-width: 320px) and (max-width: 509px)  {  
+
+/* structure */
+.wrapper {
+    width: 95%;
+/*    background-color: green;*/
+    background-color: none;
+}
+
+.landing {
+  padding-bottom: 5%;
+  border-bottom: 1px dashed #777;
+}
+
+.work  {
+/*  height: 160vh;*/
+  margin-top: 4.5%; /* on all projects */
+  border-bottom: none;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .9em;
+}
+
+.mainnav a {
+  color: #dd4b39;
+  font-weight: 400;
+}
+
+.mainnav li a {
+  padding-left: 9%;
+}
+
+.landing h6, .footer h6, #nav_active, .work h6  {
+  z-index: -2;
+  font-weight: 400;
+}
+
+/* project shape */
+.holder-a a, .holder-b a, .holder-c a {
+  width: 100%;
+  height: 12em;
+}
+
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  width: 88%;
+  padding-left: 6%;
+  padding-top: 29.5%;
+}
+
+#dbn {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 20%;
+}
+
+#mapkeys {
+  width: 65%;
+  padding-left: 17.5%;
+  padding-top: 16%;
+}
+
+#researchportal {
+  width: 30%;
+  padding-left: 35%;
+  padding-top: 17.5%;
+}
+
+#foundation {
+  width: 78%;
+  padding-left: 11%;
+  padding-top: 25%;
+}
+
+#safe {
+  width: 36%;
+  padding-left: 32%;
+  padding-top: 12%;
+}
+
+.holder-c h4{
+  color: #555;
+  font-size: 1em;
+  padding-left: 10%;
+  padding-top: 6%;
+}
+
+#oneg, #mapk, #research, #print, #divine { 
+  margin-top: -8%;
+}
+
+/* typography */
+
+.landing h1 {
+  margin-top: 2%;
+  font-size: 2.25em;
+  border-bottom: none;
+  color: #777;
+  padding-bottom: 0em;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.landing a, .footer a  {        
+  border-bottom: none;
+  color: #777;
+}
+
+.landing a:hover, .footer a:hover {        
+  border-bottom: none;
+}
+
+.profile h1 {
+  padding-top: 10%;
+  margin-top: 12%;
+  margin-bottom: .5em;
+  color: #555;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  display: inline-block;
+  border-top: 1px dashed #777;
+  font-weight: 300;
+}
+
+.profile li {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.profile h6 {
+  color: #dd4b39;
+  font-weight: 600;
+}
+
+/* profile main text style */
+.widecol {
+  width: 100%;
+}
+
+/* sidebar w photo */
+.profile_side {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 100%;
+  height: 12em;
+  margin-left: 0%;
+  border: none;
+  border-radius: 0%;
+  background-color: #000 ;
+  overflow: hidden;
+}
+
+/* image position within circle */
+#selfie img{
+    padding-top: 2.5%;
+    margin-left: 18%;
+}
+
+/* four col container */
+#fourwide {
+  padding-top: 1em;  
+  border-top: none; /* #aaa OR #444  */ /*  border top  */
+}
+
+.col_x {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 7%;
+}
+
+.col_y {
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+/* footer */
+.footer {
+  margin-top: 1.5em;
+}
+
+.footer h1 {
+  width: 100%;
+  margin-top: 3%;
+  padding-top: 0em;
+  font-size: 1em;
+  color: #555;
+  display: block;
+  border-top: none;
+}
+
+.social {
+  display: inline-block;
+  width: 100%;
+  clear: all;
+  padding-top: .2em;
+  padding-bottom: .7em;
+}
+
+/* social icons*/
+.foot_twitter a, .foot_linkedin a, .foot_email a {
+  float: left;
+  padding-left: 0%;
+  padding-right: 12%;
+  opacity: 0.3;
+  border-bottom: none;
+  transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+}
+
+}
+
+
+
+
+
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
+
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .65em;
+}
+
+.mainnav a {
+  color: #dd4b39;
+  font-weight: 400;
+}
+
+.mainnav li a {
+  padding-left: 3%;
+}
+
+.landing h6  {
+  z-index: 1;
+  font-weight: 400;
+}
+
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: lightgreen;
+*/  background-color: none;
+}
+.landing {
+  padding-bottom: 2%;
+  border-bottom: none;
+}
+
+.work  {
+  margin-top: 0em; /* on all projects */
+  border-bottom: none;
+}
+
+/* project shape */
+.holder-a a, .holder-b a, .holder-c a  {
+  width: 100%;
+  height: 12em;
+}
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 14%;
+}
+
+#dbn {
+  width: 70%;
+  padding-left: 15%;
+  padding-top: 7.5%;
+}
+
+#mapkeys {
+  width: 50%;
+  padding-left: 25%;
+  padding-top: 6.3%;
+}
+
+#researchportal {
+  width: 22%;
+  padding-left: 39%;
+  padding-top: 5.3%;
+}
+
+#foundation {
+  width: 62%;
+  padding-left: 19%;
+  padding-top: 12%;
+}
+
+#safe {
+  width: 22%;
+  padding-left: 39%;
+  padding-top: 5%;
+}
+
+.holder-c h4{
+  font-size: 1.25em;
+  padding-left: 23.4%;
+  padding-top: 2%;
+}
+
+
+/* typography */
+.landing h1 {
+  margin-top: 2%;
+  font-size: 2.25em;
+  border-bottom: none;
+  color: #777;
+  padding-bottom: 0em;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.landing a, .footer a {        
+  border-bottom: none;
+  color: #777;
+}
+
+/* profile main text style */
+.widecol {
+  width: 100%;
+}
+
+#fourwide {
+  border-top: none;
+}
+
+.profile h1 {
+  padding-top: 1.25em;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  display: inline-block;
+  border-top: none;
+  font-weight: 300;
+}
+
+.col_x {
+  width: 49%;
+  padding-right: 1%;
+  margin-right: 0%;
+  margin-bottom: 3.5%;
+}
+
+.col_y {
+  width: 100%;
+}
+
+.profile h6 {
+  color: #dd4b39;
+  font-weight: 700;
+}
+
+.profile li {
+  font-weight: 300;
+  color: #777;
+  font-size: 1em;
+  line-height: 1.45em;
+}
+
+/* sidebar w photo */
+.profile_side {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 100%;
+  height: 12em;
+  margin-left: 0%;
+  border: none;
+  border-radius: 0%;
+  background-color: #000 ;
+  overflow: hidden;
+}
+
+/* image position within shape */
+#selfie img{
+    padding-top: 1.5%;
+    margin-left: 32%;
+}
+
+.footer h1 {
+  padding-top: .5em;
+  color: #777;
+  font-size: 1em;
+  width: 60%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* tablet PORTRAIT ----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: yellow;
+*/  background-color: none;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .75em;
+}
+
+.mainnav a {
+  font-weight: 400;
+}
+
+.landing h1 {
+  padding-top: 1.7em;
+  padding-bottom: .875em;
+  color: #777;
+  font-size: 3.6em;
+  line-height: 1.25em;
+  display: inline-block;
+  border-bottom: 1px dashed #bbb;
+}
+
+/* project shape */
+.holder-a a, .holder-b a, .holder-c a {
+  width: 48%;
+  height: 12em;
+}
+
+/* project shape */
+.holder-a a {
+  width: 48%;
+  height: 12em;
+  padding-left: 1%;
+}
+
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  width: 88%;
+  padding-left: 6%;
+  padding-top: 25%;
+}
+
+#mapkeys {
+  width: 65%;
+  padding-left: 17.5%;
+  padding-top: 12%;
+}
+
+#researchportal {
+  width: 25%;
+  padding-left: 37.5%;
+  padding-top: 14%;
+}
+
+#dbn {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 15%;
+}
+
+#foundation {
+  width: 78%;
+  padding-left: 11%;
+  padding-top: 21%;
+}
+
+#safe {
+  width: 30%;
+  padding-left: 35%;
+  padding-top: 12%;
+}
+
+.holder-c h4 {
+/*  width: 120%;
+*/  color: #777;
+  font-size: 1em;
+  padding-left: 15%;
+  padding-top: 8%;
+}
+
+.widecol {
+  width: 70%;
+}
+
+.profile h1 {
+  padding-top: 2.5em;
+/*  margin-bottom: .8em;*/
+  color: #555;
+  font-size: 1.28em;
+  line-height: 1.5em;
+  display: inline-block;
+}
+
+.profile li {
+  font-weight: 300;
+  color: #555;
+  font-size: .87em;
+  line-height: 1.6em;
+}
+
+
+
+/* sidebar w photo */
+.profile_side {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  margin-top: 2.5em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 9.5em;
+  height: 9.5em;
+  margin-left: 12%;
+  border: 1px solid #bbb;
+  border-radius: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+
+/* image position within circle */
+#selfie img{
+  width: 125%;
+  height: 103%;
+  padding-top: 6px;
+  margin-left: -6px;
+}
+
+
+.col_x {
+  width: 32%;
+  padding-right: 1%;
+  margin-right: 0%;
+  margin-bottom: 3.5%;
+}
+
+.col_y {
+  width: 33%;
+  padding-right: 0%;
+
+}
+
+.footer {
+  margin-top: .4em;
+}
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
+}
+
+}
+
+
+
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: pink;
+*/  background-color: none;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .25em;
+}
+
+.mainnav a {
+  font-weight: 400;
+}
+
+.landing h1 {
+  padding-top: 1.3em;
+  padding-bottom: .5em;
+}
+
+.work  {
+  margin-top: 2em; /* on all projects */
+  border-bottom: none;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+.widecol {
+  width: 68%;
+}
+
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .5em;
+  color: #555;
+  font-size: 1.635em;
+  line-height: 1.45em;
+  display: inline-block;
+}
+
+
+/* sidebar w photo */
+.profile_side {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  padding-right: 2%;
+  margin-top: 3em;
+}
+
+/* image position on the page */
+#selfie {
+  width: 11.4em;
+  height: 11.4em;
+}
+
+/* image position within circle */
+#selfie img{
+  width: 120%;
+  height: 98%;
+  padding-top: 6px;
+  margin-left: -6px;
+}
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
+}
+
+}
+
+
+/* workaround for label on 'to come' project; can be deleated once added */
+@media (min-width: 1201px) and (max-width: 1350px)  {  
+
+.holder-c h4 {
+  padding-left: 7.5%;
+  padding-top: 2%;
+}
+
+}
+
+
+/* FULL WIDTH on MacBook Pro */
+@media (min-width: 1500px) {  
+
+/* structure */
+.wrapper {
+  width: 74%;
+}
+
+.mainnav a {
+  font-weight: 400;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3em;
+}
+
+/*  logo positioning within container  */
+#oneguggenheim {
+  padding-top: 18%;
+}
+
+#mapkeys {
+  padding-top: 8%;
+}
+
+#researchportal {
+  padding-top: 10%;
+}
+
+#dbn {
+  padding-top: 10%;
+}
+
+#foundation {
+  padding-top: 15%;
+}
+
+#safe {
+  padding-top: 10%;
+}
+
+.holder-c h4 {
+  padding-left: 17.5%;
+  padding-top: 2%;
+}
+
+
+}
+

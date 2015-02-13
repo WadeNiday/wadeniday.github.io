@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testing Ground</title>
+  <meta name="description" content="Wade Niday is a designer in Chicago thatʼs focused on bringing clarity and simplicity to digital experiences."</> 
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="shortcut icon" href="/images/sfavicon.ico" type="image/x-icon" />
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+
+<!-- MAIN NAVIGATION --> 
+<header>
+  <div class='wrapper'>
+    <nav class='mainnav'>
+      <ul>
+        <li><a href="#">search</a></li>
+        <li><a href="#">client login</a></li>
+        <li><a href="#">our perspectives</a></li>
+        <li><a href="#">our services</a></li>
+        <li><a href="#">our firm</a></li>
+      </ul>
+
+      <div class='logo'>
+        <a href="#landing"><img src="images/w.png" width='20' title="Wade's logo"></a>
+      </div>
+      
+    </nav>
+  </div>
+</header>
+
+<!-- LANDING --> 
+<div class='wrapper'> <!-- wraps the whole page -->
+
+<section class='landing'>
+      
+  <h1>Innovative Solutions.Enduring Values.SMWith more than $220 billion* in assets, Guggenheim Partners has a track record of delivering innovative investment and advisory solutions.EXPLORE MORE</h1>
+
+</section>
+
+
+
+<!-- FOOTER --> 
+
+<section class='footer'>
+
+    <h1>*Based on StrengthsFinder2.0 by Tom Rath</h1>
+
+    <aside class='social'>
+
+    <section class='foot_twitter'>
+      <a href="https://twitter.com/NidayLikeFriday" target="_blank"><img src="images/twitter.svg" width='38' height='28'></a>
+    </section>
+
+    <section class='foot_linkedin'>
+      <a href="http://www.linkedin.com/in/wadeniday" target="_blank"><img src="images/linkedin.svg" width='32' height='30'></a>
+    </section>
+
+    <section class='foot_email'>
+      <a href="mailto:wniday@gmail.com" target="_blank"><img src="images/email.svg" width='30' height='27'></a>
+    </section>
+
+    </aside>
+
+    <h4>© 2015 Guggenheim Partners, LLC. All rights reserved. Guggenheim, Guggenheim Partners and Innovative Solutions. Enduring Values. are trademarks or registered trademarks of Guggenheim Capital, LLC. *Assets under management, employee ownership, and number of employees are as of December 31, 2014. Assets under management include consulting services for clients whose assets are valued at approximately $36 billion.</h4>
+
+</section>
+
+</div> <!-- wrapper -->
+
+
+
+
+<!-- JQUERY --> 
+<script src="jquery.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+// page to page behavior
+
+ $(document).ready(function(){
+  $('.mainnav a, .projectnav a, .btn a, .landing a, .btn_design a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 575);
+       return false;
+      }
+    }
+  });
+});
+
+// hide behavior
+$('#atwork, #contact').hide();
+  $('#single_arrowright, .arrowleft, .arrowright, .banner .btn a, #connect').click(function(){
+    $('#atwork, #profile').fadeIn('slow');
+});
+
+  $('.mainnav a, #arrowreturn, .banner .btn a').click(function(){
+ // 3 second fadeOut
+    $('#atwork').fadeOut('xslow'); 
+});
+
+
+// SHOW PROJECT DESCRIPTION
+
+// show one guggenheim description
+$(function() {
+  $('#oneg').hide ();
+  $('#banner_oneg').on('mouseenter', function() {
+    $('#oneg').fadeIn ('xslow'); } );
+});
+
+// hide one guggenheim description
+  $('#banner_oneg').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#oneg').fadeOut('xslow'); 
+});
+
+
+
+// show mapkeys description
+$(function() {
+  $('#mapk').hide ();
+  $('#banner_mapk').on('mouseenter', function() {
+    $('#mapk').fadeIn ('xslow'); } );
+});
+
+// hide mapkeys description
+  $('#banner_mapk').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#mapk').fadeOut('xslow'); 
+});
+
+
+
+// show research
+$(function() {
+  $('#research').hide ();
+  $('#banner_research').on('mouseenter', function() {
+    $('#research').fadeIn ('xslow'); } );
+});
+
+// hide mapkeys description
+  $('#banner_research').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#research').fadeOut('xslow'); 
+});
+
+
+
+// show divinebacknine.com
+$(function() {
+  $('#divine').hide ();
+  $('#banner_divine').on('mouseenter', function() {
+    $('#divine').fadeIn ('xslow'); } );
+});
+
+// hide mapkeys description
+  $('#banner_divine').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#divine').fadeOut('xslow'); 
+});
+
+
+
+// show print
+$(function() {
+  $('#print').hide ();
+  $('#banner_print').on('mouseenter', function() {
+    $('#print').fadeIn ('xslow'); } );
+});
+
+// hide mapkeys description
+  $('#banner_print').on('mouseleave', function(){
+ // 3 second fadeOut
+    $('#print').fadeOut('xslow'); 
+});
+
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21939970-1', 'wadeniday.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
