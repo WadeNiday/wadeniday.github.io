@@ -18,17 +18,21 @@
 <header>
   <div class='wrapper'>
     <nav class='mainnav'>
-      <ul>
-        <li><a href="#">search</a></li>
-        <li><a href="#">client login</a></li>
-        <li><a href="#">our perspectives</a></li>
-        <li><a href="#">our services</a></li>
-        <li><a href="#">our firm</a></li>
-      </ul>
 
       <div class='logo'>
-        <a href="#landing"><img src="images/w.png" width='20' title="Wade's logo"></a>
+        <a href="#landing"><img src="images/guggLogo.png" width='170' title="logo"></a>
       </div>
+
+
+      <ul>
+        <li id='search'><a href="#">search<img src="images/search.png" width='12' title="search"></a></li>
+        <li id='login'><a href="#">client login</a></li>
+        <li id='pers'><a href="#">our perspectives</a></li>
+        <li id='serv'><a href="#">our services</a></li>
+        <li id='firm'><a href="#">our firm</a></li>
+      </ul>
+
+
       
     </nav>
   </div>
@@ -81,6 +85,44 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <script>
+
+// $('.mainnav a').mouseover(function(){
+//     //this will happen when your mouse moves over the object
+//     $('.mainnav a').css({
+
+//     });
+// },function(){
+//     //this is what will happen when you take your mouse off the object
+//     $('.mainnav a').css({
+//         "color":"#aaa",
+//     });
+// });
+
+
+// $('.mainnav a').mouseleave(function(){
+//     //this will happen when your mouse moves over the object
+//     $('mainnav li a').css({
+//     });
+// },function(){
+//     //this is what will happen when you take your mouse off the object
+//     $('.mainnav a').css({
+//         "color":"white",
+//     });
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // page to page behavior
 
  $(document).ready(function(){
@@ -100,16 +142,6 @@
   });
 });
 
-// hide behavior
-$('#atwork, #contact').hide();
-  $('#single_arrowright, .arrowleft, .arrowright, .banner .btn a, #connect').click(function(){
-    $('#atwork, #profile').fadeIn('slow');
-});
-
-  $('.mainnav a, #arrowreturn, .banner .btn a').click(function(){
- // 3 second fadeOut
-    $('#atwork').fadeOut('xslow'); 
-});
 
 
 // SHOW PROJECT DESCRIPTION
