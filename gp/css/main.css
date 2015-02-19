@@ -61,12 +61,20 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {
-  font-size: 16px;
+  font-size: 1em;
 }
 
-body {
+h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
+}
+
+h2 {
+    font-family: serif;
+}
+
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 ol, ul {
@@ -102,7 +110,7 @@ a {
 // !-- Scaffolding
 // ----------------------------------------- */
 .wrapper {
-    width: 67%;
+    width: 72%;
     margin: 0 auto;
 /*    background-color: purple;*/
 }
@@ -110,7 +118,6 @@ a {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
-  background-color: #eee;
 }
 
 header {
@@ -133,12 +140,6 @@ header {
   margin-top: 1.5em;
   width: 170px;
 }
-
-.mainnav ul {
-
-}
-
-
 
 .mainnav li a {
   margin-top: 1.5em;
@@ -176,21 +177,72 @@ header {
 // ----------------------------------------- */
 
 .landing {
-    background-color: #eee;
+  background-color: #777;
+  height: 25em;
+  width: 100%;
+  margin-bottom: 100em;
 }
 
-.landing h1 {
-  padding-top: 1.7em;
-  padding-bottom: .875em;
-  color: #777;
-  font-size: 3.5em;
-  line-height: 1.25em;
-  display: inline-block;
-  border-bottom: 1px dashed #bbb;
+.intro {
+padding-top: 8.5em;
+}
+
+.intro h1 {
+  color: #fff;
+  line-height: 1.15em;
+  font-size: 2.375em;
+/*  display: block;*/
+}
+
+.intro h2 {
+  color: #fff;
+  font-family: 'Source Serif Pro';
+  font-weight: 700;
+  font-size: 2.375em;
+  line-height: 1.15em;
+  margin-bottom: .5em;
+}
+
+#period {
+  color: #fff;
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  font-size: .75em;
+}
+
+.intro h3 {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.438em;
+  margin-bottom: .5em;
+}
+
+.herotext {
+  width: 34%;
+}
+
+#sm {
+  color: #fff;
+  font-family: 'Source Serif Pro';
+  font-size: .3em;
+  font-weight: 400;
+  vertical-align: baseline;
+  position: relative;
+  top: -1.45em;
+}
+
+
+h6 {
+  font-weight: 400;
+  color: #fff;
+  padding-top: .9em;
+  z-index: 1;
+  letter-spacing: .075em;
+  text-transform: uppercase;
 }
 
 /* links in intro copy */
-.landing a {        
+/*.landing a {        
   color: #777;
   transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
   -webkit-transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
@@ -200,49 +252,91 @@ header {
 
 .landing a:hover {        
     color: #dd4b39;
-}
-
-.landing h6, .work h6, #nav_active {
-    float: left;
-    font-weight: 400;
-    margin-left: 2em;
-    color: #777;
-    padding-top: .9em;
-    position: absolute;
-    z-index: 1;
-    font-size: 1.05em; 
-}
-
+}*/
 
 
 
 /*FOOTER*/
 
-.footer {
+/* more  */
+
+.more {
+/*  background-color: pink;*/
+  border-top: 1px solid #cdcdcd;
   display: inline-block;
-  border-top: .5em solid #ccc;
   width: 100%;
-  margin-top: 1.85em;
+  padding-bottom: 7%;
+  padding-top: 2.5%;
 }
 
-/* typography */
-.footer h1 {
-  clear: all;
-  width: 65%;
-  padding-top: 1%;
-/*  margin-bottom: 1%;*/
-  color: #777;
-  font-size: 1em;
+
+.purplelogo {
+  width: 25%;
   display: inline-block;
+  float: left;
+}
+
+.subscribe {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.follow {
+  width: 25%;
+  display: inline-block;
+  float: left;
 }
 
 
-/* copyright */
-.footer h4 {
-    color: #222;
-    font-size: .7em;
-    padding-bottom: 5%;
+
+/* full navigation */
+
+.full_nav {
+/*  background-color: pink;*/
+  border-top: 1px solid #cdcdcd;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 7%;
+  padding-top: 2.5%;
 }
+
+.full_nav_col {
+  width: 25%;
+  display: inline-block;
+  float: left;
+}
+
+.full_nav a {
+  font-weight: 400;
+  letter-spacing: .08em;
+  font-size: .85em; 
+  color: #51284f;
+  text-transform: uppercase;
+}
+
+.full_nav li {
+  font-weight: 30;
+/*  letter-spacing: .08em;
+*/  font-size: .85em; 
+  line-height: 1.85em; 
+  color: gray;
+  padding-bottom: 1px;
+}
+
+/* disclosure */
+.disclosure h4 {
+  color: #222;
+  font-size: .7em;
+}
+
+.disclosure {
+/*  background-color: green;*/
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
 
 .social {
   display: inline-block;
