@@ -23,7 +23,6 @@
 // Purple       #53284f
 // Green        #719949
 
-//
 // ----------------------------------------- */
 
 
@@ -116,7 +115,7 @@ body{
 }
 
 .wrapper {
-    width: 50%;
+    width: 52%;
     margin: 2em auto;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -131,35 +130,86 @@ body{
   width: 100%;
   display: block;
   float: left;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
+  padding-top: 2em;
 }
 
 /* --------------------------------------------
 // !-- Landing
 // ----------------------------------------- */
 
-.landing {
-  width: 100%;
-}
-
+/* article title */
 .landing h1 {
   color: #53284f;
   line-height: 1.15em;
   font-size: 1.500em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
+/* first call */
 .landing p {
   font-family: arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-bottom: .5em;
-  color: gray;
+  font-size: 1.3em;
+  margin-bottom: .3em;
+  color: #a0a0a0;
+  color: #53284f;
 }
+
+.firstcall p {
+  color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 0.875em;
+  line-height: 0.875em;
+}
+
+.firstcall {
+  margin-bottom: 2.5em;
+}
+
+.landing h4 {
+  font-family: arial, sans-serif;
+  font-size: 0.875em;
+  color: #a0a0a0;
+}
+
+/*---------------- category and date ----------------*/
+
+.dateline {
+  border-bottom: 1px solid #53284f;
+  border-top: .6em solid #53284f;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+#category {
+  display: inline-block;
+}
+
+#date {
+  float: right;
+}
+
+/*---------------- disclosure ----------------*/
+
+h6 {
+  color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 0.63em;
+  line-height: 1.25em;
+  padding-bottom: 0.75em;
+}
+
+.disclaimer h4 {
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+
+/*---------------- contributors ----------------*/
 
 .landing h3 {
   font-family: arial, sans-serif;
-  font-size: 1em;
+  font-size: .875em;
   color: #a0a0a0;
   padding-bottom: .375em;
 }
@@ -174,76 +224,34 @@ body{
   padding-bottom: 2px;
 }
 
-.landing h4 {
-  font-family: arial, sans-serif;
-  font-size: 0.875em;
-  color: #a0a0a0;
-}
-
-
-/*  disclosure  */
-h6 {
-  color: #a0a0a0;
-  font-family: arial, sans-serif;
-  font-size: 0.63em;
-  line-height: 1.25em;
-  padding-bottom: 0.75em;
-}
-
-.disclosure{
-  margin-top: 0.75em;
-  padding-top: 0.75em;
-  border-top: 1px solid #a0a0a0;
-}
-
-/*  category and date  */
-.dateline {
-  border-bottom: 1px solid #53284f;
-  border-top: .6em solid #53284f;
-  padding-top: 0.5em;
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
-}
-
-#category {
-  display: inline-block;
-}
-
-#date {
-  float: right;
-}
-
-.disclaimer h4 {
-  margin-bottom: 1em;
-  text-transform: uppercase;
-}
-
 .phone {
   padding-left: 5px;
 }
 
 .contributors{
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
-.firstcall p {
-  color: #a0a0a0;
-  font-family: arial, sans-serif;
-  font-size: 0.875em;
-  line-height: 0.875em;
-}
 
-.firstcall {
-  margin-bottom: 2.5em;
-}
+/*---------------- buttons ----------------*/
 
 .btn-access {
   background-color: #a0a0a0;
-  width: 20em;
-  margin-bottom: 1em;
+  width: 45%;
+  margin-bottom: 1.5em;
+  display: inline-block;
+  float: left;
+  margin-right: 5%;
 }
 
-.btn-access a, .btn-buy a {
+.btn-access-solo {
+  background-color: #a0a0a0;
+  width: 45%;
+  margin-bottom: 1.5em;
+  display: block;
+}
+
+.btn-access a, .btn-buy a, .btn-access-solo a {
   color: #fff;
   font-size: .875em;
 }
@@ -254,14 +262,14 @@ h6 {
 
 .btn-buy {
   background-color: green;
-  width: 20em;
-  margin-bottom: 1em;
+  width: 45%;
+  margin-bottom: 1.5em;
+  display: inline-block;
 }
 
 .btn-buy:hover {
   background-color: darkgreen;
 }
-
 
 .landing h2 {
   color: #fff;
@@ -271,12 +279,32 @@ h6 {
   text-align: center;
 }
 
+
+/*---------------- content-main ----------------*/
+
+.landing h1 {
+  color: #53284f;
+  line-height: 1.25em;
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+}
+
+
+
 .landing h5 {
   color: #a0a0a0;
   font-family: arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 1em;
+}
+
+.landing h5 a {
+  color: #5e8ab4;
+}
+
+.landing-three p {
+  margin-top: 3em;
 }
 
 .body-bold {
@@ -288,7 +316,7 @@ h6 {
   color: #5e8ab4;
 }
 
-.body-bold a:hover {
+.body-bold a:hover, .landing h5 a:hover {
   border-bottom: 1px solid #5e8ab4;
   padding-bottom: 2px;
 }
@@ -297,10 +325,190 @@ h6 {
   font-style: italic;
 }
 
+.body-black {
+  color: #222;
+}
+
+.content-main {
+    border-bottom: 1px solid #a0a0a0;
+}
+
+
+/*---------------- disclosure ----------------*/
+
+.disclosure {
+  padding-top: 0.75em;
+}
+
+.landing-two {
+  margin-top: 5em;
+}
 
 
 
 
+/* R E S P O N S I V E  S T Y L E S */
+
+
+/* Smartphones (PORTRAIT) ----------- */
+@media (min-width: 320px) and (max-width: 509px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: none;
+}
+
+.logo {
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+}
+
+.firstcall {
+  margin-bottom: 1.5em;
+}
+
+/*---------------- category and date ----------------*/
+
+.dateline {
+  border-bottom: 1px solid #53284f;
+  border-top: .6em solid #53284f;
+  padding-top: .5em;
+  padding-bottom: 1.75em;
+  margin-bottom: 1em;
+}
+
+#category, #date {
+  display: block;
+  padding-bottom: .2em;
+  font-size: .875em;
+}
+
+#date {
+  float: left;
+}
+
+/*---------------- disclosure ----------------*/
+
+.disclaimer h4 {
+  margin-bottom: 1.5em;
+    font-size: 0.75em;
+    line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+/*---------------- contributors ----------------*/
+
+.phone {
+  padding-left: 2px;
+}
+
+.contributors{
+  margin-bottom: 1em;
+}
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.btn-access-solo {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.btn-buy {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.landing h2 {
+  color: #fff;
+  padding: .875em;
+  font-family: arial, sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+
+/*---------------- content-main ----------------*/
+
+.landing h5 {
+  font-size: .875em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.landing-three p {
+  margin-top: 1.5em;
+}
+
+.landing-two {
+  margin-top: 1.5em;
+}
+
+h6 {
+  font-size: 0.7em;
+  line-height: 1.35em;
+  padding-bottom: 0.75em;
+}
+
+
+}
+
+
+
+
+
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
+
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: none;
+}
+}
+
+
+
+
+/* tablet PORTRAIT ----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: none;
+}
+}
+
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: none;
+}
+
+
+/* FULL WIDTH on MacBook Pro */
+@media (min-width: 1500px) {  
+
+/* structure */
+.wrapper {
+  width: 74%;
+}
+}
 
 
 
