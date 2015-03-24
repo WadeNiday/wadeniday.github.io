@@ -351,7 +351,8 @@ h6 {
 
 
 /* Smartphones (PORTRAIT) ----------- */
-@media (min-width: 320px) and (max-width: 509px)  {  
+
+@media (min-width: 320px) and (max-width: 695px)  {  
 
 /* structure */
 .wrapper {
@@ -476,6 +477,108 @@ h6 {
   width: 85%;
   background-color: none;
 }
+
+.logo {
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+}
+
+.firstcall {
+  margin-bottom: 1.5em;
+}
+
+/*---------------- category and date ----------------*/
+
+.dateline {
+  border-bottom: 1px solid #53284f;
+  border-top: .6em solid #53284f;
+  padding-top: .5em;
+  padding-bottom: 1.75em;
+  margin-bottom: 1em;
+}
+
+#category, #date {
+  display: block;
+  padding-bottom: .2em;
+  font-size: .875em;
+}
+
+#date {
+  float: left;
+}
+
+/*---------------- disclosure ----------------*/
+
+.disclaimer h4 {
+  margin-bottom: 1.5em;
+    font-size: 0.75em;
+    line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+/*---------------- contributors ----------------*/
+
+.phone {
+  padding-left: 2px;
+}
+
+.contributors{
+  margin-bottom: 1em;
+}
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.btn-access-solo {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.btn-buy {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.landing h2 {
+  color: #fff;
+  padding: .875em;
+  font-family: arial, sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+
+/*---------------- content-main ----------------*/
+
+.landing h5 {
+  font-size: .875em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.landing-three p {
+  margin-top: 1.5em;
+}
+
+.landing-two {
+  margin-top: 1.5em;
+}
+
+h6 {
+  font-size: 0.7em;
+  line-height: 1.35em;
+  padding-bottom: 0.75em;
+}
+
+
 }
 
 
