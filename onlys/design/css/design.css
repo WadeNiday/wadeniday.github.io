@@ -386,7 +386,7 @@ h1 {
   -webkit-transition: color .25s ease-in;
   -moz-transition: color .25s ease-in;
   -o-transition: color .25s ease-in;
-  font-size: 3.5em;
+  font-size: 3.125em;
   line-height: 1.15em;
   padding-top: .3em;
 }
@@ -401,15 +401,19 @@ h1 {
 }*/
 
 .work h4 {
-  font-weight: 600;
+  font-weight: 300;
   color: #777;
   padding-left: 17%;
   padding-bottom: 3%;
-  padding-right: 18%;
-  font-size: 1.35em;
-  line-height: 1.3em;
+  padding-right: 17.5%;
+  font-size: 1.05em;
+  line-height: 1.5em;
 }
 
+.lead-in {
+  font-weight: 600;
+  color: #777;
+}
 
 
 
@@ -549,16 +553,20 @@ h1 {
 
 .work h4 {
   width: 100%;
-  font-weight: 600;
+  font-weight: 300;
   color: #777;
   padding-left: 0%;
   padding-bottom: 10%;
   padding-top: 5%;
   padding-right: 0%;
-  font-size: 1em;
-  line-height: 1.3em;
+  font-size: 1.05em;
+  line-height: 1.5em;
 }
 
+.lead-in {
+  font-weight: 600;
+  color: #777;
+}
 
 /*Images*/
 
@@ -684,8 +692,8 @@ h1 {
   padding-bottom: 10%;
   padding-top: 5%;
   padding-right: 0%;
-  font-size: 1em;
-  line-height: 1.3em;
+  font-size: 1.05em;
+  line-height: 1.5em;
 }
 
 
@@ -806,8 +814,8 @@ h1 {
   padding-bottom: 5%;
   padding-top: 1%;
   padding-right: 12.5%;
-  font-size: 1.25em;
-  line-height: 1.3em;
+  font-size: 1.05em;
+  line-height: 1.5em;
 }
 
 .banner { 
@@ -876,8 +884,8 @@ h1 {
   padding-bottom: 5%;
   padding-top: 1%;
   padding-right: 12.5%;
-  font-size: 1.25em;
-  line-height: 1.3em;
+  font-size: 1.05em;
+  line-height: 1.5em;
 }
 
 .banner { 
