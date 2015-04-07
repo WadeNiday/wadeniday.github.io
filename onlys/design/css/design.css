@@ -689,9 +689,10 @@ h1 {
   padding-top: .3em;
 }
 
+
 .work h4 {
   width: 100%;
-  font-weight: 600;
+  font-weight: 300;
   color: #777;
   padding-left: 0%;
   padding-bottom: 10%;
@@ -700,6 +701,12 @@ h1 {
   font-size: 1.05em;
   line-height: 1.5em;
 }
+
+.lead-in {
+  font-weight: 600;
+  color: #777;
+}
+
 
 
 /*Images*/
