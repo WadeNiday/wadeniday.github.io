@@ -167,14 +167,14 @@ header {
 }
 
 .landing h1 {
-  padding-top: 1.7em;
-  padding-bottom: .875em;
-  color: #777;
-  font-size: 3.35em;
-  line-height: 1.25em;
+  padding-top: 1.85em;
+/*  padding-bottom: .1em;
+*/  color: #777;
+  font-size: 3em;
+  line-height: 1.15em;
   display: inline-block;
-  border-bottom: 1px dashed #bbb;
-}
+/*  border-bottom: 1px solid #ccc;
+*/}
 
 /* links in intro copy */
 .landing a {        
@@ -313,8 +313,7 @@ background-color: #ddd;
 
 .profile {
   background: #eee;
-/*  height: 100vh;
-*/}
+}
 
 /* main text style */
 .widecol {
@@ -410,8 +409,8 @@ background-color: #ddd;
   width: 65%;
   padding-top: 1%;
 /*  margin-bottom: 1%;*/
-  color: #777;
-  font-size: 1em;
+    color: #555;
+  font-size: .9em;
   display: inline-block;
 }
 
@@ -478,8 +477,8 @@ background-color: #ddd;
 
 .landing {
   padding-bottom: 5%;
-  border-bottom: 1px dashed #777;
-}
+/*  border-bottom: 1px dashed #777;
+*/}
 
 .work  {
 /*  height: 160vh;*/
@@ -564,13 +563,11 @@ background-color: #ddd;
 /* typography */
 
 .landing h1 {
-  margin-top: 2%;
-  font-size: 2.25em;
-  border-bottom: none;
+  margin-top: 5%;
+  font-size: 2em;
   color: #777;
-  padding-bottom: 0em;
   line-height: 1.2em;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .landing a, .footer a  {        
@@ -661,7 +658,7 @@ background-color: #ddd;
   width: 100%;
   margin-top: 3%;
   padding-top: 0em;
-  font-size: 1em;
+  font-size: .9em;
   color: #555;
   display: block;
   border-top: none;
@@ -786,14 +783,14 @@ background-color: #ddd;
 
 /* typography */
 .landing h1 {
-  margin-top: 2%;
-  font-size: 2.25em;
-  border-bottom: none;
+  margin-top: 3%;
+  font-size: 2em;
   color: #777;
   padding-bottom: 0em;
   line-height: 1.2em;
-  font-weight: 300;
+  font-weight: 0;
 }
+
 
 .landing a, .footer a {        
   border-bottom: none;
@@ -892,6 +889,10 @@ background-color: #ddd;
 */  background-color: none;
 }
 
+.landing {
+  padding-bottom: 0%;
+}
+
 /* Main Nav Bar */
 .logo {
   padding-left: .75em;
@@ -902,13 +903,11 @@ background-color: #ddd;
 }
 
 .landing h1 {
-  padding-top: 1.7em;
-  padding-bottom: .875em;
+  padding-top: 1.85em;
   color: #777;
-  font-size: 3.6em;
+  font-size: 2.75em;
   line-height: 1.25em;
   display: inline-block;
-  border-bottom: 1px dashed #bbb;
 }
 
 /* project shape */
@@ -1067,8 +1066,8 @@ background-color: #ddd;
 }
 
 .landing h1 {
-  padding-top: 1.3em;
-  padding-bottom: .5em;
+  padding-top: 1.85em;
+    font-size: 2.75em;
 }
 
 .work  {

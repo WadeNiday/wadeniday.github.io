@@ -244,6 +244,14 @@ header {
   border-bottom: 1px dashed #ccc;
 }
 
+/*project artwork*/
+.banner_project { 
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3%;
+  border-bottom: .25em solid #ccc;
+}
+
 
 .description-int { 
   display: inline-block;
