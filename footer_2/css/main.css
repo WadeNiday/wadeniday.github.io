@@ -73,7 +73,7 @@ a {
 // !-- Scaffolding
 // ----------------------------------------- */
 .wrapper {
-    width: 80%;
+    width: 65%;
     margin: 5em auto;
 /*    background-color: yellow;
 */    }
@@ -112,48 +112,34 @@ h4:hover, .heading:hover a {
   line-height: 1.5em;
 }
 
+p {
+  color: #bbb;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.825em;
+  line-height: 1.5em;
+  padding-top: 30px;
+}
+
 .item:hover a {
   color: #bbb;
-}
-
-#most {
-  width: 75%;
-  display: inline-block;
-    float: left;
-}
-
-#side {
-  width: 25%;
-  float: left;
-  display: inline-block;
 }
 
 .main {
   float: left;
   display: inline-block;
-  width: 31%;
-  padding-right: 2%;
+  width: 25%;
   clear: all;
 }
 
-.main_ex a {
-  color: red;
+
+.main_second {
   float: left;
-  width: 14%;
-  padding-right: 1%;
+  display: inline-block;
+  width: 25%;
   clear: all;
 }
 
-.main_ex_right a {
-  width: 10%;
-  color: pink;
-}
 
-.second, .third{
-  float: left;
-  width: 48%;
-  padding-right: 2%;
-}
 
 
 
@@ -170,6 +156,27 @@ h4:hover, .heading:hover a {
 /*  background-color: purple;
 */}
 
+.main {
+  display: none;
+}
+
+.main_second {
+  width: 100%;
+  text-align: center;
+}
+
+.main_second a {
+  display: inline-block;
+  float: center;
+  letter-spacing: 1px;
+  padding-bottom: 1%;
+}
+
+p {
+  padding-top: 20px;
+}
+
+
 }
 
 /* smartphone (LANDSCAPE) ----------- */
@@ -182,6 +189,20 @@ h4:hover, .heading:hover a {
 /*  background-color: green;
 */}
 
+
+.main_second {
+  padding-left: 18.5%;
+}
+
+.main_second a {
+  display: inline-block;
+  float: left;
+  letter-spacing: 1px;
+  padding-bottom: 1%;
+  padding-right: 5%;
+}
+
+
 }
 
 /* tablet PORTRAIT ----------- */
@@ -192,6 +213,10 @@ h4:hover, .heading:hover a {
   width: 95%;
 /*  background-color: blue;
 */}
+
+.main {
+  width: 25%;
+}
 
 }
 
@@ -204,28 +229,10 @@ h4:hover, .heading:hover a {
 */}
 
 .main {
-  width: 24%;
-  padding-right: 1%;
+  width: 25%;
 }
 
-.main_ex a {
-  clear: all;
-  width: 33%;
-}
 
-#most {
-  width: 100%;
-  padding-bottom: 1%; 
-}
-
-.main {
- width: 31.333333%;
-  padding-right: 2%;
-}
-
-.main_ex a, .main_ex_right a {
- width: 31.333333%;
-}
 
 }
 
