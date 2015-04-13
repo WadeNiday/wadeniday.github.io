@@ -115,6 +115,7 @@ header {
     position:fixed;
     width: 100%;
     z-index: 1;
+    background-color: #eee;
 }
 
 /* --------------------------------------------
@@ -122,7 +123,6 @@ header {
 // ----------------------------------------- */
 
 .mainnav {
-  background-color: #eee;
   height: 3.125em;
 }
 
