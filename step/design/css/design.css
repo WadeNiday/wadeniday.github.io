@@ -1,0 +1,990 @@
+/* -----------------------------------------------------------------------------
+// Table of Contents
+//
+//  - Colors
+//  - Reset
+//  - Scaffolding
+//  - Main Nav Bar
+//  - Project Nav Bar
+//  - Typography
+//  - Footer
+//
+// -------------------------------------------------------------------------- */
+
+/* --------------------------------------------
+// -- Colors
+//
+// Black:       #222
+// Dark gray:   #777
+// Light gray:  #bbb
+// Red:         #dd4b39
+//
+// ----------------------------------------- */
+
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+header {
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #eee;
+}
+
+/* --------------------------------------------
+// !-- Main Nav Bar
+// ----------------------------------------- */
+
+.mainnav {
+  height: 3.125em;
+}
+
+.logo {
+  display: block;
+  float: left;
+  margin-top: .75em;
+  width: 1.75%;
+}
+
+.mainnav li a {
+  margin-top: .9em;
+  margin-left: 4%;
+  padding-left: 4%;
+  text-align: center;
+  display: inline-block;
+}
+
+.mainnav a {
+  font-weight: 400;
+  float: right;
+  font-size: 1.05em; 
+  color: #dd4b39;
+  transition: color .2s ease-in
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+}
+-
+.mainnav a:hover {
+    color: #777;
+}
+
+
+/* --------------------------------------------
+// !-- Project Nav Bar
+// ----------------------------------------- */
+
+.work {
+  width: 100%;
+  background-color: #fff;
+}
+
+.projectnav {
+  width: 100%;
+  margin-top: 3.125em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #fff;   
+  z-index: 1;
+  border-bottom: 1px dashed #bbb;
+  display: inline-block;
+}
+
+.projectnav li {
+    display: inline;
+}
+
+.title {
+  color: #777; 
+  font-weight: 600;  
+  font-size: 1em; 
+}
+
+.projectnav a {
+  color: #777;
+  float: right;
+  margin-left: 4%;
+  padding-left: 4%;
+  font-size: 1em; 
+  font-weight: 600;
+  transition: color .5s linear;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.projectnav a:hover {
+    color: #dd4b39; 
+}
+
+.rightarrow a {
+  padding-left: 1%;
+}
+
+
+
+
+/*Project Story*/
+.description {
+  display: inline;
+  float: right;
+  margin-top: 1em;
+  width: 100%;
+  padding-bottom: 2em;
+/*  margin-bottom: 1.5em;
+*//*  border-bottom: 1px dashed #bbb;
+*/}
+
+.description a {
+  color: #777;
+  font-weight: 600;
+  transition: color .5s linear;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.description a:hover {
+  color: #dd4b39;
+}
+
+
+/*project artwork*/
+.banner { 
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3%;
+  border-bottom: 1px dashed #ccc;
+}
+
+/*project artwork*/
+.banner_project { 
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3%;
+  border-bottom: .25em solid #ccc;
+}
+
+
+.description-int { 
+  display: inline-block;
+  width: 100%;
+  margin-bottom: .5%;
+  border-bottom: 1px dashed #ccc;
+}
+
+.description-int-last { 
+  display: inline-block;
+  width: 100%;
+  margin-bottom: .5%;
+}
+
+
+#description-int {
+  float: left;
+  display: inline-block; 
+  width: 100%;
+}
+
+.banner li { 
+    list-style: none; 
+/*    padding-bottom: 30px;
+*/}
+
+.banner-dbn li { 
+    list-style: none; 
+}
+
+/*full frame images*/
+
+/*http://codepen.io/RyGanley/pen/JKwaC*/
+.full {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+#full_icons {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1.5%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.half_left {
+    display: inline-block;
+    width: 49%;
+    height: 49%;
+    padding-bottom: 4%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.half {
+    display: inline-block;
+    width: 49%;
+    height: 49%;
+    float: left;
+    padding-right: 2%;  
+    padding-bottom: 4%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.third_left {
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+    float: left;
+    padding-right: 2%;  
+/*    padding-bottom: 4%;
+*/    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.third {
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+    float: left;
+    padding-bottom: 4%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.mobile {
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+    float: left;
+    padding-bottom: 4%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.mobile_left {
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+    float: left;
+    padding-bottom: 4%;
+    padding-right: 2%;
+    margin-left: 17%;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+
+/* --------------------------------------------
+// !-- Typography
+// ----------------------------------------- */
+
+h1 {
+  font-weight: 200;
+  color: #777;
+  transition: color .25s ease-in;
+  -webkit-transition: color .25s ease-in;
+  -moz-transition: color .25s ease-in;
+  -o-transition: color .25s ease-in;
+  font-size: 3.125em;
+  line-height: 1.15em;
+  padding-top: .3em;
+}
+
+/*.projectnav h4 {
+  padding-bottom: 3px;
+  display: inline;
+  font-weight: 300;
+  color: pink;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}*/
+
+.work h4 {
+  font-weight: 300;
+  color: #777;
+  padding-left: 17%;
+  padding-bottom: 3%;
+  padding-right: 17.5%;
+  font-size: 1.05em;
+  line-height: 1.5em;
+}
+
+.work h4 a {
+  color: #777;
+  transition: color .5s linear;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.work h4 a:hover {
+  color: #dd4b39; 
+}
+
+.lead-in {
+  font-weight: 600;
+  color: #777;
+}
+
+
+
+/* --------------------------------------------
+// !-- Bottom Nav Bar
+// ----------------------------------------- */
+
+
+.bottomnav {
+  width: 100%;
+/*  padding-top: 1em;
+*//*  padding-bottom: 1em;
+*/  z-index: 1;
+/*  border-top: 1px dashed #bbb;
+*/  display: inline-block;
+}
+
+.bottomnav li {
+    display: inline;
+}
+
+.title {
+  color: #777; 
+  font-weight: 600;  
+  font-size: 1em; 
+}
+
+.bottomnav a {
+  color: #777;
+  float: left;
+  font-size: 1em; 
+  font-weight: 600;
+  transition: color .5s linear;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.bottomnav a:hover {
+    color: #dd4b39; 
+}
+
+.rightarrow a {
+  padding-left: 1%;
+  float: right;
+}
+
+
+
+
+/* --------------------------------------------
+// !-- Footer
+// ----------------------------------------- */
+
+.footer {
+  display: inline-block;
+  border-top: .5em solid #ccc;
+  width: 100%;
+  margin-top: 1em;
+}
+
+/* typography */
+.footer h1 {
+  clear: all;
+  width: 65%;
+  padding-top: 1%;
+/*  margin-bottom: 1%;*/
+  color: #777;
+  font-size: 1em;
+  display: inline-block;
+}
+
+
+/* copyright */
+.footer h4 {
+  color: #222;
+  font-size: .7em;
+  padding-bottom: 5%;
+  padding-top: 1%;
+}
+
+.social {
+  display: inline-block;
+  width: 35%;
+  float: right;
+  padding-top: .75%;
+}
+
+/* social icons*/
+.foot_twitter a, .foot_linkedin a, .foot_email a {
+  float: right;
+  padding-left: 12%;
+  opacity: 0.3;
+  border-bottom: none;
+  transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+}
+
+/* social icons, positioning */
+.foot_twitter a {
+    padding-top: 7px;
+}
+
+.foot_linkedin a {
+    padding-top: 4px;
+}
+
+.foot_email a {
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+.foot_twitter a:hover , .foot_linkedin a:hover , .foot_email a:hover {
+    opacity: 0.7;
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------
+// !-- R E S S P O N S I V E   S T Y L E S
+// ----------------------------------------- */
+
+
+/* Smartphones (PORTRAIT) ----------- */
+
+@media (min-width: 320px) and (max-width: 509px) {
+
+
+.wrapper {
+  width: 95%;
+/*  background-color: pink;*/
+  background-color: none;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .9em;
+}
+
+.mainnav a {
+  font-weight: 400;
+}
+
+.mainnav li a {
+  padding-left: 9%;
+}
+
+.landing h6, .footer h6, #nav_active, .work h6  {
+  z-index: -2;
+}
+
+/*Project Nav Bar*/
+
+.title {
+  color: #777; 
+  font-weight: 400;  
+  font-size: .9em; 
+}
+
+.projectnav a, .bottomnav a  {
+  font-size: .9em; 
+  font-weight: 400;
+}
+
+.rightarrow a {
+  padding-left: 1%;
+}
+
+/*Typography*/
+
+h1 {
+  font-weight: 200;
+  color: #777;
+  font-size: 2em;
+  line-height: 1.2em;
+  padding-top: .3em;
+}
+
+.work h4 {
+  width: 100%;
+  font-weight: 300;
+  color: #777;
+  padding-left: 0%;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-right: 0%;
+  font-size: 1.05em;
+  line-height: 1.5em;
+}
+
+.lead-in {
+  font-weight: 600;
+  color: #777;
+}
+
+/*Images*/
+
+.full {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6%;
+}
+
+#full_icons {
+    display: inline;
+    width: 100%;
+    padding-bottom: 1.5%;
+}
+
+.half, .half_left {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 6%;
+}
+
+.third, .third_left {
+  width: 80%;
+  padding-left: 10%;
+  padding-bottom: 6%;
+}
+
+.mobile, .mobile_left {
+  width: 80%;
+  padding-left: 10%;
+  padding-bottom: 6%;
+  padding-right: 0%;
+  margin-left: 0%;
+}
+
+
+
+/*Footer*/
+
+.social {
+  display: inline-block;
+  width: 100%;
+  clear: all;
+  padding-top: .2em;
+  padding-bottom: .5em;
+}
+
+/* social icons*/
+.foot_twitter a, .foot_linkedin a, .foot_email a {
+  float: left;
+  padding-left: 0%;
+  padding-right: 12%;
+  opacity: 0.3;
+  border-bottom: none;
+}
+
+  
+}
+
+
+
+
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
+
+.wrapper {
+  width: 95%;
+/*  background-color: tan;
+*/  background-color: none;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .9em;
+}
+
+.mainnav a {
+  font-weight: 400;
+}
+
+.mainnav li a {
+  padding-left: 9%;
+}
+
+.landing h6, .footer h6, #nav_active, .work h6  {
+  z-index: -2;
+}
+
+/*Project Nav Bar*/
+
+.title {
+  color: #777; 
+  font-weight: 400;  
+  font-size: .9em; 
+}
+
+.projectnav a, .bottomnav a  {
+  font-size: .9em; 
+  font-weight: 400;
+}
+
+.rightarrow a {
+  padding-left: 1%;
+}
+
+/*Typography*/
+
+h1 {
+  font-weight: 200;
+  color: #777;
+  font-size: 2em;
+  line-height: 1.2em;
+  padding-top: .3em;
+}
+
+
+.work h4 {
+  width: 100%;
+  font-weight: 300;
+  color: #777;
+  padding-left: 0%;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-right: 0%;
+  font-size: 1.05em;
+  line-height: 1.5em;
+}
+
+.lead-in {
+  font-weight: 600;
+  color: #777;
+}
+
+
+
+/*Images*/
+
+.full {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6%;
+}
+
+#full_icons {
+    display: inline;
+    width: 100%;
+    padding-bottom: 1.5%;
+}
+
+.half, .half_left {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 6%;
+}
+
+.third, .third_left {
+  width: 80%;
+  padding-left: 10%;
+  padding-bottom: 6%;
+}
+
+.mobile, .mobile_left {
+  width: 80%;
+  padding-left: 10%;
+  padding-bottom: 6%;
+  padding-right: 0%;
+  margin-left: 0%;
+}
+
+
+
+/*Footer*/
+
+.social {
+  display: inline-block;
+  width: 100%;
+  clear: all;
+  padding-top: .2em;
+  padding-bottom: .5em;
+}
+
+/* social icons*/
+.foot_twitter a, .foot_linkedin a, .foot_email a {
+  float: left;
+  padding-left: 0%;
+  padding-right: 12%;
+  opacity: 0.3;
+  border-bottom: none;
+}
+
+  
+}
+
+
+
+
+
+
+/* tablet (PORTRAIT----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: lightblue;
+*/  background-color: none;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .25em;
+}
+
+.landing h1 {
+  padding-top: 1.3em;
+  padding-bottom: .5em;
+}
+
+.work  {
+  margin-top: 0em; /* on all projects */
+  border-bottom: none;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+.widecol {
+  width: 68%;
+}
+
+
+/*Typography*/
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .5em;
+  color: #555;
+  font-size: 1.5em;
+  line-height: 1.45em;
+  display: inline-block;
+}
+
+.work h4 {
+  width: 75%;
+  font-weight: 200;
+  color: #777;
+  padding-left: 12.5%;
+  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-right: 12.5%;
+  font-size: 1.05em;
+  line-height: 1.5em;
+}
+
+.banner { 
+  margin-bottom: %;
+  border-bottom: 1px dashed #ccc;
+}
+
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
+}
+
+}
+
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: pink;
+*/  background-color: none;
+}
+
+/* Main Nav Bar */
+.logo {
+  padding-left: .25em;
+}
+
+.landing h1 {
+  padding-top: 1.3em;
+  padding-bottom: .5em;
+}
+
+.work  {
+  margin-top: 0em; /* on all projects */
+  border-bottom: none;
+}
+
+/* sidebar w photo */
+.profile_side {
+  margin-top: 3.25em;
+}
+
+.widecol {
+  width: 68%;
+}
+
+
+/*Typography*/
+.profile h1 {
+  padding-top: 2.5em;
+  margin-bottom: .5em;
+  color: #555;
+  font-size: 1.5em;
+  line-height: 1.45em;
+  display: inline-block;
+}
+
+.work h4 {
+  width: 75%;
+  font-weight: 200;
+  color: #777;
+  padding-left: 12.5%;
+  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-right: 12.5%;
+  font-size: 1.05em;
+  line-height: 1.5em;
+}
+
+.banner { 
+  margin-bottom: %;
+  border-bottom: 1px dashed #ccc;
+}
+
+
+.footer h1 {
+  padding-top: 1%;
+  font-size: 1em;
+}
+
+}
+
+
+/* FULL WIDTH on MacBook Pro */
+@media (min-width: 1500px) {  
+
+/* structure */
+.wrapper {
+  width: 74%;
+}
+
+.mainnav a {
+  font-weight: 400;
+}
+
+
+}
+
+
+
+
