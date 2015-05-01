@@ -1,0 +1,313 @@
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 1em;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+.wrapper {
+    width: 65%;
+    margin: 5em auto;
+    font-family: 'Source Sans Pro', sans-serif;
+
+/*    background-color: yellow;
+*/  
+}
+
+.map img {
+  position: absolute;
+  z-index: -1;
+  width: 65%;
+}
+
+header {
+  background-color: #51284f;
+  height: 65px;
+  position:fixed;
+  top:0;
+  width: 100%;
+}
+
+
+.mainnav {
+  height: 3.125em;
+}
+
+
+/* --------------------------------------------
+// !-- Landing
+// ----------------------------------------- */
+
+h2 {
+  font-family: times;
+  font-weight: 800;
+  font-size: 2.5em;
+  color: #51284f;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.head {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+h6 {
+  font-family: times;
+  font-size: 1.5em;
+  color: #51284f;
+  padding-bottom: .5%;
+}
+
+.static p {
+  font-size: 1em;
+  color: #aaa;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+.maplist {
+  margin-top: 315px;
+  width: 100%;
+  display: inline-block;
+/*  border-top: 1px solid #ccc;
+*/  padding-top: 20px;
+}
+
+.main {
+  float: left;
+  width: 24%;
+  margin-bottom: 5%;
+  padding-right: 1%;
+}
+
+h3  {
+  font-size: 1.5em;
+  color: #51284f;
+  font-weight: 200;
+  padding-bottom: 1%;
+}
+
+.intro {
+  font-size: 1.5em;
+  color: #aaa;
+  font-weight: 200;
+  padding-bottom: 30px;
+}
+
+
+h4, .heading a {
+  font-size: 1em;
+  font-weight: 600;
+  color: #888;
+}
+
+h4:hover {
+  color: #63666a;
+}
+
+.item  {
+  color: #aaa;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+
+.mapit,.mapit a {
+  color: #aaa;
+  font-size: .9em;
+  padding-top: 4%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mapit a:hover, .heading:hover a {
+  color: #51284f;
+}
+
+
+
+
+
+/* R E S P O N S I V E  S T Y L E S */
+
+
+/* Smartphones (PORTRAIT) ----------- */
+
+@media (min-width: 320px) and (max-width: 695px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+}
+
+.main {
+}
+
+
+p {
+  padding-top: 20px;
+}
+
+.map img {
+  visibility: hidden;
+}
+
+.maplist {
+  margin-top: 5px;
+}
+
+.main {
+  width: 100%;
+  padding-bottom: 5%;
+
+}
+
+}
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
+
+
+/* structure */
+.wrapper {
+  width: 95%;
+}
+
+
+.map img {
+  visibility: hidden;
+}
+
+.maplist {
+  margin-top: 5px;
+  width: 100%;
+  display: inline-block;
+}
+
+.main {
+  width: 48%;
+  margin-bottom: 5%;
+}
+
+}
+
+/* tablet PORTRAIT ----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+.wrapper {
+  width: 95%;
+}
+
+.map img {
+  width: 90%;
+}
+
+.main {
+  float: left;
+  width: 48%;
+  margin-bottom: 4%;
+}
+
+
+h4, .heading, .item  {
+  font-size: 1em;
+}
+
+
+}
+
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+.wrapper {
+  width: 95%;
+}
+
+.map img {
+  width: 90%;
+}
+
+.main {
+  float: left;
+  width: 24%;
+}
+
+
+h4, .heading, .item  {
+  font-size: 1em;
+}
+
+
+
+}
+
+
+
