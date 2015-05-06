@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 html {
   font-size: 1em;
+
 }
 
 
@@ -69,16 +70,60 @@ a {
     text-decoration: none;
 }
 
+@font-face {
+  font-family: 'Guardian Light Web';
+  src: url('../fonts/GuardianSans-Light-Web.eot');
+  src: url('../fonts/GuardianSans-Light-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Light-Web.woff') format('woff'), url('../fonts/GuardianSans-Light-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Light-Web.svg#Guardian Light Web') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Guardian Regular';
+  src: url('../fonts/GuardianSans-Regular-Web.eot');
+  src: url('../fonts/GuardianSans-Regular-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Regular-Web.woff') format('woff'), url('../fonts/GuardianSans-Regular-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Regular-Web.svg#Guardian TextSans Web') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; 
+}
+
+@font-face {
+  font-family: 'Guardian Medium';
+  src: url('../fonts/GuardianSans-Medium-Web.eot');
+  src: url('../fonts/GuardianSans-Medium-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Medium-Web.woff') format('woff'), url('../fonts/GuardianSans-Medium-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Medium-Web.svg#Guardian TextSans Web') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal; 
+}
+
+
+@font-face {
+  font-family: 'Egyptian Regular';
+  src: url('../fonts/GuardianEgyp-Regular-Web.eot');
+  src: url('../fonts/GuardianEgyp-Regular-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianEgyp-Regular-Web.woff') format('woff'), url('../fonts/GuardianEgyp-Regular-Web.ttf') format('truetype'), url('../fonts/GuardianEgyp-Regular-Web.svg#Guardian Text Egyptian Web') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Egyptian Medium';
+  src: url('../fonts/GuardianEgyp-Medium-Web.eot');
+  src: url('../fonts/GuardianEgyp-Medium-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianEgyp-Medium-Web.woff') format('woff'), url('../fonts/GuardianEgyp-Medium-Web.ttf') format('truetype'), url('../fonts/GuardianEgyp-Medium-Web.svg#Guardian Text Egyptian Web') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+
 /* --------------------------------------------
 // !-- Scaffolding
 // ----------------------------------------- */
 .wrapper {
-    width: 65%;
-    margin: 5em auto;
-    font-family: 'Source Sans Pro', sans-serif;
-
-/*    background-color: yellow;
-*/  
+  width: 65%;
+  margin: 5em auto;
 }
 
 .map img {
@@ -106,8 +151,7 @@ header {
 // ----------------------------------------- */
 
 h2 {
-  font-family: times;
-  font-weight: 800;
+  font-family: 'Egyptian Medium';
   font-size: 2.5em;
   color: #51284f;
   margin-top: 150px;
@@ -120,16 +164,16 @@ h2 {
 }
 
 h6 {
-  font-family: times;
+  font-family: 'Egyptian Regular';
   font-size: 1.5em;
   color: #51284f;
   padding-bottom: .5%;
 }
 
 .static p {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #aaa;
-  font-weight: 300;
+  font-family: 'Guardian Light Web';
   padding-bottom: 30px;
 }
 
@@ -137,8 +181,7 @@ h6 {
   margin-top: 315px;
   width: 100%;
   display: inline-block;
-/*  border-top: 1px solid #ccc;
-*/  padding-top: 20px;
+  padding-top: 20px;
 }
 
 .main {
@@ -149,23 +192,23 @@ h6 {
 }
 
 h3  {
+  font-family: 'Guardian Light Web';
   font-size: 1.5em;
   color: #51284f;
-  font-weight: 200;
   padding-bottom: 1%;
 }
 
 .intro {
+  font-family: 'Guardian Light Web';
   font-size: 1.5em;
   color: #aaa;
-  font-weight: 200;
   padding-bottom: 30px;
 }
 
 
 h4, .heading a {
+  font-family: 'Guardian Regular Web';
   font-size: 1em;
-  font-weight: 600;
   color: #888;
 }
 
@@ -174,17 +217,19 @@ h4:hover {
 }
 
 .item  {
+  font-family: 'Guardian Light Web';
+  line-height: 1.4em;
   color: #aaa;
   font-size: 1em;
-  font-weight: 300;
 }
 
 
 .mapit,.mapit a {
+  font-family: 'Guardian Light Web';
   color: #aaa;
   font-size: .9em;
-  padding-top: 4%;
-  letter-spacing: 1px;
+  padding-top: 6%;
+  letter-spacing: 1.3px;
   text-transform: uppercase;
 }
 
