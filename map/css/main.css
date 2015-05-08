@@ -138,14 +138,9 @@ a {
 // ----------------------------------------- */
 .wrapper {
   width: 1140px;
-  margin: 1.2em auto;
+  margin: 0 auto;
 }
 
-.map img {
-  position: absolute;
-  z-index: -1;
-  width: 65%;
-}
 
 header {
   background-color: #51284f;
@@ -157,7 +152,7 @@ header {
 }
 
 i {
-  padding-left: 5px;
+  padding-left: .325em;
 }
 
 /* --------------------------------------------
@@ -171,15 +166,22 @@ i {
 .logo {
   display: block;
   float: left;
-  margin-top: .325em;
-  margin-right: 3.75%;
+  margin-top: 1.5em;
+  margin-right: 3%;
 }
 
 .mainnav li a {
-  margin-top: .5em;
-  margin-right: 6.1%;
+  margin-right: 3%;
   display: inline-block;
   float: left;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 1em;
+  padding-right: 1em;
+  transition: background-color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+  -moz-transition: background-color .2s ease-in;
+  -o-transition: background-color .2s ease-in;
 }
 
 .mainnav a {
@@ -188,26 +190,35 @@ i {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: .125em;
+}
+
+#mainlinks a:hover {
+  background-color: rgba(0, 0, 0, .15);
+}
+
+
+#mainlinks a:hover {
+  background-color: rgba(0, 0, 0, .15);
+}
+
+.secondlinks  {
+  float: right;
+  width: 25%;
+}
+
+.secondlinks li a  {
+  margin-left: 17%;
+  padding-left: 0;
+  padding-right: 0;
   transition: color .2s ease-in;
   -webkit-transition: color .2s ease-in;
   -moz-transition: color .2s ease-in;
   -o-transition: color .2s ease-in;
 }
 
-.mainnav a:hover {
-  color: #bbb;
+.secondlinks a:hover  {
+  color: #aaa;
 }
-
-.secondlinks  {
-  float: right;
-  width: 26%;
-}
-
-.secondlinks a  {
-  margin-left: 15%;
-}
-
-
 
 
 
@@ -217,6 +228,14 @@ i {
 /* --------------------------------------------
 // !-- Landing
 // ----------------------------------------- */
+
+
+.map img {
+  position: absolute;
+  z-index: -1;
+  width: 65%;
+}
+
 
 h2 {
   font-family: 'Egyptian Medium';
@@ -378,6 +397,15 @@ p {
 .wrapper {
   width: 95%;
 }
+
+.secondlinks  {
+  width: 45%;
+}
+
+.secondlinks li a  {
+  margin-left: 1%;
+}
+
 
 .map img {
   width: 90%;
