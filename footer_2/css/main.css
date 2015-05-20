@@ -105,12 +105,6 @@ h4:hover, .heading:hover a {
   color: #63666a;
 }
 
-.item a {
-  color: #63666a;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.825em;
-  line-height: 1.5em;
-}
 
 p {
   color: #bbb;
