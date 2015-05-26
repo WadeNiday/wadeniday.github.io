@@ -96,6 +96,14 @@ a {
     text-decoration: none;
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=3.2.1');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* --------------------------------------------
 // !-- Scaffolding
 // ----------------------------------------- */
@@ -501,11 +509,32 @@ h1 {
 
 
 /* copyright */
-.footer h4 {
-  color: #222;
-  font-size: .7em;
-  padding-bottom: 5%;
+/*FOOTER*/
+
+.footer {
+  display: inline-block;
+  border-top: .5em solid #ccc;
+  width: 100%;
+  margin-top: 1.85em;
+}
+
+/* typography */
+.footer h1 {
+  clear: all;
+  width: 65%;
   padding-top: 1%;
+/*  margin-bottom: 1%;*/
+    color: #555;
+  font-size: .9em;
+  display: inline-block;
+}
+
+
+/* copyright */
+.footer h4 {
+    color: #222;
+    font-size: .7em;
+    padding-top: 1.5%;
 }
 
 .social {
@@ -513,37 +542,25 @@ h1 {
   width: 35%;
   float: right;
   padding-top: .75%;
+  margin-bottom: 3%;
 }
 
 /* social icons*/
-.foot_twitter a, .foot_linkedin a, .foot_email a {
+
+.social a {
+  font-size: 2em;
   float: right;
-  padding-left: 12%;
-  opacity: 0.3;
+  padding-left: 10%;
+  color: #bbb;
   border-bottom: none;
-  transition: opacity .2s ease-in;
-  -webkit-transition: opacity .2s ease-in;
-  -moz-transition: opacity .2s ease-in;
-  -o-transition: opacity .2s ease-in;
+  transition: color .2s ease-in;
+  -webkit-transition: color .2s ease-in;
+  -moz-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
 }
 
-/* social icons, positioning */
-.foot_twitter a {
-    padding-top: 7px;
-}
-
-.foot_linkedin a {
-    padding-top: 4px;
-}
-
-.foot_email a {
-    padding-top: 8px;
-    padding-right: 5px;
-}
-
-.foot_twitter a:hover , .foot_linkedin a:hover , .foot_email a:hover {
-    opacity: 0.7;
-    border-bottom: none;
+.social a:hover {
+  color: #777;
 }
 
 
