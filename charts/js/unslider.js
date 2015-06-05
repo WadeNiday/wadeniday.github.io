@@ -10,7 +10,25 @@
 		//  Object clone
 		var _ = this;
 
-
+		//  Set some options
+		_.o = {
+			speed: 500,     // animation speed, false for no transition (integer or boolean)
+			delay: f,    // delay between slides, false for no autoplay (integer or boolean)
+			init: 0,        // init delay, false for no delay (integer or boolean)
+			pause: !f,      // pause on hover (boolean)
+			loop: !f,       // infinitely looping (boolean)
+			keys: f,        // keyboard shortcuts (boolean)
+			dots: f,        // display dots pagination (boolean)
+			arrows: f,      // display prev/next arrows (boolean)
+			prev: '&larr;', // text or html inside prev button (string)
+			next: '&rarr;', // same as for prev option
+			fluid: f,       // is it a percentage width? (boolean)
+			starting: f,    // invoke before animation (function with argument)
+			complete: f,    // invoke after animation (function with argument)
+			items: '>ul',   // slides container selector
+			item: '>li',    // slidable items selector
+			easing: 'swing',// easing function to use for animation
+			autoplay: f,  // enable autoplay on initialisation
 		};
 
 		_.init = function(el, o) {

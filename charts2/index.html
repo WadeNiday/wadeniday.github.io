@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChartSlider</title>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+<header>
+    <div class='wrapper'>
+
+    <nav class='mainnav'>
+      <div class='logo'>
+        <a href="#"><img src="images/GUGG_logo.svg" width='164'></a>
+      </div>
+      <ul id='mainlinks'>
+        <li><a href="#">our firm</a></li>
+        <li><a href="#">our services</a></li>
+        <li><a href="#">our perspectives</a></li>
+      </ul>
+
+      <ul class='secondlinks'>
+        <li><a href="#">client login</a></li>
+        <li><a href="#">search <i class="icon-search"></i></a></li>
+      </ul>
+    </nav>
+    </div>
+</header>
+
+
+<div class='wrapper'>
+
+<div class="charts">
+
+  <a href="#" class="control_next">></a>
+  <a href="#" class="control_prev"><</a>
+
+  <ul>
+      <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/iziqag" ></iframe></a></li>
+      <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/umylop" ></iframe></a></li>
+      <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/egapyh" ></iframe></a></li>
+      <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/etopot" ></iframe></a></li>
+      <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/acygyx" ></iframe></a></li>
+  </ul>  
+
+</div>
+
+  </div> <!-- wrapper -->
+
+
+<!-- JQUERY --> 
+
+      
+  <script class="include" type="text/javascript" src="jquery.js"></script>
+  <script class="include" type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+<script>
+jQuery(document).ready(function ($) {
+
+  $('.charts').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+  
+  var slideCount = $('.charts ul li').length;
+  var slideWidth = $('.charts ul li').width(100%);
+  var slideHeight = $('.charts ul li').height(500px);
+  var sliderUlWidth = slideCount * slideWidth;
+  
+  $('.charts').css({ width: slideWidth, height: slideHeight });
+  
+  $('.charts ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+    $('.charts ul li:last-child').prependTo('.charts ul');
+
+    function moveLeft() {
+        $('.charts ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('.charts ul li:last-child').prependTo('.charts ul');
+            $('.charts ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('.charts ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('.charts ul li:first-child').appendTo('.charts ul');
+            $('.charts ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+
+    
+</script>
+
+
+
+
+</body>
+
+</html>
