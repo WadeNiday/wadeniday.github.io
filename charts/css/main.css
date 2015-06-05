@@ -249,7 +249,7 @@ float: left;
   padding-left: 4%;
   font-family: 'Guardian Medium';
   font-size: 13px; 
-  color: #ccc;
+  color: #888;
   text-transform: uppercase;
   letter-spacing: .125em;
   transition: color .2s ease-in;
@@ -263,39 +263,6 @@ float: left;
 }
 
 
-
-
-
-
-
-/* --------------------------------------------
-// !-- Static section
-// ----------------------------------------- */
-
-.static {
-  padding-bottom: 30px;
-  padding-top: 90px;
-}
-
-.head {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-}
-
-h2 {
-  font-family: 'Egyptian Medium';
-  font-size: 2.313em;
-  color: #51284f;
-  margin-top: 1%;
-  margin-bottom: 20px;
-}
-
-h3  {
-  font-family: 'Guardian Light Web';
-  font-size: 1.5em;
-  color: #51284f;
-  padding-bottom: 1%;
-}
 
 
 
