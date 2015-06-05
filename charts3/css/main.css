@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 html {
   font-size: 1em;
+  background-color: #fff;
 
 }
 
@@ -222,68 +223,60 @@ header {
 // !-- Landing
 // ----------------------------------------- */
 
-.charts {
+#slider {
   position: relative;
   overflow: hidden;
-  margin-top: 12%;
-  height: 425px;
+  margin: 12% auto;
 }
 
 .highcharts {
-  border: 0;
   height: 425px;
-  width: 100%;
   overflow: hidden;
+  width: 800px;
+  margin-left: 100px;
 }
 
-.charts li {
+#slider ul {
   position: relative;
   margin: 0;
   padding: 0;
   height: 425px;
-  width: 100%;
   list-style: none;
 }
 
-.charts ul li {
-  position: relative;
+
+#slider ul li {
+ position: relative;
   display: block;
   float: left;
   margin: 0;
   padding: 0;
+  width: 1000px;
 }
 
 a.control_prev, a.control_next {
   position: absolute;
-  top: 20%;
+  top: 30%;
   z-index: 999;
   display: block;
-  padding: 2% 2%;
-
-  background: green;
-  color: #fff;
+  padding: 2% 2.2%;
+  background: #ccc;
+  color: #222;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
-  opacity: 0.5;
+  font-size: 20px;
+  opacity: 0.35;
   cursor: pointer;
 }
 
 a.control_prev:hover, a.control_next:hover {
   opacity: 1;
-  -webkit-transition: all 0.2s ease;
-}
-
-a.control_prev {
+  -webkit-transition: all 0.3s ease;
 }
 
 a.control_next {
   right: 0;
 }
-
-
-
-
 
 
 
