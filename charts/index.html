@@ -9,23 +9,18 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
 
-  
-
-<!--     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'> -->
 
 <body>
-
 
 <header>
     <div class='wrapper'>
 
     <nav class='mainnav'>
-
       <div class='logo'>
         <a href="#"><img src="images/GUGG_logo.svg" width='164'></a>
       </div>
-
       <ul id='mainlinks'>
         <li><a href="#">our firm</a></li>
         <li><a href="#">our services</a></li>
@@ -36,78 +31,82 @@
         <li><a href="#">client login</a></li>
         <li><a href="#">search <i class="icon-search"></i></a></li>
       </ul>
-      
     </nav>
-
     </div>
 </header>
-  
 
 
-  <div class='wrapper'>
+<div class='wrapper'>
 
-<!--     c h a r t  s e c t i o n -->
+  <div id="slider">
+    <ul>
+        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/iziqag" ></iframe></a></li>
+        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/umylop" ></iframe></a></li>
+        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/egapyh" ></iframe></a></li>
+        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/etopot" ></iframe></a></li>
+        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/acygyx" ></iframe></a></li>
+    </ul>  
 
-    <section class='charts'>
-
-      <ul>
-        <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/iziqag" ></iframe></a></li>
-        <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/umylop" ></iframe></a></li>
-        <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/egapyh" ></iframe></a></li>
-        <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/etopot" ></iframe></a></li>
-        <li><a href="#"><iframe class="highcharts" src="http://cloud.highcharts.com/embed/acygyx" ></iframe></a></li>
-      </ul>
-
-<!--       <iframe class="highcharts" src="http://cloud.highcharts.com/embed/iziqag" ></iframe>
- -->
-    </section>
-
-<a href="#" class="unslider-arrow next">Next chart</a> <!-- &rarr; -->
-<a href="#" class="unslider-arrow prev">Previous chart</a> <!-- &larr; -->
+    <a href="#" class="control_next">&rarr;</a>
+    <a href="#" class="control_prev">&larr;</a>
 
 
-<!--     <nav class='chart-nav'>
-      <ul>
-        <li><a href="#">next</a></li>
-        <li><a href="#">previous</a></li>
-      </ul>
-    </nav> -->
+  </div>
 
-
-    
-  </div> <!-- wrapper -->
+</div> <!-- wrapper -->
 
 
 <!-- JQUERY --> 
 
-<!-- live reload -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
-
-
-
-<script src="jquery.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="http://unslider.com/unslider.js"></script>
+      
+  <script class="include" type="text/javascript" src="jquery.js"></script>
+  <script class="include" type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
 <script>
-// page to page behavior
-
-$(function() {
-    $('.charts').unslider();
-});
+jQuery(document).ready(function ($) {
 
 
+  
+  var slideCount = $('#slider ul li').length;
+  var slideWidth = $('#slider ul li').width();
+  var slideHeight = $('#slider ul li').height();
+  var sliderUlWidth = slideCount * slideWidth;
+  
+  $('#slider').css({ width: slideWidth, height: slideHeight });
+  
+  $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+    $('#slider ul li:last-child').prependTo('#slider ul');
 
-var unslider = $('.charts').unslider();
-    
-  $('.unslider-arrow').click(function() {
-    var fn = this.className.split(' ')[1];
-        
-    //  Either do unslider.data('unslider').next() or .prev() depending on the className
-    unslider.data('unslider')[fn]();
-});
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 600, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 600, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+ 
 
     
 </script>
