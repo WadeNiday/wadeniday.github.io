@@ -331,15 +331,16 @@ $colors: pink, lightyellow, lightblue;
 #title {
   clear: all;
   overflow: hidden;
-  margin-top: 8.5%;
+  margin-top: 9%;
   width: 100%;
+    margin-bottom: 2.5%;
 }
 
 h1 {
   color: #51284f;
   font-family: 'Egyptian Regular';
   font-size: 2em;
-  margin-bottom: 0.5%;
+
   display: inline-block;
 }
 
@@ -381,16 +382,17 @@ h6 {
   overflow: hidden;
   margin-top: 1.5%;
   border: 1px solid #ccc;
-  padding: 20px 0px;
-  width: 1000px;
+  padding: 30px 0px;
+
 }
 
 .highcharts {
-  height: 500px;
+  height: 530px;
   overflow: hidden;
   width: 940px;
   padding-left: 28px;
   padding-right: 32px;
+  display: block;
 }
 
 
@@ -398,6 +400,18 @@ h6 {
   float: left;
 }
 
+.source {
+  width: 92%;
+  float: left;
+  margin-top: -115px;
+  padding-left: 2.2em;
+}
+
+
+.source h6 {
+  color: #bbb;
+  line-height: 1.2em;
+}
 
 /* left / right controls */
 
