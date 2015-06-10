@@ -1,0 +1,437 @@
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 1em;
+  background-color: #eee;
+
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=3.2.1');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Light Web';
+  src: url('../fonts/GuardianSans-Light-Web.eot');
+  src: url('../fonts/GuardianSans-Light-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Light-Web.woff') format('woff'), url('../fonts/GuardianSans-Light-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Light-Web.svg#Guardian Light Web') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Guardian Regular';
+  src: url('../fonts/GuardianSans-Regular-Web.eot');
+  src: url('../fonts/GuardianSans-Regular-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Regular-Web.woff') format('woff'), url('../fonts/GuardianSans-Regular-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Regular-Web.svg#Guardian TextSans Web') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; 
+}
+
+@font-face {
+  font-family: 'Guardian Medium';
+  src: url('../fonts/GuardianSans-Medium-Web.eot');
+  src: url('../fonts/GuardianSans-Medium-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Medium-Web.woff') format('woff'), url('../fonts/GuardianSans-Medium-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Medium-Web.svg#Guardian TextSans Web') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal; 
+}
+
+
+@font-face {
+  font-family: 'Egyptian Regular';
+  src: url('../fonts/GuardianEgyp-Regular-Web.eot');
+  src: url('../fonts/GuardianEgyp-Regular-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianEgyp-Regular-Web.woff') format('woff'), url('../fonts/GuardianEgyp-Regular-Web.ttf') format('truetype'), url('../fonts/GuardianEgyp-Regular-Web.svg#Guardian Text Egyptian Web') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Egyptian Medium';
+  src: url('../fonts/GuardianEgyp-Medium-Web.eot');
+  src: url('../fonts/GuardianEgyp-Medium-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianEgyp-Medium-Web.woff') format('woff'), url('../fonts/GuardianEgyp-Medium-Web.ttf') format('truetype'), url('../fonts/GuardianEgyp-Medium-Web.svg#Guardian Text Egyptian Web') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #51284f;
+  height: 65px;
+  position:fixed;
+  top:0;
+  width: 103%;
+  z-index: 1;
+}
+
+/* --------------------------------------------
+// !-- Nav Bar
+// ----------------------------------------- */
+
+
+.logo {
+  float: left;
+  margin-top: 1.5em;
+  margin-left: -2%;
+}
+
+.share {
+/*  background-color: pink;
+*/  float: right;
+  width: 40%;
+  display: inline-block;
+  margin-top: 1.5em;
+}
+
+.close {
+  width: 80%;
+  float: right;
+  margin-top: 1.5em;
+}
+
+.close a {
+  display: inline-block;
+  float: right;
+  opacity: 0.4;
+  padding-left: 4.5%;
+  -webkit-transition: all 0.2s ease;
+}
+
+.close a:hover {
+  opacity: 1;
+}
+
+#xtoclose {
+  width: 15%;
+  float: right;
+  display: inline-block;
+  margin-top: -.725em;
+}
+
+#xtoclose a {
+  opacity: 0.4;
+  padding: 12px 12px 8px 13px;
+  border-radius: 100%;
+  -webkit-transition: all 0.4s ease;
+
+}
+
+#xtoclose a:hover {
+  opacity: 1;
+  background-color: #411f41;
+}
+
+
+/* --------------------------------------------
+// !-- dropdown
+// ----------------------------------------- */
+
+
+/* icons - font awesome */
+.fa {
+  font-size: 1em;
+  line-height: 12px !important; /* spacing in dropdown, use 'dropdown lable' as well */
+}
+
+/* icons */
+dropdown{
+  display: inline-block;
+  font-family: 'Egyptian Medium';
+  float: right;
+  margin-left: 3.2%;
+}
+
+/* icon (in main nav) that triggers action */
+dropdown label {
+  display: block;
+  width: 1em;
+  background: none;
+  opacity: 0.4;
+  padding: 0px 12px 16px 14px;
+  position: relative;
+  z-index: 2;
+}
+
+dropdown label:hover {
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+/* icons within the dropdown */
+dropdown ul li{
+  display: block;
+  width: 1em;
+  background: none;
+  opacity: 0.4;
+  padding: 12px 12px 12px 14px;
+}
+
+dropdown ul li:hover{
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+dropdown input{
+  display: none;
+}
+
+/* icons as dropdown is triggered */
+dropdown input ~ ul{
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -60px;
+  z-index: 1;
+  color: white;
+}
+
+
+dropdown input:checked + label{
+  color: white;
+}
+
+/* background of dropdown */
+dropdown input:checked ~ ul{
+  visibility: visible;
+  opacity: .85;
+  color: #fff;
+  background: #51284f;
+  top: 0; /* position of where the icons start as they move down */
+  margin-top: 1px;
+}
+
+$colors: pink, lightyellow, lightblue;
+
+@for $i from 1 through length($colors) {
+  dropdown ul li:nth-child(#{$i}) {
+    border-left:4px solid nth($colors, $i);
+    
+    .fa {
+      color: nth($colors, $i);
+    }
+
+    &:hover {
+        background: nth($colors, $i);
+        color: white;
+      .fa {
+        color: white; 
+      }
+    }
+  }
+}
+
+.animate{
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;  
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden; /* Chrome and Safari */
+  -moz-backface-visibility:hidden; /* Firefox */
+  -ms-backface-visibility:hidden; /* Internet Explorer */
+}
+
+
+
+/* --------------------------------------------
+// !-- Landing
+// ----------------------------------------- */
+
+#title {
+  clear: all;
+  overflow: hidden;
+  margin-top: 8.5%;
+  width: 100%;
+}
+
+h1 {
+  color: #51284f;
+  font-family: 'Egyptian Regular';
+  font-size: 2em;
+  margin-bottom: 0.5%;
+  display: inline-block;
+}
+
+h2 {
+  color: #666;
+  font-family: 'Egyptian Regular';
+  font-size: 1.3em;
+  display: inline-block;
+}
+
+h4 {
+  color: #999;
+  font-family: 'Guardian Light Web';
+  font-size: 1.05em;
+  margin-top: 1%;
+  letter-spacing: .02em;
+  }
+
+
+h6 {
+  color: #777;
+  float: right;
+  font-family: 'Guardian Regular';
+  font-size: .75em;
+  margin-top: 1.5%;
+  }
+
+.description {
+  width: 85%;
+/*  background-color: pink;
+*/  padding-left: 2em;
+  padding-bottom: 2em;
+}
+
+
+#slider {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.5%;
+  border: 1px solid #ccc;
+  padding: 20px 0px;
+  width: 1000px;
+}
+
+.highcharts {
+  height: 500px;
+  overflow: hidden;
+  width: 940px;
+  padding-left: 28px;
+  padding-right: 32px;
+}
+
+
+#slider ul li {
+  float: left;
+}
+
+
+/* left / right controls */
+
+/*a.control_prev, a.control_next {
+  position: absolute;
+  top: 30%;
+  z-index: 999;
+  display: block;
+  padding: 2% 2.2%;
+  background: #ccc;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 0.35;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+}
+
+a.control_next {
+  right: 0;
+}*/
+
+#thumbnail {
+  background-color: lightyellow;
+  overflow: hidden;
+  margin-top: 5%;
+  width: 100%;
+  border: 1px solid pink;
+  padding: 30px 0px;
+}
+
+
