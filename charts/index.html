@@ -7,37 +7,81 @@
   <title>ChartSlider</title>
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 
 
 <body>
 
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 <header>
     <div class='wrapper'>
 
-    <nav class='mainnav'>
       <div class='logo'>
         <a href="#"><img src="images/GUGG_logo.svg" width='164'></a>
       </div>
-      <ul id='mainlinks'>
-        <li><a href="#">our firm</a></li>
-        <li><a href="#">our services</a></li>
-        <li><a href="#">our perspectives</a></li>
+
+    <nav class='close'>
+
+      <ul>
+        <li id='xtoclose'> <a href="#"><img src="images/close.svg" width='16'></a></li>
       </ul>
 
-      <ul class='secondlinks'>
-        <li><a href="#">client login</a></li>
-        <li><a href="#">search <i class="icon-search"></i></a></li>
+      <ul>
+
+<!-- D R O P D O W N -->
+      <dropdown>
+        <input id="toggle2" type="checkbox">
+        <label for="toggle2" class="animate"><img src="images/share.svg" width='21'></label>
+        
+        <ul class="animate">
+          <li class="animate"><i class="fa fa-envelope"></i></li>
+          <li class="animate"><i class="fa fa-facebook"></i></li>
+          <li class="animate"><i class="fa fa-twitter"></i></li>
+          <li class="animate"><i class="fa fa-google-plus"></i></li>
+          <li class="animate"><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </dropdown>
+
+        <li> <a href="#"><img src="images/print.svg" width='20'></a></li>
+        <li> <a href="#"><img src="images/download.svg" width='18'></a></li>
+        <li> <a href="#"><img src="images/fav.svg" width='18'></a></li>
       </ul>
+
+
+
+
+
+
+
     </nav>
+
+
+
+
+
+
+
     </div>
 </header>
 
-
 <div class='wrapper'>
 
+
+<!-- T H U M B N A I L  N A V--> 
+  <div id="title">
+    <h1>Lorem ipsum dolor </h1>
+
+
+
+
+
+  </div>
+
+
+<!-- C H A R T S --> 
   <div id="slider">
     <ul>
         <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/iziqag" ></iframe></a></li>
@@ -50,10 +94,23 @@
     <a href="#" class="control_next">&rarr;</a>
     <a href="#" class="control_prev">&larr;</a>
 
-
   </div>
 
+
+<!-- T H U M B N A I L  N A V--> 
+  <div id="thumbnail">
+  </div>
+
+
+
 </div> <!-- wrapper -->
+
+
+
+
+
+
+
 
 
 <!-- JQUERY --> 
