@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-color: rgb(215, 215, 215);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+article {
+	width: 60%;
+	height: 350px;
+	margin: 100 auto;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+	display: block;
+  	-webkit-transition: all 0.4s ease;
+}
+
+a:hover {
+	color: red;
+}
+
+header {
+	border-bottom: 1px solid #ccc;
+	padding: 10 0 10 10;
+}
+
+header a {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 11px;
+	color: #bbb;
+	padding: 2.5% 0%;
+	width: 92%;
+	display: inline-block;
+}
+
+header a:hover {
+	color: #222;
+}
+
+
+.logo {
+	display: inline;
+	width: 8%;
+	opacity: 0.8;
+	float: right;
+ 	-webkit-transition: all 0.4s ease;
+}
+
+.logo:hover {
+	opacity: 1.0;
+	
+}
+
+
+
+nav {
+	font-size: 20px;
+	width: 100%;
+	display: inline-block;
+	padding: 10 10;
+	border-bottom: 1px solid #ccc;
+	color: white;
+}
+
+nav :hover {
+	color: chocolate;
+}
+
+.date {
+	float: left;
+	width: 85px;
+	font-size: 12px;
+	font-weight: 400;
+	padding-top: 8px;
+	padding-right: 30px;
+	color: #aaa;
+}
+
+.description {
+	float: left;
+	font-size: 12.5px;
+	font-weight: 400;
+	padding-top: 8px;
+	color: #999;
+}
