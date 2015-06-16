@@ -49,17 +49,19 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {
-    font-size: 1em;
-    color: #222;
-    line-height: 1.4;
-    background: url(../img/putt.jpg) no-repeat center center fixed;
-    background-size: 1700px; 
-    background-position: 0px -620px; 
+  font-family: Open sans;
+  font-size: 1em;
+  letter-spacing:.02em;
+  color: #222;
+  line-height: 1.4;
+  background: url(../img/putt.jpg) no-repeat center center fixed;
+  background-size: 1700px; 
+  background-position: 0px -620px; 
 }
 
 body {
   font-family: 'OpenSans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 ol, ul {
@@ -99,14 +101,18 @@ a {
   font-style: normal;
 }
 
+/*  S T R U C T U R E  */
+
 .wrapper {
-  width: 62%;
+  width: 65%;
   margin: 0 auto;
 }
 
+/*  N A V  B A R  +  E L E M E N T S  */
+
 header {
-  background-color: yellow;
-  height: 70px;
+  background-color: #fff;
+  height: 60px;
   position:fixed;
   top:0;
   width: 100%;
@@ -114,243 +120,190 @@ header {
 }
 
 nav {
-    padding-top: 20px;
+  padding-top: 15px;
 }
 
 #portfolio {
-    font-family: Lobster;
-    color: gold;
-    font-size: 1.5em;
-    letter-spacing:.05em;
-    display: inline-block;
-    -webkit-transition: all 0.2s ease;
+  font-family: Open sans;
+  color: #359f48;
+  font-size: 1.35em;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease;
 }
 
 #portfolio:hover {
-    color: chocolate;
+    color: #aaa;
 }
 
 /* group of list items */
 nav ul {
-    width: 30%;
-    float: right;
-    padding-top: .15em;
+  width: 30%;
+  float: right;
+  padding-top: .15em;
 }
 
 /* individual list items */
 nav li {
-    float: right;
-    padding-left: 2em;
+  float: right;
+  padding-left: 2em;
 }
 
 /* links for individual list items */
 nav a {
-    font-size: 1.3em;
-    color: gold;
-    font-family: 'FontAwesome';
-    -webkit-transition: all 0.2s ease;
+  font-size: 1.3em;
+  color: #bbb;
+  font-family: 'FontAwesome';
+  -webkit-transition: all 0.4s ease;
 }
 
 nav a:hover {
-    color: #000;
+  color: #359f48;
 }
 
+/*  B I O G R A P H Y  */
+
 .bio {
-/*    background-color: purple;
-*/  /*  padding: 20px ;*/
-/*    opacity: .5;
-*/    position: relative;
-    top: 315px;
+  position: relative;
+  top: 315px;
+  border-bottom: 1px dashed #aaa;
+  padding-bottom: 250px;
 }
 
 p {
-    font-family: Open Sans;
-    font-weight: 300;
-    color: #bbb;
-    letter-spacing:.02em;
+  font-family: Open Sans;
+  color: #bbb;
+
 }
 
 .col {
-    width: 32%;
-    padding-right: 3%;
-    float: left;
-    margin-bottom: 100px;
+  width: 32%;
+  padding-right: 3%;
+  float: left;
+}
+
+.col-right {
+  width: 30%;
+  float: left;
 }
 
 #lead-in {
-    font-size: 1.35em;
-    font-weight: 700;
-    line-height: 1.5em;
-    margin-bottom: 100px;
+  font-size: 1.35em;
+  font-weight: 700;
+  line-height: 1.5em;
+
 }
 
 
+/*  M O D A L  */
 
+.modal  {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  top: 355px;
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+#openPopUp {
+  font-family: Open sans;
+  font-size: .8em;
+  background-color: #319444;
+  padding: 15px;
+  border-radius: 4.5px;
+  color: #bbb;
+  font-weight: 600;
+  letter-spacing:.05em;
+  text-transform: uppercase; 
+  -webkit-transition: all 0.4s ease;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+a#openPopUp:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #267236;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+.popup {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 9999999;
+  background: rgba(0,0,0, 0.75);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+    -webkit-transition: opacity  0.35s ease;
+    -moz-transition: opacity 0.35s ease;
+    -o-transition: opacity 0.35s ease;
+    transition: opacity 0.35s ease;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+.popup .popUpContainer {
+  width: 100%;
+  max-width: 500px; /*  width of popup container  */
+  position: fixed; /* To avoid scroll to target */
+  left: 50%;  /*  horizontal position of popup container  */
+  top: -100vh;
+    -webkit-transition: top  0.35s ease;
+    -moz-transition: top 0.35s ease;
+    -o-transition: top 0.35s ease;
+    transition: top 0.35s ease;
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  /* Trick to properly center the element by using negative 
+  1/2 length of element as margin left and top */
+  margin-left: -250px;
+  background-color: #ffffff; /*  color of popup container  */
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  z-index: 9; 
 }
 
-.clearfix:after {
-    clear: both;
+/*  type in the popup  */
+.popup h2{
+  padding: 0.5em;
+  text-align: center;
+  color: #359f48;
+  font-size: 1.35em;
+  margin: 0;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/*  popup contents  */
+.popup img{
+  width: 100%;
+  display: block;
+  height: 290px;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+/* X to close */
+.popup a.closePopUp {
+  font-weight: 800;
+  position: absolute;
+  top: 1em;
+  right: 1.1em;
+  color: #bbb;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/* When popup is targeted, by clicking on link with #popup in HTML */
+.popup:target{
+  opacity: 1;
+  top: 0;
+}
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+/* click anywhere to close */
+.popup .closePopUpOutSide{
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9; 
+}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+/*  popup position and interaction  */
+.popup:target .popUpContainer{
+  top: 38px;
+    -webkit-transition: top  0.35s ease;
+    -moz-transition: top 0.35s ease;
+    -o-transition: top 0.35s ease;
+    transition: top 0.35s ease;
 }
