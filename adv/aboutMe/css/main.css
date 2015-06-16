@@ -54,7 +54,7 @@ html {
     line-height: 1.4;
     background: url(../img/putt.jpg) no-repeat center center fixed;
     background-size: 1700px; 
-    background-position: 0px -500px; 
+    background-position: 0px -620px; 
 }
 
 body {
@@ -100,13 +100,13 @@ a {
 }
 
 .wrapper {
-  width: 65%;
+  width: 62%;
   margin: 0 auto;
 }
 
 header {
   background-color: yellow;
-  height: 65px;
+  height: 70px;
   position:fixed;
   top:0;
   width: 100%;
@@ -114,48 +114,75 @@ header {
 }
 
 nav {
-    padding-top: 1.8%;
+    padding-top: 20px;
 }
 
-nav h1 {
+#portfolio {
     font-family: Lobster;
-    color: #000;
+    color: gold;
     font-size: 1.5em;
     letter-spacing:.05em;
-     display: inline-block;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease;
+}
+
+#portfolio:hover {
+    color: chocolate;
 }
 
 /* group of list items */
 nav ul {
     width: 30%;
     float: right;
-    padding-top: .55em;
+    padding-top: .15em;
 }
 
 /* individual list items */
 nav li {
     float: right;
     padding-left: 2em;
-
 }
 
 /* links for individual list items */
 nav a {
+    font-size: 1.3em;
     color: gold;
     font-family: 'FontAwesome';
     -webkit-transition: all 0.2s ease;
-
 }
 
 nav a:hover {
     color: #000;
 }
 
+.bio {
+/*    background-color: purple;
+*/  /*  padding: 20px ;*/
+/*    opacity: .5;
+*/    position: relative;
+    top: 315px;
+}
 
+p {
+    font-family: Open Sans;
+    font-weight: 300;
+    color: #bbb;
+    letter-spacing:.02em;
+}
 
+.col {
+    width: 32%;
+    padding-right: 3%;
+    float: left;
+    margin-bottom: 100px;
+}
 
-
-
+#lead-in {
+    font-size: 1.35em;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-bottom: 100px;
+}
 
 
 
