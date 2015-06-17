@@ -1,17 +1,3 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-
-
 /* --------------------------------------------
 // !-- Reset
 // ----------------------------------------- */
@@ -105,6 +91,7 @@ a {
 
 .wrapper {
   width: 65%;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -124,11 +111,12 @@ nav {
 }
 
 #portfolio {
-  font-family: Open sans;
   color: #359f48;
-  font-size: 1.35em;
   display: inline-block;
+  font-family: Open sans;
+  font-size: 1.35em;
   -webkit-transition: all 0.4s ease;
+
 }
 
 #portfolio:hover {
@@ -137,9 +125,9 @@ nav {
 
 /* group of list items */
 nav ul {
-  width: 30%;
   float: right;
   padding-top: .15em;
+  width: 30%;
 }
 
 /* individual list items */
@@ -150,11 +138,11 @@ nav li {
 
 /* links for individual list items */
 nav a {
-  font-size: 1.3em;
   color: #bbb;
   font-family: 'FontAwesome';
-  -webkit-transition: all 0.4s ease;
-}
+  font-size: 1.3em;
+   -webkit-transition: all 0.4s ease;
+ }
 
 nav a:hover {
   color: #359f48;
@@ -163,125 +151,125 @@ nav a:hover {
 /*  B I O G R A P H Y  */
 
 .bio {
-  position: relative;
-  top: 315px;
   border-bottom: 1px dashed #aaa;
   padding-bottom: 250px;
+  position: relative;
+  top: 315px;
 }
 
 p {
   font-family: Open Sans;
   color: #bbb;
-
 }
 
 .col {
-  width: 32%;
-  padding-right: 3%;
   float: left;
+  padding-right: 3%;
+  width: 32%;
 }
 
 .col-right {
-  width: 30%;
   float: left;
+  width: 30%;
 }
 
 #lead-in {
   font-size: 1.35em;
   font-weight: 700;
   line-height: 1.5em;
-
 }
-
 
 /*  M O D A L  */
 
 .modal  {
-  width: 100%;
   display: inline-block;
   position: relative;
   top: 355px;
-
+  width: 100%;
 }
 
 #openPopUp {
-  font-family: Open sans;
-  font-size: .8em;
   background-color: #319444;
-  padding: 15px;
   border-radius: 4.5px;
   color: #bbb;
+  font-family: Open sans;
+  font-size: .8em;
   font-weight: 600;
   letter-spacing:.05em;
+  padding: 15px;
   text-transform: uppercase; 
   -webkit-transition: all 0.4s ease;
 }
 
 a#openPopUp:hover{
-  cursor: pointer;
-  color: #fff;
   background-color: #267236;
+  color: #fff;
+  cursor: pointer;
 }
 
 .popup {
+  background: rgba(0,0,0, 0.75);
+  height: 100vh;
+  left: 0;
+  opacity: 0;
   position: fixed;
   top: -100vh;
-  left: 0;
-  z-index: 9999999;
-  background: rgba(0,0,0, 0.75);
   width: 100vw;
-  height: 100vh;
-  opacity: 0;
-    -webkit-transition: opacity  0.35s ease;
-    -moz-transition: opacity 0.35s ease;
-    -o-transition: opacity 0.35s ease;
-    transition: opacity 0.35s ease;
+  z-index: 9999999;
+  -webkit-transition: opacity  0.35s ease;
+  -moz-transition: opacity 0.35s ease;
+  -o-transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease;
 }
 
 .popup .popUpContainer {
-  width: 100%;
+  left: 50%;  /*  horizontal position of popup container  */
   max-width: 500px; /*  width of popup container  */
   position: fixed; /* To avoid scroll to target */
-  left: 50%;  /*  horizontal position of popup container  */
   top: -100vh;
-    -webkit-transition: top  0.35s ease;
-    -moz-transition: top 0.35s ease;
-    -o-transition: top 0.35s ease;
-    transition: top 0.35s ease;
+  width: 100%;
+  -webkit-transition: top  0.35s ease;
+  -moz-transition: top 0.35s ease;
+  -o-transition: top 0.35s ease;
+  transition: top 0.35s ease;
 
   /* Trick to properly center the element by using negative 
   1/2 length of element as margin left and top */
-  margin-left: -250px;
   background-color: #ffffff; /*  color of popup container  */
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  margin-left: -250px;
   z-index: 9; 
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 /*  type in the popup  */
-.popup h2{
-  padding: 0.5em;
+.popup p {
+  color: #319444;
+  font-family: Open sans;
+  font-size: .8em;
+  font-weight: 600;
+  letter-spacing:.05em;
+  padding: 15px;
   text-align: center;
-  color: #359f48;
-  font-size: 1.35em;
-  margin: 0;
+  text-transform: uppercase; 
+  -webkit-transition: all 0.4s ease;
 }
 
 /*  popup contents  */
 .popup img{
-  width: 100%;
   display: block;
   height: 290px;
+  width: 100%;
 }
 
 /* X to close */
 .popup a.closePopUp {
+  color: #bbb;
   font-weight: 800;
   position: absolute;
-  top: 1em;
   right: 1.1em;
-  color: #bbb;
+  top: .8em;
 }
 
 /* When popup is targeted, by clicking on link with #popup in HTML */
@@ -307,3 +295,4 @@ a#openPopUp:hover{
     -o-transition: top 0.35s ease;
     transition: top 0.35s ease;
 }
+

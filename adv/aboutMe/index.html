@@ -13,108 +13,65 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
+    
     <body>
-
-
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <header>
+            <div class='wrapper'>
+                <nav>
+                    <a href='http://wadeniday.com' id='portfolio'> Who is Wade Niday?</a>
+                    <ul>
+                        <li><a href="mailto:wniday@gmail.com" target="_blank"><i class="icon-envelope"></i></a><li>
+                        <li><a href="http://www.linkedin.com/in/wadeniday" target="_blank"><i class="icon-linkedin"></i></a><li>
+                        <li><a href="https://twitter.com/NidayLikeFriday" target="_blank"><i class="icon-twitter"></i></a><li>
+                    </ul>
+                </nav> 
+            </div> <!-- wrapper -->
+        </header>
 
-<header>
-    <div class='wrapper'>
-        <nav>
-            <a href='http://wadeniday.com' id='portfolio'> Who is Wade Niday?</a>
+        <div class='wrapper'>
+            <section class='bio'>
+                <div class='col'>
+                    <p id='lead-in'>A designer bringing clear thinking and simplicity to digital experiences.</p>
+                </div>
 
-            <ul>
-                <li><a href="mailto:wniday@gmail.com" target="_blank"><i class="icon-envelope"></i></a><li>
-                <li><a href="http://www.linkedin.com/in/wadeniday" target="_blank"><i class="icon-linkedin"></i></a><li>
-                <li><a href="https://twitter.com/NidayLikeFriday" target="_blank"><i class="icon-twitter"></i></a><li>
-            </ul>
-        </nav> 
+                <div class='col'>
+                    <p>Collaborating with great people has led to a simple takeaway: excel at the basics. It's a thought rooted in the tie between visual and written language, in knowing when certain details will add value, and remembering that design is a service. I've been able to lead, execute and deliver great work in a variety of team settings, including a remote work arrangement. </p>
+                </div>
 
-    </div> <!-- wrapper -->
-</header>
+                <div class='col-right'>
+                    <p>Away from design, life is about striving to be a great husband, dad, and friend. I'm passionate about Pauline literature, taking lengthy road trips, and trying to keep my tee shot (and every other golf shots) out of the woods. I live in the far west suburbs of Chicago with my ever-supportive wife and our two adorable daughters. </p>
+                </div>
+            </section>
 
-
-
-<div class='wrapper'>
-    <section class='bio'>
-
-        <div class='col'>
-            <p id='lead-in'>A designer bringing clear thinking and simplicity to digital experiences.</p>
-        </div>
-
-        <div class='col'>
-            <p>Collaborating with great people has led to a simple takeaway: excel at the basics. It's a thought rooted in the tie between visual and written language, in knowing when certain details will add value, and remembering that design is a service. I've been able to lead, execute and deliver great work in a variety of team settings, including a remote work arrangement. </p>
-        </div>
-
-        <div class='col-right'>
-            <p>Away from design, life is about striving to be a great husband, dad, and friend. I'm passionate about Pauline literature, taking lengthy road trips, and trying to keep my tee shot (and every other golf shots) out of the woods. I live in the far west suburbs of Chicago with my ever-supportive wife and our two adorable daughters. </p>
-        </div>
-
-    </section>
-
-
-
-<section class='modal'>
-
-
-  <a href="#popUp" id="openPopUp">What happens when I sink a putt?</a>
-
-</section>
+            <section class='modal'>
+              <a href="#popUp" id="openPopUp">What happens when I sink a putt?</a>
+            </section>
   
-<!-- POP UP -->
-<aside id="popUp" class="popup">
-    <div class="popUpContainer">
+            <!-- POP UP -->
+            <aside id="popUp" class="popup">
+                <div class="popUpContainer">
 
-        <a href="#!" class="closePopUp">X</a>
-        <h2>Dance party!</h2>
+                    <a href="#!" class="closePopUp">X</a>
+                    <p>Dance party!</p>
 
-      <article>
-        <img src="img/shaq.gif" alt="">
-      </article>
-   </div>        
-   <a href="#!" class="closePopUpOutSide"></a>    
-</aside>
+                  <article>
+                    <img src="img/shaq.gif" alt="">
+                  </article>
+               </div>        
+               <a href="#!" class="closePopUpOutSide"></a>    
+            </aside>
 
-
-
-
-
-
-</div> <!-- wrapper -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div> <!-- wrapper -->
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -122,10 +79,8 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-
-
-<!-- live reload -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        <!-- live reload -->
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -136,7 +91,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-
 
     </body>
 </html>
