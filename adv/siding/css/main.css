@@ -18,6 +18,12 @@ li {
 
 ul {
     margin: 0;
+    padding-left: 15px;
+}
+
+ol {
+    margin: 0; 
+    padding: 0;
 }
 
 /*
@@ -125,40 +131,59 @@ light gray: #cfcfcf;
     margin: 0 auto;
 }
 
+/* N A V  B A R */
+
 .top-nav {
+    background-color: rgb(249, 249, 249);
     background-color: #eee;
     width: 100%;
     display: inline-block;
+}
+
+.top-nav img {
+    width: 117px;
 }
 
 .top-nav li {
     float: left;
 }
 
-
 .top-nav li:first-child {
-    width: 57%;
-
+    width: 61%;
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: none;
 }
 
 .top-nav li:nth-child(2) {
-    width: 20%;
+    width: 19%;
     display: inline-block;
-    border-left: 2px solid red;
-    padding-left: 10px;
-    background-color: lightgreen;
-
+    border-left: 2px solid #fff;
+    padding: 15px 3px 20px 15px;
+    transition: all .2s;
 }
 
 .top-nav li:nth-child(3) {
-    width: 20%;
+    width: 16%;
     float: right;
     display: inline-block;
-    border-left: 2px solid red;
-    padding-left: 10px;
-    background-color: gold;
-
+    border-left: 2px solid #fff;
+    padding: 15px 0px 20px 15px;
+    transition: all .2s;
 }
+
+.top-nav li:nth-child(2):hover, .top-nav li:nth-child(3):hover{
+    background-color: #ddd;
+}
+
+i {
+    float: left;
+    padding-right: .5em;
+    color: #067bb5;
+    font-size: 1.7em;
+}
+
+/* H E R O  A R E A */
 
 .hero img {
     width:100%;
@@ -167,76 +192,231 @@ light gray: #cfcfcf;
     z-index: -1;
 }
 
-i {
-    float: left;
-    padding-right: .5em;
-
-}
-
-h3 {
-    margin: 0;
-    font-family: 'OpenSans', sans-serif;
-    font-weight: 300;
-    color: #666;
-}
-
-
-h2 {
-    margin: 0;
-    font-family: 'OpenSans', sans-serif;
-    font-weight: 300;
-    color: #666;
-}
-
-
 .deal {
-    margin-left: 4%;
-    width: 57%;
+    padding-top: .5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 6%;
+    width: 58%;
+    display: inline-block;
+/*    background: pink;
+*/}
+
+.consult {
+    background-color: #f0f0f0;
+    width: 30%;
+    padding: 1em;
+    float: right;
+    margin-right: 3%;
+    position: relative;
+    top: -80px;
+    z-index: 1;
+}
+
+.details {
+    border-top: .6em solid #eee;
+    border-bottom: .6em solid #eee;
+    text-align: center;
+    margin-bottom: 2em;
+    transition: all .3s;
+}
+.details:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+
+
+/* S I D E B A R */
+
+
+
+.consult ul {
+    padding-left: 0px;
+}
+
+.form li {
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid #ddd;
+    margin-bottom: .8em;
+    transition: all .15s;
+}
+
+.form li:hover {
+    border: 1px solid #bbb;
+}
+
+
+.form a {
+    background-color: #fff;
+}
+
+
+#box {
+  font-family: 'FontAwesome';
+}
+
+.btn {
+    padding: 15px;
+    background-color: #ff6429;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: #d73e04;
+}
+
+/* F E A T U R E  A R E A */
+
+.features {
+    margin: none;
+    padding-bottom: 1%;
+    margin-bottom: 6%;
+}
+
+.features ol {
+    padding: 0;
+}
+
+.features li img{
+    width: 100%;
+}
+
+
+.features li:first-child, .features li:nth-child(2)  {
+    width: 30%;
+    padding-right: 5%;
     display: inline-block;
     float: left;
 }
 
-
-.consult {
-    background-color: pink;
+.features li:last-child {
     width: 30%;
-    float: right;
-    margin-right: 4%;
-    position: relative;
-    top: -50px;
-    z-index: -1;
+    padding-right: 0%;
+    display: inline-block;
 }
 
-.details {
-    border-top: 5px solid gray;
-    border-bottom: 5px solid gray;
-    text-align: center;
+footer {
+    width: 100%;
+    margin-bottom: 2em;
 }
+
+/* T Y P O G R A P H Y */
 
 h1 {
     font-size: 3em;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: -.02em;
+    line-height: 1em;
+}
+
+#star {
+    font-size: .6em;
+    font-weight: 400;
+    position: relative;
+    top: -15px;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: #666;
+    color: #aaa;
+    font-size: 1.75em;
+    padding: 10px 0px 15px 15px;
+    letter-spacing: -.01em;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #aaa;
+    font-size: 1.15em;
+}
+
+.features h3 {
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid #ddd;
+}
+
+.consult h3 {
+    padding-bottom: 5%;
+}
+
+ h4 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #999;
+}
+
+.consult h4 {
+    color: #fff;
+    text-align: center;
+}
+
+ .features h4 {
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+
+.deal h4 {
+    text-align: center;
+    width: 75%;
+    padding-left: 12.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #999;
+    margin-top: 3%;
+    margin-bottom: 4%;
 }
 
 
-.details h4 {
-    width: 60%;
-    padding-left: 20%;
+#sears-card {
+    color: #555;
+}
+
+h5 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #999;
+    font-size: .97em;
+    padding-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.form h5 {
+    padding-bottom: 0;
+    color: #ccc;
 }
 
 
-.col {
-    width: 30%;
-    padding-right: 3%;
-    float: left;
+h6 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #999;
+    font-size: .7em;
+    padding-bottom: 1em;
+    line-height: 1.5em;
 }
 
-.features {
-    width: 100%;
-    margin: none;
+.consult h6 {
+    padding: 1.5em;
 }
+
+
 
 
 
