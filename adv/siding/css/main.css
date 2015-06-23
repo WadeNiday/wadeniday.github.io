@@ -202,16 +202,6 @@ i {
 /*    background: pink;
 */}
 
-.consult {
-    background-color: #f0f0f0;
-    width: 30%;
-    padding: 1em;
-    float: right;
-    margin-right: 3%;
-    position: relative;
-    top: -80px;
-    z-index: 1;
-}
 
 .details {
     border-top: .6em solid #eee;
@@ -229,7 +219,16 @@ i {
 
 /* S I D E B A R */
 
-
+.consult {
+    background-color: #f0f0f0;
+    width: 30%;
+    padding: 1em;
+    float: right;
+    margin-right: 3%;
+    position: relative;
+    top: -80px;
+    z-index: 1;
+}
 
 .consult ul {
     padding-left: 0px;
@@ -254,18 +253,44 @@ i {
 
 
 #box {
-  font-family: 'FontAwesome';
+    font-size: 2em;
+    display: inline-block;
 }
 
 .btn {
-    padding: 15px;
+    padding-top: 15px;
     background-color: #ff6429;
     border-radius: 5px;
+    margin-bottom: 2%;
     transition: all .3s;
 }
 
 .btn:hover {
     background-color: #d73e04;
+}
+
+.questions {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    width: 30.85%;
+    padding: .65em;
+    float: right;
+    margin-right: 3%;
+    position: relative;
+    top: -124px;
+    z-index: 2;
+    transition: all .3s;
+}
+
+.questions:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+
+}
+
+.questions i {
+    padding-top: 12px;
+    padding-right: 15px;
 }
 
 /* F E A T U R E  A R E A */
@@ -283,7 +308,6 @@ i {
 .features li img{
     width: 100%;
 }
-
 
 .features li:first-child, .features li:nth-child(2)  {
     width: 30%;
@@ -346,7 +370,7 @@ h3 {
 }
 
 .consult h3 {
-    padding-bottom: 5%;
+
 }
 
  h4 {
@@ -401,6 +425,10 @@ h5 {
     color: #ccc;
 }
 
+.btn h5 {
+    color: #fff;
+    text-align: center;
+}
 
 h6 {
     margin: 0;
@@ -414,6 +442,7 @@ h6 {
 
 .consult h6 {
     padding: 1.5em;
+    margin-bottom: 2%;
 }
 
 
