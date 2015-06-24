@@ -99,9 +99,9 @@ a {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
     background: #ccc;
     color: #000;
+    margin: 0.2em 0;
     padding: 0.2em 0;
 }
 
@@ -127,17 +127,17 @@ light gray: #cfcfcf;
    ========================================================================== */
 
 .wrapper {
-    width: 960px;
     margin: 0 auto;
+    width: 960px;
 }
 
 /* N A V  B A R */
 
 .top-nav {
-    background-color: rgb(249, 249, 249);
     background-color: #eee;
-    width: 100%;
+    background-color: rgb(249, 249, 249);
     display: inline-block;
+    width: 100%;
 }
 
 .top-nav img {
@@ -149,26 +149,26 @@ light gray: #cfcfcf;
 }
 
 .top-nav li:first-child {
-    width: 61%;
     display: inline-block;
-    padding-top: 10px;
     margin-left: none;
+    padding-top: 10px;
+    width: 61%;
 }
 
 .top-nav li:nth-child(2) {
-    width: 19%;
-    display: inline-block;
     border-left: 2px solid #fff;
+    display: inline-block;
     padding: 15px 3px 20px 15px;
+    width: 19%;
     transition: all .2s;
 }
 
 .top-nav li:nth-child(3) {
-    width: 16%;
-    float: right;
-    display: inline-block;
     border-left: 2px solid #fff;
+    display: inline-block;
+    float: right;
     padding: 15px 0px 20px 15px;
+    width: 16%;
     transition: all .2s;
 }
 
@@ -177,37 +177,37 @@ light gray: #cfcfcf;
 }
 
 i {
-    float: left;
-    padding-right: .5em;
     color: #067bb5;
+    float: left;
     font-size: 1.7em;
+    padding-right: .5em;
 }
 
 /* H E R O  A R E A */
 
 .hero img {
-    width:100%;
     position: relative;
     top: 0px;
+    width:100%;
     z-index: -1;
 }
 
 .deal {
-    padding-top: .5%;
+    display: inline-block;
+    margin-bottom: 6%;
     padding-left: 2%;
     padding-right: 2%;
-    margin-bottom: 6%;
+    padding-top: .5%;
     width: 58%;
-    display: inline-block;
 /*    background: pink;
 */}
 
 
 .details {
-    border-top: .6em solid #eee;
     border-bottom: .6em solid #eee;
-    text-align: center;
+    border-top: .6em solid #eee;
     margin-bottom: 2em;
+    text-align: center;
     transition: all .3s;
 }
 .details:hover {
@@ -221,12 +221,12 @@ i {
 
 .consult {
     background-color: #f0f0f0;
-    width: 30%;
-    padding: 1em;
     float: right;
     margin-right: 3%;
+    padding: 1em;
     position: relative;
     top: -80px;
+    width: 30%;
     z-index: 1;
 }
 
@@ -234,34 +234,55 @@ i {
     padding-left: 0px;
 }
 
-.form li {
-    background-color: #fff;
-    padding: 3px;
-    border: 1px solid #ddd;
-    margin-bottom: .8em;
-    transition: all .15s;
+
+input[type="text"] {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #999;
+    display: block;
+    margin: 0;
+    margin-bottom: 6%;
+    outline: 0 ;
+    border: 1px solid #eee;
+    padding: 5px 0px 5px 5px;
+    font-size: .8em;
+    width: 97%;
+    box-shadow:inset 0 0 2px rgba(0,0,0,0.5);
+    transition: all .3s;
 }
 
-.form li:hover {
+input[type="text"]:hover {
     border: 1px solid #bbb;
 }
 
-
-.form a {
-    background-color: #fff;
+form {
+    margin-bottom: 6%;
 }
 
+.form li:nth-child(5) {
+    display: inline-block;
+    margin-bottom: 3%;
+    margin-right: 3%;
+    width: 47%;
+}
+
+.form li:nth-child(6) {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 47%;
+}
 
 #box {
-    font-size: 2em;
     display: inline-block;
+    font-size: 2em;
+    margin-right: 1px;
 }
 
 .btn {
-    padding-top: 15px;
     background-color: #ff6429;
     border-radius: 5px;
     margin-bottom: 2%;
+    padding-top: 15px;
     transition: all .3s;
 }
 
@@ -272,12 +293,12 @@ i {
 .questions {
     background-color: #fff;
     border: 1px solid #dedede;
-    width: 30.85%;
-    padding: .65em;
     float: right;
     margin-right: 3%;
+    padding: .65em;
     position: relative;
-    top: -124px;
+    top: -147px;
+    width: 30.85%;
     z-index: 2;
     transition: all .3s;
 }
@@ -285,20 +306,19 @@ i {
 .questions:hover{
     background-color: #f0f0f0;
     cursor: pointer;
-
 }
 
 .questions i {
-    padding-top: 12px;
     padding-right: 15px;
+    padding-top: 12px;
 }
 
 /* F E A T U R E  A R E A */
 
 .features {
+    margin-bottom: 6%;
     margin: none;
     padding-bottom: 1%;
-    margin-bottom: 6%;
 }
 
 .features ol {
@@ -309,17 +329,25 @@ i {
     width: 100%;
 }
 
-.features li:first-child, .features li:nth-child(2)  {
-    width: 30%;
-    padding-right: 5%;
+.features li:first-child {
     display: inline-block;
     float: left;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 30%;
+}
+
+.features li:nth-child(2)  {
+    display: inline-block;
+    float: left;
+    margin-right: 5%;
+    width: 30%;
 }
 
 .features li:last-child {
-    width: 30%;
-    padding-right: 0%;
     display: inline-block;
+    padding-right: 0%;
+    width: 30%;
 }
 
 footer {
@@ -330,10 +358,10 @@ footer {
 /* T Y P O G R A P H Y */
 
 h1 {
-    font-size: 3em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
     color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
     letter-spacing: -.02em;
     line-height: 1em;
 }
@@ -346,40 +374,47 @@ h1 {
 }
 
 h2 {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
     color: #aaa;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.75em;
-    padding: 10px 0px 15px 15px;
+    font-weight: 300;
     letter-spacing: -.01em;
+    margin: 0;
+    padding: 10px 0px 15px 15px;
 }
 
 h3 {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
     color: #aaa;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.15em;
+    font-weight: 300;
+    margin: 0;
 }
 
 .features h3 {
-    padding-bottom: 1%;
-    margin-bottom: 2%;
     border-bottom: 1px solid #ddd;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
 }
 
 .consult h3 {
+    margin-bottom: 20px;
 
 }
 
  h4 {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
-    line-height: 1.3em;
     color: #999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin: 0;
+    transition: all .3s;
+
+}
+
+h4:hover {
+    color: #222;
 }
 
 .consult h4 {
@@ -393,16 +428,16 @@ h3 {
 }
 
 .deal h4 {
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    padding-left: 12.5%;
     text-align: center;
     width: 75%;
-    padding-left: 12.5%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
-    line-height: 1.3em;
-    color: #999;
-    margin-top: 3%;
-    margin-bottom: 4%;
 }
 
 
@@ -411,13 +446,13 @@ h3 {
 }
 
 h5 {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
     color: #999;
+    font-family: 'Open Sans', sans-serif;
     font-size: .97em;
-    padding-bottom: 1em;
+    font-weight: 300;
     line-height: 1.5em;
+    margin: 0;
+    padding-bottom: 1em;
 }
 
 .form h5 {
@@ -431,17 +466,16 @@ h5 {
 }
 
 h6 {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
     color: #999;
+    font-family: 'Open Sans', sans-serif;
     font-size: .7em;
-    padding-bottom: 1em;
+    font-weight: 500;
     line-height: 1.5em;
+    margin: 0;
+    padding-bottom: 1em;
 }
 
 .consult h6 {
-    padding: 1.5em;
     margin-bottom: 2%;
 }
 
