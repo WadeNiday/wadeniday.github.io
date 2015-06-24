@@ -295,14 +295,9 @@ form {
 .questions {
     background-color: #fff;
     border: 1px solid #dedede;
-/*    float: right;*/
-/*    margin-right: 3%;
-*/    padding: .65em;
+    padding: .65em;
     width: 92%;
     z-index: 2;
-/*    padding: 1em;
-*//*    position: relative;
-    top: -80px;*/
     display: inline-block;
     transition: all .3s;
 }
