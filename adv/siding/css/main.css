@@ -241,7 +241,7 @@ input[type="text"] {
     color: #999;
     display: block;
     margin: 0;
-    margin-bottom: 6%;
+    margin-bottom: 3%;
     outline: 0 ;
     border: 1px solid #eee;
     padding: 5px 0px 5px 5px;
@@ -259,7 +259,9 @@ form {
     margin-bottom: 6%;
 }
 
-
+.form {
+    margin-bottom: 8%;
+}
 
 .form li:nth-child(5) {
     display: inline-block;
@@ -393,7 +395,6 @@ form h3 {
     padding-bottom: 1%;
 }
 
-
  h4 {
     color: #999;
     font-family: 'Open Sans', sans-serif;
@@ -402,7 +403,6 @@ form h3 {
     line-height: 1.3em;
     margin: 0;
     transition: all .3s;
-
 }
 
 h4:hover {
@@ -414,7 +414,7 @@ h4:hover {
     text-align: center;
 }
 
- .features h4 {
+.features h4 {
     margin-top: 6%;
     margin-bottom: 2%;
 }
@@ -468,7 +468,7 @@ h6 {
 }
 
 .consult h6 {
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 
