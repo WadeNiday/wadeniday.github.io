@@ -819,6 +819,7 @@ h1 {
 
 
 
+
 /*Footer*/
 
 .social {
@@ -827,6 +828,7 @@ h1 {
   clear: all;
   padding-top: .2em;
   padding-bottom: .5em;
+  float: left;
 }
 
 /* social icons*/
@@ -907,6 +909,12 @@ h1 {
   margin-bottom: %;
   border-bottom: 1px dashed #ccc;
 }
+
+.bottomnav a {
+  padding-top: 50px;
+}
+
+
 
 
 .footer h1 {

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>First baseman</title>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+
+    <body>
+
+      <header>
+        <div class='wrapper'>
+            <nav>
+              <ul>
+                <li> <a href="#"><h1>The Players</h1></a>
+                <li> <a href="#relative"><h2>absolute</h2></a>
+                <li> <a href="#relative"><h2>Relative</h2></a>
+                <li> <a href="#display"><h2>Display</h2></a>
+                <li> <a href="#float"><h2>Float</h2></a>
+              </ul>
+            </nav>
+        </div> <!-- wrapper -->
+      </header>
+
+      <a name='float'></a>
+        <section class='float'>
+
+          <ul>
+            <li><a href="#"><img src="img/mrbaseball.jpg"></a>
+              <p>&ldquo;Awards mean a lot, but they don't say it all. The people in baseball mean more to me than statistics.&rdquo;</p><h2>Ernie Banks</h2>
+            </li>
+
+            <li><a href="#"><img src="img/mrbaseball.jpg"></a>
+              <p>&ldquo;Awards mean a lot, but they don't say it all. The people in baseball mean more to me than statistics.&rdquo;</p><h2>Ernie Banks</h2>
+            </li>
+            </li>
+
+            <li><a href="#"><img src="img/mrbaseball.jpg"></a>
+              <p>&ldquo;Awards mean a lot, but they don't say it all. The people in baseball mean more to me than statistics.&rdquo;</p><h2>Ernie Banks</h2>
+            </li>
+          </ul>
+
+<h1>Exhibit A: Cards /quotes floated left; clearfix hack applied as all children of the secction are floated </h1>
+
+        </section>
+
+      <a name='display'></a>
+        <section class='display'>
+          <ul>
+            <li><a href="#"><img src="img/crimedog.jpg"></a>
+              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p><h2>The Crimedog</h2>
+            </li>
+
+            <li><a href="#"><img src="img/crimedog.jpg"></a>
+              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p><h2>The Crimedog</h2>
+            </li>
+
+            <li><a href="#"><img src="img/crimedog.jpg"></a>
+              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p><h2>The Crimedog</h2>
+            </li>
+
+            <li id='grace'><a href="#"><img src="img/mGrace.jpg"></a>
+              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p><h2>We all need Grace</h2>
+            </li>
+          </ul>
+
+          <h1>Exhibit B: Elements use inline-block instead of float; hidden quote (inspector); border-box applied to Mark Grace </h1>
+
+        </section>
+
+      <footer>
+        <div class='wrapper'>
+            <nav>
+              <ul>
+                <li> <a href="#display"><h2>These guys know the fundamentals</h2></a>
+              </ul>
+            </nav>
+        </div> <!-- wrapper -->
+      </footer>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+<!-- liveReload -->
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+    </body>
+</html>
