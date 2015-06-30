@@ -131,11 +131,11 @@ nav h2 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  -webkit-transition: all 0.4s ease;
 }
 
 nav h2:hover {
   color: red;
-  -webkit-transition: all 0.4s ease;
 }
 
 .float h1 {
@@ -147,9 +147,10 @@ nav h2:hover {
 
 .float {
   padding: 100px 50px 25px 0px;
-  background-color: #eee;
+  background-color: #ddd;
 }
 
+/*  clearfix hack  */
 .float:after {
   content: ' ';
   display: block;
@@ -162,7 +163,12 @@ nav h2:hover {
   display: block;
   border: 1px solid #ddd;
   padding: 25px;
-  background-color: #fff
+  -webkit-transition: all 0.4s ease;
+}
+
+.float li:hover {
+  border: 1px solid #bbb;
+  background-color: #fff;
 }
 
 .float li:first-child {
@@ -193,8 +199,6 @@ ul img {
 }
 
 
-
-
 .display h1 {
   color: #777;
   font-weight: 600;
@@ -205,8 +209,7 @@ ul img {
 .display {
   padding: 100px 0px 100px 50px;
   background-color: #fff;
-  margin-bottom: 50px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #ddd;
 }
 
 .display li {
@@ -232,6 +235,59 @@ ul img {
 #grace h2 {
   color: #fff;
   padding-top: 2px;
+}
+
+.relative {
+  background-color: #ddd;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+
+/*  clearfix hack  */
+.relative:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+#rizzo-top {
+  width: 200px;
+  display: inline-block;
+  padding: 25px;
+  background-color: #003279;
+  position: relative;
+  top: 25px;
+  left: 300px;
+}
+
+#rizzo-bot {
+  width: 200px;
+  padding: 25px;
+  background-color: #003279;
+  position: relative;
+  top: 25px;
+  left: 350px;
+  display:inline-block;
+}
+
+.relative p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 5%;
+  color: #fff;
+}
+
+.relative h2 {
+  font-weight: 600;
+  color: #fff;
+}
+
+.relative h1 {
+  font-weight: 600;
+  color: #777;
+  padding-left: 50px;
+  padding-top: 75px;
 }
 
 
