@@ -493,64 +493,41 @@ h1 {
   display: inline-block;
   border-top: .5em solid #ccc;
   width: 100%;
-  margin-top: 1em;
-}
-
-/* typography */
-.footer h1 {
-  clear: all;
-  width: 65%;
-  padding-top: 1%;
-/*  margin-bottom: 1%;*/
-  color: #777;
-  font-size: 1em;
-  display: inline-block;
-}
-
-
-/* copyright */
-/*FOOTER*/
-
-.footer {
-  display: inline-block;
-  border-top: .5em solid #ccc;
-  width: 100%;
   margin-top: 1.85em;
 }
 
 /* typography */
-.footer h1 {
-  clear: all;
-  width: 65%;
-  padding-top: 1%;
-/*  margin-bottom: 1%;*/
-    color: #555;
-  font-size: .9em;
+
+.footer-text {
   display: inline-block;
+  float: right;
+  padding-bottom: 5%;
+  text-align: right;
+  width: 65%;
 }
+
 
 
 /* copyright */
 .footer h4 {
-    color: #222;
-    font-size: .7em;
-    padding-top: 1.5%;
+  color: #222;
+  font-size: .85em;
+  padding-top: 3%;
 }
 
 .social {
   display: inline-block;
   width: 35%;
-  float: right;
-  padding-top: .75%;
-  margin-bottom: 3%;
+  float: left;
+  padding-top: 1%;
 }
 
 /* social icons*/
 
 .social a {
   font-size: 2em;
-  float: right;
-  padding-left: 10%;
+  float: left;
+  padding-right: 10%;
   color: #bbb;
   border-bottom: none;
   transition: color .2s ease-in;
@@ -562,7 +539,6 @@ h1 {
 .social a:hover {
   color: #777;
 }
-
 
 
 
@@ -683,24 +659,38 @@ h1 {
 
 
 
-/*Footer*/
+/*FOOTER*/
 
-.social {
+.footer {
   display: inline-block;
   width: 100%;
-  clear: all;
-  padding-top: .2em;
-  padding-bottom: .5em;
 }
 
-/* social icons*/
-.foot_twitter a, .foot_linkedin a, .foot_email a {
+/* typography */
+
+.footer-text {
+  display: block;
   float: left;
-  padding-left: 0%;
-  padding-right: 12%;
-  opacity: 0.3;
-  border-bottom: none;
+  padding-bottom: 5%;
+  text-align: left;
+  width: 100%;
 }
+
+.footer h1 {
+  font-size: .85em;
+  font-weight: 600;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  padding-top: 4%;
+  border: none;
+}
+
+.social {
+  width: 100%;
+  margin-bottom: 0%;
+  margin-top: 4%;
+}
+
 
   
 }
@@ -820,24 +810,36 @@ h1 {
 
 
 
-/*Footer*/
+/*FOOTER*/
 
-.social {
+.footer {
   display: inline-block;
   width: 100%;
-  clear: all;
-  padding-top: .2em;
-  padding-bottom: .5em;
-  float: left;
 }
 
-/* social icons*/
-.foot_twitter a, .foot_linkedin a, .foot_email a {
+/* typography */
+
+.footer-text {
+  display: block;
   float: left;
-  padding-left: 0%;
-  padding-right: 12%;
-  opacity: 0.3;
-  border-bottom: none;
+  padding-bottom: 5%;
+  text-align: left;
+  width: 100%;
+}
+
+.footer h1 {
+  font-size: .85em;
+  font-weight: 600;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  padding-top: 4%;
+  border: none;
+}
+
+.social {
+  width: 100%;
+  margin-bottom: 0%;
+  margin-top: 4%;
 }
 
   
