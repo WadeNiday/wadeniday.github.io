@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>First baseman</title>
+  <title>First baseman: a layout exercise</title>
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700' rel='stylesheet' type='text/css'>
@@ -12,114 +12,109 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 
-
     <body>
 
       <header>
         <div class='wrapper'>
-            <nav>
-              <ul>
-                <li> <a href="#"><h1>The Players</h1></a>
-                <li> <a href="#relative"><h2>absolute</h2></a>
-                <li> <a href="#relative"><h2>Relative</h2></a>
-                <li> <a href="#display"><h2>Display</h2></a>
-                <li> <a href="#float"><h2>Float</h2></a>
-              </ul>
-            </nav>
+          <nav>
+            <ul>
+              <li> <a href="#"><h1>The Players</h1></a>
+              <li> <a href="#absolute"><h2>absolute</h2></a>
+              <li> <a href="#relative"><h2>Relative</h2></a>
+              <li> <a href="#display"><h2>Display</h2></a>
+              <li> <a href="#float"><h2>Float</h2></a>
+            </ul>
+          </nav>
         </div> <!-- wrapper -->
       </header>
 
       <a name='float'></a>
         <section class='float'>
-
+        <div class='wrapper'>
           <ul>
-            <li><a href="#"><img src="img/mrbaseball.jpg"></a>
-              <p>&ldquo;Awards mean a lot, but they don't say it all. The people in baseball mean more to me than statistics.&rdquo;</p><h2>Ernie Banks</h2>
+            <li>
+              <a href="#"><img src="img/mrbaseball.jpg"></a>
+              <p>&ldquo;Awards mean a lot, but they don't say it all. The people in baseball mean more to me than statistics.&rdquo;</p>
+              <h2>Ernie Banks</h2>
             </li>
 
-            <li><a href="#"><img src="img/mrbaseball.jpg"></a>
-              <p>&ldquo;Awards mean a lot, but they don't say it all. The people in baseball mean more to me than statistics.&rdquo;</p><h2>Ernie Banks</h2>
-            </li>
-            </li>
-
-            <li><a href="#"><img src="img/mrbaseball.jpg"></a>
-              <p>&ldquo;Awards mean a lot, but they don't say it all. The people in baseball mean more to me than statistics.&rdquo;</p><h2>Ernie Banks</h2>
+            <li>
+              <a href="#"><img src="img/mrbaseball.jpg"></a>
+              <p>&ldquo;Awards mean a lot, b
+                ut they don't say it all. The people in baseball mean more to me than statistics.&rdquo;</p><h2>Ernie Banks</h2>
             </li>
           </ul>
 
-<h1>Exhibit A: Cards /quotes floated left; clearfix hack applied as all children of the secction are floated </h1>
-
+            <h1>Exhibit A: Cards /quotes floated left; clearfix hack applied as all children of the section are floated </h1>
+        </div> <!-- wrapper -->
         </section>
 
       <a name='display'></a>
         <section class='display'>
+        <div class='wrapper'>
           <ul>
-            <li><a href="#"><img src="img/crimedog.jpg"></a>
-              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p><h2>The Crimedog</h2>
+            <li>
+              <a href="#"><img src="img/crimedog.jpg"></a>
+              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p>
+              <h2>The Crimedog</h2>
             </li>
 
-            <li><a href="#"><img src="img/crimedog.jpg"></a>
-              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p><h2>The Crimedog</h2>
+            <li>
+              <a href="#"><img src="img/crimedog.jpg"></a>
+              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p>
+              <h2>The Crimedog</h2>
             </li>
 
-            <li><a href="#"><img src="img/crimedog.jpg"></a>
-              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p><h2>The Crimedog</h2>
-            </li>
-
-            <li id='grace'><a href="#"><img src="img/mGrace.jpg"></a>
-              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p><h2>Amazing Grace</h2>
+            <li id='grace'>
+              <a href="#"><img src="img/mGrace.jpg"></a>
+              <p>&ldquo;This is the instructional video that gets results!.&rdquo;</p>
+              <h2>Amazing Grace</h2>
             </li>
           </ul>
 
-          <h1>Exhibit B: Elements use inline-block instead of float; hidden quote (inspector); border-box applied to Mark Grace </h1>
+            <h1>Exhibit B: Elements use inline-block instead of float; hidden quote (inspector); border-box applied to Mark Grace </h1>
 
+        </div> <!-- wrapper -->
         </section>
-
 
       <a name='relative'></a>
         <section class='relative'>
+        <div class='wrapper'>
           <ul>
-            <li id='rizzo-top'><a href="#"><img src="img/tonyriz.jpg"></a>
+            <li id='rizzo-top'>
+              <a href="#"><img src="img/tonyriz.jpg"></a>
               <p>&ldquo;We're going to win the NL Central&rdquo;</p>
               <h2>The Kid</h2>
             </li>
 
-            <li id='rizzo-bot'><a href="#"><img src="img/tonyriz.jpg"></a>
+            <li id='rizzo-bot'>
+              <a href="#"><img src="img/tonyriz.jpg"></a>
               <p>&ldquo;We're going to win the NL Central&rdquo;</p>
               <h2>The Kid</h2>
             </li>
           </ul>
 
-          <h1>Exhibit C: Each block uses relative positioning for placement </h1>
-
+            <h1>Exhibit C: Each block uses relative positioning for placement </h1>
+        
+        </div> <!-- wrapper -->
         </section>
 
-              <a name='absolute'></a>
+        <a name='absolute'></a>
         <section class='absolute'>
-          <ul>
-            <li id='rizzo-top'><a href="#"><img src="img/tonyriz.jpg"></a>
-              <p>&ldquo;We're going to win the NL Central&rdquo;</p>
-              <h2>The Kid</h2>
-            </li>
+        <div class='wrapper'>
+          <article class='box'>
+            <div class='dlee'>
+              <a href="#"><img src="img/dlee.jpg"></a>
+            </div>
+          </article>
 
-            <li id='rizzo-bot'><a href="#"><img src="img/tonyriz.jpg"></a>
-              <p>&ldquo;We're going to win the NL Central&rdquo;</p>
-              <h2>The Kid</h2>
-            </li>
-          </ul>
-
-          <h1>Exhibit C: Make another bio-block and position it via position: relative, just nudge it somewhere a bit. </h1>
-
+          <h1>Card uses absolute positioning to be centered in the blue square </h1>
+        </div> <!-- wrapper -->
         </section>
-
 
       <footer>
         <div class='wrapper'>
-            <nav>
-              <ul>
-                <li> <a href="#display"><h2>These guys know the fundamentals</h2></a>
-              </ul>
-            </nav>
+          <h2>Baseball, apple pie, and Chevrolet</h2>
         </div> <!-- wrapper -->
       </footer>
 

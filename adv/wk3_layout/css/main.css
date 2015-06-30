@@ -70,46 +70,25 @@ a {
   text-decoration: none;
 }
 
-
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=3.2.1');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-
 /* --------------------------------------------
 // !-- Scaffolding
 // ----------------------------------------- */
 
 .wrapper {
-  width: 960px;
   margin: 0 auto;
+  width: 960px;
 }
 
+/* --------------------------------------------
+// !-- Header / Nav bar
+// ----------------------------------------- */
 
 header {
   background-color: #003279;
-  z-index: 1;
+  padding: 20px 0px;
   position: fixed;
   width: 100%;
-  padding: 20px 0px;
-}
-
-header h1 {
-  color: #fff;
-}
-
-header h1 {
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  z-index: 1;
 }
 
 nav {
@@ -118,6 +97,7 @@ nav {
 
 nav li:first-child {
   float: left;
+  padding-left: 0px;
 }
 
 nav li {
@@ -125,12 +105,18 @@ nav li {
   padding-left: 50px;
 }
 
+header h1 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 
 nav h2 {
   color: #fff;
   font-weight: 300;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   -webkit-transition: all 0.4s ease;
 }
 
@@ -138,37 +124,34 @@ nav h2:hover {
   color: red;
 }
 
-.float h1 {
-  color: #777;
-  font-weight: 600;
-  padding-top: 25px;
-  float: right;
-}
+/* --------------------------------------------
+// !-- Float section
+// ----------------------------------------- */
 
 .float {
-  padding: 100px 50px 25px 0px;
   background-color: #ddd;
+  padding: 100px 0px 25px 0px;
 }
 
 /*  clearfix hack  */
 .float:after {
+  clear: both;
   content: ' ';
   display: block;
-  clear: both;
 }
 
 .float li {
-  width: 200px;
-  float: right;
-  display: block;
   border: 1px solid #ddd;
+  display: block;
+  float: right;
   padding: 25px;
+  width: 200px;
   -webkit-transition: all 0.4s ease;
 }
 
 .float li:hover {
-  border: 1px solid #bbb;
   background-color: #fff;
+  border: 1px solid #bbb;
 }
 
 .float li:first-child {
@@ -193,39 +176,49 @@ ul img {
   margin-top: 5%;
 }
 
-.float, .display h2 {
-  font-weight: 700;
-  color: blue;
-}
-
-
-.display h1 {
+.float h1 {
   color: #777;
+  float: left;
   font-weight: 600;
   padding-top: 25px;
-  float: left;
 }
 
+.float, .display h2 {
+  color: #003279;
+  font-weight: 700;
+}
+
+/* --------------------------------------------
+// !-- Display section
+// ----------------------------------------- */
+
 .display {
-  padding: 100px 0px 100px 50px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  padding: 125px 0px 100px 0px;
 }
 
 .display li {
-  width: 200px;
   display: inline-block;
   padding-right: 100px;
+  width: 200px;
 }
 
 .display p {
   display: none;
 }
 
+.display h1 {
+  color: #777;
+  float: left;
+  font-weight: 600;
+  padding-top: 25px;
+}
+
 #grace {
+  background-color: red;
   box-sizing: border-box;
   padding: 12px;
-  background-color: red;
 }
 
 #grace img {
@@ -237,45 +230,47 @@ ul img {
   padding-top: 2px;
 }
 
+/* --------------------------------------------
+// !-- Relative section
+// ----------------------------------------- */
+
 .relative {
   background-color: #ddd;
-  padding-top: 100px;
   padding-bottom: 50px;
-}
-
-
-/*  clearfix hack  */
-.relative:after {
-  content: ' ';
-  display: block;
-  clear: both;
+  padding-top: 100px;
 }
 
 #rizzo-top {
-  width: 200px;
-  display: inline-block;
-  padding: 25px;
   background-color: #003279;
+  display: inline-block;
+  left: 200px;
+  padding: 25px;
   position: relative;
   top: 25px;
-  left: 300px;
+  width: 200px;
 }
 
 #rizzo-bot {
-  width: 200px;
-  padding: 25px;
   background-color: #003279;
+  display:inline-block;
+  left: 250px;
+  padding: 25px;
   position: relative;
   top: 25px;
-  left: 350px;
-  display:inline-block;
+  width: 200px;
 }
 
 .relative p {
+  color: #fff;
   font-size: 1em;
   font-weight: 300;
   margin-top: 5%;
-  color: #fff;
+}
+
+.relative h1 {
+  font-weight: 600;
+  color: #777;
+  padding-top: 75px;
 }
 
 .relative h2 {
@@ -283,21 +278,52 @@ ul img {
   color: #fff;
 }
 
-.relative h1 {
-  font-weight: 600;
-  color: #777;
-  padding-left: 50px;
-  padding-top: 75px;
+/* --------------------------------------------
+// !-- Absolute section
+// ----------------------------------------- */
+
+.absolute {
+  background-color: #fff;
+  padding-bottom: 175px;
+  padding-top: 100px;
 }
 
+.box {
+  background-color: #003279;
+  height: 500px;
+  margin-left: 230px;
+  width: 500px;
+}
+
+.dlee img {
+  width: 200px;
+  border: 2px solid #fff;
+}
+
+.dlee {
+  left: 600px;
+  position: absolute;
+  top: 1990px;
+  width: 200px;
+}
+
+.absolute h1 {
+  font-weight: 600;
+  color: #777;
+  padding-top: 50px;
+}
+
+/* --------------------------------------------
+// !-- Footer
+// ----------------------------------------- */
 
 footer {
   background-color: red;
-  z-index: 1;
-  position: fixed;
   bottom: 0;
-  width: 100%;
   padding: 10px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 footer li:first-child {
@@ -306,9 +332,11 @@ footer li:first-child {
 
 footer h2 {
   color: maroon;
+  cursor: pointer;
   font-weight: 300;
-  text-transform: none;
   letter-spacing: 0em;
+  text-transform: none;
+  -webkit-transition: all 0.4s ease;
 }
 
 footer h2:hover {
