@@ -413,7 +413,13 @@ nav h2,.float h1, .display h1, .relative h1, .absolute h1 {
   padding-top: 50px;
 }
 
+footer {
+  position: static;
+}
 
+footer h2 {
+  color: #fff;
+}
 
 }
 
@@ -479,6 +485,13 @@ nav h2 {
   width: 30%;
 }
 
+footer {
+  position: static;
+}
+
+footer h2 {
+  color: #fff;
+}
 
 }
 
@@ -550,6 +563,14 @@ nav h2:hover {
   width: 30%;
 }
 
+footer {
+  position: static;
+}
+
+footer h2 {
+  color: #fff;
+}
+
 }
 
 
@@ -615,6 +636,14 @@ nav h2:hover {
 
 .dlee {
   width: 30%;
+}
+
+footer {
+  position: static;
+}
+
+footer h2 {
+  color: #fff;
 }
 
 }
