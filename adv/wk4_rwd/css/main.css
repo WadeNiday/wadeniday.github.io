@@ -1,0 +1,622 @@
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 1em;
+  background-color: yellow;
+  font-family: Open Sans;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* --------------------------------------------
+// !-- Header / Nav bar
+// ----------------------------------------- */
+
+header {
+  background-color: #003279;
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  display: inline;
+}
+
+nav li:first-child {
+  float: left;
+  padding-left: 0px;
+}
+
+nav li {
+  float: right;
+  padding-left: 5%;
+}
+
+header h1 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+nav h2 {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+}
+
+nav h2:hover {
+  color: red;
+}
+
+/* --------------------------------------------
+// !-- Float section
+// ----------------------------------------- */
+
+.float {
+  background-color: #ddd;
+  padding: 100px 0px;
+}
+
+/*  clearfix hack  */
+.float:after {
+  clear: both;
+  content: ' ';
+  display: block;
+}
+
+.float li {
+  border: 1px solid #ddd;
+  display: block;
+  float: left;
+  margin-right: 5%;
+  padding: 2.5%;
+  width: 20%;
+  -webkit-transition: all 0.4s ease;
+}
+
+.float li:hover {
+  background-color: #fff;
+  border: 1px solid #bbb;
+}
+
+ul img {
+  width: 100%;
+}
+
+.float p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 5%;
+}
+
+.float h1 {
+  color: #777;
+  float: left;
+  font-weight: 600;
+  padding-top: 25px;
+}
+
+.float, .display h2 {
+  color: #003279;
+  font-weight: 700;
+}
+
+/* --------------------------------------------
+// !-- Display section
+// ----------------------------------------- */
+
+.display {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 125px 0px 100px 0px;
+}
+
+.display li {
+  display: inline-block;
+  padding-right: 5%;
+  width: 20%;
+}
+
+
+.display p {
+  display: none;
+}
+
+.display h1 {
+  color: #777;
+  float: left;
+  font-weight: 600;
+  padding-top: 25px;
+}
+
+#grace {
+  background-color: red;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+#grace img {
+  width: 100%;
+}
+
+#grace h2 {
+  color: #fff;
+  padding-top: 2px;
+}
+
+/* --------------------------------------------
+// !-- Relative section
+// ----------------------------------------- */
+
+.relative {
+  background-color: #ddd;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+#rizzo-top {
+  background-color: #003279;
+  display: inline-block;
+  left: 200px;
+  padding: 25px;
+  position: relative;
+  top: 25px;
+  width: 200px;
+}
+
+#rizzo-bot {
+  background-color: #003279;
+  display:inline-block;
+  left: 250px;
+  padding: 25px;
+  position: relative;
+  top: 25px;
+  width: 200px;
+}
+
+.relative p {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 5%;
+}
+
+.relative h1 {
+  font-weight: 600;
+  color: #777;
+  padding-top: 75px;
+}
+
+.relative h2 {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* --------------------------------------------
+// !-- Absolute section
+// ----------------------------------------- */
+
+.absolute {
+  background-color: #fff;
+  padding-bottom: 175px;
+  padding-top: 100px;
+}
+
+.box {
+  background-color: #003279;
+  height: 500px;
+  margin-left: 30%;
+  position: relative;
+  width: 500px;
+}
+
+.dlee img {
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+.dlee {
+  left: 30%;
+  position: absolute;
+  top: 18%;
+  width: 200px;
+}
+
+.absolute h1 {
+  font-weight: 600;
+  color: #777;
+  padding-top: 50px;
+}
+
+/* --------------------------------------------
+// !-- Footer
+// ----------------------------------------- */
+
+footer {
+  background-color: red;
+  bottom: 0;
+  padding: 10px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+footer li:first-child {
+  float: right;
+}
+
+footer h2 {
+  color: maroon;
+  cursor: pointer;
+  font-weight: 300;
+  letter-spacing: 0em;
+  text-transform: none;
+  -webkit-transition: all 0.4s ease;
+}
+
+footer h2:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------
+// !-- r e s p o n s i v e
+// ----------------------------------------- */
+
+/* Smartphones (PORTRAIT) ----------- */
+@media (min-width: 320px) and (max-width: 509px)  {  
+/* structure */
+.wrapper {
+  width: 90%;
+/*  background-color: green;
+*/}
+
+.float, .display, .relative, .absolute   {
+  padding: 80px 0px;
+}
+
+.float li, .display li {
+  width: 80%;
+  padding: none;
+  margin-bottom: 20%;
+  margin-left: 10%;
+  border: none;
+}
+
+.float li:hover {
+  background-color: #ddd;
+  border: none;
+}
+
+nav h2,.float h1, .display h1, .relative h1, .absolute h1 {
+  display: none;
+}
+
+.float h2, .relative h2 {
+  padding-bottom: 65px;
+}
+
+#rizzo-top, #rizzo-bot {
+  background-color: #ddd;
+  display: block;
+  margin-left: 10%;
+  padding: 0px;
+  position: static;
+  width: 80%;
+}
+
+.box {
+  margin-left: 0%;
+  position: relative;
+  width: 100%;
+}
+
+.dlee img {
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+.dlee {
+  left: 0%;
+  margin-left: 10%;
+  padding-top-bottom: 50%;
+  width: 80%;
+}
+
+.absolute h1 {
+  font-weight: 600;
+  color: #777;
+  padding-top: 50px;
+}
+
+
+
+}
+
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: lightblue;*/
+}
+
+.float, .display, .relative, .absolute   {
+  padding: 80px 0px;
+}
+
+.float li, .display li {
+  width: 30%;
+  padding: none;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  border: none;
+}
+
+.float li:hover {
+  background-color: #ddd;
+  border: none;
+}
+
+.float h1, .display h1, .relative h1, .absolute h1 {
+  display: none;
+}
+
+nav h2 {
+  display: all;
+}
+
+#rizzo-top, #rizzo-bot {
+  background-color: #ddd;
+  display: inline-block;
+  margin-left: 10%;
+  padding: 0px;
+  position: static;
+  width: 30%;
+}
+
+.box {
+  margin-left: 0%;
+  position: relative;
+  width: 100%;
+}
+
+.dlee img {
+  width: 100%;
+  margin-left: 25%;
+  border: 2px solid #fff;
+}
+
+.dlee {
+  left: 0%;
+  margin-left: 30%;
+  padding-top-bottom: 50%;
+  width: 30%;
+}
+
+
+}
+
+
+/* tablet PORTRAIT ----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+/*  background-color: yellow;
+*/}
+
+.float, .display, .relative, .absolute   {
+  padding: 80px 0px;
+}
+
+
+.float li, .display li {
+  width: 30%;
+  padding: none;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  border: none;
+}
+
+.float li:hover {
+  background-color: #ddd;
+  border: none;
+}
+
+.float h1, .display h1, .relative h1, .absolute h1 {
+  display: none;
+}
+
+nav h2 {
+  color: #fff;
+}
+
+nav h2:hover {
+  color: red;
+}
+
+#rizzo-top, #rizzo-bot {
+  background-color: #ddd;
+  display: inline-block;
+  margin-left: 10%;
+  padding: 0px;
+  position: static;
+  width: 30%;
+}
+
+.box {
+  margin-left: 0%;
+  position: relative;
+  width: 100%;
+}
+
+.dlee img {
+  width: 100%;
+  margin-left: 25%;
+  border: 2px solid #fff;
+}
+
+.dlee {
+  left: 0%;
+  margin-left: 30%;
+  padding-top-bottom: 50%;
+  width: 30%;
+}
+
+}
+
+
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+/*  background-color: pink;
+*/}
+
+.float, .display, .relative, .absolute   {
+  padding: 80px 0px;
+}
+
+
+.float li, .display li {
+  width: 20%;
+  padding: none;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  border: none;
+}
+
+.float li:hover {
+  background-color: #ddd;
+  border: none;
+}
+
+.float h1, .display h1, .relative h1, .absolute h1 {
+  display: none;
+}
+
+nav h2 {
+  color: #fff;
+}
+
+nav h2:hover {
+  color: red;
+}
+
+#rizzo-top, #rizzo-bot {
+  background-color: #ddd;
+  display: inline-block;
+  margin-right: 5%;
+  padding: 0px;
+  position: static;
+  width: 25%;
+}
+
+.box {
+  margin-left: 0%;
+  position: relative;
+  width: 100%;
+}
+
+.dlee img {
+  width: 100%;
+  margin-left: 25%;
+  border: 2px solid #fff;
+}
+
+.dlee {
+  width: 30%;
+}
+
+}
+
+
