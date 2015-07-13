@@ -1,0 +1,617 @@
+/* -----------------------------------------------------------------------------
+// Table of Contents
+//
+//  - Colors
+//  - Reset
+//  - Scaffolding
+//  - Main Nav Bar
+//  - Landing
+//  - Profile
+//  - Project Nav Bar
+//  - Typography
+//  - Footer
+//
+// -------------------------------------------------------------------------- */
+
+/* --------------------------------------------
+// -- Colors
+//
+// Black:       #222
+// Dark gray:   #646464
+// Light gray:  #a0a0a0
+// Blue:        #5e8ab4
+// Purple       #53284f
+// Green        #719949
+
+// ----------------------------------------- */
+
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 1em;
+}
+
+h1 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+  }
+
+h2 {
+    font-family: serif;
+}
+
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+body{
+  background-color: #eee;
+}
+
+.wrapper {
+    width: 52%;
+    margin: 2em auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    }
+
+/* --------------------------------------------
+// !-- Main Nav Bar
+// ----------------------------------------- */
+
+.logo {
+  width: 100%;
+  display: block;
+  float: left;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+/* --------------------------------------------
+// !-- Landing
+// ----------------------------------------- */
+
+/* article title */
+.landing h1 {
+  color: #53284f;
+  line-height: 1.15em;
+  font-size: 1.500em;
+  margin-bottom: 1.5em;
+}
+
+/* first call */
+.landing p {
+  font-family: arial, sans-serif;
+  font-size: 1.3em;
+  margin-bottom: .3em;
+  color: #a0a0a0;
+  color: #53284f;
+}
+
+.firstcall p {
+  color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 0.875em;
+  line-height: 0.875em;
+}
+
+.firstcall {
+  margin-bottom: 2.5em;
+}
+
+.landing h4 {
+  font-family: arial, sans-serif;
+  font-size: 0.875em;
+  color: #a0a0a0;
+}
+
+/*---------------- category and date ----------------*/
+
+.dateline {
+  border-bottom: 1px solid #53284f;
+  border-top: .6em solid #53284f;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+#category {
+  display: inline-block;
+}
+
+#date {
+  float: right;
+}
+
+/*---------------- disclosure ----------------*/
+
+h6 {
+  color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 0.63em;
+  line-height: 1.25em;
+  padding-bottom: 0.75em;
+}
+
+.disclaimer h4 {
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+
+/*---------------- contributors ----------------*/
+
+.landing h3 {
+  font-family: arial, sans-serif;
+  font-size: .875em;
+  color: #a0a0a0;
+  padding-bottom: .375em;
+}
+
+.landing h3 a {
+  color: #5e8ab4;
+  font-weight: bold;
+}
+
+.landing h3 a:hover {
+  border-bottom: 1px solid #5e8ab4;
+  padding-bottom: 2px;
+}
+
+.phone {
+  padding-left: 5px;
+}
+
+.contributors{
+  margin-bottom: 1.5em;
+}
+
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  background-color: #a0a0a0;
+  width: 45%;
+  margin-bottom: 1.5em;
+  display: inline-block;
+  float: left;
+  margin-right: 5%;
+}
+
+.btn-access-solo {
+  background-color: #a0a0a0;
+  width: 45%;
+  margin-bottom: 1.5em;
+  display: block;
+}
+
+.btn-access a, .btn-buy a, .btn-access-solo a {
+  color: #fff;
+  font-size: .875em;
+}
+
+.btn-access:hover {
+  background-color: #646464; 
+}
+
+.btn-buy {
+  background-color: green;
+  width: 45%;
+  margin-bottom: 1.7em;
+  display: inline-block;
+}
+
+/*.btn-buy:hover {
+  background-color: darkgreen;
+}*/
+
+.landing h2 {
+  color: #fff;
+  padding: .6em;
+  font-family: arial, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+
+/*---------------- content-main ----------------*/
+
+.landing h1 {
+  color: #53284f;
+  line-height: 1.25em;
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+}
+
+
+
+.landing h5 {
+  color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.landing h5 a {
+  color: #5e8ab4;
+}
+
+.landing-three p {
+  margin-top: 3em;
+}
+
+.body-bold {
+  color: #a0a0a0;
+  font-weight: bold;
+}
+
+.body-bold a {
+  color: #5e8ab4;
+}
+
+.body-bold a:hover, .landing h5 a:hover {
+  border-bottom: 1px solid #5e8ab4;
+  padding-bottom: 2px;
+}
+
+.body-italic {
+  font-style: italic;
+}
+
+.body-black {
+  color: #222;
+}
+
+.content-main {
+    border-bottom: 1px solid #a0a0a0;
+}
+
+
+/*---------------- disclosure ----------------*/
+
+.disclosure {
+  padding-top: 0.75em;
+}
+
+.landing-two {
+  margin-top: 5em;
+}
+
+
+
+
+/* R E S P O N S I V E  S T Y L E S */
+
+
+/* Smartphones (PORTRAIT) ----------- */
+
+@media (min-width: 320px) and (max-width: 695px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: none;
+}
+
+.logo {
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+}
+
+.firstcall {
+  margin-bottom: 1.5em;
+}
+
+/*---------------- category and date ----------------*/
+
+.dateline {
+  border-bottom: 1px solid #53284f;
+  border-top: .6em solid #53284f;
+  padding-top: .5em;
+  padding-bottom: 1.75em;
+  margin-bottom: 1em;
+}
+
+#category, #date {
+  display: block;
+  padding-bottom: .2em;
+  font-size: .875em;
+}
+
+#date {
+  float: left;
+}
+
+/*---------------- disclosure ----------------*/
+
+.disclaimer h4 {
+  margin-bottom: 1.5em;
+    font-size: 0.75em;
+    line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+/*---------------- contributors ----------------*/
+
+.phone {
+  padding-left: 2px;
+}
+
+.contributors{
+  margin-bottom: 1em;
+}
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.btn-access-solo {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.btn-buy {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.landing h2 {
+  color: #fff;
+  padding: .6em;
+  font-family: arial, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+
+/*---------------- content-main ----------------*/
+
+.landing h5 {
+  font-size: .875em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.landing-three p {
+  margin-top: 1.5em;
+}
+
+.landing-two {
+  margin-top: 1.5em;
+}
+
+h6 {
+  font-size: 0.7em;
+  line-height: 1.35em;
+  padding-bottom: 0.75em;
+}
+
+
+}
+
+
+
+
+
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
+
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: none;
+}
+
+.logo {
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+}
+
+.firstcall {
+  margin-bottom: 1.5em;
+}
+
+/*---------------- category and date ----------------*/
+
+.dateline {
+  border-bottom: 1px solid #53284f;
+  border-top: .6em solid #53284f;
+  padding-top: .5em;
+  padding-bottom: 1.75em;
+  margin-bottom: 1em;
+}
+
+#category, #date {
+  display: block;
+  padding-bottom: .2em;
+  font-size: .875em;
+}
+
+#date {
+  float: left;
+}
+
+/*---------------- disclosure ----------------*/
+
+.disclaimer h4 {
+  margin-bottom: 1.5em;
+    font-size: 0.75em;
+    line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+/*---------------- contributors ----------------*/
+
+.phone {
+  padding-left: 2px;
+}
+
+.contributors{
+  margin-bottom: 1em;
+}
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.btn-access-solo {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.btn-buy {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: none;
+}
+
+.landing h2 {
+  color: #fff;
+  padding: .6em;
+  font-family: arial, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+
+/*---------------- content-main ----------------*/
+
+.landing h5 {
+  font-size: .875em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.landing-three p {
+  margin-top: 1.5em;
+}
+
+.landing-two {
+  margin-top: 1.5em;
+}
+
+h6 {
+  font-size: 0.7em;
+  line-height: 1.35em;
+  padding-bottom: 0.75em;
+}
+
+
+}
+
+
+
+
+/* tablet PORTRAIT ----------- */
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: none;
+}
+}
+
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: none;
+}
+
+
+/* FULL WIDTH on MacBook Pro */
+@media (min-width: 1500px) {  
+
+/* structure */
+.wrapper {
+  width: 74%;
+}
+}
+
+
+
