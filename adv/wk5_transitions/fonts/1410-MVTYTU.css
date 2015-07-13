@@ -1,0 +1,292 @@
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2013 Schwartzco Inc.
+        License: 1410-MVTYTU     
+*/
+
+
+@font-face {
+  font-family: 'Guardian Egyptian Web';
+  src: url('GuardianEgyp-Light-Web.eot');
+  src: url('GuardianEgyp-Light-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianEgyp-Light-Web.woff') format('woff'),
+     url('GuardianEgyp-Light-Web.ttf') format('truetype'),
+     url('GuardianEgyp-Light-Web.svg#Guardian Egyptian Web') format('svg');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.GuardianEgyp-Light-Web {
+  font-family: 'Guardian Egyptian Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Egyptian Web';
+  src: url('GuardianEgyp-LightIt-Web.eot');
+  src: url('GuardianEgyp-LightIt-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianEgyp-LightIt-Web.woff') format('woff'),
+     url('GuardianEgyp-LightIt-Web.ttf') format('truetype'),
+     url('GuardianEgyp-LightIt-Web.svg#Guardian Egyptian Web') format('svg');
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.GuardianEgyp-LightIt-Web {
+  font-family: 'Guardian Egyptian Web';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Egyptian Web';
+  src: url('GuardianEgyp-Regular-Web.eot');
+  src: url('GuardianEgyp-Regular-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianEgyp-Regular-Web.woff') format('woff'),
+     url('GuardianEgyp-Regular-Web.ttf') format('truetype'),
+     url('GuardianEgyp-Regular-Web.svg#Guardian Egyptian Web') format('svg');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.GuardianEgyp-Regular-Web {
+  font-family: 'Guardian Egyptian Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Egyptian Web';
+  src: url('GuardianEgyp-RegularIt-Web.eot');
+  src: url('GuardianEgyp-RegularIt-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianEgyp-RegularIt-Web.woff') format('woff'),
+     url('GuardianEgyp-RegularIt-Web.ttf') format('truetype'),
+     url('GuardianEgyp-RegularIt-Web.svg#Guardian Egyptian Web') format('svg');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.GuardianEgyp-RegularIt-Web {
+  font-family: 'Guardian Egyptian Web';
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Egyptian Web';
+  src: url('GuardianEgyp-Medium-Web.eot');
+  src: url('GuardianEgyp-Medium-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianEgyp-Medium-Web.woff') format('woff'),
+     url('GuardianEgyp-Medium-Web.ttf') format('truetype'),
+     url('GuardianEgyp-Medium-Web.svg#Guardian Egyptian Web') format('svg');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.GuardianEgyp-Medium-Web {
+  font-family: 'Guardian Egyptian Web';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Egyptian Web';
+  src: url('GuardianEgyp-MediumIt-Web.eot');
+  src: url('GuardianEgyp-MediumIt-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianEgyp-MediumIt-Web.woff') format('woff'),
+     url('GuardianEgyp-MediumIt-Web.ttf') format('truetype'),
+     url('GuardianEgyp-MediumIt-Web.svg#Guardian Egyptian Web') format('svg');
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.GuardianEgyp-MediumIt-Web {
+  font-family: 'Guardian Egyptian Web';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Sans Web';
+  src: url('GuardianSans-Light-Web.eot');
+  src: url('GuardianSans-Light-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianSans-Light-Web.woff') format('woff'),
+     url('GuardianSans-Light-Web.ttf') format('truetype'),
+     url('GuardianSans-Light-Web.svg#Guardian Sans Web') format('svg');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.GuardianSans-Light-Web {
+  font-family: 'Guardian Sans Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Sans Web';
+  src: url('GuardianSans-LightIt-Web.eot');
+  src: url('GuardianSans-LightIt-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianSans-LightIt-Web.woff') format('woff'),
+     url('GuardianSans-LightIt-Web.ttf') format('truetype'),
+     url('GuardianSans-LightIt-Web.svg#Guardian Sans Web') format('svg');
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.GuardianSans-LightIt-Web {
+  font-family: 'Guardian Sans Web';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Sans Web';
+  src: url('GuardianSans-Regular-Web.eot');
+  src: url('GuardianSans-Regular-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianSans-Regular-Web.woff') format('woff'),
+     url('GuardianSans-Regular-Web.ttf') format('truetype'),
+     url('GuardianSans-Regular-Web.svg#Guardian Sans Web') format('svg');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.GuardianSans-Regular-Web {
+  font-family: 'Guardian Sans Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Sans Web';
+  src: url('GuardianSans-RegularIt-Web.eot');
+  src: url('GuardianSans-RegularIt-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianSans-RegularIt-Web.woff') format('woff'),
+     url('GuardianSans-RegularIt-Web.ttf') format('truetype'),
+     url('GuardianSans-RegularIt-Web.svg#Guardian Sans Web') format('svg');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.GuardianSans-RegularIt-Web {
+  font-family: 'Guardian Sans Web';
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Sans Web';
+  src: url('GuardianSans-Medium-Web.eot');
+  src: url('GuardianSans-Medium-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianSans-Medium-Web.woff') format('woff'),
+     url('GuardianSans-Medium-Web.ttf') format('truetype'),
+     url('GuardianSans-Medium-Web.svg#Guardian Sans Web') format('svg');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.GuardianSans-Medium-Web {
+  font-family: 'Guardian Sans Web';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Sans Web';
+  src: url('GuardianSans-MediumIt-Web.eot');
+  src: url('GuardianSans-MediumIt-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianSans-MediumIt-Web.woff') format('woff'),
+     url('GuardianSans-MediumIt-Web.ttf') format('truetype'),
+     url('GuardianSans-MediumIt-Web.svg#Guardian Sans Web') format('svg');
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.GuardianSans-MediumIt-Web {
+  font-family: 'Guardian Sans Web';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Sans Web';
+  src: url('GuardianSans-Semibold-Web.eot');
+  src: url('GuardianSans-Semibold-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianSans-Semibold-Web.woff') format('woff'),
+     url('GuardianSans-Semibold-Web.ttf') format('truetype'),
+     url('GuardianSans-Semibold-Web.svg#Guardian Sans Web') format('svg');
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.GuardianSans-Semibold-Web {
+  font-family: 'Guardian Sans Web';
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Guardian Sans Web';
+  src: url('GuardianSans-SemiboldIt-Web.eot');
+  src: url('GuardianSans-SemiboldIt-Web.eot?#iefix') format('embedded-opentype'),
+     url('GuardianSans-SemiboldIt-Web.woff') format('woff'),
+     url('GuardianSans-SemiboldIt-Web.ttf') format('truetype'),
+     url('GuardianSans-SemiboldIt-Web.svg#Guardian Sans Web') format('svg');
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.GuardianSans-SemiboldIt-Web {
+  font-family: 'Guardian Sans Web';
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
