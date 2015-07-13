@@ -282,6 +282,7 @@ h6 {
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 1em;
+  list-style-position: inside;
 }
 
 .landing h5 a {
@@ -350,8 +351,8 @@ h6 {
 }
 
 .logo {
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 .firstcall {
@@ -468,8 +469,8 @@ h6 {
 }
 
 .logo {
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 .firstcall {
@@ -581,6 +582,16 @@ h6 {
   width: 85%;
   background-color: none;
 }
+
+.logo {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.firstcall {
+  margin-bottom: 1.5em;
+}
+
 }
 
 /* tablet (LANDSCAPE----------- */
@@ -590,6 +601,13 @@ h6 {
 .wrapper {
   width: 85%;
   background-color: none;
+}
+
+.logo {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
 }
 
 
