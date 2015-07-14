@@ -39,10 +39,9 @@ html {
   font-size: 1em;
 /*  background-color: yellow;
 */  font-family: Open Sans;
-  cursor: pointer;
 }
 
-ol, ul {
+ol, ul, li {
   list-style: none;
 }
 
@@ -69,6 +68,10 @@ table {
 
 a {
   text-decoration: none;
+}
+
+section {
+    cursor: pointer;
 }
 
 /* --------------------------------------------
@@ -117,9 +120,14 @@ h1 {
   z-index: -1;
 }
 
+.label {
+    padding-top: 2%;
+}
+
 .label a {
   display: inline;
   margin-left: 3%;
+
   color: #bbb;
   border-bottom: 1px solid #eee;
   transition: color .3s, border .6s;
@@ -132,37 +140,31 @@ h1 {
 
 /* BOX-SHADOW values: offset-x | offset-y | blur-radius | spread-radius | color */
 .trans-1 {
-  margin: 15% auto;
-  width: 100px;
+  margin: 20% auto;
+  width: 85%;
   display:block;
-  height: 100px;
-  border-radius: 50%;
+  height: 25%;
   background-color: orange;
   transition: box-shadow .5s;
 }
 
+.trans-1 h1 {
+  color: #fff;
+  text-align: center;
+  padding: 7.5%;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: .08em;
+}
+
 .trans-1:hover {
-  box-shadow: 5px 5px 15px black;
   box-shadow: 0 0 1em red;
 }
 
 /* BORDER-RADIUS values: top-left | top-right | bottom-right | bottom-left */
 .trans-2 {
-  margin: 15% auto;
-  width: 50%;
-  display:block;
-  height: 50%;
-  background-color: midnightblue;
-  transition: border-radius .5s;
-}
-
-.trans-2:hover {
-  border-radius: 10px 0 70px 70px;
-}
-
-/* BORDER-RADIUS values: top-left | top-right | bottom-right | bottom-left */
-.trans-2 {
-  margin: 15% auto;
+  margin: 20% auto;
   width: 50%;
   display:block;
   height: 50%;
@@ -176,7 +178,7 @@ h1 {
 
 /* BORDER */
 .trans-3 input {
-  margin: 29% auto;
+  margin: 20% auto;
   width: 85%;
   display:block;
   height: 15%;
@@ -194,7 +196,7 @@ h1 {
 
 /* POSITION values: offset-x | offset-y | blur-radius | spread-radius | color */
 .trans-4 {
-  margin: 15% 70px;
+  margin: 20% auto;
   width: 100px;
   display:block;
   height: 100px;
@@ -208,11 +210,10 @@ h1 {
 }
 
 /* VISIBILITY */
-
 #triangle-left {
   width: 0;
   height: 0;
-  margin: 15% auto;
+  margin: 20% auto;
   border-top: 50px solid transparent;
   border-right: 100px solid red;
   border-bottom: 50px solid transparent;
@@ -225,7 +226,7 @@ h1 {
 
 /* WIDTH  */
 .trans-6 {
-  margin: 15% auto;
+  margin: 12.5% auto;
   width: 100px;
   display:block;
   height: 100px;
@@ -242,7 +243,7 @@ h1 {
 
 /* TYPE COLOR */
 #holder, #holder-8, #holder-9, #holder-10   {
-  margin: 20.5% auto;
+  margin: 13.5% auto;
   padding: 15px;
 }
 
@@ -304,6 +305,119 @@ h1 {
 
 
 
+/* A N I M A T I O N S */
+
+@keyframes triangle {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+
+  33% {
+    left: 100px;
+    top: 150px;
+    background-color: red;
+  }
+
+  66% {
+    left: 210px;
+    top: 20px;
+    background-color: blue;
+  }
+
+  100% {
+    left: 0px;
+    top: 20px;
+  }
+
+}
+
+.ani {
+  width: 100%;
+}
+
+.shape {
+    height: 25px;
+    position: relative;
+    top: 20px;
+    width: 25px;
+    z-index: 1;
+    background-color: green;
+    cursor: pointer;
+}
+
+.ani:active .shape {
+  animation-name: triangle;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}
+
+
+
+
+
+
+@keyframes bounce {
+  0% {
+/*    left: 75px;
+*/    top: 10px;
+    width: 50px;
+    background-color: orange;
+  }
+
+  25% {
+    top: 125px;
+    width: 57px;
+    z-index: 10;
+  }
+
+  50% {
+    top: 10px;
+    width: 50px;
+    background-color: orange;
+  }
+
+  75% {
+    top: 125px;
+    width: 57px;
+
+  }
+
+  100% {
+    top: 10px;
+    width: 50px;
+    background-color: orange;
+  }
+}
+.ani-2 {
+  width: 100%;
+}
+
+.ball {
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 85px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.ani-2:active .ball {
+  animation-name: bounce;
+  animation-duration: 1.75s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 15;
+
+}
+
+
+
+
 /*.circle {
   width: 22px;
   height: 22px;
@@ -358,8 +472,8 @@ h1 {
 }
 
 .library {
-  background-color: green;
-}
+/*  background-color: green;
+*/}
 
 .library li {
   width: 24%;
@@ -376,13 +490,21 @@ h1 {
 /* structure */
 .wrapper {
   width: 95%;
-  background-color: blue;
-}
+/*  background-color: blue;
+*/}
 
 .library li {
   width: 32%;
   margin-right: 1%;
   margin-bottom: 1%
+}
+
+.trans-4 {
+  margin: 12% auto;
+}
+
+#triangle-left {
+  margin: 12% auto;
 }
 
 }
@@ -392,14 +514,37 @@ h1 {
 /* structure */
 .wrapper {
   width: 95%;
-  background-color: lightblue;
-}
+/*  background-color: lightblue;
+*/}
 
 .library li {
   width: 49%;
   margin-right: 1%;
   margin-bottom: 1%
 }
+
+.trans-1 {
+  margin: 16.5% auto;
+}
+
+.trans-1 h1 {
+  padding: 5.5%;
+}
+
+.trans-4 {
+  margin: 10% auto;
+}
+
+#triangle-left {
+  margin: 11% auto;
+}
+
+.trans-2, .trans-6 {
+  margin: 9% auto;
+}
+
+
+
 
 }
 
@@ -408,12 +553,40 @@ h1 {
 /* structure */
 .wrapper {
   width: 95%;
-  background-color: purple;
-}
+/*  background-color: purple;
+*/}
 
 .library li {
   width: 100%;
   margin-bottom: 2%
+}
+
+.trans-1 {
+  margin: 10.5% auto;
+}
+
+.trans-1 h1 {
+  padding: 4.5%;
+}
+
+.trans-2, .trans-6 {
+  margin: 6.5% auto;
+}
+
+.trans-3 input {
+  margin: 13.5% auto;
+}
+
+.trans-4 {
+  margin: 7% auto;
+}
+
+#triangle-left {
+  margin: 8% auto;
+}
+
+#holder, #holder-8, #holder-9, #holder-10 {
+    margin: 8% auto;
 }
 
 }
