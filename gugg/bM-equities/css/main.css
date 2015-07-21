@@ -571,6 +571,23 @@ h6 {
 .dateline h4 {
   float: right;
 }
+
+.landing h1 {
+  color: #53284f;
+  line-height: 1.25em;
+  font-size: 1.3em;
+  margin-bottom: 1.2em;
+}
+
+.landing p {
+  font-size: 1.12em;
+}
+
+.firstcall p {
+  font-size: 0.875em;
+}
+
+
 }
 
 
