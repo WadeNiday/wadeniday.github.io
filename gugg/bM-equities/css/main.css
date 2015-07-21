@@ -568,10 +568,6 @@ h6 {
   margin-bottom: 1em;
 }
 
-.dateline h4 {
-  float: right;
-}
-
 .landing h1 {
   color: #53284f;
   line-height: 1.25em;
@@ -587,6 +583,18 @@ h6 {
   font-size: 0.875em;
 }
 
+.dateline h4 {
+  float: right;
+  padding-top: .35em;
+}
+
+.contributors{
+  padding-top: .35em;
+}
+
+.dateline {
+  padding-bottom: 1em;
+}
 
 }
 
