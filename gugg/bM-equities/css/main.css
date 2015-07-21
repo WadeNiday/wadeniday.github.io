@@ -434,16 +434,16 @@ h6 {
 /*---------------- category and date ----------------*/
 
 .dateline {
-  border-bottom: 1px solid #53284f;
-  border-top: .6em solid #53284f;
+  border-bottom: 1px solid #a0a0a0;
+  border-top: .6em solid #53284f;  
   padding-top: .75em;
-  padding-bottom: 2em;
+  padding-bottom: .8em;
   margin-bottom: 1em;
 }
 
 .dateline h4 {
-  float: left;
-  padding-top: 6px;
+/*  float: left;
+*/  padding-bottom: 6px;
 }
 
 #category, #date {
@@ -546,7 +546,9 @@ h6 {
   padding-bottom: 0.75em;
 }
 
-
+.dateline h4 {
+  float: none;
+}
 
 
 
@@ -583,18 +585,8 @@ h6 {
   font-size: 0.875em;
 }
 
-.dateline h4 {
-  float: right;
-  padding-top: .35em;
-}
 
-.contributors{
-  padding-top: .35em;
-}
 
-.dateline {
-  padding-bottom: 1em;
-}
 
 }
 
