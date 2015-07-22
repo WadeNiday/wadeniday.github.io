@@ -191,7 +191,7 @@ body{
   border-top: .6em solid #53284f;
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .dateline h4 {
@@ -212,6 +212,8 @@ h6 {
 .disclaimer h4 {
   margin-bottom: 1.5em;
   text-transform: uppercase;
+  color: black;
+  font-size: 0.825em;
 }
 
 /*---------------- contributors ----------------*/
@@ -468,10 +470,9 @@ h6 {
 /*---------------- disclosure ----------------*/
 
 .disclaimer h4 {
-  margin-bottom: 1.5em;
-    font-size: 0.75em;
-    line-height: 1.5em;
-  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  line-height: 1.5em;
 }
 
 /*---------------- contributors ----------------*/
@@ -489,6 +490,7 @@ h6 {
 .btn-access, .btn-access-solo, .btn-events {
   width: 100%;
   display: block;
+  margin-top: .8em;
   margin-bottom: .5em;
   margin-right: none;
 }
