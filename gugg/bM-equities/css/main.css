@@ -141,6 +141,15 @@ body{
 // ----------------------------------------- */
 
 /* article title */
+
+#title {
+  color: #a0a0a0;
+  margin-bottom: 1em;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: .02em;
+}
+
 .landing h1 {
   color: #53284f;
   line-height: 1.15em;
@@ -153,7 +162,7 @@ body{
   font-family: arial, sans-serif;
   font-size: 1.3em;
   margin-bottom: .3em;
-  color: #a0a0a0;
+
   color: #53284f;
   clear: both;
 }
@@ -281,7 +290,7 @@ h6 {
   background-color: #646464; 
 }
 
-.landing h2 {
+.btn-access h2 {
   color: #fff;
   padding: .6em;
   font-family: arial, sans-serif;
@@ -493,7 +502,7 @@ h6 {
   width: 100%;
 }
 
-.landing h2 {
+.btn-access h2 {
   color: #fff;
   padding: .6em;
   font-family: arial, sans-serif;
