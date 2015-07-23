@@ -66,17 +66,11 @@ html {
   font-size: 1em;
 }
 
-h1 {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-  }
 
 h2 {
     font-family: serif;
 }
 
-h6 {
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 ol, ul {
   list-style: none;
@@ -131,7 +125,6 @@ body{
 .logo {
   width: 100%;
   display: block;
-  float: left;
   padding-bottom: 3em;
   padding-top: 2em;
 }
@@ -140,73 +133,56 @@ body{
 // !-- Landing
 // ----------------------------------------- */
 
-/* article title */
-
+/* EMAIL series title */
 #title {
   color: #a0a0a0;
+  font-family: Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 1em;
   font-family: arial, sans-serif;
   font-weight: bold;
   letter-spacing: .02em;
 }
 
-.landing h1 {
+/* article title */
+h1 {
   color: #53284f;
   line-height: 1.15em;
   font-size: 1.500em;
   margin-bottom: 1.5em;
 }
 
-/* first call */
-.landing p {
+/* section subheads */
+p {
   font-family: arial, sans-serif;
   font-size: 1.3em;
   margin-bottom: .3em;
-
   color: #53284f;
   clear: both;
 }
 
-.firstcall p {
+/* name and phone_type */
+h3 {
+  font-family: arial, sans-serif;
+  font-size: .875em;
   color: #a0a0a0;
+}
+
+/* name_type */
+h3 a {
+  color: #5e8ab4;
+  font-weight: bold;
+}
+
+/* name_type:hover; */
+h3 a:hover {
+  border-bottom: 1px solid #5e8ab4;
+  padding-bottom: 2px;
+}
+
+h4 {
   font-family: arial, sans-serif;
   font-size: 0.875em;
-  line-height: 0.875em;
-}
-
-.firstcall {
-  margin-bottom: 2.5em;
-}
-
-.landing h4 {
-  font-family: arial, sans-serif;
-  font-size: 0.875em;
   color: #a0a0a0;
-}
-
-/*---------------- category and date ----------------*/
-
-.dateline {
-  border-bottom: 1px solid #53284f;
-  border-top: .6em solid #53284f;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 1.5em;
-}
-
-.dateline h4 {
-  float: right;
-}
-
-
-/*---------------- disclosure ----------------*/
-
-h6 {
-  color: #a0a0a0;
-  font-family: arial, sans-serif;
-  font-size: 0.63em;
-  line-height: 1.25em;
-  padding-bottom: 0.75em;
 }
 
 .disclaimer h4 {
@@ -216,31 +192,58 @@ h6 {
   font-size: 0.825em;
 }
 
-/*---------------- contributors ----------------*/
-
-.landing h3 {
-  font-family: arial, sans-serif;
-  font-size: .875em;
+.landing h5 {
   color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  list-style-position: inside;
+  clear: both;
 }
 
-.landing h3 a {
+.landing h5 a {
   color: #5e8ab4;
-  font-weight: bold;
 }
 
-.landing h3 a:hover {
-  border-bottom: 1px solid #5e8ab4;
-  padding-bottom: 2px;
+/* disclosure */
+h6 {
+  color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 0.63em;
+  line-height: 1.25em;
+  padding-bottom: 0.75em;
 }
 
+
+
+/*---------------- contributors and date ----------------*/
+
+/* space where contributors and date sit */
+.datearea {
+  border-bottom: 1px solid #53284f;
+  border-top: .6em solid #53284f;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+/* datearea type container */
+.contributors {
+  display: inline-block;
+}
+
+/* date_type */
+.datearea h4 {
+  float: right;
+}
+
+/* phone_type */
 .phone {
   padding-left: 5px;
 }
 
-.contributors{
-  display: inline-block;
-}
+
 
 
 /*---------------- buttons ----------------*/
@@ -259,6 +262,18 @@ h6 {
   width: 45%;
   margin-bottom: 1.5em;
   display: block;
+}
+
+.btn-access:hover {
+  background-color: #646464; 
+}
+
+.btn-access h2 {
+  color: #fff;
+  padding: .6em;
+  font-family: arial, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
 }
 
 .btn-summary {
@@ -288,17 +303,6 @@ h6 {
   font-size: .875em;
 }
 
-.btn-access:hover {
-  background-color: #646464; 
-}
-
-.btn-access h2 {
-  color: #fff;
-  padding: .6em;
-  font-family: arial, sans-serif;
-  font-size: 1.1em;
-  text-align: center;
-}
 
 
 /*---------------- content-main ----------------*/
@@ -321,25 +325,6 @@ h6 {
   width: 49%;
   display: inline-block;
   float: left;
-}
-
-
-.landing h5 {
-  color: #a0a0a0;
-  font-family: arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-bottom: 1em;
-  list-style-position: inside;
-  clear: both;
-}
-
-.landing h5 a {
-  color: #5e8ab4;
-}
-
-.landing-three p {
-  margin-top: 3em;
 }
 
 .body-bold {
@@ -365,18 +350,18 @@ h6 {
 }
 
 .content-main {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .content-main-first {
-    border-bottom: 1px solid #a0a0a0;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-    margin-top: 20px;
+  border-bottom: 1px solid #a0a0a0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .content-main-first h6, .content-main h6, .landing-three h6  {
@@ -387,7 +372,6 @@ h6 {
   letter-spacing: .05em;
   border-bottom: 1px solid #ddd;
   margin-bottom: 0.5em;
-
 }
 
 /*---------------- disclosure ----------------*/
@@ -405,9 +389,10 @@ h6 {
 }
 
 
+
+
+
 /* R E S P O N S I V E  S T Y L E S */
-
-
 /* Smartphones (PORTRAIT) ----------- */
 
 @media (min-width: 320px) and (max-width: 695px)  {  
@@ -434,13 +419,10 @@ h6 {
   margin-bottom: 1.2em;
 }
 
-.landing p {
+p {
   font-size: 1.12em;
 }
 
-.firstcall p {
-  font-size: 0.875em;
-}
 
 /*---------------- category and date ----------------*/
 
@@ -452,20 +434,20 @@ h6 {
   margin-bottom: 1em;
 }
 
-.dateline h4 {
-/*  float: left;
-*/  padding-bottom: 6px;
-}
-
-#category, #date {
-  display: block;
-  padding-bottom: .2em;
-  font-size: .875em;
+.datearea h4 {
+  float: left;
+  padding-bottom: 6px;
 }
 
 #date {
+  width: 150px;
+  display: block;
+  padding-bottom: .2em;
+  font-size: .875em;
   float: left;
+  margin-right: 200px;
 }
+
 
 /*---------------- disclosure ----------------*/
 
