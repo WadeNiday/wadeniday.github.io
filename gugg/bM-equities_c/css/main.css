@@ -133,21 +133,32 @@ body{
 // !-- Landing
 // ----------------------------------------- */
 
+.bkgrd {
+/*  background-color: #eee;
+*/  /*padding: 10px;*/
+/*  margin-bottom: 3em;*/
+}
+
+
 /* EMAIL series title */
 #title {
   color: #a0a0a0;
-  margin-bottom: .15em;
-  font-family: arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: .01em;
+  margin-bottom: 0.1em;
 }
+
+#thedate {
+  margin-bottom: 0em;
+  color: #646464;
+  font-size: .875em;
+}
+
+
 
 /* article title */
 h1 {
   color: #53284f;
   line-height: 1.15em;
-  font-size: 1.500em;
-  margin-bottom: 1.5em;
+  font-size: 1.5em;
 }
 
 /* section subheads */
@@ -164,6 +175,7 @@ h3 {
   font-family: arial, sans-serif;
   font-size: .875em;
   color: #646464;
+  margin-bottom: 2em;
 }
 
 /* name_type */
@@ -180,15 +192,17 @@ h3 a:hover {
 
 h4 {
   font-family: arial, sans-serif;
-  font-size: 0.875em;
-  color: #646464;
 }
 
 .disclaimer h4 {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   text-transform: uppercase;
-  color: #646464;
+  letter-spacing: 0.025em;
+  color: #a0a0a0;
   font-size: 0.825em;
+  margin-top: 2.5em;
+  padding-top: 1em;
+  border-top: 6px solid #53284f;
 }
 
 .landing h5 {
@@ -205,8 +219,7 @@ h4 {
   color: #5e8ab4;
 }
 
-/* disclosure */
-h6 {
+ .disclosure h6 {
   color: #646464;
   font-family: arial, sans-serif;
   font-size: 0.7em;
@@ -216,16 +229,8 @@ h6 {
 
 
 
-/*---------------- contributors and date ----------------*/
+/*---------------- contributors and date ----------------
 
-/* space where contributors and date sit */
-.datearea {
-  border-bottom: 1px solid #53284f;
-  border-top: .6em solid #53284f;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 1.5em;
-}
 
 /* datearea type container */
 .contributors {
@@ -248,60 +253,29 @@ h6 {
 /*---------------- buttons ----------------*/
 
 .btn-access {
-  background-color: #a0a0a0;
+  background-color: #5e8ab4;
   width: 45%;
   display: block;
-  margin: 1.5em auto;
+  margin: 3em auto;
   transition: background-color .3s ease-out;
   cursor: pointer;
 }
 
-.btn-access-solo {
-  background-color: #a0a0a0;
-  width: 45%;
-  margin-bottom: 1.5em;
-  display: block;
-}
-
 .btn-access:hover {
-  background-color: #646464; 
+  background-color: #406485; 
 }
 
 .btn-access h2 {
-  color: #fff;
   padding: .6em;
   font-family: arial, sans-serif;
   font-size: 1.1em;
   text-align: center;
 }
 
-.btn-summary {
-  background-color: #53284f;
-  width: 49%;
-  display: inline-block;
-  margin-bottom: .5em;
-  margin-right: 1%;
-}
-
-.btn-events {
-  background-color: #a0a0a0;
-  width: 49%;
-  display: inline-block;
-  margin-bottom: .5em;
-}
-
-.btn-buy {
-  background-color: green;
-  width: 49%;
-  margin-bottom: 1.5em;
-  display: inline-block;
-}
-
-.btn-access a, .btn-buy a, .btn-access-solo a, .btn-summary a, .btn-events a {
+.btn-access a {
   color: #fff;
   font-size: .875em;
 }
-
 
 
 /*---------------- content-main ----------------*/
@@ -415,7 +389,7 @@ h6 {
   color: #53284f;
   line-height: 1.25em;
   font-size: 1.3em;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.8em;
 }
 
 p {
@@ -451,9 +425,9 @@ p {
 /*---------------- disclosure ----------------*/
 
 .disclaimer h4 {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   font-size: 0.75em;
-  line-height: 1.5em;
+  line-height: 1.35em;
 }
 
 /*---------------- contributors ----------------*/
@@ -463,7 +437,7 @@ p {
 }
 
 .contributors{
-  margin-bottom: 0em;
+  margin-bottom: 2em;
 }
 
 /*---------------- buttons ----------------*/
@@ -472,7 +446,7 @@ p {
   width: 100%;
   display: block;
   margin-top: .8em;
-  margin-bottom: .5em;
+  margin-bottom: 2.6em;
   margin-right: none;
 }
 
@@ -543,8 +517,6 @@ h6 {
 }
 
 
-
-
 }
 
 
@@ -555,7 +527,7 @@ h6 {
 @media (min-width: 510px) and (max-width: 695px)  {  
 
 .btn-access {
-  margin-bottom: .5em;
+  margin-bottom: 2.6em;
 }
 
 .btn-buy, .btn-events {
@@ -566,7 +538,6 @@ h6 {
   color: #53284f;
   line-height: 1.25em;
   font-size: 1.3em;
-  margin-bottom: 1.2em;
 }
 
 .landing p {

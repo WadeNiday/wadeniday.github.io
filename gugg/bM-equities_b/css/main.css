@@ -125,7 +125,7 @@ body{
 .logo {
   width: 100%;
   display: block;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   padding-top: 2em;
 }
 
@@ -136,18 +136,15 @@ body{
 /* EMAIL series title */
 #title {
   color: #a0a0a0;
-  margin-bottom: .15em;
-  font-family: arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: .01em;
+  margin-bottom: 0.1em;
 }
 
 /* article title */
 h1 {
   color: #53284f;
   line-height: 1.15em;
-  font-size: 1.500em;
-  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  margin-bottom: 2.5em;
 }
 
 /* section subheads */
@@ -415,7 +412,7 @@ h6 {
   color: #53284f;
   line-height: 1.25em;
   font-size: 1.3em;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.8em;
 }
 
 p {
