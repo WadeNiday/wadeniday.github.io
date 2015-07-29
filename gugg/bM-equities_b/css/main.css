@@ -323,7 +323,7 @@ h5 a {
 
 /* structure */
 .wrapper {
-  width: 86%;
+  width: 85%;
 }
 
 .title {
@@ -354,6 +354,20 @@ h4 {
 
 /* smartphone (LANDSCAPE) ----------- */
 @media (min-width: 510px) and (max-width: 695px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+}
+
+.title {
+  margin: 2em 0;
+}
+
+.logo {
+  padding-bottom: 0em;
+  padding-top: 2.25em;
+}
 
 /*---------------- buttons ----------------*/
 
