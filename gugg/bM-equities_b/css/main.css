@@ -163,6 +163,7 @@ body{
 }
 
 .disclosure {
+  padding-bottom: 1em;
 }
 
 
@@ -263,10 +264,6 @@ h5 a {
   display: inline-block;
 }
 
-/* date_type */
-.datearea h4 {
-  float: right;
-}
 
 /* phone_type */
 .phone {
@@ -345,7 +342,7 @@ h5 a {
 
 h4 {
   line-height: 1.5em;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
 }
 }
 
