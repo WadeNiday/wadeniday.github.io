@@ -183,7 +183,7 @@ h1 {
 /* section subheads */
 p {
   font-family: arial, sans-serif;
-  font-size: .875em;
+  font-size: 1em;
   margin-bottom: .25em;
   color: #53284f;
   clear: both;
@@ -222,7 +222,7 @@ h4 {
 h5 {
   color: #646464;
   font-family: arial, sans-serif;
-  font-size: .8em;
+  font-size: .9em;
   line-height: 1.5em;
   margin-bottom: 1em;
   list-style-position: inside;
