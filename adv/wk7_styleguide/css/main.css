@@ -1,0 +1,709 @@
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 1em;
+/*  background-color: yellow;
+*/  font-family: Open Sans;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+    cursor: pointer;
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+/*  background-color: yellow;
+*/}
+
+/* --------------------------------------------
+// !-- Header / Nav bar
+// ----------------------------------------- */
+
+.title {
+  padding-bottom: 15px;
+}
+
+h1 {
+  color: #777;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.library {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.library:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.library li {
+  display: inline-block;
+  float: left;   
+  width: 19%;
+  height: 200px;
+  background-color: #eee;
+  margin-bottom: 1%;
+  margin-right: 1%;
+  z-index: -1;
+}
+
+.label {
+    padding-top: 2%;
+}
+
+.label a {
+  display: inline;
+  margin-left: 3%;
+
+  color: #bbb;
+  border-bottom: 1px solid #eee;
+  transition: color .3s, border .6s;
+}
+
+.label a:hover {
+  border-bottom: 1px solid #666;
+  color: #777;
+}
+
+/* BOX-SHADOW values: offset-x | offset-y | blur-radius | spread-radius | color */
+.trans-1 {
+  margin: 20% auto;
+  width: 85%;
+  display:block;
+  height: 25%;
+  background-color: orange;
+  transition: box-shadow .5s;
+}
+
+.trans-1 h1 {
+  color: #fff;
+  text-align: center;
+  padding: 7.5%;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: .08em;
+}
+
+.trans-1:hover {
+  box-shadow: 0 0 1em red;
+}
+
+/* BORDER-RADIUS values: top-left | top-right | bottom-right | bottom-left */
+.trans-2 {
+  margin: 20% auto;
+  width: 50%;
+  display:block;
+  height: 50%;
+  background-color: midnightblue;
+  transition: border-radius .5s;
+}
+
+.trans-2:hover {
+  border-radius: 10px 0 70px 70px;
+}
+
+/* BORDER */
+.trans-3 input {
+  margin: 20% auto;
+  width: 85%;
+  display:block;
+  height: 15%;
+  background-color: #fff;
+  transition: border .4s;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 7px 0px 7px 3px;
+}
+
+.trans-3 input:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+/* POSITION values: offset-x | offset-y | blur-radius | spread-radius | color */
+.trans-4 {
+  margin: 20% auto;
+  width: 100px;
+  display:block;
+  height: 100px;
+  border-radius: 10%;
+  background-color: purple;
+  transition: margin-left .2s ease-in-out;
+}
+
+.trans-4:active {
+  margin-left: 20px;
+}
+
+/* VISIBILITY */
+#triangle-left {
+  width: 0;
+  height: 0;
+  margin: 20% auto;
+  border-top: 50px solid transparent;
+  border-right: 100px solid red;
+  border-bottom: 50px solid transparent;
+  transition: visibility 1s ease-in-out;
+}
+
+#triangle-left:active {
+  visibility: hidden;
+}
+
+/* WIDTH  */
+.trans-6 {
+  margin: 12.5% auto;
+  width: 100px;
+  display:block;
+  height: 100px;
+  border-radius: 50%;
+  background-color: teal;
+  z-index: -2;
+  transition: width .2s;
+}
+
+.trans-6:active {
+  width: 150px;
+}
+
+
+/* TYPE COLOR */
+#holder, #holder-8, #holder-9, #holder-10   {
+  margin: 13.5% auto;
+  padding: 15px;
+}
+
+#holder h1 {
+  text-align: center;
+  font-size: 2em;
+  transition: color .2s ease-in-out;
+}
+
+#holder h1:hover {
+  color: orange;
+  opacity: 0.25;
+}
+
+#holder h1:active {
+  color: red;
+}
+
+/* TYPE SIZE */
+#holder-8 h1 {
+  text-align: center;
+  font-size: 2em;
+  color: orange;
+  transition: font-size .2s .5s ease, color .3s ease;
+}
+
+#holder-8 h1:hover {
+  font-size: 2.2em;
+}
+
+#holder-8 h1:active {
+  color: red;
+}
+
+/* OPACITY */
+#holder-9 h1 {
+  text-align: center;
+  font-size: 2em;
+  color: red;
+  opacity: 0.25;
+  transition: opacity .2s ease;
+}
+
+#holder-9 h1:active {
+  opacity: 1.0;
+}
+
+/* FONT-SIZE */
+#holder-10 h1 {
+  text-align: center;
+  font-size: 2em;
+  color: red;
+  transition: font-weight .05s ease;
+}
+
+#holder-10 h1:active {
+  font-weight: 400;
+}
+
+
+
+/* A N I M A T I O N S */
+
+@keyframes triangle {
+  0% {
+    left: 0;
+    top: 20px;
+  }
+
+  33% {
+    left: 100px;
+    top: 150px;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  66% {
+    left: 210px;
+    top: 20px;
+    background-color: blue;
+  }
+
+  100% {
+    left: 0px;
+    top: 20px;
+  }
+
+}
+
+
+
+.shape {
+    height: 25px;
+    position: relative;
+    top: 20px;
+    width: 25px;
+    z-index: 1;
+    background-color: green;
+    cursor: pointer;
+}
+
+.shape:active {
+  animation-name: triangle;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}
+
+
+
+@keyframes bounce {
+  0% {
+/*    left: 75px;
+*/    top: 10px;
+    width: 50px;
+    background-color: orange;
+  }
+
+  25% {
+    top: 125px;
+    width: 57px;
+    z-index: 10;
+  }
+
+  50% {
+    top: 10px;
+    width: 50px;
+    background-color: orange;
+  }
+
+  75% {
+    top: 125px;
+    width: 57px;
+
+  }
+
+  100% {
+    top: 10px;
+    width: 50px;
+    background-color: orange;
+  }
+}
+
+
+.ball {
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 85px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.ball:active {
+  animation-name: bounce;
+  animation-duration: 1.75s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 15;
+
+}
+
+
+
+
+@keyframes slide {
+  from {
+    top: 50px;
+    left: 20px;
+    opacity: 1.0;
+  }
+
+ to {
+    top: 10px;
+    left: 220px;
+    opacity: 0;
+    border-radius: 0%;
+    width: 5px;
+    height: 150px;
+    background-color: gold;
+  }
+}
+
+.shape-3 {
+    height: 35px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    width: 35px;
+    z-index: 1;
+    background-color: teal;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.shape-3:active   {
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 15;
+}
+
+
+/*  lonely shape  */
+
+.rotation {
+  margin: 60px 30px;
+}
+
+.rotate {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-color: black;
+}
+
+@keyframes red {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(90deg);}
+  0% {background-color: pink;}
+  25% {background-color: magenta;}
+  50% {background-color: red;}
+  75% {background-color: magenta;}
+  100% {background-color: pink;}
+}
+
+@keyframes blue {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(180deg);}
+  0% {background-color: lightblue;}
+  25% {background-color: cyan;}
+  50% {background-color: navy;}
+  75% {background-color: cyan;}
+  100% {background-color: lightblue;}
+}
+
+@keyframes green {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(270deg);}
+  0% {background-color: lightgreen;}
+  25% {background-color: green;}
+  50% {background-color: forestgreen;}
+  75% {background-color: green;}
+  100% {background-color: lightgreen;}
+}
+
+@keyframes black {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+  0% {background-color: silver;}
+  25% {background-color: lightgray;}
+  50% {background-color: gray;}
+  75% {background-color: lightgray;}
+  100% {background-color: silver;}
+}
+
+.red {
+  animation-name: red;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.blue {
+  animation-name: blue;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.green {
+  animation-name: green;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.black {
+  animation-name: black;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+
+/*  toggle switch  */
+
+.circle {
+  width: 22px;
+  height: 22px;
+  z-index: 11;
+  border-radius: 100%;
+  background-color: red;
+  position: relative;
+  top: 49px;
+  left: 70px;
+  transition: background-color .6s, left .1s;
+}
+
+.socket {
+  width: 45px;
+  padding: 10px;
+  position: relative;
+  background-color: white;
+  top: 70px;
+  left: 70px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.circle:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.circle:active {
+  background-color: purple;
+  cursor: pointer;
+  left: 120px;
+  animation: toggle .3s ease-in-out;
+}
+
+@keyframes toggle {
+  0% {top: 50px, left: 250px;}
+  50% {top: 50px, left: 280px;}
+  100% {top: 50px, left: 300px;}
+}
+
+
+
+
+/* tablet (LANDSCAPE----------- */
+@media (min-width: 900px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+}
+
+.library {
+/*  background-color: green;
+*/}
+
+.library li {
+  width: 24%;
+  margin-right: 1%;
+  margin-bottom: 1%
+
+}
+
+
+}
+
+@media (min-width: 696px) and (max-width: 899px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: blue;
+*/}
+
+.library li {
+  width: 32%;
+  margin-right: 1%;
+  margin-bottom: 1%
+}
+
+.trans-4 {
+  margin: 12% auto;
+}
+
+#triangle-left {
+  margin: 12% auto;
+}
+
+}
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: lightblue;
+*/}
+
+.library li {
+  width: 49%;
+  margin-right: 1%;
+  margin-bottom: 1%
+}
+
+.trans-1 {
+  margin: 16.5% auto;
+}
+
+.trans-1 h1 {
+  padding: 5.5%;
+}
+
+.trans-4 {
+  margin: 10% auto;
+}
+
+#triangle-left {
+  margin: 11% auto;
+}
+
+.trans-2, .trans-6 {
+  margin: 9% auto;
+}
+
+
+
+
+}
+
+/* Smartphones (PORTRAIT) ----------- */
+@media (min-width: 320px) and (max-width: 509px)  {  
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: purple;
+*/}
+
+.library li {
+  width: 100%;
+  margin-bottom: 2%
+}
+
+.trans-1 {
+  margin: 10.5% auto;
+}
+
+.trans-1 h1 {
+  padding: 4.5%;
+}
+
+.trans-2, .trans-6 {
+  margin: 6.5% auto;
+}
+
+.trans-3 input {
+  margin: 13.5% auto;
+}
+
+.trans-4 {
+  margin: 7% auto;
+}
+
+#triangle-left {
+  margin: 8% auto;
+}
+
+#holder, #holder-8, #holder-9, #holder-10 {
+    margin: 8% auto;
+}
+
+}

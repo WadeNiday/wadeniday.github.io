@@ -106,66 +106,85 @@ a {
 /* --------------------------------------------
 // !-- Scaffolding
 // ----------------------------------------- */
+
 body{
   background-color: #eee;
 }
 
 .wrapper {
-    width: 52%;
-    margin: 2em auto;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1em;
-    }
+  width: 52%;
+  margin: 2em auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
 
 /* --------------------------------------------
-// !-- Main Nav Bar
+// !-- Sections
 // ----------------------------------------- */
+
+
+/* solid aubergine bar */
+.solid-bar {
+  width: 100%;
+  margin-bottom: 0em;
+  background-color: #53284f;
+}
 
 .logo {
-  width: 100%;
+  width: 80%;
   display: block;
-  padding-bottom: 2em;
-  padding-top: 2em;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-top: 1.7em;
 }
 
-/* --------------------------------------------
-// !-- Landing
-// ----------------------------------------- */
+.title-cta {
+  margin-top: 2.5em;
+  padding: 0em 1em;
+}
 
-.bkgrd {
-/*  background-color: #eee;
-*/  /*padding: 10px;*/
-/*  margin-bottom: 3em;*/
+.disclaimer {
+}
+
+.content-main {
+  margin-top: 2.5em;
+  padding: 0em 1em;
+}
+
+.story {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.disclosure {
+  padding: 0em 1em 1em 1em;
 }
 
 
-/* EMAIL series title */
-#title {
-  color: #a0a0a0;
-  margin-bottom: 0.1em;
-}
-
-#thedate {
-  margin-bottom: 0em;
-  color: #646464;
-  font-size: .875em;
-}
-
+/*---------------- type styles ----------------
 
 
 /* article title */
 h1 {
   color: #53284f;
   line-height: 1.15em;
-  font-size: 1.5em;
+  font-size: 1.25em;
+}
+
+#thedate {
+  margin-bottom: 0em;
+  color: #a0a0a0;
+  font-size: .75em;
+  margin-top: .2em;
 }
 
 /* section subheads */
 p {
   font-family: arial, sans-serif;
-  font-size: 1.3em;
-  margin-bottom: .3em;
+  font-size: .875em;
+  margin-bottom: .25em;
   color: #53284f;
   clear: both;
 }
@@ -173,9 +192,9 @@ p {
 /* name and phone_type */
 h3 {
   font-family: arial, sans-serif;
-  font-size: .875em;
-  color: #646464;
-  margin-bottom: 2em;
+  font-size: .675em;
+  color: #a0a0a0;
+  margin-bottom: .6em;
 }
 
 /* name_type */
@@ -192,38 +211,33 @@ h3 a:hover {
 
 h4 {
   font-family: arial, sans-serif;
-}
-
-.disclaimer h4 {
-  margin-bottom: 2em;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   color: #a0a0a0;
-  font-size: 0.825em;
-  margin-top: 2.5em;
-  padding-top: 1em;
-  border-top: 6px solid #53284f;
+  font-size: 0.675em;
+  padding-top: .6em;
+  border-top: 1px solid #ddd;
 }
 
-.landing h5 {
+h5 {
   color: #646464;
   font-family: arial, sans-serif;
-  font-size: 1em;
+  font-size: .8em;
   line-height: 1.5em;
   margin-bottom: 1em;
   list-style-position: inside;
   clear: both;
 }
 
-.landing h5 a {
+h5 a {
   color: #5e8ab4;
 }
 
  .disclosure h6 {
-  color: #646464;
+  color: #a0a0a0;
   font-family: arial, sans-serif;
-  font-size: 0.7em;
-  line-height: 1.35em;
+  font-size: 0.625em;
+  line-height: 1.375em;
   padding-bottom: 0.75em;
 }
 
@@ -253,115 +267,42 @@ h4 {
 /*---------------- buttons ----------------*/
 
 .btn-access {
-  background-color: #5e8ab4;
-  width: 45%;
+  background-color: #a0a0a0;
+  width: 30%;
   display: block;
-  margin: 3em auto;
+  margin: 1.75em 0;
   transition: background-color .3s ease-out;
   cursor: pointer;
 }
 
 .btn-access:hover {
-  background-color: #406485; 
+  background-color: #646464; 
 }
 
 .btn-access h2 {
-  padding: .6em;
+  padding: .85em;
   font-family: arial, sans-serif;
-  font-size: 1.1em;
   text-align: center;
+  font-size: .825em;
 }
 
 .btn-access a {
   color: #fff;
-  font-size: .875em;
-}
-
-
-/*---------------- content-main ----------------*/
-
-/* placeholders for charts */
-.fpo {
-  background: #eee;
-  padding: 80px 50px;
-  margin-bottom: 20px;
-}
-
-.chart-left {
-  width: 49%;
-  display: inline-block;
-  float: left;
-  padding-right: 2%;
-}
-
-.chart-right {
-  width: 49%;
-  display: inline-block;
-  float: left;
-}
-
-.body-bold {
-  color: #a0a0a0;
-  font-weight: bold;
-}
-
-.body-bold a {
-  color: #5e8ab4;
-}
-
-.body-bold a:hover, .landing h5 a:hover, .disclosure a:hover {
-  border-bottom: 1px solid #5e8ab4;
-  padding-bottom: 2px;
-}
-
-.body-italic {
-  font-style: italic;
-}
-
-.body-black {
-  color: #222;
-}
-
-.content-main {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.content-main-first {
-  border-bottom: 1px solid #a0a0a0;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  border-top: 1px solid #ddd;
-  padding-top: 20px;
-  margin-top: 20px;
-}
-
-.content-main-first h6, .content-main h6, .landing-three h6  {
-  font-size: 0.7em;
   text-transform: uppercase;
-  padding: 0.25em 0;
-  color: #646464;
+  font-size: .825em;
   letter-spacing: .05em;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 0.5em;
 }
 
 /*---------------- disclosure ----------------*/
-
-.disclosure {
-  padding-top: 0.75em;
-}
-
-.landing-two {
-  margin-top: 5em;
-}
 
 .disclosure a {
   color: #5e8ab4;
 }
 
-
+.disclosure a:hover {
+  border-bottom: 1px solid #5e8ab4;
+  padding-bottom: 2px;
+}
 
 
 
@@ -372,153 +313,31 @@ h4 {
 
 /* structure */
 .wrapper {
-  width: 85%;
-  background-color: none;
+  width: 90%;
+  margin: 1em auto;
 }
 
-.logo {
-  padding-bottom: 1.5em;
-  padding-top: 1em;
-}
-
-.firstcall {
-  margin-bottom: 1.5em;
-}
-
-.landing h1 {
-  color: #53284f;
-  line-height: 1.25em;
-  font-size: 1.3em;
-  margin-bottom: 1.8em;
-}
-
-p {
-  font-size: 1.12em;
-}
-
-
-/*---------------- category and date ----------------*/
-
-.dateline {
-  border-bottom: 1px solid #a0a0a0;
-  border-top: .6em solid #53284f;  
-  padding-top: .75em;
-  padding-bottom: .8em;
-  margin-bottom: 1em;
-}
-
-.datearea h4 {
-  float: left;
-  padding-bottom: 6px;
-}
-
-#date {
-  width: 150px;
-  display: block;
-  padding-bottom: .2em;
-  font-size: .875em;
-  float: left;
-  margin-right: 200px;
-}
-
-
-/*---------------- disclosure ----------------*/
-
-.disclaimer h4 {
-  margin-bottom: 2em;
-  font-size: 0.75em;
-  line-height: 1.35em;
-}
-
-/*---------------- contributors ----------------*/
-
-.phone {
-  padding-left: 2px;
-}
-
-.contributors{
-  margin-bottom: 2em;
+.title-cta {
+  margin-top: 1.5em;
 }
 
 /*---------------- buttons ----------------*/
 
-.btn-access, .btn-access-solo, .btn-events {
+.btn-access {
   width: 100%;
-  display: block;
-  margin-top: .8em;
-  margin-bottom: 2.6em;
-  margin-right: none;
-}
-
-.btn-buy {
-  width: 100%;
-  margin-bottom: 1em;
-}
-
-.btn-summary {
-  width: 100%;
+  margin: 2.5em 0;
 }
 
 .btn-access h2 {
-  color: #fff;
-  padding: .6em;
-  font-family: arial, sans-serif;
-  font-size: 1.1em;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-.btn-access a, .btn-buy a, .btn-access-solo a, .btn-summary a, .btn-events a {
-  font-size: .8em;
-}
-
-/*---------------- content-main ----------------*/
-
-/* placeholders for charts */
-.fpo {
-  margin-bottom: 2%;
-}
-
-.chart-left {
-  width: 100%;
-  display: inline-block;
-  padding-right: 0%;
-  margin-bottom: 10px;
-}
-
-.chart-right {
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.landing h5 {
   font-size: .875em;
+}
+
+/*---------------- type styles ----------------*/
+
+h4 {
   line-height: 1.5em;
-  margin-bottom: 1em;
 }
-
-.landing-three p {
-  margin-top: 1.5em;
 }
-
-.landing-two {
-  margin-top: 1.5em;
-}
-
-h6 {
-  font-size: 0.7em;
-  line-height: 1.35em;
-  padding-bottom: 0.75em;
-}
-
-.dateline h4 {
-  float: none;
-}
-
-
-}
-
 
 
 
@@ -526,31 +345,16 @@ h6 {
 /* smartphone (LANDSCAPE) ----------- */
 @media (min-width: 510px) and (max-width: 695px)  {  
 
+/*---------------- buttons ----------------*/
+
 .btn-access {
-  margin-bottom: 2.6em;
+  width: 45%;
+  margin: 1.5em auto 1.825em;
 }
 
-.btn-buy, .btn-events {
-  margin-bottom: 1em;
+.btn-access h2 {
+  font-size: .825em;
 }
-
-.landing h1 {
-  color: #53284f;
-  line-height: 1.25em;
-  font-size: 1.3em;
-}
-
-.landing p {
-  font-size: 1.12em;
-}
-
-.firstcall p {
-  font-size: 0.875em;
-}
-
-
-
-
 }
 
 
@@ -566,19 +370,6 @@ h6 {
 
 
 
-/* FULL WIDTH on MacBook Pro */
-@media (min-width: 1500px) {  
-
-/* structure */
-.wrapper {
-  width: 74%;
-}
-
-.btn-access {
-  width: 30%;
-  padding: 10px;
-}
-}
 
 
 
