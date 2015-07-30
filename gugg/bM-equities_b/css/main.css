@@ -298,7 +298,7 @@ h5 a {
 /* R E S P O N S I V E  S T Y L E S */
 /* Smartphones (PORTRAIT) ----------- */
 
-@media (min-width: 320px) and (max-width: 568px)  {  
+@media (min-width: 320px) and (max-width: 736px)  {  
 
 /* structure */
 .wrapper {
@@ -335,7 +335,7 @@ h4 {
 
 
 /* tablet PORTRAIT and LANDSCAPE----------- */
-@media (min-width: 696px) and (max-width: 1200px)  {  
+@media (min-width: 737px) and (max-width: 1200px)  {  
 
 /* structure */
 .wrapper {
