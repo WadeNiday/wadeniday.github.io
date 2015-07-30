@@ -337,7 +337,7 @@ h4 {
 /* structure */
 .wrapper {
   width: 95%;
-  background-color: yellow;
+  background-color: pink;
 }
 
 .title {
@@ -359,6 +359,77 @@ h4 {
 .btn-access h2 {
   font-size: .825em;
 }
+
+
+p {
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: .25em;
+  color: #53284f;
+  clear: both;
+}
+
+/* name and phone_type */
+h3 {
+  font-family: arial, sans-serif;
+  font-size: .675em;
+  color: #a0a0a0;
+  margin-top: .75em;
+}
+
+/* name_type */
+h3 a {
+  color: #5e8ab4;
+  font-weight: bold;
+}
+
+/* name_type:hover; */
+h3 a:hover {
+  border-bottom: 1px solid #5e8ab4;
+  padding-bottom: 2px;
+}
+
+h4 {
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #a0a0a0;
+  font-size: 0.675em;
+  padding-top: .8em;
+  border-top: 1px solid #ddd;
+}
+
+h5 {
+  color: #646464;
+  font-family: arial, sans-serif;
+  font-size: .9em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  list-style-position: inside;
+  clear: both;
+}
+
+h5 a {
+  color: #5e8ab4;
+}
+
+ .disclosure h6 {
+  color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 0.625em;
+  line-height: 1.375em;
+  padding-bottom: 0.75em;
+}
+
+
+
+
+
+
+
+
+
+
 }
 
 
