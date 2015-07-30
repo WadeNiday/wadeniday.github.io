@@ -298,7 +298,7 @@ h5 a {
 /* R E S P O N S I V E  S T Y L E S */
 /* Smartphones (PORTRAIT) ----------- */
 
-@media (min-width: 320px) and (max-width: 736px)  {  
+@media (min-width: 320px) and (max-width: 415px)  {  
 
 /* structure */
 .wrapper {
@@ -331,11 +331,40 @@ h4 {
 
 
 
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 416px) and (max-width: 736px)  {  
+
+/* structure */
+.wrapper {
+  width: 85%;
+  background-color: yellow;
+}
+
+.title {
+  margin: 1.625em 0;
+}
+
+.logo {
+  padding-bottom: 0em;
+  padding-top: 1.375em;
+}
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  width: 45%;
+  margin: 1.5em auto 1.825em;
+}
+
+.btn-access h2 {
+  font-size: .825em;
+}
+}
 
 
 
 /* tablet PORTRAIT and LANDSCAPE----------- */
-@media (min-width: 737px) and (max-width: 1200px)  {  
+@media (min-width: 696px) and (max-width: 1200px)  {  
 
 /* structure */
 .wrapper {
