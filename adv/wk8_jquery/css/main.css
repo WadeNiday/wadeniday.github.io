@@ -1,0 +1,260 @@
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 1em;
+/*  background-color: yellow;
+*/  font-family: Open Sans;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+    cursor: pointer;
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+/*  background-color: yellow;
+*/}
+
+/* --------------------------------------------
+// !-- Header / Nav bar
+// ----------------------------------------- */
+
+header {
+  background-color: teal;
+  opacity: 0.9;
+  position: fixed;
+  height: 65px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header h1 {
+  color: #fff;
+  line-height: 65px;
+  font-weight: 800;
+  letter-spacing: .05em;
+}
+
+.method {
+  margin: 2% auto;
+  padding-bottom: 2em;
+  border-bottom: 1px solid lightgray;
+}
+
+.first {
+  margin-top: 10%;
+}
+
+
+.position {
+
+}
+
+
+.last {
+  margin-bottom: 15%;
+}
+
+h1 {
+  color: #777;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+p {
+  color: red;
+}
+
+h2 {
+  margin-top: 1em;
+  color: maroon;
+  font-size: .75em;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 1em;
+  color: purple;
+  font-size: .625em;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+
+.added {
+  font-family: times;
+  margin-top: 1em;
+  color: darkred;
+  font-weight: 800;
+  line-height: 1.5em;
+  background-color: yellow;
+}
+
+
+p a {
+  color: #dd22ee;
+}
+
+
+
+.width-ex, .height-ex {
+  background: pink;
+  padding: 50px;
+
+}
+
+.btn {
+  margin-top: 1em;
+  background-color: lightgreen;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+}
+
+.fade-in {
+  background-color: lightgreen;
+}
+
+.btn p {
+  color: #000;
+}
+
+
+.fade-out {
+  background-color: lightblue;
+}
+
+.method input {
+  margin-top: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (PORTRAIT) ----------- */
+@media (min-width: 320px) and (max-width: 509px)  {  
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: purple;
+*/}
+
+.library li {
+  width: 100%;
+  margin-bottom: 2%
+}
+
+.trans-1 {
+  margin: 10.5% auto;
+}
+
+.trans-1 h1 {
+  padding: 4.5%;
+}
+
+.trans-2, .trans-6 {
+  margin: 6.5% auto;
+}
+
+.trans-3 input {
+  margin: 13.5% auto;
+}
+
+.trans-4 {
+  margin: 7% auto;
+}
+
+#triangle-left {
+  margin: 8% auto;
+}
+
+#holder, #holder-8, #holder-9, #holder-10 {
+    margin: 8% auto;
+}
+
+}
