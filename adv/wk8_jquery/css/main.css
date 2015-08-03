@@ -115,11 +115,9 @@ header h1 {
   margin-top: 10%;
 }
 
-
 .position {
 
 }
-
 
 .last {
   margin-bottom: 15%;
@@ -165,8 +163,6 @@ p a {
   color: #dd22ee;
 }
 
-
-
 .width-ex, .height-ex {
   background: pink;
   padding: 50px;
@@ -209,52 +205,26 @@ p a {
 
 
 
-
-
-
-
-
-
-
 /* Smartphones (PORTRAIT) ----------- */
-@media (min-width: 320px) and (max-width: 509px)  {  
+@media (min-width: 320px) and (max-width: 750px)  {  
 /* structure */
 .wrapper {
   width: 95%;
 /*  background-color: purple;
 */}
 
-.library li {
-  width: 100%;
-  margin-bottom: 2%
+.first {
+  margin-top: 28%;
 }
 
-.trans-1 {
-  margin: 10.5% auto;
 }
 
-.trans-1 h1 {
-  padding: 4.5%;
-}
 
-.trans-2, .trans-6 {
-  margin: 6.5% auto;
-}
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 510px) and (max-width: 695px)  {  
 
-.trans-3 input {
-  margin: 13.5% auto;
-}
-
-.trans-4 {
-  margin: 7% auto;
-}
-
-#triangle-left {
-  margin: 8% auto;
-}
-
-#holder, #holder-8, #holder-9, #holder-10 {
-    margin: 8% auto;
+.first {
+  margin-top: 15%;
 }
 
 }

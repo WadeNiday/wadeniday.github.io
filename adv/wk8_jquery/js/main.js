@@ -18,7 +18,12 @@ $('.breakfast').text("bacon, eggs, and you gotta have coffee");
 
 
 // .attr() – GET
-$('.question').attr('color');
+
+var color = $('.question').attr('color');
+$('color').text('the text color is ');
+
+
+
 
 
 // .width() – SET
@@ -30,27 +35,38 @@ $('.height-ex').width('100px');
 $('.height-ex').height('200px');
 
 
+
+
 // .position() – GET
-$('header h1').position()
+$('tion').position('top:50', 'left:100')
 
 
-// .val() – GET
-$('input').val()
+
+
+
+
+// .val() – GET -- used for form elements
+
+
+
+
+
+
 
 
 // .addClass()
-$('#bananas').addClass('added');
+$('.bananas').addClass('added');
 
 
 // .removeClass()
-$('#bananas2').removeClass('added');
+$('.bananas2').removeClass('added');
 
 
 // .insertAfter()
-$("<h2>baconipsum.com</h2>").insertAfter('#in-after');
+$("<a href='baconipsum.com'><h2>baconipsum.com</h2></a>").insertAfter('#in-after');
 
 // .insertBefore()
-$("<a href><h2>baconipsum.com</h2></a>").insertBefore('#in-before');
+$("<a href='baconipsum.com'><h2>baconipsum.com</h2></a>").insertBefore('#in-before');
 
 // .appendTo()
 $("<h3>this part was added with jQuery</h3>").appendTo('#bottom');
