@@ -105,7 +105,7 @@ header h1 {
   letter-spacing: .05em;
 }
 
-.method {
+.method, .methodPosition, .methodForm {
   margin: 2% auto;
   padding-bottom: 2em;
   border-bottom: 1px solid lightgray;
@@ -116,7 +116,6 @@ header h1 {
 }
 
 .position {
-
 }
 
 .last {
@@ -130,7 +129,7 @@ h1 {
 }
 
 p {
-  color: red;
+  color: #777;
 }
 
 h2 {
@@ -140,6 +139,14 @@ h2 {
   font-weight: 600;
 }
 
+
+.holder {
+  position: relative;
+  left: 150px;
+  top: 10px;
+}
+
+
 h3 {
   margin-top: 1em;
   color: purple;
@@ -148,6 +155,19 @@ h3 {
   letter-spacing: .02em;
 }
 
+#work p {
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: .1em;
+}
+
+
+button {
+  background: darkblue;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
 
 .added {
   font-family: times;
@@ -160,13 +180,16 @@ h3 {
 
 
 p a {
-  color: #dd22ee;
+  color: blue;
 }
 
 .width-ex, .height-ex {
   background: pink;
   padding: 50px;
+}
 
+.question2 {
+  text-decoration: line-through;
 }
 
 .btn {

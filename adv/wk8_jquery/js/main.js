@@ -3,10 +3,10 @@ $( document ).ready(function() {
 
 
 // .html()
-$('.bacon').html( "<bites>This paragraph was added via jQuery</bites>: Bacon ipsum dolor amet andouille shank meatloaf chicken pork chop. Kielbasa fatback pork tenderloin. Porchetta pastrami pig cow biltong, meatloaf meatball short ribs chuck cupim flank brisket chicken. Shankle flank t-bone picanha alcatra. Tongue pig kevin ribeye meatball pancetta. Porchetta salami capicola, bresaola fatback pig pastrami andouille.");
+$('.bacon').html( "<bites>This paragraph was added via jQuery</bites>: Bacon ipsum dolor amet andouille shank meatloaf chicken pork chop. Kielbasa fatback pork tenderloin. Porchetta salami capicola, bresaola fatback pig pastrami andouille.");
 
 $('.bacon bites')
-	.css('color', 'darkred')
+	.css('color', '#222')
 	.css('text-decoration', 'underline')
 	.css('text-transform', 'uppercase')
 	.css('letter-spacing', '.05em')
@@ -17,14 +17,12 @@ $('.bacon bites')
 $('.breakfast').text("bacon, eggs, and you gotta have coffee");
 
 
-// .attr() – GET
-
-var color = $('.question').attr('color');
-$('color').text('the text color is ');
+// .attr() – GETTING the url and showing it to the user(via alert)
+alert($(".question a").attr("href"));
 
 
-
-
+// .attr() – SETTING the url and showing it to the user(via alert)
+// alert($(".question2 a").attr("href", "http://www.google.co.uk"));
 
 // .width() – SET
 $('.width-ex').width('100px');
@@ -35,23 +33,20 @@ $('.height-ex').width('100px');
 $('.height-ex').height('200px');
 
 
-
-
-// .position() – GET
-$('tion').position('top:50', 'left:100')
-
-
-
-
-
-
-// .val() – GET -- used for form elements
+// .position() – this is a GET only
+$('#work2').click(function(){
+    var pixels = $('p').position();
+    alert('Top:' + pixels.top + 'Left:' + pixels.left);
+});
 
 
 
+// .val() – designed to work with the <input> tag; btn triggers function
+// *** https://blog.udemy.com/jquery-set-value***
 
-
-
+  $("#work").click(function(){
+    $('#defaultText').val('gatorwade76');
+  });
 
 
 // .addClass()
@@ -73,8 +68,6 @@ $("<h3>this part was added with jQuery</h3>").appendTo('#bottom');
 
 // .prependTo()
 $("<h3>this part was added with jQuery</h3>").prependTo('#top');
-
-
 
 
 
