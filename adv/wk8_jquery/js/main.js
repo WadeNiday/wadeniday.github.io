@@ -18,11 +18,8 @@ $('.breakfast').text("bacon, eggs, and you gotta have coffee");
 
 
 // .attr() – GETTING the url and showing it to the user(via alert)
-alert($(".question a").attr("href"));
+$(".question a").attr('href', 'http://www.eggharborcafe.com');
 
-
-// .attr() – SETTING the url and showing it to the user(via alert)
-// alert($(".question2 a").attr("href", "http://www.google.co.uk"));
 
 // .width() – SET
 $('.width-ex').width('100px');
