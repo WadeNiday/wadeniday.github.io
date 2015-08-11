@@ -13,28 +13,25 @@
 
 
 <body>
-
-<!-- liveReload -->
-
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-
 <header>
     <div class='wrapper'>
 
-      <div class='logo'>
+<!--       <div class='logo'>
         <a href="#"><img src="images/GUGG_logo.svg" width='164'></a>
-      </div>
+      </div> -->
 
     <nav class='close'>
 
-      <ul>
+<!--       <ul>
         <li id='xtoclose'> <a href="#"><img src="images/close.svg" width='16'></a></li>
-      </ul>
+      </ul> -->
 
       <ul>
 
 <!-- D R O P D O W N -->
+    <nav class='close'>
+        <li id='xtoclose'> <a href="#"><img src="images/close.svg" width='16'></a></li>
+
       <dropdown>
         <input id="toggle2" type="checkbox">
         <label for="toggle2" class="animate"><img src="images/share.svg" width='21'></label>
@@ -52,14 +49,7 @@
         <li> <a href="#"><img src="images/print.svg" width='20'></a></li>
         <li> <a href="#"><img src="images/download.svg" width='18'></a></li>
         <li> <a href="#"><img src="images/fav.svg" width='18'></a></li>
-
-
-
-
-
-
-
-
+        <li class='logo'><a href="#"><img src="images/GUGG_logo.svg" width='164'></a></li>
     </nav>
 
 
@@ -89,20 +79,16 @@
   <section id="slider">
 
   <div class='description'>
-    
     <h2>This Created an Opportunity Across the Index as All Spreads Widened</h2>
-
     <h4>HY Index Spread/Yield widened on energy-sector fears, creating an opportunity for high-yield investors. </h4>
-
   </div>
 
-    <ul>
-        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/ymypof" ></iframe></a></li>
-        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/egapyh" ></iframe></a></li>
-        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/etopot" ></iframe></a></li>
-        <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/acygyx" ></iframe></a></li>
-    </ul>  
-
+  <ul>
+    <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/ymypof" ></iframe></a></li>
+    <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/egapyh" ></iframe></a></li>
+    <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/etopot" ></iframe></a></li>
+    <li><iframe class="highcharts" src="http://cloud.highcharts.com/embed/acygyx" ></iframe></a></li>
+  </ul>  
 
 
 
@@ -128,63 +114,18 @@
 
 
 
-<!-- JQUERY --> 
+<!-- scripts / JQUERY --> 
 
-      
-  <script class="include" type="text/javascript" src="jquery.js"></script>
-  <script class="include" type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-
-<script>
-jQuery(document).ready(function ($) {
-
-
-  
-  var slideCount = $('#slider ul li').length;
-  var slideWidth = $('#slider ul li').width();
-  var slideHeight = $('#slider ul li').height();
-  var sliderUlWidth = slideCount * slideWidth;
-  
-  $('#slider').css({ width: slideWidth, height: slideHeight });
-  
-  $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-  
-    $('#slider ul li:last-child').prependTo('#slider ul');
-
-    function moveLeft() {
-        $('#slider ul').animate({
-            left: + slideWidth
-        }, 600, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
-
-    function moveRight() {
-        $('#slider ul').animate({
-            left: - slideWidth
-        }, 600, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
-
-    $('a.control_prev').click(function () {
-        moveLeft();
-    });
-
-    $('a.control_next').click(function () {
-        moveRight();
-    });
-
-});    
- 
-
-    
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jQuery.event.swipe.js"></script>
 
 
 
+<!-- liveReload -->
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 

@@ -220,7 +220,7 @@ header {
 }
 
 /* icons */
-dropdown{
+dropdown {
   display: inline-block;
   font-family: 'Egyptian Medium';
   float: right;
@@ -244,7 +244,6 @@ dropdown label:hover {
   cursor: pointer;
 }
 
-
 /* icons within the dropdown */
 dropdown ul li{
   display: block;
@@ -260,7 +259,6 @@ dropdown ul li:hover{
   cursor: pointer;
 }
 
-
 dropdown input{
   display: none;
 }
@@ -274,7 +272,6 @@ dropdown input ~ ul{
   z-index: 1;
   color: white;
 }
-
 
 dropdown input:checked + label{
   color: white;
@@ -290,7 +287,7 @@ dropdown input:checked ~ ul{
   margin-top: 1px;
 }
 
-$colors: pink, lightyellow, lightblue;
+/* animation of dropdown */
 
 @for $i from 1 through length($colors) {
   dropdown ul li:nth-child(#{$i}) {
@@ -310,7 +307,7 @@ $colors: pink, lightyellow, lightblue;
   }
 }
 
-.animate{
+.animate {
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;

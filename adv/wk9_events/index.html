@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery – Events</title>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<header>
+  <div class='wrapper'>
+    <h1>jQuery – Events</h1>
+  </div>
+</header>
+
+
+
+
+<div class='wrapper'>
+
+<!-- click --> 
+  <article class='method first'>
+    <h1>.on('click')</h1>
+    
+    <div class='btn one'><a href="#"> <h3>slide text down</h3></a>
+    </div>
+      <div class='textBox-1'> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tincidunt purus.</p></div>
+
+  </article>
+
+
+
+
+<!-- double click --> 
+  <article class='method'>
+    <h1>.on('dblclick’)</h1>
+
+    <div class='btn second'><a href="#"> <h3>slide text to the right</h3></a>
+    </div>
+      <div class='textBox-2'> <p>Donec eleifend libero in orci mattis pulvinar. Ut et felis eu leo malesuada eleifend.</p></div>
+
+
+  </article>
+
+
+
+
+<!-- mouse enter --> 
+  <article class='method'>
+    <h1>.on('mouseenter') / .mouseleave</h1>
+
+    <div class='btn third'><a href="#"> <h3>slide, then go back</h3></a>
+    </div>
+      <div class='textBox-3'> <p>Donec eleifend libero in orci mattis pulvinar. Ut et felis eu leo malesuada eleifend.</p></div>
+
+   </article>
+
+
+
+
+
+
+<!-- focus --> 
+  <article class='method'>
+    <h1>.on('focus')</h1>
+ 
+  <input type="text" id="defaultText" placeholder='password'>
+  <input type="text" id="defaultText" placeholder='username'> 
+  </article>
+
+
+
+<!--  keydown  --> 
+  <article class='method'>
+    <h1>.on('keydown')</h1>
+
+  <input type="text" id="defaultText" placeholder='password'>
+  <input type="text" id="defaultText" placeholder='username'> 
+  </article>
+
+
+
+<!-- keypress --> 
+  <article class='method'>
+    <h1>.on('keypress')</h1>
+    
+  <input type="text" id="defaultText" placeholder='password'>
+  <input type="text" id="defaultText" placeholder='username'> 
+  </article>
+
+
+
+
+
+
+<!-- resize --> 
+  <article class='method'>
+    <h1>.on('resize')</h1>
+
+  <input type="text" id="defaultText" placeholder='password'>
+  <input type="text" id="defaultText" placeholder='username'> 
+  </article>
+
+
+
+
+</div> <!-- wrapper -->
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+
+
+    </body>
+</html>
