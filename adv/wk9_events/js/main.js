@@ -31,13 +31,20 @@ $(".third").mouseleave(function(){
 
 
 // .on('focus')
-
+$("#one").focus(function(){
+     $("span").css("display", "inline").fadeOut(7000);
+});
 
 // .on('keydown')
+$('#two').keydown(function(){
+	  $("#down").css("display", "inline").fadeIn(2000);
+});
 
 
 // .on('keypress')
-
+$('#three').keypress(function(){
+    $("#down2").css("display", "inline").fadeIn(2000);
+});
 
 // .on('resize')
 

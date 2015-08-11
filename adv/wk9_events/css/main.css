@@ -105,7 +105,7 @@ header h1 {
   letter-spacing: .05em;
 }
 
-.method {
+.method, .method-focus {
   margin: 2% auto;
   padding-bottom: 2em;
   border-bottom: 1px solid lightgray;
@@ -154,6 +154,13 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  color: #777;
+  font-size: .7em;
+  font-weight: 400;
+  letter-spacing: .02em;
+  margin-top: 1em;
+}
 
 .btn {
   background: blue;
@@ -200,7 +207,9 @@ input {
   margin-right: 1%;
 }
 
-
+span, #down, #down2 {
+  display: none;
+}
 
 
 

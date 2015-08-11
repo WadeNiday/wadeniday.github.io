@@ -43,11 +43,8 @@
     <div class='btn second'><a href="#"> <h3>slide text to the right</h3></a>
     </div>
       <div class='textBox-2'> <p>Donec eleifend libero in orci mattis pulvinar. Ut et felis eu leo malesuada eleifend.</p></div>
-
-
+  
   </article>
-
-
 
 
 <!-- mouse enter --> 
@@ -61,26 +58,22 @@
    </article>
 
 
-
-
-
-
 <!-- focus --> 
-  <article class='method'>
+  <article class='method-focus'>
     <h1>.on('focus')</h1>
- 
-  <input type="text" id="defaultText" placeholder='password'>
-  <input type="text" id="defaultText" placeholder='username'> 
-  </article>
 
+    <input id= 'one' type="password" placeholder='password'> 
+    <h4><span>Requires one captial letter and one number</span> </h4>
+  </article>
 
 
 <!--  keydown  --> 
   <article class='method'>
     <h1>.on('keydown')</h1>
 
-  <input type="text" id="defaultText" placeholder='password'>
-  <input type="text" id="defaultText" placeholder='username'> 
+  <input id="two" type="text" placeholder='username'> 
+  <h4 id='down'>Limited to 12 characters</h4>
+
   </article>
 
 
@@ -89,8 +82,9 @@
   <article class='method'>
     <h1>.on('keypress')</h1>
     
-  <input type="text" id="defaultText" placeholder='password'>
-  <input type="text" id="defaultText" placeholder='username'> 
+  <input id="three" type="password" placeholder='username'> 
+  <h4 id='down2'>this seems very similar to keydown</h4>
+
   </article>
 
 
@@ -99,12 +93,12 @@
 
 
 <!-- resize --> 
-  <article class='method'>
+<!--   <article class='method'>
     <h1>.on('resize')</h1>
 
   <input type="text" id="defaultText" placeholder='password'>
   <input type="text" id="defaultText" placeholder='username'> 
-  </article>
+  </article> -->
 
 
 
