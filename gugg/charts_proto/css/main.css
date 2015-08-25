@@ -181,23 +181,19 @@ header {
   padding-left: 4.5%;
 }
 
-.top-nav li:first-child {
-  margin: -0.75em 1em 0em 2.5em;
+
+#xtoclose {
+  margin: -.78em 0em 0em 5em;
   float: right;
   border-radius: 100%;
   display: inline-block;
   background-color: #51284f;
   padding: .8em .9em;
+  -webkit-transition: all 0.4s ease;
 }
 
-/*x to close button*/
-.top-nav li:first-child:hover{
-  opacity: 1.0;
-  background-color: purple;
-}
-
-#xtoclose {
-  padding-top: .8em;
+#xtoclose:hover {
+  background-color: #442243;
 }
 
 
@@ -244,7 +240,8 @@ dropdown ul li{
   width: 1em;
   background: none;
   opacity: 0.4;
-  padding: 12px 12px 12px 14px;
+  padding: 10px 12px 0px 14px;
+  margin-bottom: .75em;
 }
 
 dropdown ul li:hover{
