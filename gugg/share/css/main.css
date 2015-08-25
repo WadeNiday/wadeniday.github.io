@@ -205,7 +205,7 @@ header {
 /* icons - font awesome */
 .fa {
   font-size: 1em;
-  line-height: 12px !important; /* spacing in dropdown, use 'dropdown lable' as well */
+  line-height: 10px !important; /* spacing in dropdown, use 'dropdown lable' as well */
 }
 
 
@@ -259,7 +259,7 @@ dropdown input ~ ul{
   position: relative;
   visibility: hidden;
   opacity: 0;
-  top: -90px;
+  top: -100px;
   z-index: 1;
   color: white;
 }
