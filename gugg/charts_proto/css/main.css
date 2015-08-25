@@ -146,7 +146,7 @@ header {
   height: 65px;
   position:fixed;
   top:0;
-  width: 103%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -155,56 +155,49 @@ header {
 // ----------------------------------------- */
 
 
-.logo {
+
+.top-nav li {
+  margin-top: 1.45em;
+  opacity: 0.4;
+  -webkit-transition: all 0.2s ease;
+}
+
+.top-nav li:hover{
+  opacity: 1.0;
+}
+
+
+/*logo*/
+.top-nav li:last-child {
+  margin-top: 0.2em;
+  opacity: 1;
   float: left;
-  margin-top: 1.5em;
-  margin-left: -2%;
-}
-
-.share {
-/*  background-color: pink;
-*/  float: right;
-  width: 40%;
-  display: inline-block;
-  margin-top: 1.5em;
-}
-
-.close {
-  width: 80%;
-  float: right;
-  margin-top: 1.5em;
+  margin-left: -0.65%;
 }
 
 .close a {
   display: inline-block;
   float: right;
-  opacity: 0.4;
   padding-left: 4.5%;
-  -webkit-transition: all 0.2s ease;
 }
 
-.close a:hover {
-  opacity: 1;
+.top-nav li:first-child {
+  margin: -0.75em 1em 0em 2.5em;
+  float: right;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #51284f;
+  padding: .8em .9em;
+}
+
+/*x to close button*/
+.top-nav li:first-child:hover{
+  opacity: 1.0;
+  background-color: purple;
 }
 
 #xtoclose {
-  width: 15%;
-  float: right;
-  display: inline-block;
-  margin-top: -.725em;
-}
-
-#xtoclose a {
-  opacity: 0.4;
-  padding: 12px 12px 8px 13px;
-  border-radius: 100%;
-  -webkit-transition: all 0.4s ease;
-
-}
-
-#xtoclose a:hover {
-  opacity: 1;
-  background-color: #411f41;
+  padding-top: .8em;
 }
 
 
@@ -218,6 +211,7 @@ header {
   font-size: 1em;
   line-height: 12px !important; /* spacing in dropdown, use 'dropdown lable' as well */
 }
+
 
 /* icons */
 dropdown {
@@ -284,7 +278,8 @@ dropdown input:checked ~ ul{
   color: #fff;
   background: #51284f;
   top: 0; /* position of where the icons start as they move down */
-  margin-top: 1px;
+  margin-top: -21px;
+  border-bottom: 1px solid red;
 }
 
 /* animation of dropdown */
