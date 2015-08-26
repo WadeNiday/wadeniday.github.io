@@ -1,0 +1,170 @@
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 1em;
+  background-color: #eee;
+
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+section {
+  color: pink;
+  text-align: center;
+  display: table;
+  min-width: 100%;
+  height: 180vh;
+}
+
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero {
+  color: pink;
+  text-align: center;
+  display: table;
+  min-width: 100%;
+  height: 40vh;
+  z-index: 11;
+
+}
+
+.nav-one {
+  background-color: #51284f;
+  color: white;
+  text-align: left;
+  display: table;
+  position: fixed;
+  min-width: 100%;
+  height: 10vh;
+  z-index: 1;
+}
+
+.nav-one li {
+  display: inline-block;
+  padding-right: 2em;
+}
+
+section:nth-of-type(2n) {
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+section.hero {
+  background-color: #fff;
+
+}
+
+section h1 {
+  display: block;
+  vertical-align: center;
+  font-size: 56px;
+  margin-top: 5em;
+}
+
+nav {
+  min-height: 10vh;
+  width: 100%;
+  background-color: #fff;
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+nav.sticky {
+  position: fixed;
+  top: 9.85vh;
+}
+
+.nav-one.sticky {
+  position: fixed;
+  top: 0vh;
+  background-color: red;
+  z-index: 1;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 10vh;
+  padding: 0 80px;
+  border-right: 1px solid #ddd;
+  -webkit-transition: all .35s;
+}
+
+nav li:hover {
+  background-color: blue;
+  cursor: pointer;
+  color: #fff;
+}
