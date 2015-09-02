@@ -7,7 +7,7 @@ $(document).ready(function() {
         var windowHeight = $(window).height();
 
         // Find the value of 90% of the viewport height
-        var ninetypercent = .30 * windowHeight;
+        var ninetypercent = .35 * windowHeight;
 
         // When the document is scrolled ninety percent, toggle the classes
         // Does not work in iOS 7 or below
@@ -22,6 +22,7 @@ $(document).ready(function() {
 
                 // Add the "sticky" class
                 $('nav').addClass('sticky');
+                // $('nav-one').addClass('nav-one.sticky');
             } else {
                 // Else remove it.
                 $('nav').removeClass('sticky');

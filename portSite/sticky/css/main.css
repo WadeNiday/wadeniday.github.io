@@ -71,9 +71,65 @@ a {
     text-decoration: none;
 }
 
-body {
-  font-family: 'Alegreya Sans SC', sans-serif;
+
+
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=3.2.1');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'Guardian Light Web';
+  src: url('../fonts/GuardianSans-Light-Web.eot');
+  src: url('../fonts/GuardianSans-Light-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Light-Web.woff') format('woff'), url('../fonts/GuardianSans-Light-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Light-Web.svg#Guardian Light Web') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Guardian Regular';
+  src: url('../fonts/GuardianSans-Regular-Web.eot');
+  src: url('../fonts/GuardianSans-Regular-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Regular-Web.woff') format('woff'), url('../fonts/GuardianSans-Regular-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Regular-Web.svg#Guardian TextSans Web') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; 
+}
+
+@font-face {
+  font-family: 'Guardian Medium';
+  src: url('../fonts/GuardianSans-Medium-Web.eot');
+  src: url('../fonts/GuardianSans-Medium-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Medium-Web.woff') format('woff'), url('../fonts/GuardianSans-Medium-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Medium-Web.svg#Guardian TextSans Web') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal; 
+}
+
+
+@font-face {
+  font-family: 'Egyptian Regular';
+  src: url('../fonts/GuardianEgyp-Regular-Web.eot');
+  src: url('../fonts/GuardianEgyp-Regular-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianEgyp-Regular-Web.woff') format('woff'), url('../fonts/GuardianEgyp-Regular-Web.ttf') format('truetype'), url('../fonts/GuardianEgyp-Regular-Web.svg#Guardian Text Egyptian Web') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Egyptian Medium';
+  src: url('../fonts/GuardianEgyp-Medium-Web.eot');
+  src: url('../fonts/GuardianEgyp-Medium-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianEgyp-Medium-Web.woff') format('woff'), url('../fonts/GuardianEgyp-Medium-Web.ttf') format('truetype'), url('../fonts/GuardianEgyp-Medium-Web.svg#Guardian Text Egyptian Web') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
 
 section {
   color: pink;
@@ -89,30 +145,99 @@ section {
   margin: 0 auto;
 }
 
-.hero {
-  color: pink;
-  text-align: center;
-  display: table;
-  min-width: 100%;
-  height: 40vh;
-  z-index: 11;
 
+
+/* LOGIN LEVEL NAVIGATION */
+/* solid bar */
+.nav-login {
+  background-color: #51284f;
+  height: 2.25em;
+  position: fixed;
+  min-width: 100%;
+  z-index: 2;
 }
 
+/* links, box elements */
+.nav-login li {
+  display: inline-block;
+  line-height: 2.2em;
+  -webkit-transition: all .35s;
+  padding-left: 3em;
+}
+
+/* links, type styles */
+.nav-login a {
+  font-family: 'Guardian Regular';
+  font-size: 14px; 
+  color: #867484;
+  letter-spacing: .025em;
+  -webkit-transition: all .35s;
+}
+
+.nav-login a:hover {
+  color: #aaa;
+}
+
+/* investor type, increased padding */
+.nav-login li:first-child {
+  padding-right: 3.2em;
+  padding-left: 0em;
+}
+
+/* GP.com links */
+.secondary {
+  float: right;
+}
+
+
+i {
+  padding-left: 1em;  
+}
+
+
+.nav-login.sticky {
+  display: none;
+  background-color: green;
+}
+
+/*– – – – – – – – – – – – – – – – – – – – */
+
+/* MAIN NAVIGATION */
+/* solid bar */
 .nav-one {
+  border-top: solid 1px #41203f;
   background-color: #51284f;
   color: white;
   text-align: left;
   display: table;
   position: fixed;
   min-width: 100%;
-  height: 10vh;
+  height: 5em;
+  margin-top: 2.25em;
   z-index: 1;
+}
+
+.nav-one a {
+  font-family: 'Guardian Light Web';
+  font-size: 13px; 
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .125em;
+  -webkit-transition: all .35s;
+}
+
+.nav-one a:hover {
+  color: #bbb;
 }
 
 .nav-one li {
   display: inline-block;
-  padding-right: 2em;
+  padding-right: 3em;
+  padding-top: 2.5%;
+}
+
+.nav-one .secondary{
+  padding-right: 0em;
 }
 
 section:nth-of-type(2n) {
@@ -120,20 +245,40 @@ section:nth-of-type(2n) {
   background-color: #fff;
 }
 
+.nav-one.sticky {
+  position: fixed;
+  top: -2.25em;
+/*  background-color: pink;
+*/  z-index: 1;
+}
+
+
+
+
 section.hero {
-  background-color: #fff;
-
+  background-color: pink;
 }
 
-section h1 {
-  display: block;
-  vertical-align: center;
-  font-size: 56px;
-  margin-top: 5em;
+.hero {
+  color: #fff;
+  min-width: 100%;
+  height: 20em;
+  z-index: 11;
+  padding-top: 8em;
 }
 
-nav {
-  min-height: 10vh;
+.ticker-search {
+  width: 300px;
+  border: 1px solid red;
+  display: inline-block;
+/*  margin-top: 2em;
+*/  padding: 1.5em;
+  float: right;
+  z-index: 1;
+}
+
+.nav-product {
+  min-height: 5em;
   width: 100%;
   background-color: #fff;
   color: blue;
@@ -143,28 +288,41 @@ nav {
   border-bottom: 1px solid #ddd;
 }
 
+.nav-product a {
+  font-family: 'Guardian Regular';
+  font-size: 13px; 
+  color: #5E8AB4;
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
+
 nav.sticky {
-  position: fixed;
-  top: 9.85vh;
-}
+/*  position: fixed;*/
+/*  top: 8em;
+*/}
 
-.nav-one.sticky {
-  position: fixed;
-  top: 0vh;
-  background-color: red;
-  z-index: 1;
-}
 
-nav li {
+
+
+.nav-product li {
   display: inline-block;
-  line-height: 10vh;
-  padding: 0 80px;
+  line-height: 5em;
+  padding: 0 1em;
   border-right: 1px solid #ddd;
   -webkit-transition: all .35s;
+
 }
 
-nav li:hover {
+.nav-product li:hover {
   background-color: blue;
   cursor: pointer;
   color: #fff;
 }
+
+section h1 {
+  display: block;
+  vertical-align: center;
+  font-size: 56px;
+  margin-top: 5em;
+}
+
