@@ -7,7 +7,7 @@ $(document).ready(function() {
         var windowHeight = $(window).height();
 
         // Find the value of 90% of the viewport height
-        var ninetypercent = .35 * windowHeight;
+        var ninetypercent = .56 * windowHeight;
 
         // When the document is scrolled ninety percent, toggle the classes
         // Does not work in iOS 7 or below

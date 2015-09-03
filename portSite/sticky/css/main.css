@@ -154,7 +154,7 @@ section {
   height: 2.25em;
   position: fixed;
   min-width: 100%;
-  z-index: 2;
+  z-index: 2000;
 }
 
 /* links, box elements */
@@ -197,7 +197,6 @@ i {
 
 .nav-login.sticky {
   display: none;
-  background-color: green;
 }
 
 /*– – – – – – – – – – – – – – – – – – – – */
@@ -215,9 +214,10 @@ i {
   height: 5em;
   margin-top: 2.25em;
   z-index: 1;
+  -webkit-transition: all .3s;
 }
 
-.nav-one a {
+.nav-one a, .nav-two a {
   font-family: 'Guardian Light Web';
   font-size: 13px; 
   color: #fff;
@@ -233,7 +233,7 @@ i {
 .nav-one li {
   display: inline-block;
   padding-right: 3em;
-  padding-top: 2.5%;
+  padding-top: 1.83em;
 }
 
 .nav-one .secondary{
@@ -246,14 +246,46 @@ section:nth-of-type(2n) {
 }
 
 .nav-one.sticky {
-  position: fixed;
   top: -2.25em;
-/*  background-color: pink;
-*/  z-index: 1;
+  z-index: 20;
+  background-color: purple;
+  height: 3.75em;
+}
+
+.nav-one.sticky li {
+  padding-top: 1.5em;
+}
+
+.nav-one.sticky #navstatic {
+  display: none;
+}
+
+
+/* ticker and name hidden until scroll */
+.nav-one #navscroll {
+  display: none;
+}
+
+.nav-one.sticky #navscroll {
+  display: inline-block;
 }
 
 
 
+h4 {
+  font-family: 'Guardian Light Web';
+  font-size: 18px; 
+  color: #fff;
+  text-transform: none;
+  letter-spacing: 0.03em;
+}
+
+.ticker {
+  font-family: 'Egyptian Medium';
+  letter-spacing: .1em;
+  padding-right: .5em;
+
+}
 
 section.hero {
   background-color: pink;
@@ -263,7 +295,7 @@ section.hero {
   color: #fff;
   min-width: 100%;
   height: 20em;
-  z-index: 11;
+  z-index: 1;
   padding-top: 8em;
 }
 
