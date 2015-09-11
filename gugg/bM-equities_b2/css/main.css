@@ -1,0 +1,392 @@
+
+/* --------------------------------------------
+// -- Colors
+//
+// Black:       #222
+// Dark gray:   #646464
+// Light gray:  #a0a0a0
+// Blue:        #5e8ab4
+// DarkBlue:    #5e8ab4
+// Purple       #53284f
+
+
+// ----------------------------------------- */
+
+
+/* --------------------------------------------
+// !-- Reset
+// ----------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 1em;
+}
+
+
+h2 {
+    font-family: serif;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.group:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+a {
+    text-decoration: none;
+      cursor: pointer;
+
+}
+
+/* --------------------------------------------
+// !-- Scaffolding
+// ----------------------------------------- */
+
+body{
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 52%;
+  margin: 0 auto;
+}
+
+
+/* --------------------------------------------
+// !-- Sections
+// ----------------------------------------- */
+
+
+/* solid aubergine bar */
+.solid-bar {
+  width: 100%;
+/*  background-color: #53284f;
+  background-color: #ddd;*/
+/*  padding-bottom: 1.25em;
+*/}
+
+
+.logo {
+  width: 80%;
+  display: block;
+  padding-bottom: 2em;
+  padding-top: 2.25em;
+}
+
+.title {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 100%;
+  background-color: #53284f;
+}
+
+.title-text {
+  padding: 0em 1em;
+}
+
+.title-cta {
+}
+
+.disclaimer {
+}
+
+.content-main {
+  margin-top: 1.5em;
+  width: 100%;
+
+}
+
+.story {
+  padding-bottom: 1.5em;
+  width: 100%;
+}
+
+.disclosure {
+  border-top: 1px solid #ddd;
+  padding-top: .675em;
+  padding-bottom: 1em;
+}
+
+
+/*---------------- type styles ----------------
+
+
+/* article title */
+h1 {
+  color: #fff;
+  line-height: 1.15em;
+  font-size: 1.425em;
+  padding-bottom: .75em;
+  text-transform: uppercase;
+}
+
+#thedate {
+  color: #a0a0a0;
+  font-size: .75em;
+}
+
+h2 {
+  font-family: arial, sans-serif;
+  font-size: .875em;
+  color: #fff;
+  clear: both;
+  letter-spacing: .015em;
+  padding-bottom: .2em;
+}
+
+
+/* section subheads */
+p {
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: .25em;
+  color: #53284f;
+  clear: both;
+}
+
+/* name and phone_type */
+h3 {
+  font-family: arial, sans-serif;
+  font-size: .675em;
+  color: #a0a0a0;
+  margin-top: .75em;
+}
+
+/* name_type */
+h3 a {
+  color: #5e8ab4;
+  font-weight: bold;
+}
+
+/* name_type:hover; */
+h3 a:hover {
+  border-bottom: 1px solid #5e8ab4;
+  padding-bottom: 2px;
+}
+
+h4 {
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #a0a0a0;
+  font-size: 0.675em;
+  padding-top: .8em;
+  border-top: 1px solid #ddd;
+}
+
+h5 {
+  color: #646464;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  list-style-position: inside;
+  clear: both;
+}
+
+h5 a {
+  color: #5e8ab4;
+}
+
+ .disclosure h6 {
+  color: #a0a0a0;
+  font-family: arial, sans-serif;
+  font-size: 0.625em;
+  line-height: 1.375em;
+  padding-bottom: 0.75em;
+}
+
+
+
+/*---------------- contributors and date ----------------
+
+
+/* datearea type container */
+.contributors {
+  display: inline-block;
+}
+
+
+/* phone_type */
+.phone {
+  padding-left: 5px;
+}
+
+
+
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  background-color: #5e8ab4;
+  width: 40%;
+  display: block;
+  margin: 2.25em auto;
+  transition: background-color .3s ease-out;
+  cursor: pointer;
+}
+
+.btn-access:hover {
+  background-color: #315b8c; 
+}
+
+.btn-access h2, .btn-access a {
+  padding: .85em;
+  font-family: arial, sans-serif;
+  text-align: center;
+  font-size: .925em;
+    color: #fff;
+  letter-spacing: .025em;
+
+}
+
+
+/*---------------- disclosure ----------------*/
+
+.disclosure a {
+  color: #5e8ab4;
+}
+
+.disclosure a:hover {
+  border-bottom: 1px solid #5e8ab4;
+  padding-bottom: 2px;
+}
+
+
+
+/* R E S P O N S I V E  S T Y L E S */
+/* Smartphones (PORTRAIT) ----------- */
+
+@media (min-width: 320px) and (max-width: 415px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+}
+
+/*.title {
+  margin: 3em 0;
+}*/
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  width: 100%;
+  margin: 2.5em 0;
+}
+
+.btn-access h2 {
+  font-size: .875em;
+}
+
+/*---------------- type styles ----------------*/
+
+h4 {
+  line-height: 1.5em;
+  padding-bottom: .5em;
+}
+}
+
+
+
+
+/* smartphone (LANDSCAPE) ----------- */
+@media (min-width: 416px) and (max-width: 736px)  {  
+
+/* structure */
+.wrapper {
+  width: 95%;
+/*  background-color: lightblue;
+*/}
+
+/*.title {
+  margin: 1.625em 0;
+}*/
+
+.logo {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+/*---------------- buttons ----------------*/
+
+.btn-access {
+  width: 45%;
+  margin: 1.5em auto 1.825em;
+}
+
+.btn-access h2 {
+  font-size: .825em;
+}
+
+}
+
+
+
+/* tablet PORTRAIT and LANDSCAPE----------- */
+@media (min-width: 737px) and (max-width: 1200px)  {  
+
+/* structure */
+.wrapper {
+  width: 70%;
+}
+
+
+}
+
+
+
+
+
+
