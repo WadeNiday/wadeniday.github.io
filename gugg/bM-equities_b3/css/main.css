@@ -337,10 +337,16 @@ h5 a {
 
 /*---------------- type styles ----------------*/
 
+h2 {
+  font-size: 0.875em;
+}
+
 h4 {
   line-height: 1.5em;
   padding-bottom: .5em;
 }
+
+
 }
 
 
