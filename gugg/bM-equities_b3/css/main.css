@@ -112,11 +112,7 @@ body{
 /* solid aubergine bar */
 .solid-bar {
   width: 100%;
-/*  background-color: #53284f;
-  background-color: #ddd;*/
-/*  padding-bottom: 1.25em;
-*/}
-
+}
 
 .logo {
   width: 80%;
@@ -126,11 +122,9 @@ body{
 }
 
 .title {
-/*  padding-top: 1.5em;
-*/  padding-bottom: 2em;
+  padding-bottom: 2em;
   width: 100%;
-/*  background-color: #ddd;
-*/  border-bottom: 2px solid #53284f;
+  border-bottom: 2px solid #53284f;
 }
 
 .title-text {
@@ -146,7 +140,6 @@ body{
 .content-main {
   margin-top: 1.5em;
   width: 100%;
-
 }
 
 .story {
@@ -369,6 +362,10 @@ h4 {
 .logo {
   padding-bottom: 2em;
   padding-top: 2em;
+}
+
+h2 {
+  font-size: 0.875em;
 }
 
 /*---------------- buttons ----------------*/
