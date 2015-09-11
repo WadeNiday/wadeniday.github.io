@@ -165,12 +165,27 @@ body{
 
 /* article title */
 h1 {
+  font-family: arial, sans-serif;
+  color: #fff;
+  line-height: 1.25em;
+  font-size: 1.2em;
+  padding-bottom: .4em;
+  letter-spacing: .05em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*h1 {
+  font-family: arial, sans-serif;
   color: #fff;
   line-height: 1.15em;
   font-size: 1.425em;
-  padding-bottom: .75em;
+  padding-bottom: .5em;
+  letter-spacing: .03em;
+  font-weight: bold;
   text-transform: uppercase;
-}
+}*/
+
 
 #thedate {
   color: #a0a0a0;
@@ -179,10 +194,10 @@ h1 {
 
 h2 {
   font-family: arial, sans-serif;
-  font-size: .875em;
+  font-size: 1em;
   color: #fff;
   clear: both;
-  letter-spacing: .015em;
+  letter-spacing: .02em;
   padding-bottom: .2em;
 }
 
