@@ -130,86 +130,48 @@ header {
 // !-- Main Nav Bar
 // ----------------------------------------- */
 
-.mainnav {
-  height: 3.125em;
-}
-
 .logo {
-  display: block;
-  float: left;
-  margin-top: .75em;
   width: 1.75%;
+  padding-left: .35em;
+  -webkit-transition: all .3s;
 }
 
-.mainnav li a {
-  margin-top: .9em;
+
+/* solid bar */
+.nav-one {
+  background-color: #eee;
+  border-bottom: 1px dashed #eee;
+  text-align: right;
+  display: table;
+  position: fixed;
+  min-width: 100%;
+  height: 3.125em;
+  -webkit-transition: all .3s;
+}
+
+.nav-one a {
+  color: #dd4b39; 
+  float: right;
+  margin-top: .75em;
   margin-left: 4%;
   padding-left: 4%;
-  text-align: center;
-  display: inline-block;
-}
-
-.mainnav a {
+  font-size: 1em; 
   font-weight: 400;
-  float: right;
-  font-size: 1.05em; 
-  color: #dd4b39;
-  transition: color .2s ease-in
-  -webkit-transition: color .2s ease-in;
-  -moz-transition: color .2s ease-in;
-  -o-transition: color .2s ease-in;
-}
--
-.mainnav a:hover {
-    color: #777;
+  transition: all .4s linear;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
 }
 
-
-/* --------------------------------------------
-// !-- Project Nav Bar
-// ----------------------------------------- */
-
-.work {
-  width: 100%;
-  background-color: #fff;
-}
-
-.projectnav {
-  width: 100%;
-  margin-top: 3.125em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background-color: #fff;   
-  z-index: 1;
-  border-bottom: 1px dashed #bbb;
-  display: inline-block;
-}
-
-.projectnav li {
-    display: inline;
-}
-
-.title {
-  color: #777; 
-  font-weight: 600;  
-  font-size: 1em; 
-}
-
-.projectnav a {
+.nav-one a:hover {
   color: #777;
-  float: right;
+}
+
+.nav-one li a {
+  margin-top: 1.0em;
   margin-left: 4%;
   padding-left: 4%;
-  font-size: 1em; 
-  font-weight: 600;
-  transition: color .5s linear;
-  -webkit-transition: color .5s;
-  -moz-transition: color .5s;
-  -o-transition: color .5s;
-}
-
-.projectnav a:hover {
-    color: #dd4b39; 
+  display: inline-block;
 }
 
 .rightarrow a {
@@ -218,17 +180,120 @@ header {
 
 
 
+/*  behavior of primary nav when scrolled  */
+
+.nav-one.sticky {
+  z-index: 1;
+  background-color: #fff;
+  border-bottom: 1px dashed #bbb;
+}
+
+.nav-one.sticky li a {
+  margin-top: -1.25em;
+  opacity: .1;
+}
+
+.nav-one.sticky .logo {
+  margin-top: -2.25em;
+  opacity: .2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------
+// !-- Project Nav Bar
+// ----------------------------------------- */
+
+.projectnav {
+  width: 100%;
+  margin-top: 2.85em;
+  border-bottom: 1px dashed #bbb;
+  display: inline-block;
+  -webkit-transition: all .5s;
+  z-index: 1000;
+
+}
+
+/* title of the page */
+#navscroll li, .title {
+  font-size: 1em; 
+  color: #777;
+  display: inline-block;
+  text-align: baseline;
+  line-height: 4em;
+  font-weight: 600;
+}
+
+/*  arrow left/right  */
+#navscroll a {
+  color: #777;
+  -webkit-transition: all .25s;
+}
+
+.rightarrow  {
+  float: right;
+}
+
+#navscroll a:hover {
+  color: #dd4b39; 
+  color: #bbb;
+}
+
+.projectnav.sticky  {
+  border-bottom: 1px dashed #bbb;
+  z-index: 1000;
+  margin-bottom: 2.8em;
+}
+
+.projectnav.sticky #navscroll {
+  margin-top: -3.3em;
+  position: fixed;
+  z-index: 100;
+  border-bottom: none;
+  width: 70%;
+}
+
+.projectnav.sticky #navscroll a  {
+  color: #777;
+}
+
+.projectnav.sticky #navscroll a:hover  {
+  color: #bbb;
+}
+
+
+
+
+
+
+.work {
+  width: 100%;
+  background-color: #fff;
+}
+
 
 /*Project Story*/
 .description {
   display: inline;
   float: right;
-  margin-top: 1em;
+  margin-top: 2em;
   width: 100%;
   padding-bottom: 2em;
 /*  margin-bottom: 1.5em;
 *//*  border-bottom: 1px dashed #bbb;
 */}
+
 
 .description a {
   color: #777;
@@ -251,6 +316,7 @@ header {
   margin-bottom: 3%;
   border-bottom: 1px dashed #ccc;
 }
+
 
 /*project artwork*/
 .banner_project { 
@@ -475,11 +541,11 @@ h1 {
 
 .bottomnav a:hover {
     color: #dd4b39; 
+    color: #bbb;
 }
 
 .rightarrow a {
   padding-left: 1%;
-  float: right;
 }
 
 
