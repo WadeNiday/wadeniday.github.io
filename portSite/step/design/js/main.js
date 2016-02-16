@@ -7,7 +7,7 @@ $(document).ready(function() {
         var windowHeight = $(window).height();
 
         // Find the value of 90% of the viewport height
-        var ninetypercent =66;
+        var ninetypercent =400;
 
         // var ninetypercent = .56 * windowHeight;
 

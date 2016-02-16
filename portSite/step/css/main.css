@@ -144,18 +144,21 @@ header {
 }
 
 .mainnav li a {
-  margin-top: .9em;
+    font-weight: 600;
+  margin-top: 1.3em;
   margin-left: 4%;
-  padding-left: 4%;
-  text-align: center;
+/*  padding-left: 4%;
+*/  text-align: center;
   display: inline-block;
 }
 
 .mainnav a {
-  font-weight: 400;
+
   float: right;
-  font-size: 1.05em; 
+  font-size: .85em; 
   color: #dd4b39;
+  text-transform: uppercase;
+  letter-spacing: .1em;
   transition: color .2s ease-in
   -webkit-transition: color .2s ease-in;
   -moz-transition: color .2s ease-in;
