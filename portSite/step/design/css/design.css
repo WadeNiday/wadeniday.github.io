@@ -124,6 +124,7 @@ header {
     width: 100%;
     z-index: 1;
     background-color: #eee;
+      background-color: #dd4b39;
 }
 
 /* --------------------------------------------
@@ -142,6 +143,7 @@ header {
 /* solid bar */
 .nav-one {
   background-color: #eee;
+    background-color: #dd4b39;
   border-bottom: 1px dashed #eee;
   text-align: right;
   display: table;
@@ -194,6 +196,8 @@ header {
 .nav-one.sticky {
   z-index: 1;
   background-color: #fff;
+    background-color: #eee;
+
   border-bottom: 1px dashed #bbb;
 }
 
