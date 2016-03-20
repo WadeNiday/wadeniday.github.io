@@ -145,7 +145,7 @@ header {
 }
 
 .mainnav li a {
-    font-weight: 600;
+    font-weight: 400;
   margin-top: 1.3em;
   margin-left: 4%;
 /*  padding-left: 4%;
@@ -154,20 +154,17 @@ header {
 }
 
 .mainnav a {
-
   float: right;
   font-size: .85em; 
-  color: #dd4b39;
+  color: #bbb;s
   text-transform: uppercase;
   letter-spacing: .1em;
-  transition: color .2s ease-in
-  -webkit-transition: color .2s ease-in;
-  -moz-transition: color .2s ease-in;
-  -o-transition: color .2s ease-in;
+  -webkit-transition: color 0.25s ease-in-out;
+          transition: color 0.25s ease-in-out;
 }
 
 .mainnav a:hover {
-    color: #777;
+    color: #fff;
 }
 
 /* --------------------------------------------
@@ -203,9 +200,9 @@ header {
 
 .landing h6, .work h6, #nav_active {
     float: left;
-    font-weight: 400;
+    font-weight: 200;
     margin-left: 2em;
-    color: #777;
+    color: #bbb;
     padding-top: .9em;
     position: absolute;
     z-index: 1;
@@ -353,7 +350,7 @@ background-color: #ddd;
 
 /* image position within circle */
 #selfie img{
-  padding-top: 10px;
+  padding-top: 0px;
   margin-bottom: -5px;
   margin-left: -3px;
 }

@@ -144,8 +144,8 @@ header {
 .nav-one {
   background-color: #eee;
     background-color: #dd4b39;
-  border-bottom: 1px dashed #eee;
-  text-align: right;
+/*  border-bottom: 1px dashed #eee;
+*/  text-align: right;
   display: table;
   position: fixed;
   min-width: 100%;
@@ -155,11 +155,12 @@ header {
 
 .nav-one a {
   color: #dd4b39; 
+  color: #bbb; 
   float: right;
   margin-top: .75em;
   margin-left: 4%;
   font-size: .85em; 
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .1em;
   transition: all .4s linear;
@@ -168,12 +169,8 @@ header {
   -o-transition: all .4s;
 }
 
-
-
-
-
 .nav-one a:hover {
-  color: #777;
+  color: #fff;
 }
 
 .nav-one li a {
