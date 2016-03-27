@@ -112,6 +112,15 @@ p {
   font-size: 0.825em;
   line-height: 1.5em;
   padding-top: 30px;
+
+}
+
+.item a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #63666a;
+  font-weight: 200;
+  font-size: .925em;
+    line-height: 1.5em;
 }
 
 .item:hover a {
