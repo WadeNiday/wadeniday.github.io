@@ -333,6 +333,35 @@ h5 {
   background-color: #fff;
 }
 
+.sect-one {
+  background-color: #fff;
+  padding-left: 10.1%;
+  padding-right: 10%;
+  padding-top: 2em;
+  z-index: 1;
+}
+
+p {
+  width: 55%;
+  font-family: 'Guardian Regular';
+  font-size: 1em; 
+  color: #777;
+  text-transform: none;
+  line-height: 1.6em;
+  padding-bottom: 1em;
+  letter-spacing: 0.02em;
+
+}
+
+h3 {
+  color: #51284f;
+  padding-bottom: 4px;
+  font-family: 'Guardian Light Web';
+  letter-spacing: 0.05em;
+  font-size: 1.2em;
+  padding-top: 20px;
+}
+
 .hero {
   color: #fff;
   min-width: 100%;
@@ -372,19 +401,18 @@ h5 {
 /*– – – – – – – – – – – – – – – – – – – – */
 
 /* PRODUCT NAV */
-.nav-product {
-/*  min-height: 5em;
-*/  /*padding: 2em 0em;*/
-/*  background-color: yellow;*/
-/*  width: 700px;
-*/  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+
+.empty{
+  background-color: white;
 }
 
+
 .nav-product.sticky {
+  background-color: white;
   position: fixed;
   top: 3.78em;
-  background: pink;
+  width: 80%;
+  border-bottom: 1px solid #ddd;
 }
 
 /*.nav-product ul {
@@ -397,23 +425,20 @@ h5 {
   font-size: 13px; 
   color: #5E8AB4;
   text-transform: uppercase;
-/*  letter-spacing: .125em;
-*/}
+  letter-spacing: .075em;
+}
 
 .nav-product li {
   display: inline-block;
-/*    background-color: yellow;
-*/  line-height: 5em;
-/*  width: 19.5%;*/
-/*  padding: 0 .5em;
-*/  border-right: 1px solid #ddd;
+  line-height: 3em;
+  width: 19.5%;
+  border-bottom: 1px solid #eee;
   -webkit-transition: all .35s;
 }
 
 .nav-product li:hover {
-  background-color: blue;
+  border-bottom: 1px solid #5E8AB4;
   cursor: pointer;
-  color: #fff;
 }
 
 section h1 {
