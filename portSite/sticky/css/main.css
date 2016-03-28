@@ -318,7 +318,7 @@ section:nth-of-type(2n) {
   font-size: 18px; 
   color: #fff;
   text-transform: none;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
 }
 
 h5 {
