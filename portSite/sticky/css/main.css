@@ -396,6 +396,22 @@ h3 {
 }
 
 
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+
+
 
 
 /*– – – – – – – – – – – – – – – – – – – – */
@@ -415,9 +431,7 @@ h3 {
   border-bottom: 1px solid #ddd;
 }
 
-/*.nav-product ul {
-  background-color: red;
-}*/
+
 
 
 .nav-product a {
@@ -426,6 +440,8 @@ h3 {
   color: #5E8AB4;
   text-transform: uppercase;
   letter-spacing: .075em;
+  -webkit-transition: all .35s;
+
 }
 
 .nav-product li {
@@ -436,8 +452,8 @@ h3 {
   -webkit-transition: all .35s;
 }
 
-.nav-product li:hover {
-  border-bottom: 1px solid #5E8AB4;
+.nav-product a:hover {
+  color: #ccc;
   cursor: pointer;
 }
 

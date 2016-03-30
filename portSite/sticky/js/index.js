@@ -22,7 +22,7 @@ $(document).ready(function() {
      'position':'absolute',
      'background-color':'#5e8ab4',
      'bottom':'0',
-     'height':'8px'
+     'height':'6px'
    }).animate({
      'left':liPos,
      'width':lineWidth
