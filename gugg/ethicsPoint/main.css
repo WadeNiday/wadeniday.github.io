@@ -1,0 +1,235 @@
+body {
+    font: 12px arial, sans-serif;
+    margin: 0;
+}
+
+#epHeader {
+    background: #53294f;
+    height: 60px;
+    position: relative;
+    width: 100.25%;
+/*    border-right: 1px solid #ccc;
+*/}
+
+#epNav {
+    float: right;
+    width: 100%;
+    margin: 0;
+}
+
+a.logo {
+    background: url(Gugg-logo.png) no-repeat left top;
+    display: block;
+    height: 14px;
+    left: 25px;
+    position: absolute;
+    top: 22px;
+    width: 170px;
+}
+
+#epNav a {
+    color: #fff;
+    display: block;
+    float: right;
+    padding: 12px 20px 10px 20px;
+    line-height: 32px;
+    letter-spacing: .05em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+}
+
+#epNav a:hover {
+    color: #a0a0a0;
+    border-bottom: none;
+}
+
+#epWrapper {
+    position: relative;
+    margin: auto;
+    margin-bottom: 20em;
+    width: 978px;
+}
+
+#epLang a {
+    padding: 0 5px;
+}
+
+a {
+    color: #5e8ab4;
+    text-decoration: none;
+}
+
+.disclosure a:hover {
+    border-bottom: 1px solid #5e8ab4;
+    padding-bottom: 2px;
+}
+
+#epAttention {
+    font-size: 14px;
+    padding-left: 25px;
+    color: #a0a0a0;
+    letter-spacing: .02em;
+}
+
+.banner {
+    padding-top: 130px;
+    padding-bottom: 57px;
+    margin-bottom: 12px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-bottom: 1px solid ##cccccc;
+}
+
+#top {
+    color: #53284f;
+    font-size: 40px;
+    font-family: georgia;
+}
+
+#epContent {
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#epColumn2 {
+    float: right;
+    padding-right: 25px;
+    width: 30%;
+}
+
+#epColumn1 {
+    margin-top: 265px;
+    margin-left: 25px;
+    width: 65%;
+}
+
+#epColumn2b {
+    margin-top: 265px;
+    width: 35%;
+}
+
+#epColumn2a {
+    padding: 0px 0px 20px 30px;
+}
+
+#epColumn2a p {
+    color: #a0a0a0;
+}
+
+
+h1 {
+    color: #646464;
+    font-family: arial, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+h2 {
+    color: #646464;
+    font-family: arial, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: 0.67em;
+}
+
+h3 {
+    color: #53284f;
+    font-family: arial, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: .02em;
+    line-height: 30px;
+    padding-bottom: 8px;
+}
+
+h4 {
+    color: #53284f;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 0em;
+}
+
+.report {
+    border-bottom: 1px solid #c1c1c1;
+    border-top: 1px solid #c1c1c1;
+    margin-bottom: 30px;
+    padding-bottom: 45px;
+    padding-top: 1em;
+}
+
+
+#left {
+    width: 39%;
+    display: inline-block;
+}
+
+#right {
+    float: right;
+    width: 52%;
+}
+
+#right p {
+    color: #5e8ab4;
+}
+
+#left p {
+    color: #5e8ab4;
+    font-weight: bold;
+}
+
+/* dropdown styles */
+select {
+    width: 213px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+/*#epColumn2 ul li.principles {
+    color: #53284f;
+    font-family: arial, sans-serif;
+    margin-bottom: 20px;
+}*/
+
+.main-copy {
+    border-bottom: 1px solid #c1c1c1;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #a0a0a0;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .005em;
+    margin: 0 0 12px 0;
+}
+
+.disclosure p {
+    color: #a0a0a0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+#epFooter p {
+    color: #a0a0a0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+#strong {
+    font-weight: bold;
+    letter-spacing: .02em;
+}
+
+.disclosure {
+    padding-bottom: 20px;
+}
